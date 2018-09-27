@@ -3,20 +3,327 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:background="@drawable/deve1"
+    android:layout_height="match_parent"
+
     android:orientation="vertical">
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text= "Developers"
-        android:paddingTop="95dp"
-        android:layout_gravity="left"
-        android:paddingLeft="20dp"
-        android:textSize="40dp"
-        android:textColor = "#ffffff"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="114dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/deve1">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Developers"
+            android:paddingTop="95dp"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:textSize="40dp"
+            android:textColor = "#ffffff"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src = "@drawable/vanshi"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="VANSHIKA ARORA"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="Mathematics and Computing"
+                            android:textSize="15dp" />
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="gmailvanshi"
+                                android:src="@drawable/gmail" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="vanshifb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/peru" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text= "PERUL JAIN"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text= "Electronics and Communication Engineering"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="perumail"
+                                android:src="@drawable/gmail" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="perufb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/sri" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text= "SHRIDHAR GOEL"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text= "Mathematics and Computing"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="srimail"
+                                android:src="@drawable/gmail" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="srifb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:text="  Designers"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true"
+                android:background="#BDBDBD" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="101dp"
+                        android:src="@drawable/peru" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="KULDEEP GAUTAM"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="173dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:onClick="kulfb"
+                        android:layout_marginRight="5dp"
+
+                        android:src="@drawable/fb" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
 </LinearLayout>
