@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    >
+<ImageView
+    android:id="@+id/concettoImage"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@color/colorAccent"
+    app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <android.support.v7.widget.AppCompatButton
+        android:marginTop="50dp"
+        android:id="@+id/eventsButton"
+        android:layout_width="200dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/concettoImage"
+        android:text="Events"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/workshopButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventsButton"
+        android:text="Workshops"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workshopButton"
+        android:margin="30dp"
+        android:text="Timings"/>
 
 </android.support.constraint.ConstraintLayout>
+<!--
+tools:showIn="@layout/app_bar_main"
+    xmlns:tools="http://schemas.android.com/tools"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+-->
