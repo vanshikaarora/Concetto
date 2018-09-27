@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="dark_grey">#A9A9A9</color>
     <color name="black">#000000</color>
+    <color name="main_screen_button">#000000</color>
 </resources>

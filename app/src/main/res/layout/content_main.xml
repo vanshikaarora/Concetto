@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    >
+<ImageView
+    android:id="@+id/concettoImage"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:src="@drawable/concetto_logo"
+    app:layout_constraintTop_toTopOf="parent"/>
 
-    <Button
-        android:id="@+id/events_btn"
-        android:layout_width="105dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="241dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="222dp"
-        android:text="Events"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/eventsButton"
+        android:layout_width="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/batmanforeveralternate"
+        android:background="@drawable/ripple"
+        app:layout_constraintTop_toBottomOf="@+id/concettoImage"
+        android:text="Events"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/workshopButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventsButton"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/batmanforeveralternate"
+        android:text="Workshops"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workshopButton"
+        android:fontFamily="@font/batmanforeveralternate"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ripple"
+        android:text="Timings"/>
+
 </android.support.constraint.ConstraintLayout>
+<!--
+tools:showIn="@layout/app_bar_main"
+    xmlns:tools="http://schemas.android.com/tools"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+-->
+
+
+
