@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "965865719332",
+    "firebase_url": "https://concetto-50e48.firebaseio.com",
+    "project_id": "concetto-50e48",
+    "storage_bucket": "concetto-50e48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965865719332:android:7ef8066bef153b6f",
+        "android_client_info": {
+          "package_name": "com.example.vanshika.concetto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965865719332-totakd7q4cvvrfo5o0ohoeoj8fammiea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vanshika.concetto",
+            "certificate_hash": "831cd6e237ec8fa6c4e95a1b33f13dc265d91490"
+          }
+        },
+        {
+          "client_id": "965865719332-757h3adu4tim6in496f96b50t896gteu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA80Rf4nAOwWscZ7p93wWi-VxJauLmb9hA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965865719332-757h3adu4tim6in496f96b50t896gteu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
