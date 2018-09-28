@@ -1,4 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/concetto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="225dp"
+        app:shimmer_duration="1500">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/eventsButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/batmanforeveralternate"
+            android:text="Events" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="35dp"
+        app:shimmer_duration="1500">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/workshopButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/batmanforeveralternate"
+            android:text="workshop" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="35dp"
+        app:shimmer_duration="1500">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/timingButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/batmanforeveralternate"
+            android:text="Events" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -8,22 +100,30 @@
     tools:context=".MainActivity"
     >
 <ImageView
-    android:id="@+id/concettoImage"
+    android:layout_marginTop="20dp"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
-    android:src="@drawable/concetto_logo"
-    app:layout_constraintTop_toTopOf="parent"/>
+    android:layout_height="match_parent"
+    android:src="@drawable/concetto"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"/>
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:id="@+id/eventsButton"
         android:layout_width="200dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/batmanforeveralternate"
+        android:layout_marginVertical="55dp"
         android:background="@drawable/ripple"
-        app:layout_constraintTop_toBottomOf="@+id/concettoImage"
-        android:text="Events"/>
+        android:fontFamily="@font/batmanforeveralternate"
+        android:text="Events"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="259dp"
+        tools:ignore="MissingConstraints" />
 
 
     <android.support.v7.widget.AppCompatButton
@@ -31,33 +131,36 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:layout_marginBottom="15dp"
-        android:paddingBottom="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventsButton"
         android:background="@drawable/ripple"
         android:fontFamily="@font/batmanforeveralternate"
-        android:text="Workshops"/>
+        android:text="Workshops"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="406dp"
+        tools:ignore="MissingConstraints" />
 
     <android.support.v7.widget.AppCompatButton
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/batmanforeveralternate"
+        android:text="Timings"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/workshopButton"
-        android:fontFamily="@font/batmanforeveralternate"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/ripple"
-        android:text="Timings"/>
+        tools:layout_editor_absoluteY="331dp"
+        tools:ignore="MissingConstraints" />
 
-</android.support.constraint.ConstraintLayout>
-<!--
+    </android.support.constraint.ConstraintLayout>
+&lt;!&ndash;
 tools:showIn="@layout/app_bar_main"
     xmlns:tools="http://schemas.android.com/tools"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 
+&ndash;&gt;
+
+
+
 -->
-
-
-
