@@ -111,9 +111,12 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_faq) {
+            startActivity(new Intent(MainActivity.this,obstaclecourseracing.class));
+            //FirebaseMessaging.getInstance().subscribeToTopic("love");
+            return true;
 
         } else if (id == R.id.nav_dev) {
-             startActivity(new Intent(MainActivity.this,develop.class));
+             startActivity(new Intent(MainActivity.this,developers.class));
 
              return true;
         }
