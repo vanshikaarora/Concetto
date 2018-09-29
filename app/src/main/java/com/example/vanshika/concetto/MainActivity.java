@@ -1,5 +1,8 @@
 package com.example.vanshika.concetto;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +16,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.vanshika.concetto.Models.constants;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,8 +47,20 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this, CategoriesActivity.class);
                 startActivity(intent);
+
             }
         });
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationManager mNotificationManager =
+                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel mChannel = new NotificationChannel(constants.CHANNEL_ID, constants.CHANNEL_NAME, importance);
+            mChannel.setDescription(constants.CHANNEL_DESCRIPTION);
+            mChannel.enableLights(true);
+            mChannel.enableVibration(true);
+            mChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+            mNotificationManager.createNotificationChannel(mChannel);
+        }
     }
 
     @Override
@@ -86,6 +104,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_contact_us) {
+            startActivity(new Intent(MainActivity.this,eventA.class));
+            //FirebaseMessaging.getInstance().subscribeToTopic("love");
+            return true;
 
 
 
@@ -93,6 +114,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_dev) {
              startActivity(new Intent(MainActivity.this,develop.class));
+
              return true;
         }
 
