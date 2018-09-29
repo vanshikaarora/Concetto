@@ -1,6 +1,7 @@
 package com.example.vanshika.concetto.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.provider.CalendarContract;
 import android.support.v4.view.ViewCompat;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.vanshika.concetto.EventsActivity;
 import com.example.vanshika.concetto.Models.Event;
 import com.example.vanshika.concetto.R;
 
@@ -73,6 +75,13 @@ import java.util.List;
                 textViewTitle = itemView.findViewById(R.id.textViewTitle);
                 textViewDate = itemView.findViewById(R.id.textViewDate);
                 textViewTime = itemView.findViewById(R.id.textViewTime);
+
+                itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        int position=getAdapterPosition();
+                    }
+                });
             }
         }
 

@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+      
+        <activity android:name=".CategoriesActivity"></activity>
+
         <activity android:name=".develop"></activity>
         <activity android:name=".EventsActivity"></activity>
         <activity android:name=".eventA"></activity>
@@ -34,13 +37,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-
-
-
-
-
-
-
 
     </application>
 
