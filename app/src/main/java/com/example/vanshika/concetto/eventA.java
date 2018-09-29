@@ -28,6 +28,7 @@ public class eventA extends AppCompatActivity {
        ab = (Button)findViewById(R.id.button);
         ru = (Button)findViewById(R.id.button2);
         pr = (Button)findViewById(R.id.button3);
+        getSupportActionBar().hide();
 
     }
 

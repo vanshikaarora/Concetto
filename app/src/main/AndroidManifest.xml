@@ -24,7 +24,7 @@
 
         <activity android:name=".develop"></activity>
         <activity android:name=".EventsActivity"></activity>
-        <activity android:name=".eventA"></activity>
+        <activity android:name=".robowar"></activity>
         <service
             android:name=".MyFirebaseInstanceIDService">
             <intent-filter>
