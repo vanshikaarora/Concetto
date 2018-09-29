@@ -7,15 +7,14 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
- * Created by lenovo on 9/29/2018.
+ * Created by lenovo on 9/30/2018.
  */
 
-public class obstaclecourseracing extends AppCompatActivity {
-    TextView tl,t2;
+public class vitricity extends AppCompatActivity {
+    TextView tl;
     Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
@@ -24,10 +23,10 @@ public class obstaclecourseracing extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.obstaclecourseracing);
         getSupportActionBar().hide();
+        setContentView(R.layout.vitricity);
+        //// img = (ImageView)findViewById(R.id.titleImage);
         tl = (TextView)findViewById(R.id.title);
-        t2 = (TextView)findViewById(R.id.title1);
 
         ab = (Button)findViewById(R.id.bt1);
         ru = (Button)findViewById(R.id.bt2);
@@ -37,8 +36,8 @@ public class obstaclecourseracing extends AppCompatActivity {
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(obstaclecourseracing.this);
-                about.setMessage("sujal jain");
+                about = new AlertDialog.Builder(vitricity.this);
+                about.setMessage("perul jain");
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -49,8 +48,8 @@ public class obstaclecourseracing extends AppCompatActivity {
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(obstaclecourseracing.this);
-                rules.setMessage("rules are found");
+                rules = new AlertDialog.Builder(vitricity.this);
+                rules.setMessage("rules are");
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -60,7 +59,7 @@ public class obstaclecourseracing extends AppCompatActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(obstaclecourseracing.this);
+                prizes = new AlertDialog.Builder(vitricity.this);
                 prizes.setMessage("Rs 2000");
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -71,8 +70,8 @@ public class obstaclecourseracing extends AppCompatActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(obstaclecourseracing.this);
-                contacts.setMessage("Rs 20000");
+                contacts = new AlertDialog.Builder(vitricity.this);
+                contacts.setMessage("Rs 2000");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -82,10 +81,9 @@ public class obstaclecourseracing extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(obstaclecourseracing.this,obstacle_registration.class));
+
 
             }
         });
-
     }
 }

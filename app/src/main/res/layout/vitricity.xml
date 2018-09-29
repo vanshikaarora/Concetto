@@ -14,7 +14,7 @@
         android:layout_height="250dp"
 
         android:orientation="vertical"
-        android:background="@drawable/obstacle">
+        android:background="@drawable/vitri">
 
 
 
@@ -27,18 +27,7 @@
             android:layout_marginTop="150dp"
             android:textColor="#ffffff"
             android:textSize="25dp"
-            android:text="OBSTACLE COURSE
-          "/>
-        <TextView
-            android:id="@+id/title1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0.5dp"
-            android:textColor="#ffffff"
-            android:textSize="25dp"
-            android:text="RACING"
-            />
+            android:text="VITRICITY"/>
     </LinearLayout>
 
 
