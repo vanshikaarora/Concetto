@@ -22,7 +22,7 @@
       
         <activity android:name=".CategoriesActivity"></activity>
 
-        <activity android:name=".develop"></activity>
+        <activity android:name=".Developers"></activity>
         <activity android:name=".EventsActivity"></activity>
         <activity android:name=".eventA"></activity>
         <service
