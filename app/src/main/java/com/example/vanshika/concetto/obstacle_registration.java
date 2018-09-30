@@ -97,7 +97,7 @@ public class obstacle_registration extends AppCompatActivity {
                         String id = obs.push().getKey();
                         registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                         obs.child("obstacle course").child(id).setValue(reg);
-                        Toast.makeText(obstacle_registration.this, "Registration done For Aavishkar Registration",
+                        Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
                                 Toast.LENGTH_LONG).show();
                         startActivity(new Intent(obstacle_registration.this, MainActivity.class));
 

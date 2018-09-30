@@ -97,7 +97,7 @@ public class robowar_registration extends AppCompatActivity {
                     String id = robos.push().getKey();
                     registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                     robos.child("robowar").child(id).setValue(reg);
-                    Toast.makeText(robowar_registration.this, "Registration done For Aavishkar Registration",
+                    Toast.makeText(robowar_registration.this, "Registration done For robowar",
                             Toast.LENGTH_LONG).show();
                     startActivity(new Intent(robowar_registration.this, MainActivity.class));
 
