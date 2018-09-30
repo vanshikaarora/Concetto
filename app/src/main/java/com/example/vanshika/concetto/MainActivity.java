@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_contact_us) {
-            startActivity(new Intent(MainActivity.this,vitricity.class));
+            startActivity(new Intent(MainActivity.this,obstaclecourseracing.class));
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;
 

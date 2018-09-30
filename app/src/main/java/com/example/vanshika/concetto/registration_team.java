@@ -20,6 +20,30 @@ public class registration_team {
 
     }
 
+    public void setTeamname(String teamname) {
+        this.teamname = teamname;
+    }
+
+    public void setMember1(String member1) {
+        this.member1 = member1;
+    }
+
+    public void setMember2(String member2) {
+        this.member2 = member2;
+    }
+
+    public void setMember3(String member3) {
+        this.member3 = member3;
+    }
+
+    public void setMember4(String member4) {
+        this.member4 = member4;
+    }
+
+    public void setTeamleaderemailid(String teamleaderemailid) {
+        this.teamleaderemailid = teamleaderemailid;
+    }
+
     public String getTeamname() {
         return teamname;
     }
