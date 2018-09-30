@@ -23,8 +23,9 @@
         </activity>
       
         <activity android:name=".CategoriesActivity"></activity>
+      
+        <activity android:name=".Developers"></activity>
 
-        <activity android:name=".developers"></activity>
         <activity android:name=".EventsActivity"></activity>
         <activity android:name=".robowar"></activity>
         <activity android:name=".obstaclecourseracing"></activity>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d3d3d3"
 
     android:orientation="vertical">
     <LinearLayout
@@ -43,8 +44,11 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:elevation="5dp">
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="15dp">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -54,6 +58,8 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+
                         android:src="@drawable/peru" />
 
                     <LinearLayout
@@ -110,9 +116,11 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:elevation="15dp"
-                >
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="5dp">
+                
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -122,6 +130,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="150dp"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/sri" />
 
                     <LinearLayout
@@ -180,9 +189,13 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:elevation="15dp">
+                android:layout_margin="4dp"
+                android:elevation="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                >
 
+               
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
@@ -191,6 +204,8 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+
                         android:src = "@drawable/vanshi"
                         />
 
@@ -250,37 +265,40 @@
 
             </android.support.v7.widget.CardView>
 
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:text="  Designers"
-                android:textSize="20dp" />
-
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dip"
                 android:layout_centerVertical="true"
                 android:background="#BDBDBD" />
 
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="  Designers"
+                android:textSize="20dp" />
+
+
+
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:elevation="15dp"
                 >
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="150dp"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="125dp"
-                        android:layout_height="101dp"
+                        android:layout_height="150dp"
                         android:src="@drawable/peru" />
 
                     <LinearLayout

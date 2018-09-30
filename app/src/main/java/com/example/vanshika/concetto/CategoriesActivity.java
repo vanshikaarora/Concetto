@@ -52,10 +52,6 @@ public class CategoriesActivity extends AppCompatActivity {
         //creating recyclerview adapter
         CategoriesAdapter adapter = new CategoriesAdapter(this, categoryList);
 
-        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(
-                getApplicationContext()
-        ));
-
         //setting adapter to recyclerview
         recyclerView.setAdapter(adapter);
 

@@ -116,7 +116,8 @@ public class MainActivity extends AppCompatActivity
             return true;
 
         } else if (id == R.id.nav_dev) {
-             startActivity(new Intent(MainActivity.this,developers.class));
+        
+             startActivity(new Intent(MainActivity.this,Developers.class));
 
              return true;
         }
