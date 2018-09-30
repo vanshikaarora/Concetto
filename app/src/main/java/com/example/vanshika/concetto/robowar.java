@@ -14,7 +14,7 @@ import android.widget.TextView;
  * Created by lenovo on 9/29/2018.
  */
 
-public class robowar extends AppCompatActivity {
+public class robowar extends MainActivity {
     //ImageView img;
     TextView tl;
    Button ab,ru,pr,co,reg;
@@ -25,8 +25,10 @@ public class robowar extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.replaceContentLayout(R.layout.event_layout, R.id.content_main_linear_layout);
+
         getSupportActionBar().hide();
-        setContentView(R.layout.event_layout);
+
        //// img = (ImageView)findViewById(R.id.titleImage);
         tl = (TextView)findViewById(R.id.title);
 

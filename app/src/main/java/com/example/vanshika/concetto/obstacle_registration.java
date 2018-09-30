@@ -20,14 +20,17 @@ import com.google.firebase.database.FirebaseDatabase;
  * Created by lenovo on 9/30/2018.
  */
 
-public class obstacle_registration extends AppCompatActivity {
+public class obstacle_registration extends MainActivity {
     EditText nm,m1,m2,m3,m4,em;
     Button b;
     FirebaseDatabase obst;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.regtest);
+        super.replaceContentLayout(R.layout.regtest, R.id.content_main_linear_layout);
+
+        getSupportActionBar().hide();
+
         b = (Button)findViewById(R.id.button4);
         nm = (EditText)findViewById(R.id.tnm);
         m1 = (EditText)findViewById(R.id.mem1);
@@ -97,7 +100,7 @@ public class obstacle_registration extends AppCompatActivity {
                         String id = obs.push().getKey();
                         registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                         obs.child("obstacle course").child(id).setValue(reg);
-                        Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
+                        Toast.makeText(obstacle_registration.this, "Registration done for obstacle course racing ",
                                 Toast.LENGTH_LONG).show();
                         startActivity(new Intent(obstacle_registration.this, MainActivity.class));
 

@@ -1,7 +1,7 @@
 package com.example.vanshika.concetto.Models;
 
 /**
- * Created by Shridhar on 28-Sep-18.
+ * Created by shridhar on 28-Sep-18.
  */
 
 public class Category
