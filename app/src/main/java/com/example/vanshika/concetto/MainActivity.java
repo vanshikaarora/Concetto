@@ -16,12 +16,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 
 import com.example.vanshika.concetto.Models.constants;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    protected DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,8 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.concetto_white);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         /*toggle.setDrawerIndicatorEnabled(false);
@@ -125,5 +129,16 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    protected void replaceContentLayout(int sourceId, int destinationId) {
+        View contentLayout = findViewById(destinationId);
+
+        ViewGroup parent = (ViewGroup) contentLayout.getParent();
+        int index = parent.indexOfChild(contentLayout);
+
+        parent.removeView(contentLayout);
+        contentLayout = getLayoutInflater().inflate(sourceId, parent, false);
+        parent.addView(contentLayout, index);
     }
 }

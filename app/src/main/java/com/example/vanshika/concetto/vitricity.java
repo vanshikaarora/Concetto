@@ -13,7 +13,7 @@ import android.widget.TextView;
  * Created by lenovo on 9/30/2018.
  */
 
-public class vitricity extends AppCompatActivity {
+public class vitricity extends MainActivity {
     TextView tl;
     Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
@@ -23,8 +23,10 @@ public class vitricity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.replaceContentLayout(R.layout.vitricity, R.id.content_main_linear_layout);
+
         getSupportActionBar().hide();
-        setContentView(R.layout.vitricity);
+
         //// img = (ImageView)findViewById(R.id.titleImage);
         tl = (TextView)findViewById(R.id.title);
 

@@ -19,7 +19,7 @@ import com.example.vanshika.concetto.R;
 import java.util.List;
 
 /**
- * Created by Shridhar on 27-Sep-18.
+ * Created by shridhar on 27-Sep-18.
  */
 
     public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsViewHolder> {

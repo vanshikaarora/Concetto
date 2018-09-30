@@ -20,14 +20,17 @@ import com.google.firebase.database.FirebaseDatabase;
  * Created by lenovo on 9/30/2018.
  */
 
-public class robowar_registration extends AppCompatActivity {
+public class robowar_registration extends MainActivity {
     EditText nm,m1,m2,m3,m4,em;
     Button b;
     FirebaseDatabase robo;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.regtest);
+        super.replaceContentLayout(R.layout.regtest, R.id.content_main_linear_layout);
+
+        getSupportActionBar().hide();
+
         b = (Button)findViewById(R.id.button4);
         nm = (EditText)findViewById(R.id.tnm);
         m1 = (EditText)findViewById(R.id.mem1);
