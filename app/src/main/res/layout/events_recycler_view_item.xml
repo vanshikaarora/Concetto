@@ -4,40 +4,47 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:padding="15dp"
-        card_view:cardBackgroundColor="#001e32"
-        card_view:cardElevation="10dp"
-        card_view:cardCornerRadius="3dp">
+        card_view:contentPadding="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="15dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/textViewTime"
+                android:layout_alignStart="@+id/textViewTime"
+                android:src="@drawable/robo" />
+
             <TextView
                 android:id="@+id/textViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/batmanforeveralternate"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="80dp"
                 android:layout_toRightOf="@id/imageView"
                 android:text="Event A"
-                android:textSize="32sp"
-                android:textAlignment="center"
+                android:textSize="28sp"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                android:textColor="#FFFFFF" />
+                android:textColor="#001e32" />
 
             <TextView
                 android:id="@+id/textViewDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textViewTitle"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="80dp"
                 android:layout_marginTop="5dp"
-                android:textAlignment="center"
-                android:textSize="26sp"
-                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textColor="#3e3e3e"
                 android:layout_toRightOf="@id/imageView"
                 android:text="Date"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
@@ -49,7 +56,7 @@
                 android:textAlignment="center"
                 android:layout_below="@id/textViewDate"
                 android:layout_marginLeft="5dp"
-                android:textSize="26sp"
+                android:textSize="20sp"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/imageView"

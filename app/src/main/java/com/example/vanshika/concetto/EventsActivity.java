@@ -72,10 +72,6 @@ public class EventsActivity extends AppCompatActivity {
         //creating recyclerview adapter
         EventsAdapter adapter = new EventsAdapter(this, eventsList);
 
-        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(
-                getApplicationContext()
-        ));
-
         //setting adapter to recyclerview
         recyclerView.setAdapter(adapter);
 

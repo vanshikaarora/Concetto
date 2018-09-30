@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/concetto"
+    android:background="@drawable/registeration_bg"
     tools:context="com.example.vanshika.concetto.EventsActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/events_recycler_view"
+        android:layout_margin="8dp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
