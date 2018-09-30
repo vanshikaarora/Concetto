@@ -14,7 +14,7 @@ import android.widget.TextView;
  * Created by lenovo on 9/29/2018.
  */
 
-public class obstaclecourseracing extends AppCompatActivity {
+public class obstaclecourseracing extends MainActivity {
     TextView tl,t2;
     Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
@@ -24,7 +24,8 @@ public class obstaclecourseracing extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.obstaclecourseracing);
+        super.replaceContentLayout(R.layout.obstaclecourseracing, R.id.content_main_linear_layout);
+
         getSupportActionBar().hide();
         tl = (TextView)findViewById(R.id.title);
         t2 = (TextView)findViewById(R.id.title1);

@@ -19,7 +19,7 @@ import java.util.List;
 
 import static android.support.v7.widget.DividerItemDecoration.VERTICAL;
 
-public class EventsActivity extends AppCompatActivity {
+public class EventsActivity extends MainActivity {
 
     RecyclerView recyclerView;
     List<Event> eventsList;
@@ -27,7 +27,7 @@ public class EventsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_events);
+        super.replaceContentLayout(R.layout.activity_events, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 

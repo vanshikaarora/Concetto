@@ -1,9 +1,15 @@
 package com.example.vanshika.concetto;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -15,15 +21,16 @@ import com.example.vanshika.concetto.Models.Event;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CategoriesActivity extends AppCompatActivity {
+public class CategoriesActivity extends MainActivity {
 
     private RecyclerView recyclerView;
     private List<Category> categoryList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories);
+        super.replaceContentLayout(R.layout.activity_categories, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
