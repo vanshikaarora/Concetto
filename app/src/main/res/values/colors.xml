@@ -6,4 +6,7 @@
     <color name="dark_grey">#A9A9A9</color>
     <color name="black">#000000</color>
     <color name="main_screen_button">#a5b4bd</color>
+    <color name="bagcolor">#e4e4e4</color>
+    <color name="btcolor">#009cb0</color>
+    <color name="regcolor">#001e32</color>
 </resources>
