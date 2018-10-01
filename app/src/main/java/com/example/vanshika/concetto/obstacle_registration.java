@@ -30,7 +30,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 public class obstacle_registration extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
-    public static boolean uv = true;
+
     EditText nm,m1,m2,m3,m4,em;
     Button b;
     FirebaseDatabase obst;
@@ -105,7 +105,8 @@ public class obstacle_registration extends AppCompatActivity {
                     if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mem4.isEmpty()==true||email.isEmpty()==true){
 
                     }else {
-                     /*   obs.addValueEventListener(new ValueEventListener() {
+                        final boolean[] uv = {true};
+                       /* obs.addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
                                 if(dataSnapshot.hasChildren()){
@@ -116,8 +117,11 @@ public class obstacle_registration extends AppCompatActivity {
                                         if(p == name){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
+                                            Toast.makeText(obstacle_registration.this, "Registration not done",
+                                                    Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
-                                            uv = false;
+
+                                            uv[0] = false;
                                             break;
 
                                         }
@@ -133,11 +137,11 @@ public class obstacle_registration extends AppCompatActivity {
 
                             }
                         });*/
-                        if(uv){
+                        if(uv[0]){
                             Log.e(obstacle_registration.class.getSimpleName(),"enter");
                             String id = obs.push().getKey();
                             registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
-                            obs.child("obstacle course").child(id).setValue(reg);
+                            obs.child(id).setValue(reg);
                             FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
                             Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
                                     Toast.LENGTH_LONG).show();
