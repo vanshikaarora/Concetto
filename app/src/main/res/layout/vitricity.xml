@@ -81,7 +81,7 @@
 
     <Button
         android:id="@+id/bt5"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="REGISTRATION"

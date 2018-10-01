@@ -33,7 +33,7 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/btn_shape"
 
         android:padding="10dp"
@@ -89,7 +89,7 @@
 
     <Button
         android:id="@+id/bt5"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="REGISTRATION"
