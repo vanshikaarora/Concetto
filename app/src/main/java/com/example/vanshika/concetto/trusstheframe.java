@@ -39,7 +39,7 @@ public class trusstheframe extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(trusstheframe.this);
-                about.setMessage("perul jain");
+                about.setMessage(R.string.truss_desc);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -51,7 +51,7 @@ public class trusstheframe extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(trusstheframe.this);
-                rules.setMessage("rules are");
+                rules.setMessage(R.string.truss_rules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -73,7 +73,7 @@ public class trusstheframe extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(trusstheframe.this);
-                contacts.setMessage("Rs 2000");
+                contacts.setMessage(R.string.truss_contact);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

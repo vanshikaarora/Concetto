@@ -38,11 +38,11 @@ ROUND 2:  SELECTED TEAMS HAVE TO MAKE A CIRCUIT WITH THE HELP OF GIVEN COMPLEX C
 ROUND 3: QUIZ ON BASIC ELECTRONICS WILL BE CONDUCTED. TEAM WITH MORE POINTS WILL TURN OUT TO BE THE WINNER.
     </string>
     
-    <string name="electrabuzz_rules">1.EACH TEAM IS OF 4-5 PEOPLE.
-2. IN FIRST ROUND, ANSWER HAS TO BE WRITTEN ON QUESTION PAPER ALSO AND THE RESPECTIVE COMPONENT SHOULD BE DROPPED IN TEAM’S DROP BOX.
-3.IN SECOND ROUND, SIMPLIFIED CIRCUIT HAS TO BE DRAWN ON THE QUESTION PAPER.
-4.IN THIRD ROUND, NEGATIVE POINTS ARE ALSO AWARDED TO THE WRONG ANSWERS. 
-5.  +3, -1 ,0 POINTS ARE AWARDED TO CORRECT, WRONG AND NO ANSWER RESPECTIVELY
+    <string name="electrabuzz_rules">1.EACH TEAM IS OF 4-5 PEOPLE.\n
+2. IN FIRST ROUND, ANSWER HAS TO BE WRITTEN ON QUESTION PAPER ALSO AND THE RESPECTIVE COMPONENT SHOULD BE DROPPED IN TEAM’S DROP BOX.\n
+3.IN SECOND ROUND, SIMPLIFIED CIRCUIT HAS TO BE DRAWN ON THE QUESTION PAPER.\n
+4.IN THIRD ROUND, NEGATIVE POINTS ARE ALSO AWARDED TO THE WRONG ANSWERS.\n
+5.  +3, -1 ,0 POINTS ARE AWARDED TO CORRECT, WRONG AND NO ANSWER RESPECTIVELY\n
     </string>
     
     <string name="electrabuzz_contact">SIRIGIREDDY DHANALAXMI  7780134173
@@ -124,39 +124,42 @@ Pankaj Kumar-17JE002806 Contact no.-8207691824
 
 
 
-    <string name="truss_desc">Ever thought how the bridges and buildings across the world are so stable and balanced? How a simple structure is enough to carry the heaviest load? Not yet!! Well! its never too late.
-Experience the world of construction in a miniature form by constructing a Truss Bridge. Truss Bridge is the type of bridge whose main element is a truss, which is a structure of connected elements that form triangular units. Truss is used because it is very rigid structure and it transfers the load from single point to much wider area and are economic to construct. But the closed bridges provide obstacle for better transportation along the river. To overcome this hurdle, the new concept called HYDRAULIC ASSISTED BRIDGE (HAB) is used that provides the feasible transportation.
-Participants are required to build a Hydraulic Assisted truss bridge with the following material
-1.	100 popsicle sticks 2. Fevicol 3. Syringe 4. Narrow hose pipe Note: - All the materials will be provided by event organizers.
+    <string name="truss_desc">Ever thought how the bridges and buildings across the world are so stable and balanced? How a simple structure is enough to carry the heaviest load? Not yet!! Well! its never too late.\n
+Experience the world of construction in a miniature form by constructing a Truss Bridge. Truss Bridge is the type of bridge whose main element is a truss, which is a structure of connected elements that form triangular units.\n
+        Truss is used because it is very rigid structure and it transfers the load from single point to much wider area and are economic to construct. But the closed bridges provide obstacle for better transportation along the river.\n
+        To overcome this hurdle, the new concept called HYDRAULIC ASSISTED BRIDGE (HAB) is used that provides the feasible transportation.\n
+Participants are required to build a Hydraulic Assisted truss bridge with the following material\n\n
+1.	100 popsicle sticks \n 2. Fevicol\n 3. Syringe\n 4. Narrow hose pipe Note: - All the materials will be provided by event organizers.\n\n
+
 </string>
 
-    <string name="truss_guidelines">•	Team Size — 4 Students
-•	Entry Fee - 400
-•	Judging Criteria -
-50% points — Efficiency of the bridge. (Weight of load/Weight of bridge)
-20% points — The gap between the base of truss. (If it is 25cm= full marks will be awarded	otherwise points
-will be rewarded accordingly)
-20% points — Elevation of the bridge from the horizon (From the top of the base). If it is 15cm+	full marks will be
-awarded otherwise points will be rewarded accordingly.
-10% points — Creative design and peculiarity.
+    <string name="truss_guidelines">
 </string>
 
     <string name="truss_rules">•	The Bridge should be in the specified dimensions limit. Minimum height of the closed bridge — 15 cm. Maximum length — 45 cm.
-Minimum gap between the base of the bridge —10 cm Maximum width — 10 cm
-•	The sticks can be altered physically by notching or cutting at any angle.
-•	The overlapping of one stick over the other should not exceed 20%. (DOUBLING OF STICKS IS NOT PERMITTED)
-•	No GLUE other than the one provided (Fevicol) must be used.
-•	Penalties --
-1.	Dimensional specifications are not met — Maximum of 10% Penalty per specification (of the total score) as per rules violation.
-2.	Use of any other material other than the ones provided — DISQUALIFIED
-
-3.	If Syringe is taking load — DISQUALIFIED
-4.	Use of superglues — DISQUALIFIED
+Minimum gap between the base of the bridge —10 cm Maximum width — 10 cm\n
+•	The sticks can be altered physically by notching or cutting at any angle\n
+•	The overlapping of one stick over the other should not exceed 20%. (DOUBLING OF STICKS IS NOT PERMITTED)\n
+•	No GLUE other than the one provided (Fevicol) must be used.\n
+•	Penalties --\n
+1.	Dimensional specifications are not met — Maximum of 10% Penalty per specification (of the total score) as per rules violation.\n
+2.	Use of any other material other than the ones provided — DISQUALIFIED/\n
+        3.	If Syringe is taking load — DISQUALIFIED\n
+4.	Use of superglues — DISQUALIFIED\n\n
+        ->	<b>Team Size</b> — 4 Students\n
+        ->	Entry Fee - 400\n
+        •	<b>Judging Criteria</b> -\n
+->50% points — Efficiency of the bridge. (Weight of load/Weight of bridge)\n
+->20% points — The gap between the base of truss. (If it is 25cm= full marks will be awarded	otherwise points
+->will be rewarded accordingly)\n
+->20% points — Elevation of the bridge from the horizon (From the top of the base). If it is 15cm+	full marks will be\n
+->awarded otherwise points will be rewarded accordingly.\n
+->10% points — Creative design and peculiarity.
 
     </string>
 
-    <string name="truss_contact">1-	Rohit kumar 8678877133
-2-	Deepansh Deepak srivastav 9082140959
+    <string name="truss_contact">1-	Rohit kumar->8678877133\n
+2-	Deepansh Deepak srivastav -> 9082140959\n
     </string>
 
     <string name="truss_time">Last Two Days</string>
