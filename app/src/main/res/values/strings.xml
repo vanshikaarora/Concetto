@@ -110,7 +110,7 @@ can be 4.
         Each team will be awarded total marks out of 100,in these 100 marks
         we will consider the design of boat, no. of motors used, technical
         knowledge of team and also two rounds will be conducted to test their
-        models practically(I.e race).
+        models practically(i.e. race). \n
     </string>
 
 
@@ -119,10 +119,11 @@ each team out of 100.</string>
 
     <string name="modelthecaravel_prizes">1st prize-2500/- \n
 2nd prize-1500/- \n
-3rd prize-1000/-</string>
+3rd prize-1000/- \n
+    </string>
     
     <string name="modelthecaravel_contact">Sagar Rathor-17JE003356 Contact no.-7877529922 \n
-Pankaj Kumar-17JE002806 Contact no.-8207691824
+Pankaj Kumar-17JE002806 Contact no.-8207691824 \n
     </string>
 
 
@@ -171,23 +172,25 @@ Minimum gap between the base of the bridge —10 cm Maximum width — 10 cm\n
 
 
 
-    <string name="triathlon_intro">A Three day long event comprised of three stage to feel the zeal of participating in bidding, quizzing and unveil the enterpreneurship inside you to solve the problems faced by industries on day to day basis.
-Stage 1- Bid-Vaganza
+    <string name="triathlon_intro">A Three day long event comprised of three stage to feel the zeal of participating in bidding, quizzing and unveil the enterpreneurship inside you to solve the problems faced by industries on day to day basis. \n
+Stage 1- Bid-Vaganza \n
 
-Participants will be provided fixed amount of virtual cash. Participants will bid on the buildings present in the IIT(ISM) campus that will be put on the auction.
-Stage 2- Concee-quiz
+Participants will be provided fixed amount of virtual cash. Participants will bid on the buildings present in the IIT(ISM) campus that will be put on the auction. \n
+Stage 2- Concee-quiz \n
 
-Second round will be the general quiz. Stage 3- Caliber
-Industrial problems will be provided to the participants and participants have to come up with a innovative solution to the Problem.
+Second round will be the general quiz. Stage 3- Caliber \n
+Industrial problems will be provided to the participants and participants have to come up with a innovative solution to the Problem. \n
     </string>
 
-    <string name="triathlon_rules">1-	Participants will be sorted according to the credit value of building in their basket and ready cash in their hand after the completion of bidding .
-2-	Their will be no elimination in the first round.
+    <string name="triathlon_rules">1- Participants will be sorted according to the credit value of building in their basket and ready cash in their hand after the completion of bidding. \n
+2-	Their will be no elimination in the first round. \n
 
-3-	Marks of stage1 and stage 2 will be sum up to sort the participants for stage3. 4-Final	winners will solely be decided on the basis of score of stage3.
+3-	Marks of stage1 and stage 2 will be sum up to sort the participants for stage3. 4-Final	winners will solely be decided on the basis of score of stage3. \n
     </string>
     
-    <string name="triathlon_contact">1-Surya Kumar Samadhiya :-9304154418 2- Sahil :- 725592778 </string>
+    <string name="triathlon_contact">1-Surya Kumar Samadhiya :-9304154418 \n
+        2- Sahil :- 725592778 \n
+    </string>
 
     <string name="triathlon_time">3 Days (150 minutes daily) </string>
 
