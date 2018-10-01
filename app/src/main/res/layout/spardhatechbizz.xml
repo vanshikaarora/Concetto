@@ -12,19 +12,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:orientation="vertical">
+
+        android:orientation="vertical"
+        android:background="@drawable/robowar">
+
+
 
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="150dp"
-            android:text="LEVER THE HUGE"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
             android:textColor="#ffffff"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:text="SPARDHA TECH BIZZ"/>
     </LinearLayout>
 
 
@@ -50,17 +53,6 @@
         android:text="RULES"
         android:textColor="#ffffff"
         android:background="@drawable/btn_shape" />
-    <Button
-        android:id="@+id/bt6"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="JUDGING"
-        android:textColor="#ffffff"
-        android:background="@drawable/btn_shape"
-        />
 
     <Button
         android:id="@+id/bt3"

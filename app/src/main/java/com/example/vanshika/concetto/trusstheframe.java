@@ -15,11 +15,12 @@ import android.widget.TextView;
 
 public class trusstheframe extends MainActivity {
     TextView tl;
-    Button ab,ru,pr,co,reg;
+    Button ab,ru,pr,co,reg,jud;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
+    AlertDialog.Builder judging;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,7 @@ public class trusstheframe extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
+        jud = (Button)findViewById(R.id.bt6);
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +47,16 @@ public class trusstheframe extends MainActivity {
                 ab.show();
 
 
+            }
+        });
+        jud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                judging = new AlertDialog.Builder(trusstheframe.this);
+                judging.setMessage(R.string.truss_guidelines);
+                AlertDialog jd = judging.create();
+                jd.setTitle("JUDGING");
+                jd.show();
             }
         });
         ru.setOnClickListener(new View.OnClickListener() {

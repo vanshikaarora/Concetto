@@ -1,5 +1,6 @@
 package com.example.vanshika.concetto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -11,18 +12,17 @@ import android.widget.TextView;
  * Created by lenovo on 10/1/2018.
  */
 
-public class leverthehuge extends MainActivity {
+public class techtriathlon extends MainActivity {
     TextView tl;
-    Button ab,ru,pr,co,reg,jud;
+    Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    AlertDialog.Builder judging;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.leverthehuge, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.techtrathlon, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -34,13 +34,11 @@ public class leverthehuge extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        jud = (Button)findViewById(R.id.bt6);
-
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(leverthehuge.this);
-                about.setMessage(R.string.leverthehuge_desc);
+                about = new AlertDialog.Builder(techtriathlon.this);
+                about.setMessage(R.string.triathlon_intro);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -51,28 +49,18 @@ public class leverthehuge extends MainActivity {
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(leverthehuge.this);
-                rules.setMessage(R.string.leverthehuge_rules);
+                rules = new AlertDialog.Builder(techtriathlon.this);
+                rules.setMessage(R.string.triathlon_rules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
 
             }
         });
-        jud.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                judging = new AlertDialog.Builder(leverthehuge.this);
-                judging.setMessage(R.string.leverthehuge_rewards_criteria);
-                AlertDialog jd = judging.create();
-                jd.setTitle("JUDGING");
-                jd.show();
-            }
-        });
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(leverthehuge.this);
+                prizes = new AlertDialog.Builder(techtriathlon.this);
                 prizes.setMessage("Rs 2000");
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -83,8 +71,8 @@ public class leverthehuge extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(leverthehuge.this);
-                contacts.setMessage(R.string.leverthehuge_contact);
+                contacts = new AlertDialog.Builder(techtriathlon.this);
+                contacts.setMessage(R.string.triathlon_contact);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

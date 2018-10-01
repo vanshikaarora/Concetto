@@ -34,6 +34,9 @@
         <activity android:name=".trusstheframe"></activity>
         <activity android:name=".vitricity"></activity>
         <activity android:name=".leverthehuge"></activity>
+        <activity android:name=".spardhatechbizz"></activity>
+        <activity android:name=".modelthecaravel"></activity>
+        <activity android:name=".techtriathlon"></activity>
         <service
             android:name=".MyFirebaseInstanceIDService">
             <intent-filter>

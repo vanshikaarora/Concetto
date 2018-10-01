@@ -20,12 +20,8 @@ In case of tie, tie breaker question would be asked.
     </string>
 
     <string name="spardha_contact">A) Deepti
-Masters of Business Administration 2nd year
-Department of Management Studies
      Contact No. 7783024700
-B) Krishna Sudhakar Sonvane
-     Industrial Engineering and Management 1st Year
-     Department of Management Studies
+        B) Krishna Sudhakar Sonvane
      Contact No. 9158464845
     </string>
 
@@ -70,13 +66,16 @@ PARTICIPANTS ARE EXPECTED TO PREPARE A MODEL CONSISTING THE BASIC LEVER SYSTEM.\
 	STRING LOOPING IS NOT ALLOWED.\n
 	WEIGHTS WILL BE PROVIDED.\n
 	PULLEYS LIMIT (IF USED): 3
-        <b>REWARDS CRITERIA</b>
-      ->  1.	The distance/height lifted by the system- 30%\n
-->2.	Maximum weight that can be lifted- 50%\n
-->3.	Design of mechanism - 20%\n
+
+      ->  1.	The distance/height lifted by the system- 30% POINTS\n
+->2.	Maximum weight that can be lifted- 50% POINTS\n
+->3.	Design of mechanism - 20% POINTS\n
     </string>
     
     <string name="leverthehuge_rewards_criteria">
+        ->  1.	The distance/height lifted by the system- 30% POINTS\n
+->2.	Maximum weight that can be lifted- 50% POINTS\n
+->3.	Design of mechanism - 20% POINTS\n
     </string>
 
     <string name="leverthehuge_contact">   DEVASHISH BARIKO -> 9398889882\n
@@ -90,32 +89,29 @@ PARTICIPANTS ARE EXPECTED TO PREPARE A MODEL CONSISTING THE BASIC LEVER SYSTEM.\
     <string name="modelthecaravel_task">Participating teams have to design a boat which will be tested on
 different parameters during the competition</string>
 
-    <string name="modelthecaravel_desc">A caravel​ is a small, highly maneuverable sailing ship developed in
-the 15th century by the Portuguese to explore along the West African
-coast and into the Atlantic Ocean.
-Design is a way of life, a point of view. It involves the whole complex
-of visual communications: talent, creative ability, manual skill, and
-technical knowledge. Aesthetics and economics, technology and
-psychology are intrinsically related to the process.In the event named
-model the caravel we will test the understanding of participants in the
-area of boat making and check their technical knowledge in this field.
-    </string>
-
-    <string name="modelthecaravel_req">The entire event is only to exhibit the creativity and designing of the
-participants
+    <string name="modelthecaravel_desc"><b>TASK</b>\n
+        Participating teams have to design a boat which will be tested on
+different parameters during the competition\n\n
+        The entire event is only to exhibit the creativity and designing of the
+participants.\n
 Each participating team has to design a boat which can be made up of
 materials like plastic, metal, empty cans, thermocol, cardboard,glass,
-etc. This boat will run using motors which will be powered by DC
-batteries.
+etc.\n
+        This boat will run using motors which will be powered by DC
+batteries.\n
 Each team have to use minimum one motor while the maximum limit
-can be 4.  </string>
+can be 4.
+    </string>
+
+
 
     <string name="modelthecaravel_rules">Participating teams must consists of atleast two members while the
 max. Limit can go upto 4
 Each team will be awarded total marks out of 100,in these 100 marks
 we will consider the design of boat, no. of motors used, technical
 knowledge of team and also two rounds will be conducted to test their
-models practically(I.e race).</string>
+models practically(I.e race).
+
 
     <string name="modelthecaravel_winning_criteria">The winners will be decided on the basis of total marks gained by
 each team out of 100.</string>
@@ -140,6 +136,13 @@ Participants are required to build a Hydraulic Assisted truss bridge with the fo
 </string>
 
     <string name="truss_guidelines">
+        ->50% points — Efficiency of the bridge. (Weight of load/Weight of bridge)\n
+->20% points — The gap between the base of truss. (If it is 25cm= full marks will be awarded	otherwise points
+->will be rewarded accordingly)\n
+->20% points — Elevation of the bridge from the horizon (From the top of the base). If it is 15cm+	full marks will be\n
+->awarded otherwise points will be rewarded accordingly.\n
+->10% points — Creative design and peculiarity.
+
 </string>
 
     <string name="truss_rules">•	The Bridge should be in the specified dimensions limit. Minimum height of the closed bridge — 15 cm. Maximum length — 45 cm.
@@ -154,13 +157,7 @@ Minimum gap between the base of the bridge —10 cm Maximum width — 10 cm\n
 4.	Use of superglues — DISQUALIFIED\n\n
         ->	<b>Team Size</b> — 4 Students\n
         ->	Entry Fee - 400\n
-        •	<b>Judging Criteria</b> -\n
-->50% points — Efficiency of the bridge. (Weight of load/Weight of bridge)\n
-->20% points — The gap between the base of truss. (If it is 25cm= full marks will be awarded	otherwise points
-->will be rewarded accordingly)\n
-->20% points — Elevation of the bridge from the horizon (From the top of the base). If it is 15cm+	full marks will be\n
-->awarded otherwise points will be rewarded accordingly.\n
-->10% points — Creative design and peculiarity.
+
 
     </string>
 
@@ -192,4 +189,5 @@ Industrial problems will be provided to the participants and participants have t
     <string name="triathlon_contact">1-Surya Kumar Samadhiya :-9304154418 2- Sahil :- 725592778 </string>
 
     <string name="triathlon_time">3 Days (150 minutes daily) </string>
+
 </resources>
