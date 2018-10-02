@@ -45,7 +45,7 @@ public class EventsActivity extends MainActivity {
 
         if(position.equals("0")) {
             eventsList.add(
-                    new Event("Event A",
+                    new Event("Robowar",
                             "26th October",
                             "10 AM to 12 PM"));
 
