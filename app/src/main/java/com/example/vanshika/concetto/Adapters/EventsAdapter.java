@@ -15,6 +15,8 @@ import android.widget.TextView;
 import com.example.vanshika.concetto.EventsActivity;
 import com.example.vanshika.concetto.Models.Event;
 import com.example.vanshika.concetto.R;
+import com.example.vanshika.concetto.trusstheframe;
+import com.example.vanshika.concetto.trusstheframeregistration;
 
 import java.util.List;
 
@@ -80,6 +82,9 @@ import java.util.List;
                     @Override
                     public void onClick(View v) {
                         int position=getAdapterPosition();
+                        if(position == 0){
+
+                        }
                     }
                 });
             }

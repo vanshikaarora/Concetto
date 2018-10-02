@@ -1,21 +1,21 @@
-package com.example.vanshika.concetto;
+package com.example.vanshika.concetto.Models;
 
 /**
- * Created by lenovo on 9/30/2018.
+ * Created by lenovo on 10/2/2018.
  */
 
-public class registration_team {
+public class registername {
     String teamname;
-    String member1,member2,member3,member4;
+    String member1,member2,member3;
     String teamleaderemailid;
     String mobile;
 
-    registration_team(){}
-    registration_team(String Teamname,String Member1,String Member2,String Member3,String Member4,String Teamleaderemailidea ){
+    registername(){}
+    registername(String Teamname,String Member1,String Member2,String Member3,String mobile,String Teamleaderemailidea ){
         this.member1 = Member1;
         this.member2 = Member2;
         this.member3 = Member3;
-        this.member4 = Member4;
+        this.mobile = mobile;
         this.teamname = Teamname;
         this.teamleaderemailid = Teamleaderemailidea;
 
@@ -50,9 +50,6 @@ public class registration_team {
         this.member3 = member3;
     }
 
-    public void setMember4(String member4) {
-        this.member4 = member4;
-    }
 
     public void setTeamleaderemailid(String teamleaderemailid) {
         this.teamleaderemailid = teamleaderemailid;
@@ -74,9 +71,7 @@ public class registration_team {
         return member3;
     }
 
-    public String getMember4() {
-        return member4;
-    }
+
 
     public String getTeamleaderemailid() {
         return teamleaderemailid;

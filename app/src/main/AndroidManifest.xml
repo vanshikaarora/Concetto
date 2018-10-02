@@ -41,6 +41,12 @@
         <activity android:name=".industrialdesignproblem"></activity>
         <activity android:name=".unravelthewhizz"></activity>
         <activity android:name=".buffetmoney"></activity>
+        <activity android:name=".flash"></activity>
+        <activity android:name=".aquarise"></activity>
+        <activity android:name=".frothfloatation"></activity>
+        <activity android:name=".borntowander"></activity>
+        <activity android:name=".googleminer"></activity>
+
 
         <service
             android:name=".MyFirebaseInstanceIDService">
