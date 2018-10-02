@@ -321,7 +321,7 @@
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
                             android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
-                            android:textSize="15dp" />
+                            android:textSize="10dp" />
 
 
                     </LinearLayout>

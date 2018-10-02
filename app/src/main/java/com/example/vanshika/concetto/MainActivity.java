@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_faq) {
-            startActivity(new Intent(MainActivity.this,leverthehuge.class));
+            startActivity(new Intent(MainActivity.this,obstaclecourseracing.class));
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;
 
