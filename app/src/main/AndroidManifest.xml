@@ -37,6 +37,11 @@
         <activity android:name=".spardhatechbizz"></activity>
         <activity android:name=".modelthecaravel"></activity>
         <activity android:name=".techtriathlon"></activity>
+        <activity android:name=".surveytopographia"></activity>
+        <activity android:name=".industrialdesignproblem"></activity>
+        <activity android:name=".unravelthewhizz"></activity>
+        <activity android:name=".buffetmoney"></activity>
+
         <service
             android:name=".MyFirebaseInstanceIDService">
             <intent-filter>
