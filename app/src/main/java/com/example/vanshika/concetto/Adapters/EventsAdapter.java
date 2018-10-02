@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.vanshika.concetto.EventsActivity;
 import com.example.vanshika.concetto.Models.Event;
 import com.example.vanshika.concetto.R;
+import com.example.vanshika.concetto.robowar;
 
 import java.util.List;
 
@@ -79,7 +80,14 @@ import java.util.List;
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        int position=getAdapterPosition();
+
+                        Event event = eventsList.get(getAdapterPosition());
+
+                        if(event.getName().equals("Robowar"))
+                        {
+                            Intent intent=new Intent(mCtx, robowar.class);
+                            mCtx.startActivity(intent);
+                        }
                     }
                 });
             }
