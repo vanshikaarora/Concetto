@@ -244,5 +244,24 @@ There's no right way to solve it, but there's only one right answer.
 4.	A quiz on Froth Floatation-30 Points
 
     </string>
+    <string name="frothcontacts">
+        mithun kr yadav - 9065090837\n
+        sumit choudhary - 8486146283
+    </string>
+    <string name="borntowanderabout">
+        <b>TASK</b>:-\n
+Wander fast and get the ANSWERS asked.\n
+<b>DESCRIPTION:-</b>\n\n
+*You will be given clues to find how to wander.\n
+* Then find things which were mentioned in the slip and do carry them with you.\n
+*submit them at the first place, at the end.\n
+
+    </string>
+    <string name="bornrules">
+        1. There will be a team of maximum of three participants\n
+2. Where there is a requirement to take a selfie all the team members must be present in the selfie\n
+3. Everything is with in campus do not go outside the campus.
+REWARD CRITERIA
+    </string>
 
 </resources>
