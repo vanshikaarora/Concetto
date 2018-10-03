@@ -7,12 +7,21 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.example.vanshika.concetto.Adapters.EventsAdapter;
 import com.example.vanshika.concetto.Models.Event;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +32,8 @@ public class EventsActivity extends MainActivity {
 
     RecyclerView recyclerView;
     List<Event> eventsList;
+    DatabaseReference ref;
+    TextView placeholder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +41,8 @@ public class EventsActivity extends MainActivity {
         super.replaceContentLayout(R.layout.activity_events, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
+
+        placeholder=(TextView)findViewById(R.id.placeholder_text);
 
         //getting the recyclerview from xml
         recyclerView = (RecyclerView) findViewById(R.id.events_recycler_view);
@@ -43,31 +56,37 @@ public class EventsActivity extends MainActivity {
 
         //adding some items to our list
 
+        ref=FirebaseDatabase.getInstance().getReference("EventTimings");
+
         if(position.equals("0")) {
             eventsList.add(
-                    new Event("Robowar",
-                            "26th October",
-                            "10 AM to 12 PM"));
+                    new Event("Event A"));
 
             eventsList.add(
-                    new Event("Event B",
-                            "27th October",
-                            "6 PM to 7 PM"));
+                    new Event("Event B"));
         }
 
         else if(position.equals("1")) {
+
             eventsList.add(
-                    new Event("Event C",
-                            "28th October",
-                            "11 AM"));
+                    new Event("Robowar"));
+
+            eventsList.add(
+                    new Event("Obstacle Course Racing"));
+
+            eventsList.add(
+                    new Event("Flash"));
         }
 
         else if(position.equals("2")) {
             eventsList.add(
-                    new Event("Event D",
-                            "28th October",
-                            "5 PM to 6 PM"));
+                    new Event("Buffet Money"));
+
+            eventsList.add(
+                    new Event("Unravel"));
         }
+
+
 
         //creating recyclerview adapter
         EventsAdapter adapter = new EventsAdapter(this, eventsList);
@@ -76,5 +95,5 @@ public class EventsActivity extends MainActivity {
         recyclerView.setAdapter(adapter);
 
     }
-    }
+}
 
