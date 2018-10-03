@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_faq) {
-            startActivity(new Intent(MainActivity.this,trusstheframe.class));
+            startActivity(new Intent(MainActivity.this,About.class));
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;
 

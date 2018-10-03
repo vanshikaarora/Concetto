@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vanshika.concetto">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -21,31 +22,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-      
-        <activity android:name=".CategoriesActivity"></activity>
-      
-        <activity android:name=".Developers"></activity>
+        <activity android:name=".CategoriesActivity" />
+        <activity android:name=".Developers" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".robowar" />
+        <activity android:name=".obstaclecourseracing" />
+        <activity android:name=".obstacle_registration" />
+        <activity android:name=".robowar_registration" />
+        <activity android:name=".trusstheframe" />
+        <activity android:name=".vitricity" />
 
-        <activity android:name=".EventsActivity"></activity>
-        <activity android:name=".robowar"></activity>
-        <activity android:name=".obstaclecourseracing"></activity>
-        <activity android:name=".obstacle_registration"></activity>
-        <activity android:name=".robowar_registration"></activity>
-        <activity android:name=".trusstheframe"></activity>
-        <activity android:name=".vitricity"></activity>
-        <service
-            android:name=".MyFirebaseInstanceIDService">
+        <service android:name=".MyFirebaseInstanceIDService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service
-            android:name=".MyFirebaseMessagingService">
+        <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
