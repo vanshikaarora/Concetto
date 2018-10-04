@@ -369,14 +369,112 @@ In case of any discrepancies in the rules, the view of the presiding judge over 
 •	Eric John -> +91-9570093144
 
     </string>
-    <string name="about_concetto">CONCETTO is the annual techno-management festival of INDIAN INSTITUTE OF TECHNOLOGY (INDIAN SCHOOL OF MINES) DHANBAD. It also refers to the independent body of students who organize this event along with many other social initiatives and outreach programs around the year. CONCETTO is known for hosting a variety of events that include competitions, exhibitions, guest lectures as well as workshops. CONCETTO is Eastern India’s Largest Technical fest organized by the student body of the college.
+    <string name="roboelig">
+        <b>Eligibility</b> \n   Team from any recognized engineering college are eligible to participate.\n
+        <b>Team Specification:</b> Any team consisting of maximum 4 members can participate.\n
+        <b>Team Name</b> : Every team must have an appropriate name which must be unique. Team's name won’t be change once submitted.\n
+        <b>Team Representative:</b> Each team must specify their Team Representative (Leader) at the time of registration on the website or app.\n\n
+All important communications between Concetto (Robowars) and the registered
+teams will be done through their Team Representative.
+The Team Representatives must submit valid contact details (Mobile no., email ID etc.) at the time of registration.
 
-The word “Concetto” means an opinion, an idea that has the revolutionary potential to shake the technical world.
+    </string>
+    <string name="robojudging">
+        •	Points will be given on the basis of aggression and damage.\n
+	Aggression – Points on aggression will be awarded on the basis of frequency, boldness and effectiveness of attacks attempted by the robot against its opponent.\n
+	Damage – Points on damage will be awarded if the robot reduces the functionality, effectiveness or defensibility of an opponent either directly or indirectly. Win the game by immobilizing your opponent’s bot.\n
+	Any foul play by any of the teams would result in deduction of score.\n
 
-Started in 2012, with the aim of providing a platform for the Indian student community to develop and showcase their technical prowess, it has now grown into East India’s Largest Science and Technology Festival with the participation of thousands of students from hundreds of Technical Institutes all around the nation. The activities culminate in a grand three-day festival event in the IIT (ISM) campus which attracts people from all over the country, including students, academia, corporates, and the general public as well. CONCETTO is all set to have its 8th Edition from 26th to 28th October’18.
 
-The 3 day Technical Fiesta of IIT (ISM) DHANBAD- “CONCETTO” is one of the largest Techno-Management Fests in Eastern India with a massive participation of more than 10000 participants from hundreds of different institutes and colleges, who stalk the grounds of IIT (ISM) to prove their technical expertise, encompassing a platform to shoot the “TECHNICAL ME” of everyone. Apart from the various Robotics and Coding events, Concetto calls all the budding Entrepreneurs to showcase their innovative business skills. At the same time, hone your skills by joining our workshops taken by the eminent personalities in the various fields of science</string>
+<b>Certification</b>
+•	Certificates of Participation will be given to all the participating teams.\n
+•	Certificate of appreciation and prizes will be given to all the winners.\n
 
+
+    </string>
+    <string name="roborules">
+        <b>General Rules</b>
+•	There will be two rounds, 10 minutes each.\n
+•	In no case should the arena be damaged by any robot.\n
+
+<b> Round 1 </b>\n
+•	Opponents shall be selected on lottery basis.\n
+•	 seconds will be given to each team before the start of each round to set
+their bot. Any team that is not ready at the time specified will be disqualified.\n
+•	If no robot is immobilized within the time limit then winner will be judged on the basis of point scored.\n\n
+<b>Round 2</b>\n
+•	Best 6 scorers will be selected for next round of Battle where they will compete against each other.\n
+•	Final winners will be decided on the basis of cumulative points for both the rounds.\n
+
+•	Violation of any of the above rules or any misconduct will lead to disqualification.\n\n
+
+        <b>Note:</b>\n- The organizers reserve the rights to change, any or all of the above rules as they deem fit. Decision of organizers will be final and binding on all.\n\n
+        <b>Safety	Rules</b>\n
+It is expected that competitors stay within the rules.\n
+•	Special care should be taken to protect the batteries and pneumatics on the Bot.\n
+•	Proper activation and deactivation of robots is important. Robots must only be activated in the arena, testing areas, or with expressed consent of the event coordinators.\n
+•	All weapons must have a safety cover on any sharp or sharpen edges.\n
+•	All participants build and operate robots at their own risk.\n
+Please take care to not hurt yourself or others when building, testing and competing. Any kind of activity which may cause damage to the surroundings during the stay of the teams in the competition area should not be carried out without the consent of organizers. Not following this rule may result in disqualification.\n
+•	Once the robots have entered into the arena, no team member can enter into the arena at any point of time.
+
+    </string>
+    <string name="robospecs">
+        <b>Net Dimensions and Fabrications</b>\n
+•	The Main body of bot should fit into a box of 1’6’’x1’6’’x1’6’’ (lxbxh),
+i.e. 45x45x45 cm.\n
+The external device used to control the machine or any external tank is not
+included in the size constraint.\n
+•	The machine should not exceed 30kg of weight for robot having pneumatic source/tank and 25kg for wired robot on board.\n
+•	In case of wireless robot if the battery is on-board then the weight will be taken as 0.80 x Actual Weight.\n
+
+        <b>Power Sources</b>
+•	The machine can be powered electrically only.\n
+•	Each team must prepare its own power sources. The teams have to bring their
+own battery eliminators/adaptor.\n
+•	Use of DC motor is mandatory, the voltage difference between any two points in
+the machine should not be more than 36V DC at any point of time.\n
+
+        <b>Safety is first priority.</b>
+•	All connections should be made safe to prevent short circuits and battery fires. Any unsafe circuitry may result in disqualification.\n
+•	Use of damaged, non-leak proof batteries may lead to disqualification.\n
+•	Change of battery will not be allowed during the match unless timeout is taken by
+either of the team.\n
+•	It is suggested to have extra batteries ready and charged.\n
+•	No provision will be provided for charging of batteries around the arena.
+
+<b>Mobility</b>
+•	Freedom of mobility may include:\n
+	Rolling (wheels, tracks or the whole robot).\n
+	Walking (linear actuated legs with no rolling).\n
+•	Any other method of mobility which leads the robot to lose contact with the ground is not allowed.\n
+        <b>Robot Control Requirements</b>
+•	Extra marks will be awarded to Wireless Robots.\n
+a>You can use the external power supply to power your robot.\n
+•	The wires which you may use to supply the power to your robot (properly protected and insulated), which will be coming out of the robot should be bundled as a single unit.\n
+•	The wire should be sufficiently long so as to remain slack at all time during the war, it is recommended to attach a pipe to bot in vertical direction through which wires come out.\n
+•	For wireless remote controls, it is recommended that the remote should have at least two frequency operations to prevent interference with other team.\n\n
+
+
+<b>Weapon Systems</b>\n
+•	Robots can have any kind of cutters, flippers, saws, lifting devices, spinning hammers etc. as weapons with following exceptions and limitations:\n
+	Any kind of inflammable liquid / liquid projectiles.\n
+	Smoke or dust based weapons.\n
+	Any kind of explosive or intentionally ignited solid or potentially ignitable solid.\n
+	Nets, tape, glue, or any other entanglement device.\n
+	High power magnets or electromagnets\n
+	Radio Jamming, Tasers, Tesla coils, or any other high-voltage device.\n
+•	Spinning weapons which do not come in contact with the arena at any point of
+time are allowed.\n
+
+    </string>
+    <string name="robocontacts">
+        •	Ayan   Prakash -> 918809075447
+•	Jalaj -> +918878209475
+•	Prince Kunal -> +919386667625
+•	Shantanu -> +919424697088
+
+    </string>
 
 
 </resources>

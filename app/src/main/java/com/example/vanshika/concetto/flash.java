@@ -108,7 +108,7 @@ public class flash extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(flash.this);
-                contacts.setMessage(R.string.flashcontacts);
+                contacts.setMessage(R.string.flashbot);
                 AlertDialog co = contacts.create();
                 co.setTitle("BOT SPECIFICATIONS");
                 co.show();
