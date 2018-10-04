@@ -4,6 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@drawable/register_page"
     tools:context=".About">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="95dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/hola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hola Techies!"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:fontFamily="@font/batmanforeveralternate"
+                android:textColor="#001e32"
+                android:textSize="30dp"
+                android:paddingTop="55dp"
+                />
+            <TextView
+                android:id="@+id/about_concetto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_concetto"
+                android:layout_marginTop="45dp"
+                android:padding="15dp"
+                android:textColor="#ffff"
+                app:layout_constraintTop_toBottomOf="@+id/hola"
+                android:typeface="monospace"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

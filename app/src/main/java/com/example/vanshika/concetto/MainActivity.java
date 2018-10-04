@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(MainActivity.this,About.class));
 
-            startActivity(new Intent(MainActivity.this,obstaclecourseracing.class));
+
 
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;

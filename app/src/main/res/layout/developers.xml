@@ -133,7 +133,7 @@
                         android:layout_width="130dp"
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/shridhar"
+
                          />
 
                     <LinearLayout

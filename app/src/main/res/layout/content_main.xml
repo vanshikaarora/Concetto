@@ -5,61 +5,49 @@
     android:id="@+id/content_main_linear_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="40dp"
-    android:background="@drawable/concetto"
+    android:layout_marginTop="45dp"
+    android:background="@drawable/mainbg"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:layout_width="wrap_content"
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/eventsButton"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="98dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="225dp"
-        app:shimmer_duration="1500">
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/batmanforeveralternate"
+        android:text="Events"
+        android:textColor="#ffffff"/>
 
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/eventsButton"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
 
-            android:background="@drawable/ripple"
-            android:fontFamily="@font/batmanforeveralternate"
-            android:text="Events" />
-    </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/workshopButton"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="98dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="35dp"
-        app:shimmer_duration="1500">
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/batmanforeveralternate"
+        android:text="workshop"
+        android:textColor="#ffffff"/>
 
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/workshopButton"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
 
-            android:background="@drawable/ripple"
-            android:fontFamily="@font/batmanforeveralternate"
-            android:text="workshop" />
-    </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/timingButton"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="98dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="35dp"
-        app:shimmer_duration="1500">
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/timingButton"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-
-            android:background="@drawable/ripple"
-            android:fontFamily="@font/batmanforeveralternate"
-            android:text="Events" />
-    </com.facebook.shimmer.ShimmerFrameLayout>
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/batmanforeveralternate"
+        android:text="Timings"
+        android:textColor="#ffffff"/>
 
 </LinearLayout>
 
@@ -90,78 +78,78 @@
 
 
 
-<!--
+    <!--
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
-<ImageView
-    android:layout_marginTop="20dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:src="@drawable/concetto"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintTop_toBottomOf="parent"
-    />
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:orientation="vertical"/>
-
-    <Button
-        android:id="@+id/eventsButton"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="55dp"
-        android:background="@drawable/ripple"
-        android:fontFamily="@font/batmanforeveralternate"
-        android:text="Events"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="259dp"
-        tools:ignore="MissingConstraints" />
-
-
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/workshopButton"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:background="@drawable/ripple"
-        android:fontFamily="@font/batmanforeveralternate"
-        android:text="Workshops"
-        app:layout_constrainedHeight="true"
-        app:layout_constraintHorizontal_bias="0.554"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        >
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/concetto"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="406dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="parent"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"/>
 
-    <android.support.v7.widget.AppCompatButton
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ripple"
-        android:fontFamily="@font/batmanforeveralternate"
-        android:text="Timings"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="331dp"
-        tools:ignore="MissingConstraints" />
-
-    </android.support.constraint.ConstraintLayout>
-&lt;!&ndash;
-tools:showIn="@layout/app_bar_main"
-    xmlns:tools="http://schemas.android.com/tools"
-app:layout_behavior="@string/appbar_scrolling_view_behavior"
-
-&ndash;&gt;
+        <Button
+            android:id="@+id/eventsButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="55dp"
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/batmanforeveralternate"
+            android:text="Events"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="259dp"
+            tools:ignore="MissingConstraints" />
 
 
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/workshopButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/batmanforeveralternate"
+            android:text="Workshops"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintHorizontal_bias="0.554"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="406dp"
+            tools:ignore="MissingConstraints" />
 
--->
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/batmanforeveralternate"
+            android:text="Timings"
+            app:layout_constraintHorizontal_bias="0.554"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="331dp"
+            tools:ignore="MissingConstraints" />
+
+        </android.support.constraint.ConstraintLayout>
+    &lt;!&ndash;
+    tools:showIn="@layout/app_bar_main"
+        xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    &ndash;&gt;
+
+
+
+    -->
