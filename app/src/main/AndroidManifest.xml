@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".CategoriesActivity" />
         <activity android:name=".Developers" />
         <activity android:name=".EventsActivity" />
@@ -32,50 +33,50 @@
         <activity android:name=".robowar_registration" />
         <activity android:name=".trusstheframe" />
         <activity android:name=".vitricity" />
+        <activity
+            android:name=".EventsActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".robowar"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".obstaclecourseracing"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".obstacle_registration"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".robowar_registration"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".trusstheframe"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".vitricity"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".leverthehuge" />
+        <activity android:name=".spardhatechbizz" />
+        <activity android:name=".modelthecaravel" />
+        <activity android:name=".techtriathlon" />
+        <activity android:name=".surveytopographia" />
+        <activity android:name=".industrialdesignproblem" />
+        <activity android:name=".unravelthewhizz" />
+        <activity android:name=".buffetmoney" />
+        <activity android:name=".flash" />
+        <activity android:name=".aquarise" />
+        <activity android:name=".frothfloatation" />
+        <activity android:name=".borntowander" />
+        <activity android:name=".googleminer" />
+        <activity android:name=".arena" />
+        <activity android:name=".About" />
+        <activity android:name=".chemcarnival" />
+        <activity android:name=".chemecar" />
+        <activity android:name=".tesla" />
+        <activity android:name=".electrocharades" />
+        <activity android:name=".thebafflingplanet" />
+        <activity android:name=".symposium" />
 
-
-
-
-        <activity android:name=".EventsActivity"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".robowar"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".obstaclecourseracing"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".obstacle_registration"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".robowar_registration"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".trusstheframe"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".vitricity"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".leverthehuge"></activity>
-        <activity android:name=".spardhatechbizz"></activity>
-        <activity android:name=".modelthecaravel"></activity>
-        <activity android:name=".techtriathlon"></activity>
-        <activity android:name=".surveytopographia"></activity>
-        <activity android:name=".industrialdesignproblem"></activity>
-        <activity android:name=".unravelthewhizz"></activity>
-        <activity android:name=".buffetmoney"></activity>
-        <activity android:name=".flash"></activity>
-        <activity android:name=".aquarise"></activity>
-        <activity android:name=".frothfloatation"></activity>
-        <activity android:name=".borntowander"></activity>
-        <activity android:name=".googleminer"></activity>
-        <activity android:name=".arena"></activity>
-        <activity android:name=".About"></activity>
-        <activity android:name=".chemcarnival"></activity>
-        <activity android:name=".chemecar"></activity>
-        <activity android:name=".tesla"></activity>
-        <activity android:name=".electrocharades"></activity>
-        <activity android:name=".thebafflingplanet"></activity>
-        <activity android:name=".symposium"></activity>
-
-
-        <service
-            android:name=".MyFirebaseInstanceIDService">
-
+        <service android:name=".MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
@@ -85,9 +86,8 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+
     </application>
-
-
-
 
 </manifest>

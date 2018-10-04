@@ -6,13 +6,13 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    
+
     <string name="spardha_desc">Compromising of 3 members each there will be approximately 15-20 Groups (Depending on the participants). The quiz will be Divided into 3 Rounds. \n
 •	First Round Would Consist of the questions Regarding the CEO, Higher management authorities, technology based and Company related questions where each team will be given a set of questions that they have to answer, Top 10 teams would be selected for next round. \n
 •	Round 2 will be conducted with the Help of Projector where Pictures will be displayed on the screen and the participants would be required to guess the right answer. \n
 •	Third Round Would Consist of questions related to Latest Business changes and technical innovations. \n
     </string>
-    
+
     <string name="spardha_rules">Round 1-There will be 25-30 questions and time allotted will be approximately 30 minutes. Group members would discuss and mark the answer correctly. No Negative Marking. \n
 Round 2- The Team Would Nominate 1 Member From The Group. The Logo/Symbols/Pictures would be Displayed and the member will have to guess the correct answer, time given would be 10 seconds each, team will Lose marks if the member Fails to answer. 2-3 such rounds will be conducted. Top 5 teams would go to the next round. \n
 Round 3- Current Business and technological questions would be asked Individually to members of the teams for which 15 seconds will be provided. Each member of the team would get 1 question, and 1 bonus question for 1 team of 5 marks to make up. \n
@@ -33,23 +33,22 @@ ROUND 1:  A TEAM IS FORMED AND QUESTIONS RELATED TO ELECTRONIC COMPONENT IS GIVE
 ROUND 2:  SELECTED TEAMS HAVE TO MAKE A CIRCUIT WITH THE HELP OF GIVEN COMPLEX CIRCUIT DIAGRAM. THEY HAVE TO REDUCE IT TO SIMPLER FORM AND MAKE THE RESULTING CIRCUIT. THE GIVEN CIRCUIT DIAGRAM WILL BE A BLEND OF CIRCUIT THAT PARTICIPANTS COME ACROSS DAY TO DAY LIFE. \n
 ROUND 3: QUIZ ON BASIC ELECTRONICS WILL BE CONDUCTED. TEAM WITH MORE POINTS WILL TURN OUT TO BE THE WINNER. \n
     </string>
-    
+
     <string name="electrabuzz_rules">1.EACH TEAM IS OF 4-5 PEOPLE.\n
 2. IN FIRST ROUND, ANSWER HAS TO BE WRITTEN ON QUESTION PAPER ALSO AND THE RESPECTIVE COMPONENT SHOULD BE DROPPED IN TEAM’S DROP BOX.\n
 3.IN SECOND ROUND, SIMPLIFIED CIRCUIT HAS TO BE DRAWN ON THE QUESTION PAPER.\n
 4.IN THIRD ROUND, NEGATIVE POINTS ARE ALSO AWARDED TO THE WRONG ANSWERS.\n
 5.  +3, -1 ,0 POINTS ARE AWARDED TO CORRECT, WRONG AND NO ANSWER RESPECTIVELY\n
     </string>
-    
+
     <string name="electrabuzz_contact">SIRIGIREDDY DHANALAXMI  7780134173 \n
     PERUL JAIN : 7891167889 \n
     </string>
-    
+
     <string name="electrabuzz_time">ROUND 1: 1 HR. \n
     ROUND 2: 1 HR. \n
     ROUND 3: 1 HR. \n
     </string>
-
 
 
     <string name="leverthehuge_desc">THIS EVENT IS TO COMPLETELY TO BRING OUT THE ENGINEER WITHIN THE NEW SPRUNG STUDENTS.\n
@@ -71,7 +70,7 @@ PARTICIPANTS ARE EXPECTED TO PREPARE A MODEL CONSISTING THE BASIC LEVER SYSTEM.\
 ->2.	Maximum weight that can be lifted- 50% POINTS\n
 ->3.	Design of mechanism - 20% POINTS\n
     </string>
-    
+
     <string name="leverthehuge_rewards_criteria">
         ->  1.	The distance/height lifted by the system- 30% POINTS\n
 ->2.	Maximum weight that can be lifted- 50% POINTS\n
@@ -83,9 +82,8 @@ PARTICIPANTS ARE EXPECTED TO PREPARE A MODEL CONSISTING THE BASIC LEVER SYSTEM.\
     </string>
 
     <string name="leverthehuge_time">3 Hours</string>
-    
-    
-    
+
+
     <string name="modelthecaravel_task">Participating teams have to design a boat which will be tested on
 different parameters during the competition</string>
 
@@ -104,7 +102,6 @@ can be 4.
     </string>
 
 
-
     <string name="modelthecaravel_rules">Participating teams must consists of atleast two members while the
         max. Limit can go upto 4. \n
         Each team will be awarded total marks out of 100,in these 100 marks
@@ -121,11 +118,10 @@ each team out of 100.</string>
 2nd prize-1500/- \n
 3rd prize-1000/- \n
     </string>
-    
+
     <string name="modelthecaravel_contact">Sagar Rathor-17JE003356 Contact no.-7877529922 \n
 Pankaj Kumar-17JE002806 Contact no.-8207691824 \n
     </string>
-
 
 
     <string name="truss_desc">Ever thought how the bridges and buildings across the world are so stable and balanced? How a simple structure is enough to carry the heaviest load? Not yet!! Well! its never too late.\n
@@ -170,8 +166,6 @@ Minimum gap between the base of the bridge —10 cm Maximum width — 10 cm\n
     <string name="truss_time">Last Two Days</string>
 
 
-
-
     <string name="triathlon_intro">A Three day long event comprised of three stage to feel the zeal of participating in bidding, quizzing and unveil the enterpreneurship inside you to solve the problems faced by industries on day to day basis. \n
 Stage 1- Bid-Vaganza \n
 
@@ -187,7 +181,7 @@ Industrial problems will be provided to the participants and participants have t
 
 3-	Marks of stage1 and stage 2 will be sum up to sort the participants for stage3. 4-Final	winners will solely be decided on the basis of score of stage3. \n
     </string>
-    
+
     <string name="triathlon_contact">1-Surya Kumar Samadhiya :-9304154418 \n
         2- Sahil :- 725592778 \n
     </string>
@@ -475,6 +469,5 @@ time are allowed.\n
 •	Shantanu -> +919424697088
 
     </string>
-
 
 </resources>
