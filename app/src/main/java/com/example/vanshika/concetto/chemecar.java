@@ -15,22 +15,23 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 /**
- * Created by lenovo on 10/1/2018.
+ * Created by lenovo on 10/4/2018.
  */
 
-public class techtriathlon extends MainActivity {
-    String p;
+public class chemecar extends MainActivity {
     TextView tl;
-    Button ab,ru,pr,co,reg;
+    Button ab,ru,pr,co,reg,jud;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    DatabaseReference triath;
+    AlertDialog.Builder judging;
+    DatabaseReference tru;
+    String p;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.techtrathlon, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.trusstheframe, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -42,12 +43,14 @@ public class techtriathlon extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        triath = FirebaseDatabase.getInstance().getReference();
-        triath.addListenerForSingleValueEvent(new ValueEventListener() {
+        jud = (Button)findViewById(R.id.bt6);
+        tru = FirebaseDatabase.getInstance().getReference();
+        tru.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("triathlon").child("prize");
+                dataSnapshot = dataSnapshot.child("chem").child("prize");
                 p = dataSnapshot.getValue().toString();
+
 
             }
 
@@ -59,8 +62,8 @@ public class techtriathlon extends MainActivity {
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(techtriathlon.this);
-                about.setMessage(R.string.triathlon_intro);
+                about = new AlertDialog.Builder(chemecar.this);
+                about.setMessage(R.string.truss_desc);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -68,11 +71,21 @@ public class techtriathlon extends MainActivity {
 
             }
         });
+        jud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                judging = new AlertDialog.Builder(chemecar.this);
+                judging.setMessage(R.string.truss_guidelines);
+                AlertDialog jd = judging.create();
+                jd.setTitle("JUDGING");
+                jd.show();
+            }
+        });
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(techtriathlon.this);
-                rules.setMessage(R.string.triathlon_rules);
+                rules = new AlertDialog.Builder(chemecar.this);
+                rules.setMessage(R.string.truss_rules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -82,8 +95,7 @@ public class techtriathlon extends MainActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                prizes = new AlertDialog.Builder(techtriathlon.this);
+                prizes = new AlertDialog.Builder(chemecar.this);
                 prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -94,8 +106,8 @@ public class techtriathlon extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(techtriathlon.this);
-                contacts.setMessage(R.string.triathlon_contact);
+                contacts = new AlertDialog.Builder(chemecar.this);
+                contacts.setMessage(R.string.truss_contact);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -107,9 +119,8 @@ public class techtriathlon extends MainActivity {
             public void onClick(View v) {
 
 
+
             }
         });
     }
-
-
 }

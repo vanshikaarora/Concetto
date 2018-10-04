@@ -15,40 +15,39 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 /**
- * Created by lenovo on 10/1/2018.
+ * Created by lenovo on 10/4/2018.
  */
 
-public class techtriathlon extends MainActivity {
-    String p;
-    TextView tl;
+public class thebafflingplanet extends MainActivity {
+    TextView tl,t2;
     Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    DatabaseReference triath;
+    DatabaseReference obsta;
+    String p;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.techtrathlon, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.bafflingplanet, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
-
-        //// img = (ImageView)findViewById(R.id.titleImage);
         tl = (TextView)findViewById(R.id.title);
+        t2 = (TextView)findViewById(R.id.title1);
+
 
         ab = (Button)findViewById(R.id.bt1);
         ru = (Button)findViewById(R.id.bt2);
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        triath = FirebaseDatabase.getInstance().getReference();
-        triath.addListenerForSingleValueEvent(new ValueEventListener() {
+        obsta = FirebaseDatabase.getInstance().getReference();
+        obsta.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("triathlon").child("prize");
+                dataSnapshot = dataSnapshot.child("planet").child("prize");
                 p = dataSnapshot.getValue().toString();
-
             }
 
             @Override
@@ -59,8 +58,8 @@ public class techtriathlon extends MainActivity {
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(techtriathlon.this);
-                about.setMessage(R.string.triathlon_intro);
+                about = new AlertDialog.Builder(thebafflingplanet.this);
+                about.setMessage("sujal jain");
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -71,8 +70,8 @@ public class techtriathlon extends MainActivity {
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(techtriathlon.this);
-                rules.setMessage(R.string.triathlon_rules);
+                rules = new AlertDialog.Builder(thebafflingplanet.this);
+                rules.setMessage("rules are found");
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -83,7 +82,7 @@ public class techtriathlon extends MainActivity {
             @Override
             public void onClick(View v) {
 
-                prizes = new AlertDialog.Builder(techtriathlon.this);
+                prizes = new AlertDialog.Builder(thebafflingplanet.this);
                 prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -94,8 +93,8 @@ public class techtriathlon extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(techtriathlon.this);
-                contacts.setMessage(R.string.triathlon_contact);
+                contacts = new AlertDialog.Builder(thebafflingplanet.this);
+                contacts.setMessage("Rs 20000");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -106,10 +105,8 @@ public class techtriathlon extends MainActivity {
             @Override
             public void onClick(View v) {
 
-
             }
         });
+
     }
-
-
 }
