@@ -263,5 +263,111 @@ Wander fast and get the ANSWERS asked.\n
 3. Everything is with in campus do not go outside the campus.
 REWARD CRITERIA
     </string>
+    <string name="flashabout">
+        Here is the mission for you. The robot you make has to play a crucial role. The mission is to carry THE SECRET CODES from CODE_SQUARE to DATA_RING. You do not have much time. The clock is ticking fast. Should you choose to accept it?\n
+
+        <b>PROBLEM STATEMENT</b>\n
+ Teams have to build an autonomous bot that can follow a white line over a coloured surface to move between the different zones and perform the required tasks.\nThe arena will consist of the Starting Zone (SZ), Code Square (CS), Data Ring (DR) and timers T1 and T2.\n The bot will start from the SZ and follow the thick white path. It will reach the CS where it has to identify a set of operators (+, -, x, %) and operands (a, b, c), where a, b, c are small integers encoded using combinations of LEDs.\n The mapping of operators and operands to LEDs of CS are shown clearly in table 1. The bot has to calculate that arithmetic expression. Once it has done its work at CS, it has to move to DR, where it shall transmit of evaluated result(magnitude only) of expression using its binary equivalent with the help of a set of 5-LEDs (An ON LED will represent ‘1’ and an OFF LED will represent ‘0’).\n\n
+        <b>Guidelines and Suggestions</b>
+1)	Along with an Arduino board, make use of light detecting sensors like photo-diode, light-dependent resistor (LDR), photo-transistors, LEDs.\n
+2)	Strictly follow the dimensions of CODE_SQUARE and place your sensors accordingly to get accurate readings and prevent misalignments.\n
+3)	The codes given by CODE_SQUARE will change on the spot i.e. they will be different for different bots. Thus, the bot should be programmed to adapt according to every possible code given.
+    </string>
+    <string name="flashtasks">
+        <b>Level 1:</b>
+The first task will check the bot’s locomotion capabilities. The bot will have to travel path by following the thick white line. The bots who are successfully able to do this will qualify this stage.
+Bot should complete this level without any human intervention. In case of any human intervention the respective penalties will be awarded.
+Maximum time limit: 10 minutes.\n
+Points awarded: \n\n
+•	50 points on completion of level.\n
+•	-5 for each human intervention.\n
+
+<b>Level 2:</b>
+The Second level is where the real challenge begins. The bot will start from SZ and travel the path to reach CS. Now according to table 1, decode the code given through LED’s and convert it into a meaningful arithmetic expression and then calculate the value and store that value as it will be used later. Also, initially all the 4 LED’s will be ON for the bot to properly align itself to take those readings. Make sure that after the bot has stopped on CS it signals in the form of an external LED after which the code will be exposed (refer note 1). After taking the readings from CS the bot will move to DR where it will display the calculated output number in the form of binary which is advised to be done with the help of 5-LEDs placed in a line (array) on the bot.
+Maximum time limit: 15 minutes.\n
+Points awarded:\n\n
+•	20 points for stopping at CS.\n
+•	20 points for successfully collecting data from CS.\n
+•	10 points for crossing to path break.\n
+•	15 points for successfully crossing ‘L’ junction.\n
+•	70 points for displaying correct answer at DR.\n
+•	-5 points for touch for each physical contact.\n
+        <b>Note1:</b>
+Initially all the LEDs of CS will be on, in order to help the bot properly align. The bot must signal only after it has properly aligned.\n
+
+<b>Tie-breaker Level:</b>\n\n
+This level will be open only for those team whose points are coincident and in top three scores. Quantitative tie-breaking strategies will be employed. The strategies will be disclosed on the spot.\n
+
+
+    </string>
+    <string name="flashrules">
+        1)	Only one bot per team is allowed.\n
+2)	A team can have a maximum of 4 members.\n
+3)	Sharing or exchanging of bots within teams is not allowed.\n
+4)	Explicit physical contact with the bot during the course of the event is not allowed without the organizer’s permission. Doing so can lead to a penalty or even disqualification.\n
+5)	In case the bot leaves the defined track, the respective team will have to restart from the Starting Zone.\n
+6)	Each participant has to bring his/her Identity Proof to be checked by the organizers at the time of the event.
+
+
+
+    </string>
+    <string name="flashcontacts">
+        Nikhitha ->	8919340777\n
+Pradyumna Gupta ->	7023086751\n
+        Yash Raj ->	7488420275\n
+
+
+    </string>
+    <string name="flashbot">
+        1)	 The size of the bot should not be more than 17x17x10 (cm). Care should be taken such that it fits in the arena properly.\n
+2)	 Use of internal combustion engines in the bot is not allowed.\n
+3)	 The bot can have its own power source. An external Power source of 220 Volts AC will be provided if needed. However, teams are suggested to confine the power source within the bot. \n
+4)	 Teams are permitted to implement their own choice of sensors.\n
+5)	 Teams are allowed to use readymade microcontrollers, an array of LDR, IR or any other sensor as per their requirement.\n
+6)	Bots with power source confined within the bot (i.e. not using an adapter to power the bot) will be rewarded bonus points\n
+7)	 Teams are not allowed to use any readymade Lego kits or any such assemblies.\n
+8)	 Any type of violation can result to disqualification.
+
+    </string>
+    <string name="obstacleabout">
+        The participant shall hereafter be referred to as the player and their robot, the bot.\n
+In this event the player is supposed to complete a course littered with obstacles, the player who finishes in the least amount of score wins the event. The obstacles can be either active or passive; active – they can deliberately delay the bot or passive – they can make it harder to continue.\n
+The bot must not harm or otherwise deliberately sabotage the Arena. They must adhere to the following rules while participating in the event.\n
+
+    </string>
+    <string name="obstaclespecs">
+        •	It must be a manually controlled bot, i.e. there must be a way for the player to control the movements of the bot. It can have some automatic features but the decision to toggle those features should lie with the player.
+•	Extra points will be awarded to wireless bots.\n
+•	The dimensions of the bot must be less than 20 centimetres by 18 centimetres (length by width) and it must less than 20 centimetres.\n
+•	The maximum permissible weight for the bot is 2.5 kilograms.\n
+•	It must use a DC motor.\n
+•	An adapter will be present beside the arena to resolve issues of length of wire and faulty equipment. The player must use the provided adapter which will be of 12V – 2A.\n
+•	The bot must complete the entire course. Shortcuts are a strict no-no.\n\n
+
+In case of any discrepancies in the rules, the view of the presiding judge over the event shall be final and binding. Decisions regarding exceptional cases shall also lie in the hands of the presiding judge.
+ 
+
+
+    </string>
+    <string name="obstarules">
+        •	The players must not enter the arena unless given permission by the presiding judge.\n
+•	The player must not directly or indirectly nudge or otherwise touch the bot once the race has started without prior permission of the presiding judge.\n
+•	The bot shall only be controlled by one person which cannot be changed once the race has started. The team leader shall intimate identity of the controller to the presiding judge.\n
+•	In case of any violation of rules, the team shall be instantly disqualified.
+
+    </string>
+    <string name="obstajudging">
+        •	The players must not enter the arena unless given permission by the presiding judge.\n
+•	The player must not directly or indirectly nudge or otherwise touch the bot once the race has started without prior permission of the presiding judge.\n
+•	The bot shall only be controlled by one person which cannot be changed once the race has started. The team leader shall intimate identity of the controller to the presiding judge.\n
+•	In case of any violation of rules, the team shall be instantly disqualified.
+
+    </string>
+    <string name="obstacontacts">
+        •	Prakhar Kumar ->+91-9559801909\n
+•	Harsh Vardhan ->+91-9608722879\n
+•	Eric John -> +91-9570093144
+
+    </string>
 
 </resources>
