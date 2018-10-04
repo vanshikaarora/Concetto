@@ -20,7 +20,7 @@ import com.example.vanshika.concetto.R;
 import java.util.List;
 
 /**
- * Created by Shridhar on 28-Sep-18.
+ * Created by shridhar on 28-Sep-18.
  */
 
 public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder> {

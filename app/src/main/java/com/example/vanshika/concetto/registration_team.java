@@ -8,6 +8,8 @@ public class registration_team {
     String teamname;
     String member1,member2,member3,member4;
     String teamleaderemailid;
+    String mobile;
+
     registration_team(){}
     registration_team(String Teamname,String Member1,String Member2,String Member3,String Member4,String Teamleaderemailidea ){
         this.member1 = Member1;
@@ -18,6 +20,42 @@ public class registration_team {
         this.teamleaderemailid = Teamleaderemailidea;
 
 
+    }
+
+
+
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getMobile() {
+
+        return mobile;
+    }
+
+    public void setTeamname(String teamname) {
+        this.teamname = teamname;
+    }
+
+    public void setMember1(String member1) {
+        this.member1 = member1;
+    }
+
+    public void setMember2(String member2) {
+        this.member2 = member2;
+    }
+
+    public void setMember3(String member3) {
+        this.member3 = member3;
+    }
+
+    public void setMember4(String member4) {
+        this.member4 = member4;
+    }
+
+    public void setTeamleaderemailid(String teamleaderemailid) {
+        this.teamleaderemailid = teamleaderemailid;
     }
 
     public String getTeamname() {

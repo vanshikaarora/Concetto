@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Name"
+            android:hint="Team Name"
             android:inputType="textPersonName"
             android:layout_centerHorizontal="true"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -108,5 +108,18 @@
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>
 
+<<<<<<< HEAD
 
+=======
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/btcolor"
+        android:textColor="#ffffff"
+        android:text="Register"
+         />
+>>>>>>> fe5a91aa16d9220b88db3908ef14448b9ab22da5
 </LinearLayout>

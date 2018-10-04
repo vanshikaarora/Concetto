@@ -10,11 +10,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 /**
  * Created by lenovo on 9/29/2018.
  */
 
-public class robowar extends AppCompatActivity {
+public class robowar extends MainActivity {
     //ImageView img;
     TextView tl;
    Button ab,ru,pr,co,reg;
@@ -22,11 +28,15 @@ public class robowar extends AppCompatActivity {
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
+    DatabaseReference rob;
+    String p;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.replaceContentLayout(R.layout.event_layout, R.id.content_main_linear_layout);
+
         getSupportActionBar().hide();
-        setContentView(R.layout.event_layout);
+
        //// img = (ImageView)findViewById(R.id.titleImage);
         tl = (TextView)findViewById(R.id.title);
 
@@ -35,6 +45,19 @@ public class robowar extends AppCompatActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
+        rob  = FirebaseDatabase.getInstance().getReference();
+        rob.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                dataSnapshot = dataSnapshot.child("robo").child("prize");
+                p = dataSnapshot.getValue().toString();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,8 +84,9 @@ public class robowar extends AppCompatActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 prizes = new AlertDialog.Builder(robowar.this);
-                prizes.setMessage("Rs 2000");
+                prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();

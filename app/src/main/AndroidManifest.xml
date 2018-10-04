@@ -32,7 +32,34 @@
         <activity android:name=".trusstheframe" />
         <activity android:name=".vitricity" />
 
+<<<<<<< HEAD
         <service android:name=".MyFirebaseInstanceIDService">
+=======
+        <activity android:name=".EventsActivity"></activity>
+        <activity android:name=".robowar"></activity>
+        <activity android:name=".obstaclecourseracing"></activity>
+        <activity android:name=".obstacle_registration"></activity>
+        <activity android:name=".robowar_registration"></activity>
+        <activity android:name=".trusstheframe"></activity>
+        <activity android:name=".vitricity"></activity>
+        <activity android:name=".leverthehuge"></activity>
+        <activity android:name=".spardhatechbizz"></activity>
+        <activity android:name=".modelthecaravel"></activity>
+        <activity android:name=".techtriathlon"></activity>
+        <activity android:name=".surveytopographia"></activity>
+        <activity android:name=".industrialdesignproblem"></activity>
+        <activity android:name=".unravelthewhizz"></activity>
+        <activity android:name=".buffetmoney"></activity>
+        <activity android:name=".flash"></activity>
+        <activity android:name=".aquarise"></activity>
+        <activity android:name=".frothfloatation"></activity>
+        <activity android:name=".borntowander"></activity>
+        <activity android:name=".googleminer"></activity>
+
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+>>>>>>> fe5a91aa16d9220b88db3908ef14448b9ab22da5
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>

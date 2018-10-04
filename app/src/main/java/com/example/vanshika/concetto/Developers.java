@@ -1,5 +1,6 @@
 package com.example.vanshika.concetto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -9,12 +10,19 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 
-public class Developers extends AppCompatActivity {
+public class Developers extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.developers);
+        super.replaceContentLayout(R.layout.developers, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        startActivity(new Intent(Developers.this, MainActivity.class));
     }
 }

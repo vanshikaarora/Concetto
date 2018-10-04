@@ -6,4 +6,243 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    
+    <string name="spardha_desc">Compromising of 3 members each there will be approximately 15-20 Groups (Depending on the participants). The quiz will be Divided into 3 Rounds. \n
+•	First Round Would Consist of the questions Regarding the CEO, Higher management authorities, technology based and Company related questions where each team will be given a set of questions that they have to answer, Top 10 teams would be selected for next round. \n
+•	Round 2 will be conducted with the Help of Projector where Pictures will be displayed on the screen and the participants would be required to guess the right answer. \n
+•	Third Round Would Consist of questions related to Latest Business changes and technical innovations. \n
+    </string>
+    
+    <string name="spardha_rules">Round 1-There will be 25-30 questions and time allotted will be approximately 30 minutes. Group members would discuss and mark the answer correctly. No Negative Marking. \n
+Round 2- The Team Would Nominate 1 Member From The Group. The Logo/Symbols/Pictures would be Displayed and the member will have to guess the correct answer, time given would be 10 seconds each, team will Lose marks if the member Fails to answer. 2-3 such rounds will be conducted. Top 5 teams would go to the next round. \n
+Round 3- Current Business and technological questions would be asked Individually to members of the teams for which 15 seconds will be provided. Each member of the team would get 1 question, and 1 bonus question for 1 team of 5 marks to make up. \n
+In case of tie, tie breaker question would be asked. \n
+    </string>
+
+    <string name="spardha_contact">A) Deepti
+     Contact No. 7783024700 \n
+        B) Krishna Sudhakar Sonvane
+     Contact No. 9158464845 \n
+    </string>
+
+    <string name="spardha_time">2 hours</string>
+
+
+    <string name="electrabuzz_desc">ITS A KNOWLEDGE HUNT. THE EVENT IS ALL ABOUT TESTING THE BASIC ELECTRONICS YOU COME ACROSS IN YOUR REAL DAY TO DAY LIFE. IT COMPRISES OF THREE ROUNDS OF POSSIBLE ELIMINATIONS. \n
+ROUND 1:  A TEAM IS FORMED AND QUESTIONS RELATED TO ELECTRONIC COMPONENT IS GIVEN. THEY HAVE TO SEARCH FOR THE COMPONENT AND DROP IT IN TEAM’S DROP BOX.. EACH CORRECT COMPONENT(ANSWER) WILL BE A CLUE TO THE NEXT QUESTION. TEAMS ARE PROMOTED TO NEXT ROUND BASED ON CORRECT AND QUICKANSWERING. \n
+ROUND 2:  SELECTED TEAMS HAVE TO MAKE A CIRCUIT WITH THE HELP OF GIVEN COMPLEX CIRCUIT DIAGRAM. THEY HAVE TO REDUCE IT TO SIMPLER FORM AND MAKE THE RESULTING CIRCUIT. THE GIVEN CIRCUIT DIAGRAM WILL BE A BLEND OF CIRCUIT THAT PARTICIPANTS COME ACROSS DAY TO DAY LIFE. \n
+ROUND 3: QUIZ ON BASIC ELECTRONICS WILL BE CONDUCTED. TEAM WITH MORE POINTS WILL TURN OUT TO BE THE WINNER. \n
+    </string>
+    
+    <string name="electrabuzz_rules">1.EACH TEAM IS OF 4-5 PEOPLE.\n
+2. IN FIRST ROUND, ANSWER HAS TO BE WRITTEN ON QUESTION PAPER ALSO AND THE RESPECTIVE COMPONENT SHOULD BE DROPPED IN TEAM’S DROP BOX.\n
+3.IN SECOND ROUND, SIMPLIFIED CIRCUIT HAS TO BE DRAWN ON THE QUESTION PAPER.\n
+4.IN THIRD ROUND, NEGATIVE POINTS ARE ALSO AWARDED TO THE WRONG ANSWERS.\n
+5.  +3, -1 ,0 POINTS ARE AWARDED TO CORRECT, WRONG AND NO ANSWER RESPECTIVELY\n
+    </string>
+    
+    <string name="electrabuzz_contact">SIRIGIREDDY DHANALAXMI  7780134173 \n
+    PERUL JAIN : 7891167889 \n
+    </string>
+    
+    <string name="electrabuzz_time">ROUND 1: 1 HR. \n
+    ROUND 2: 1 HR. \n
+    ROUND 3: 1 HR. \n
+    </string>
+
+
+
+    <string name="leverthehuge_desc">THIS EVENT IS TO COMPLETELY TO BRING OUT THE ENGINEER WITHIN THE NEW SPRUNG STUDENTS.\n
+        DO YOU HAVE THE ABILITY TO DESIGN THE BASIC LEVER? COME OUT AND SHOW OF YOUR SKILLS USING THE BASIC MATERIALS AROUND YOU.\n
+        HOPE YOU LIFT THE WEIGHTS AND AS WELL LIFT THE PRIZE.\n
+PARTICIPANTS ARE EXPECTED TO PREPARE A MODEL CONSISTING THE BASIC LEVER SYSTEM.\n
+        USE YOUR BASIC PHYSICS TO LIFT THE LOAD GIVEN BY US ON THE SPOT.\n
+        EVENT ORGANISERS WILL ALWAYS BE AVAILABLE TO ASSIST YOU DURING THE PREPARATION OF YOUR MODEL. DO CONTACT US FOR FURTHER DOUBTS.
+    </string>
+
+    <string name="leverthehuge_rules">	HEIGHT LIMIT OF MECHANISM :80cm\n
+	LENGTH LIMIT OF MECHANISM:100cm\n
+	WOOD MATERIAL TO BE USED ONLY.\n
+	STRING LOOPING IS NOT ALLOWED.\n
+	WEIGHTS WILL BE PROVIDED.\n
+	PULLEYS LIMIT (IF USED): 3
+
+      ->  1.	The distance/height lifted by the system- 30% POINTS\n
+->2.	Maximum weight that can be lifted- 50% POINTS\n
+->3.	Design of mechanism - 20% POINTS\n
+    </string>
+    
+    <string name="leverthehuge_rewards_criteria">
+        ->  1.	The distance/height lifted by the system- 30% POINTS\n
+->2.	Maximum weight that can be lifted- 50% POINTS\n
+->3.	Design of mechanism - 20% POINTS\n
+    </string>
+
+    <string name="leverthehuge_contact">   DEVASHISH BARIKO -> 9398889882\n
+             GOWTHAM DVSS -> 9631510705\n
+    </string>
+
+    <string name="leverthehuge_time">3 Hours</string>
+    
+    
+    
+    <string name="modelthecaravel_task">Participating teams have to design a boat which will be tested on
+different parameters during the competition</string>
+
+    <string name="modelthecaravel_desc"><b>TASK</b>\n
+        Participating teams have to design a boat which will be tested on
+different parameters during the competition\n\n
+        The entire event is only to exhibit the creativity and designing of the
+participants.\n
+Each participating team has to design a boat which can be made up of
+materials like plastic, metal, empty cans, thermocol, cardboard,glass,
+etc.\n
+        This boat will run using motors which will be powered by DC
+batteries.\n
+Each team have to use minimum one motor while the maximum limit
+can be 4.
+    </string>
+
+
+
+    <string name="modelthecaravel_rules">Participating teams must consists of atleast two members while the
+        max. Limit can go upto 4. \n
+        Each team will be awarded total marks out of 100,in these 100 marks
+        we will consider the design of boat, no. of motors used, technical
+        knowledge of team and also two rounds will be conducted to test their
+        models practically(i.e. race). \n
+    </string>
+
+
+    <string name="modelthecaravel_winning_criteria">The winners will be decided on the basis of total marks gained by
+each team out of 100.</string>
+
+    <string name="modelthecaravel_prizes">1st prize-2500/- \n
+2nd prize-1500/- \n
+3rd prize-1000/- \n
+    </string>
+    
+    <string name="modelthecaravel_contact">Sagar Rathor-17JE003356 Contact no.-7877529922 \n
+Pankaj Kumar-17JE002806 Contact no.-8207691824 \n
+    </string>
+
+
+
+    <string name="truss_desc">Ever thought how the bridges and buildings across the world are so stable and balanced? How a simple structure is enough to carry the heaviest load? Not yet!! Well! its never too late.\n
+Experience the world of construction in a miniature form by constructing a Truss Bridge. Truss Bridge is the type of bridge whose main element is a truss, which is a structure of connected elements that form triangular units.\n
+        Truss is used because it is very rigid structure and it transfers the load from single point to much wider area and are economic to construct. But the closed bridges provide obstacle for better transportation along the river.\n
+        To overcome this hurdle, the new concept called HYDRAULIC ASSISTED BRIDGE (HAB) is used that provides the feasible transportation.\n
+Participants are required to build a Hydraulic Assisted truss bridge with the following material\n\n
+1.	100 popsicle sticks \n 2. Fevicol\n 3. Syringe\n 4. Narrow hose pipe Note: - All the materials will be provided by event organizers.\n\n
+
+</string>
+
+    <string name="truss_guidelines">
+        ->50% points — Efficiency of the bridge. (Weight of load/Weight of bridge)\n
+->20% points — The gap between the base of truss. (If it is 25cm= full marks will be awarded	otherwise points
+->will be rewarded accordingly)\n
+->20% points — Elevation of the bridge from the horizon (From the top of the base). If it is 15cm+	full marks will be\n
+->awarded otherwise points will be rewarded accordingly.\n
+->10% points — Creative design and peculiarity.
+
+</string>
+
+    <string name="truss_rules">•	The Bridge should be in the specified dimensions limit. Minimum height of the closed bridge — 15 cm. Maximum length — 45 cm.
+Minimum gap between the base of the bridge —10 cm Maximum width — 10 cm\n
+•	The sticks can be altered physically by notching or cutting at any angle\n
+•	The overlapping of one stick over the other should not exceed 20%. (DOUBLING OF STICKS IS NOT PERMITTED)\n
+•	No GLUE other than the one provided (Fevicol) must be used.\n
+•	Penalties --\n
+1.	Dimensional specifications are not met — Maximum of 10% Penalty per specification (of the total score) as per rules violation.\n
+2.	Use of any other material other than the ones provided — DISQUALIFIED/\n
+        3.	If Syringe is taking load — DISQUALIFIED\n
+4.	Use of superglues — DISQUALIFIED\n\n
+        ->	<b>Team Size</b> — 4 Students\n
+        ->	Entry Fee - 400\n
+
+
+    </string>
+
+    <string name="truss_contact">1-	Rohit kumar->8678877133\n
+2-	Deepansh Deepak srivastav -> 9082140959\n
+    </string>
+
+    <string name="truss_time">Last Two Days</string>
+
+
+
+
+    <string name="triathlon_intro">A Three day long event comprised of three stage to feel the zeal of participating in bidding, quizzing and unveil the enterpreneurship inside you to solve the problems faced by industries on day to day basis. \n
+Stage 1- Bid-Vaganza \n
+
+Participants will be provided fixed amount of virtual cash. Participants will bid on the buildings present in the IIT(ISM) campus that will be put on the auction. \n
+Stage 2- Concee-quiz \n
+
+Second round will be the general quiz. Stage 3- Caliber \n
+Industrial problems will be provided to the participants and participants have to come up with a innovative solution to the Problem. \n
+    </string>
+
+    <string name="triathlon_rules">1- Participants will be sorted according to the credit value of building in their basket and ready cash in their hand after the completion of bidding. \n
+2-	Their will be no elimination in the first round. \n
+
+3-	Marks of stage1 and stage 2 will be sum up to sort the participants for stage3. 4-Final	winners will solely be decided on the basis of score of stage3. \n
+    </string>
+    
+    <string name="triathlon_contact">1-Surya Kumar Samadhiya :-9304154418 \n
+        2- Sahil :- 725592778 \n
+    </string>
+
+    <string name="triathlon_time">3 Days (150 minutes daily) </string>
+    <string name="googleminerabout">
+        The event is to know how fast the participants can Google search in limited time and get maximum answers. The participants will have multiple clue regarding the answer in the question itself. The questions will be on various topics.\n
+        <b>TASK</b>\n
+        To google about the question and find the right answer.\n
+
+There's no right way to solve it, but there's only one right answer.
+
+
+
+    </string>
+    <string name="googleminerrules">
+        ->	Participating team must consist of maximum 3 participants.\n
+->	Mobile phone with internet connectivity is required to Google about questions and find the answer.
+
+    </string>
+    <string name="googleminerjudging">
+        Team with highest marks will be winners. The marks will be based on:\n
+->	Number of correct answers\n
+->	Ideas and Thinking
+
+    </string>
+    <string name="googleminercontacts">
+        Dhanit Guria -> 7004721451
+        Maripuddi Vamshi -> 9121561571
+    </string>
+    <string name="frothabout">
+        Froth floatation process is a process for selectively separating hydrophobic materials from hydrophilic. This is used in mineral processing, paper recycling and waste water treatment industries.\n
+        <b>TASK:</b>\n
+        To concentrate sulphide ore.\n
+        This event is for to exhibit the designing ability of the participants. The participants should prepare the model which should be able to concentrate the ore given in the event. The ore may be sulphide ore or coal. \n
+
+
+
+
+    </string>
+    <string name="frothrules">
+        There will be a team of maximum 3 participants.\n
+        <b>REQUIREMENTS:</b>\n
+1.	Chemicals (Provided by Organisers)\n
+2.	Air Blower\n
+3.	A Bowl
+
+    </string>
+    <string name="frothjudging">
+        The winners will be the top 3 teams getting maximum points. The points will be based on\n
+1.	How good the model look -20 Points\n
+2.	Some innovative change-20 Points\n
+3.	Amount of Froth obtained-30 Points\n
+4.	A quiz on Froth Floatation-30 Points
+
+    </string>
+
 </resources>

@@ -41,13 +41,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="4dp"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
-                android:elevation="15dp">
+                android:elevation="15dp"
+                android:foreground="?android:attr/selectableItemBackground">
 
 
                 <LinearLayout
@@ -73,7 +74,7 @@
                             android:layout_height="45dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="18dp"
-                            android:text= "PERUL JAIN"
+                            android:text="PERUL JAIN"
                             android:textSize="20dp" />
 
                         <TextView
@@ -81,7 +82,7 @@
                             android:layout_height="50dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
-                            android:text= "Electronics and Communication Engineering"
+                            android:text="Electronics and Communication Engineering"
                             android:textSize="15dp" />
 
                         <LinearLayout
@@ -113,14 +114,15 @@
 
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="4dp"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
-                android:elevation="5dp">
-                
+                android:elevation="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -130,8 +132,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/sri" />
+                        android:scaleType="centerCrop" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -144,7 +145,7 @@
                             android:layout_height="45dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="18dp"
-                            android:text= "SHRIDHAR GOEL"
+                            android:text="SHRIDHAR GOEL"
                             android:textSize="20dp" />
 
                         <TextView
@@ -152,7 +153,7 @@
                             android:layout_height="50dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
-                            android:text= "Mathematics and Computing"
+                            android:text="Mathematics and Computing"
                             android:textSize="15dp" />
 
                         <LinearLayout
@@ -190,12 +191,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="4dp"
-                android:elevation="15dp"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
-                >
+                android:elevation="15dp"
+                android:foreground="?android:attr/selectableItemBackground">
 
-               
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
@@ -206,8 +206,7 @@
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
 
-                        android:src = "@drawable/vanshi"
-                        />
+                        android:src="@drawable/vanshi" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -231,6 +230,7 @@
                             android:paddingTop="8dp"
                             android:text="Mathematics and Computing"
                             android:textSize="15dp" />
+
                         <LinearLayout
                             android:layout_width="225dp"
                             android:layout_height="50dp"
@@ -256,9 +256,6 @@
                         </LinearLayout>
 
 
-
-
-
                     </LinearLayout>
                 </LinearLayout>
 
@@ -272,7 +269,6 @@
                 android:background="#BDBDBD" />
 
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -281,15 +277,13 @@
                 android:textSize="20dp" />
 
 
-
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="4dp"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:elevation="15dp"
-                >
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -321,7 +315,7 @@
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
                             android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
-                            android:textSize="15dp" />
+                            android:textSize="10dp" />
 
 
                     </LinearLayout>
@@ -332,8 +326,8 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="25dp"
-                        android:onClick="kulfb"
                         android:layout_marginRight="5dp"
+                        android:onClick="kulfb"
 
                         android:src="@drawable/fb" />
                 </LinearLayout>
