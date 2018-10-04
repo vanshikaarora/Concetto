@@ -57,7 +57,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="125dp"
+                        android:layout_width="130dp"
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
 
@@ -130,9 +130,11 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="125dp"
+                        android:layout_width="130dp"
                         android:layout_height="150dp"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shridhar"
+                         />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -202,7 +204,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="125dp"
+                        android:layout_width="130dp"
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
 
