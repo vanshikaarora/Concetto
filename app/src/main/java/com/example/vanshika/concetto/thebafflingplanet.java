@@ -59,7 +59,7 @@ public class thebafflingplanet extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(thebafflingplanet.this);
-                about.setMessage("sujal jain");
+                about.setMessage(R.string.bafabout);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -71,7 +71,7 @@ public class thebafflingplanet extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(thebafflingplanet.this);
-                rules.setMessage("rules are found");
+                rules.setMessage(R.string.bafrules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -94,7 +94,7 @@ public class thebafflingplanet extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(thebafflingplanet.this);
-                contacts.setMessage("Rs 20000");
+                contacts.setMessage(R.string.bafcon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

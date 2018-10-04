@@ -469,5 +469,322 @@ time are allowed.\n
 •	Shantanu -> +919424697088
 
     </string>
+    <string name="sympabout">
+        Having technical knowledge is no more an auxiliary trait, it has become our necessity. Technical stuff is not about mugging, it also demands for your awareness towards technical world of inventions and discussions. Get a chance to express yourself and share your knowledge with others. If you see yourself as a techno-freak, it’s time to explore your technical and presentation skills in Symposium.\n\n
+<b>TOPICS –</b>\n\n
+• Scope of Machine learning in Geophysics\n
+• Seismology of Himalayan arc and Burmese arc Region\n
+• Crustal study of Mars (Comparative study with Earth)\n
+• Geophysical Methods for mineral exploration • Automatic detection of seismic events in urban areas\n
+• Unconventional Reservoirs- Hydrates, Shale gas, CBM etc.(any one)\n
+• Vertical Seismic Profiling (VSP)\n
+• Groundwater Exploration using Geo electric Sounding\n
+• Marine Geophysics\n
+• Airborne Survey and Technicalities
+    </string>
+    <string name="symprules">
+        1. State the principle objectives, the scope of the investigation or the reason for addressing the topic (the “what” and “why”). This would include your thesis statement.\n
+2. Describe very briefly the methodology employed or the approach to the problem or topic (the “how” or “where”).\n
+3. Summarize the results that were found. If some studies had similar findings, then you don’t need to elaborate on each study.\n
+4. State the principal conclusions. What do the results of your studies suggest?\n\n
+The abstract should not exceed 200 words and should be fully self-contained; that is, it must make sense to someone not familiar with the topic. It should be typed as a single paragraph and must contain complete sentences with correct grammar and spelling. The abstract should
+not give information or conclusions that are not in the paper or presentation. It should not contain bibliographic information, figures or references. Omit abbreviations and acronyms.\n
+<b>Submit your abstract on:</b> \n
+        agpism2018@gmail.com\n
+<b>Last Date for abstract submission:</b>\n
+        25th October 2018\n
+<b>Time Limit for Presentation</b>:\n
+        8 min Presentation and 2 min Q/A
+    </string>
+    <string name="symjudge">
+        <b>• Content:</b>/n
+        30 points
+<b>• Presentation:</b> \n
+        20 points
+        <b>• Q/A:</b>\n
+        10 points\n
+• 2 marks will be deducted for each minute beyond the time limit
+    </string>
+    <string name="symcontacts">
+        Shubham Kumar -> 7004016692
+    </string>
+    <string name="chemcarabout">
 
+The aim of the competition is to provide students with an opportunity to design and
+construct a small chemically powered car and test the ability of participants to safely
+control and harness the energy of a chemical reaction by initiating the car and allowing
+it to traverse a fixed distance carrying a certain load.\n\n
+        A)   <b>ROUND 1</b>\n
+
+➣ Each Team will be allowed to give one run to test their model. In this run, the model would
+     be checked whether it emits harmful chemicals (concentrated acid, poisonous gases,
+     etc.),  your team would be eliminated if chemicals are hazardous and harmful for the
+     Surroundings.\n
+
+➣The model should cover a minimum distance of 5m. If they are unable to do so, their
+    teams would be disqualified.\n
+
+B) <b>ROUND 2</b>\n
+
+➣The car is expected to carry a specified payload (most probably water) of 500
+    grams(Note: payload will be provided at the competition site.)\n
+➣The car must have a chamber for the container in which load will be placed.\n
+➣One of the organiser from our team will measure the payload and it would be
+    given to you to pour it into your container.
+
+C)  <b>ROUND 3</b>\n
+
+The final qualifications for stage 3 would entirely be dependent on stage 2 winners.The teams will be asked to give a brief overview (lasting 4 minutes) about their model to the judges, followed by viva by the judges.. The Teams will be questioned, and based on their understanding and the performance of the model they will be graded.
+
+
+    </string>
+    <string name="chemcarjud">
+        The criteria for judging will be as following:\n\n
+
+➣  Round 1: Trial runs (Weightage 30%).\n
+➣  Round 2: Payload (Weightage 50%).\n
+➣  Round 3: Presentation Round (Weightage 20%)\n\n
+
+The judging for all rounds will be done by the judges of the competition who shall also decide upon disqualification and penalisation in cases of breaching of rules.
+
+    </string>
+    <string name="chemcarcont">
+        ROHIT AGRAWAL ->7462876817
+
+
+    </string>
+
+    <string name="chemcarrules">
+        ➣ Each team can consist of at most 4 members. Multiple teams from the same institution
+    are allowed, provided their abstracts and models are not the same.\n
+    ➣Teams must strictly adhere to the given deadlines, failing to do so will lead to heavy
+    penalisation in points or disqualification.\n
+    ➣Transportation of chemicals to the competition venue is strictly the responsibility of the
+    Team. You are also responsible for arranging disposal of chemical wastes generated by
+    your model.(Note:Facility for disposal will be provided at the competition site)\n
+    ➣Your Chem-E-Car model should be built based on the final abstract submitted.\n
+    ➣The decision of the judges or event coordinators will be considered final and no further
+    arguments would be entertained.\n
+
+
+    </string>
+    <string name="carabout">
+        <b>Problem Statement</b>\n
+        Your team is given a list of reactions which is required to completed. To complete
+It, your team require certain chemicals. At the starting you’ve certain chemical, but the twist is they are insufficient to complete any one of reaction.\n\n
+
+    <b>Solution</b>\n
+You’ve to trade your chemicals with other teams. So, every team has to decide which chemicals to sold, and bought. Now, trading would be in form of bidding, and would be through bank (organizers) only.\n
+Winner will be decided on the basis of maximum no. of reactions completed at the end of event.
+
+    </string>
+    <string name="carjud">
+        <b>How to play</b>
+Every team will be given a ledger, on which they’ve to register every trade they’ve made during each round of bidding.\n
+
+Ex. \n
+
+
+
+
+Compound
+Round 1 Round 2 Round 3
+A  B  C
++2 -  -\n
+-1 +3 -\n
+-  +4 -\n
+        Here +2 represent buying, while -1 represents selling.\n\n
+
+
+<b>Pricing Dynamics:</b>\n
+Initially certain value would given by bank to every compound. As rounds we’ll be progress prices will change based on the rule of demand and supply. Compounds higher in demand, will have higher price, and vice versa for compounds low in demand.\n
+
+Ex.\n
+Let every chemical have an intial value of $100/mol.\n
+Take Team 1, it has 2 moles of compound B.\n
+And it bids chemical A $100/mol, for 0.5 mol.\n
+Hence, Team 1 has to exchange 1mol of B\n
+For Bank,\n
+Then, before bidding\n
+        Compound A        Compound B\n
+Price(mol)    $100 (1)        $100 (1)\n
+
+After bidding,\n\n
+        Compound A        Compound B\n
+Price(mol)    $200(0.5)        $100(2)\n
+    =$400(1)        = $50\n
+
+
+
+    </string>
+    <string name="carcon">
+        Rishabh Verma -> 9977991841\n
+
+      .Prashant Choudhary ->7091025596
+
+    </string>
+    <string name="carrules">
+        Each round will cover all chemical compounds once.\n
+There is no limitation on teams regarding number of bids.\n
+There will be only specific amount of chemical placed for bidding by bank, also if there is less than 0.5 mol available of a given compound, then it’ll not be bid unless it is sold to bank in that round.\n\n
+        <b>Bidding Rules:</b>\n
+Any wrong bidding, i.e. placing bid more than in account, will result in disqualification.\n
+Any illegal manipulation of ledger result in disqualification\n
+No team can cancel bid once placed.\n\n
+
+5.If any bid is found wrong, then next highest bidder is taken, and so on.\n
+6.Only one member of team is allowed to place the bid, rest can discuss among.
+
+    </string>
+    <string name="electroabout">
+The event consists of three rounds:
+<b>ROUND 1:-</b> \n
+        (Written Exam) It consists of a pen and paper based exam with questions on solving electrical circuits containing resistors, capacitors, inductors etc. and some aptitude questions.\n
+<b>ROUND 2:</b>\n -(Dumb Charades) The Intermediate round which tests your ability to relate technical words to your daily life aspects as soon as possible, as only 2 minutes are given to each team. One member from each team will be given some technical word which he has to explain to his partner without uttering a single word.\n
+        <b>ROUND 3:</b> \n-(Interview) This round will test your group knowledge through personal interview.
+    </string>
+    <string name="electrorules">
+        <b>ROUND 1</b>\n
+        • Correct answer will be awarded with 4 marks, wrong answer will be result in -1 mark and in case of no attempt, Zero marks will be deduced.\n
+• The team which qualify the exam above cut-off below threshold limit will be continue in the next Round.\n\n
+        <b>ROUND 2
+        </b>\n
+        • No mode of communication will be allowed except hand gestures.\n
+• Time limit for each team is 2 minutes.\n
+• No electronic gadgets for communication will be permitted.\n\n
+        <b>ROUND 3</b>\n
+        RULES:- • The group performs well will be awarded marks according to judges.\n\n
+        • Registration fee is ZERO\n
+• Team consists maximum of 4 members and minimum 3.\n
+• Use of mobile phones and cheating leads to disqualification of team.\n
+• Decision of judges is final.
+    </string>
+    <string name="electrochcon">
+        Bharadwaj Donthula - (9392427427)\n
+Gouni sandeep kumar - (8247554468)
+
+    </string>
+    <string name="electrchjud">
+        Judgement depends on the final score made by the team by completion of third round and it also depends on how much they understood observations and experimenting circuits.
+    </string>
+    <string name="teslabaout">
+        The event consists of two rounds:-\n\n
+<b>ROUND 1:-</b>\n
+Here participants will be provided circuit elements. By using them participants have to make the tesla
+circuit. According to their design and conceptual understanding will help them to qualify for next round.\n\n
+
+<b>ROUND 2:-</b>\n
+Here each team member will have to give a pen paper based Quiz .After that there will be a
+personal interview related to the wireless technology.
+
+    </string>
+    <string name="teslarule">
+        <b>
+            ROUND 1
+        </b>\N
+        1. The CFL provided must glow properly.\n
+2. Design of slayer circuit.\n
+3. Conceptual understanding (In case of tie).\n
+Only 10 teams will qualify for 2nd round based on the time of completion of circuit and glowing of
+bulb.\n\n
+
+<b>ROUND 2:-</b>\n
+        1. Marks will be given according to the answer given by the team members\n\n
+        <b>GENERAL RULES:-</b>\n
+1. NO registration fees.\n
+2. Money will be taken for circuit elements which teams can take with them after the event.\n
+3. Team must of 3 members only.\n
+4. Use of mobile phones or other gadgets are not allowed.\n
+5. Decision of judges will be final.
+    </string>
+    <string name="teslajud">
+        Judgement depends on the final score made by the team by completion of second round and it
+also depends on how much they understood by observations and experimenting circuits
+    </string>
+    <string name="tescon">
+        Tarun kumar ->(8507359111)
+    </string>
+    <string name="bafabout">
+        <b>Round 1:</b>\n
+Teams consisting of 3 to 4 members will compete with each other on the basis of their
+knowledge of elementary earth sciences. A problem sheet will be provided to each team.\n\n
+<b>Round 1:</b>\n
+Teams selected from round 1 will have an interactive pictionary round. With the blend of
+Science, this round will be full of fun and something to look forward to.\n\n
+<b>Round 2B:</b>
+This round will be a treasure hunt. To add to the twist, this will be an indoor treasure hunt. This
+is where things really get interesting.\n\n
+<b>Round 3:</b>\n
+This round is a surprise round. This round will check how well-versed one is with the innovations
+and technologies of the present day. Applying these techs in any field to provide an effective
+solution is what a technophile should look forward to. This said, this round seeks an innovative
+mind.
+    </string>
+    <string name="bafrules">
+        Teams must have at least 3 members.\n
+● The number of teams selected from round 1 will depend upon the participation.\n
+● The cumulative score of rounds 2A and 2B will be assessed for qualification to the third
+round.\n
+● Each of the 5 teams selected for round 3 will get cash prizes based to their final score.\n
+
+    </string>
+    <string name="bafcon">
+        Anuj Gupta
+        Pushpendra Singh Deora
+    </string>
+    <string name="aquaabout">
+        <b>TASK:</b> \n
+To shift objects from one place to other using hydraulic arm.\n
+<b>DESCRIPTION:</b>\n
+The event is focused on lifting and moving of object with the help of hydraulic arm. The arm moves with the movement of water when you push the plunger on a syringe, water is forced from one syringe into another which do some mechanical movement to lift the object. The process illustrates aspects of fluid pressure, force, mechanical work, and biomechanics.\n\n
+<b>REQUIREMENTS:</b>\n
+•	Syringes, Hard board, wood, rubber bands.
+
+    </string>
+    <string name="aquarules">
+        •	Maximum of 3 people are allowed in a team.\n
+•	The fluid inside the syringes should be water.\n
+•	Weight limit/ and other dimensions will be given\n.
+•	Use of batteries, Electric motors, springs, compressors and pressurized cylinders are prohibited.\n
+•	In case of any discrepancy, the decision of the judges shall be treated as final and binding on all.
+
+    </string>
+    <string name="aquajud">
+        Winner will be the one getting maximum points. The points will be based on the following criteria:\n
+•	Time taken for completion of given task.\n
+•	Design of the hydraulic arm.\n
+•	Lifting mechanisms.
+
+    </string>
+    <string name="thriiiabout">
+        The task of this is as simple as can be. You are required to construct a framework which can adequately support the equipments. Drill through the obstructions efficiently to claim your prize. Sounds daunting, doesn\'t it! Well there\'s not much to worry about as we have a Workshop designed specifically to acquaint you with a vivid description of the intricacies involved.\n
+<b>REQUIREMENT:</b>
+➢ Things that will be provided in the kit.\n
+• 3 Motors.\n
+• Nut-Bolt sets.\n
+• Plywood (1.5 sq. ft).\n
+• 2 DPDT switches.\n
+• Wire (1m).\n
+• Slider.\n
+• Connector.\n
+➢ Drill chuck and the drill pipes will be provided at the time of event.\n
+
+    </string>
+<string name="thrillrules">
+    TEAM:
+    • Team must consist of 3 to 5 members.
+    • Participation fee will be Rs 500 per team.
+    MODEL:
+    • Maximum height of the derrick is 45 cm.
+    • The base area should not exceed 18*18 cm2.
+    • No other motor should be used other than the one provided in the kit.
+    • Use of iron, steel etc. is not allowed to design the derrick, only wooden framework is permitted.
+    TIME LIMIT:
+    • Maximum time limit to drill the composition is 30 minutes.
+    • Minimum performing time is 6 minutes.
+</string><string name="thrilljudging">Judging criterion includes a distribution of 100 points.\n
+    • 60 POINTS for the length of drilled composition. (1 cm =1 point)\n
+    • 20 POINTS for stability &amp; design of the Derrick.\n
+    • 20 POINTS - Time {2/3 of the time remaining at the time of quitting}\n
+    The one securing maximum number of points will be the winner. In case of a tie, time will be the judging criterion.</string>
 </resources>

@@ -63,7 +63,7 @@ public class chemecar extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(chemecar.this);
-                about.setMessage(R.string.truss_desc);
+                about.setMessage(R.string.chemcarabout);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,7 +75,7 @@ public class chemecar extends MainActivity {
             @Override
             public void onClick(View v) {
                 judging = new AlertDialog.Builder(chemecar.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging.setMessage(R.string.chemcarjud);
                 AlertDialog jd = judging.create();
                 jd.setTitle("JUDGING");
                 jd.show();
@@ -85,7 +85,7 @@ public class chemecar extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(chemecar.this);
-                rules.setMessage(R.string.truss_rules);
+                rules.setMessage(R.string.chemcarrules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -107,7 +107,7 @@ public class chemecar extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(chemecar.this);
-                contacts.setMessage(R.string.truss_contact);
+                contacts.setMessage(R.string.chemcarcont);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
