@@ -3,6 +3,7 @@ package com.example.vanshika.concetto.Adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
+import android.net.Uri;
 import android.provider.CalendarContract;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
@@ -66,6 +67,7 @@ import java.util.List;
 
             //binding the data with the viewholder views
             holder.textViewTitle.setText(event.getName());
+            holder.imageView.setImageURI(Uri.parse(event.getImage()));
 
             final DatabaseReference ref= FirebaseDatabase.getInstance().getReference("EventTimings");
 
@@ -124,6 +126,7 @@ import java.util.List;
             public EventsViewHolder(View itemView) {
                 super(itemView);
 
+                imageView=itemView.findViewById(R.id.events_image);
                 textViewTitle = itemView.findViewById(R.id.textViewTitle);
                 textViewDate = itemView.findViewById(R.id.textViewDate);
                 textViewTime = itemView.findViewById(R.id.textViewTime);

@@ -4,37 +4,36 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="7dp"
-    android:padding="15dp"
-    card_view:cardBackgroundColor="#001e32"
-    card_view:cardElevation="10dp"
-    card_view:cardCornerRadius="3dp">
+    card_view:contentPadding="5dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardElevation="15dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="15dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:padding="8dp">
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/category_image" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/category_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/robo" />
 
         <TextView
             android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/batmanforeveralternate"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="90dp"
             android:layout_toRightOf="@id/imageView"
+            android:fontFamily="@font/calibri"
             android:text="Category A"
-            android:textSize="34sp"
-            android:layout_marginTop="10dp"
-            android:textAlignment="center"
+            android:gravity="center_vertical"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textColor="#ffffff" />
-
-
+            android:textColor="#001e32"
+            android:textSize="40sp" />
 
     </RelativeLayout>
 

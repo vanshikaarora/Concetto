@@ -6,14 +6,18 @@ package com.example.vanshika.concetto.Models;
 
 public class Event {
 
-    private String name;
+    private String name, image;
 
-    public Event(String name) {
+    public Event(String name, String image) {
         this.name = name;
+        this.image = image;
     }
 
     public String getName() {
         return name;
     }
 
+    public String getImage() {
+        return image;
+    }
 }
