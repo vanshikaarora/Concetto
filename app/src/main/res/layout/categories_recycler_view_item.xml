@@ -9,7 +9,7 @@
     card_view:cardBackgroundColor="#ffffff"
     card_view:cardElevation="15dp"
     card_view:cardUseCompatPadding="true"
-    card_view:cardCornerRadius="15dp">
+    card_view:cardCornerRadius="5dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,10 +17,10 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/category_image"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="5dp"
-            android:src="@drawable/robo" />
+            android:src="@drawable/concetto_white" />
 
         <TextView
             android:id="@+id/textViewTitle"
@@ -33,7 +33,7 @@
             android:gravity="center_vertical"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textColor="#001e32"
-            android:textSize="40sp" />
+            android:textSize="30sp" />
 
     </RelativeLayout>
 

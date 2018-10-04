@@ -164,7 +164,12 @@ public class EventsActivity extends MainActivity {
 
         else if(position.equals("14")) {
             eventsList.add(
-                    new Event("Spardha Tech", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+                    new Event("Spardha Tech Bizz", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+        }
+
+        else if(position.equals("14")) {
+            eventsList.add(
+                    new Event("Management", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
         }
 
 

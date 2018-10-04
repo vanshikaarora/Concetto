@@ -45,52 +45,52 @@ public class CategoriesActivity extends MainActivity {
 
         //adding some items to our list
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Informal"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Informal"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Robotics"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Robotics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Applied Mathematics"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Applied Mathematics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Computer Science and Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Computer Science and Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Electronics Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Electronics Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Electrical Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Electrical Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Mechanical Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Mechanical Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Civil Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Civil Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Mining Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Mining Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Petroleum Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Petroleum Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Fuel and Mineral Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Fuel and Mineral Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Applied Geology"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Applied Geology"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Applied Geophysics"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Applied Geophysics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Applied Chemistry"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Applied Chemistry"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Engineering Physics"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Engineering Physics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.mipmap.ic_launcher, "Management Studies"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white, "Management Studies"));
 
 
 
