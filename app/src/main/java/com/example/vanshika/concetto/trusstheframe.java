@@ -9,6 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 /**
  * Created by lenovo on 9/30/2018.
  */
@@ -21,6 +27,8 @@ public class trusstheframe extends MainActivity {
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
     AlertDialog.Builder judging;
+    DatabaseReference tru;
+    String p;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +45,21 @@ public class trusstheframe extends MainActivity {
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
         jud = (Button)findViewById(R.id.bt6);
+        tru = FirebaseDatabase.getInstance().getReference();
+        tru.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                dataSnapshot = dataSnapshot.child("truss").child("prize");
+                p = dataSnapshot.getValue().toString();
+
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +97,7 @@ public class trusstheframe extends MainActivity {
             @Override
             public void onClick(View v) {
                 prizes = new AlertDialog.Builder(trusstheframe.this);
-                prizes.setMessage("Rs 2000");
+                prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();
@@ -95,6 +118,7 @@ public class trusstheframe extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(trusstheframe.this,trusstheframeregistration.class));
 
 
             }

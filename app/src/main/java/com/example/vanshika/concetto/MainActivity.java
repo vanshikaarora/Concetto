@@ -108,14 +108,18 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_contact_us) {
-            startActivity(new Intent(MainActivity.this,obstaclecourseracing.class));
+            startActivity(new Intent(MainActivity.this,flash.class));
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;
 
 
 
         } else if (id == R.id.nav_faq) {
-            startActivity(new Intent(MainActivity.this,trusstheframe.class));
+
+            startActivity(new Intent(MainActivity.this,About.class));
+
+            startActivity(new Intent(MainActivity.this,obstaclecourseracing.class));
+
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;
 

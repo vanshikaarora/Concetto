@@ -193,5 +193,75 @@ Industrial problems will be provided to the participants and participants have t
     </string>
 
     <string name="triathlon_time">3 Days (150 minutes daily) </string>
+    <string name="googleminerabout">
+        The event is to know how fast the participants can Google search in limited time and get maximum answers. The participants will have multiple clue regarding the answer in the question itself. The questions will be on various topics.\n
+        <b>TASK</b>\n
+        To google about the question and find the right answer.\n
+
+There's no right way to solve it, but there's only one right answer.
+
+
+
+    </string>
+    <string name="googleminerrules">
+        ->	Participating team must consist of maximum 3 participants.\n
+->	Mobile phone with internet connectivity is required to Google about questions and find the answer.
+
+    </string>
+    <string name="googleminerjudging">
+        Team with highest marks will be winners. The marks will be based on:\n
+->	Number of correct answers\n
+->	Ideas and Thinking
+
+    </string>
+    <string name="googleminercontacts">
+        Dhanit Guria -> 7004721451
+        Maripuddi Vamshi -> 9121561571
+    </string>
+    <string name="frothabout">
+        Froth floatation process is a process for selectively separating hydrophobic materials from hydrophilic. This is used in mineral processing, paper recycling and waste water treatment industries.\n
+        <b>TASK:</b>\n
+        To concentrate sulphide ore.\n
+        This event is for to exhibit the designing ability of the participants. The participants should prepare the model which should be able to concentrate the ore given in the event. The ore may be sulphide ore or coal. \n
+
+
+
+
+    </string>
+    <string name="frothrules">
+        There will be a team of maximum 3 participants.\n
+        <b>REQUIREMENTS:</b>\n
+1.	Chemicals (Provided by Organisers)\n
+2.	Air Blower\n
+3.	A Bowl
+
+    </string>
+    <string name="frothjudging">
+        The winners will be the top 3 teams getting maximum points. The points will be based on\n
+1.	How good the model look -20 Points\n
+2.	Some innovative change-20 Points\n
+3.	Amount of Froth obtained-30 Points\n
+4.	A quiz on Froth Floatation-30 Points
+
+    </string>
+    <string name="frothcontacts">
+        mithun kr yadav - 9065090837\n
+        sumit choudhary - 8486146283
+    </string>
+    <string name="borntowanderabout">
+        <b>TASK</b>:-\n
+Wander fast and get the ANSWERS asked.\n
+<b>DESCRIPTION:-</b>\n\n
+*You will be given clues to find how to wander.\n
+* Then find things which were mentioned in the slip and do carry them with you.\n
+*submit them at the first place, at the end.\n
+
+    </string>
+    <string name="bornrules">
+        1. There will be a team of maximum of three participants\n
+2. Where there is a requirement to take a selfie all the team members must be present in the selfie\n
+3. Everything is with in campus do not go outside the campus.
+REWARD CRITERIA
+    </string>
 
 </resources>

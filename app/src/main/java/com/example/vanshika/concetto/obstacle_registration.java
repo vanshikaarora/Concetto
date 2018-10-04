@@ -105,27 +105,37 @@ public class obstacle_registration extends AppCompatActivity {
                     if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mem4.isEmpty()==true||email.isEmpty()==true){
 
                     }else {
-                        final boolean[] uv = {true};
-                       /* obs.addValueEventListener(new ValueEventListener() {
+                        obs.addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
+                                boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                                         Log.e(obstacle_registration.class.getSimpleName(),"check1");
                                         registration_team regss = snapshot.getValue(registration_team.class);
                                         String p = regss.getTeamname();
-                                        if(p == name){
+                                        Log.e(TAG,p);
+                                        if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
                                             Toast.makeText(obstacle_registration.this, "Registration not done",
                                                     Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
 
-                                            uv[0] = false;
+                                            flag = false;
                                             break;
-
                                         }
                                     }
+                                }
+                                if(flag){
+                                    Log.e(obstacle_registration.class.getSimpleName(),"enter");
+                                    String id = obs.push().getKey();
+                                    registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
+                                    obs.child(id).setValue(reg);
+                                    FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
+                                    Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
+                                            Toast.LENGTH_LONG).show();
+                                    startActivity(new Intent(obstacle_registration.this, MainActivity.class));
 
                                 }
 
@@ -136,18 +146,8 @@ public class obstacle_registration extends AppCompatActivity {
                             public void onCancelled(DatabaseError databaseError) {
 
                             }
-                        });*/
-                        if(uv[0]){
-                            Log.e(obstacle_registration.class.getSimpleName(),"enter");
-                            String id = obs.push().getKey();
-                            registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
-                            obs.child(id).setValue(reg);
-                            FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
-                            Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
-                                    Toast.LENGTH_LONG).show();
-                            startActivity(new Intent(obstacle_registration.this, MainActivity.class));
+                        });
 
-                        }
 
 
 

@@ -1,98 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:background="@color/bagcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.v4.widget.NestedScrollView
 
-
-
-    android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/hl">
 
-        android:orientation="vertical"
-        >
-
-
-
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="200dp"
-            android:textColor="#ffffff"
-            android:textSize="30dp"
-            android:text="SPARDHA TECH BIZZ"/>
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bagcolor"
 
 
-    <Button
-        android:id="@+id/bt1"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/btn_shape"
 
-        android:padding="10dp"
-        android:text="ABOUT"
-        android:textColor="#ffffff" />
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/bt2"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="RULES"
-        android:textColor="#ffffff"
-        android:background="@drawable/btn_shape" />
 
-    <Button
-        android:id="@+id/bt3"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="PRIZES"
-        android:textColor="#ffffff"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
 
-        android:background="@drawable/btn_shape"/>
+                android:orientation="vertical"
+                android:background="@drawable/ttl">
 
-    <Button
-        android:id="@+id/bt4"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="CONTACTS"
-        android:textColor="#ffffff"
 
-        android:background="@drawable/btn_shape"
-        />
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="150dp"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/btn_shape"
+
+                android:padding="10dp"
+                android:text="ABOUT"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="RULES"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_shape" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="PRIZES"
+                android:textColor="#ffffff"
+
+                android:background="@drawable/btn_shape"/>
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="CONTACTS"
+                android:textColor="#ffffff"
+
+                android:background="@drawable/btn_shape"
+                />
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
     <Button
         android:id="@+id/bt5"
-        android:layout_marginTop="125dp"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-        android:text="REGISTRATION"
-        android:padding="10dp"
-        android:textColor="#ffffff"
+
         android:background="@color/regcolor"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="REGISTRATION"
+        android:textColor="#ffffff"
+        app:layout_anchor="@+id/hl"
+        app:layout_anchorGravity="bottom|right"
+
 
         />
 
-
-
-
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
