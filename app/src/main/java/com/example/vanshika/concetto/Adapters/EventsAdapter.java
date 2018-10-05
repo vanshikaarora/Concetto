@@ -17,13 +17,23 @@ import android.widget.TextView;
 import com.example.vanshika.concetto.EventsActivity;
 import com.example.vanshika.concetto.Models.Event;
 import com.example.vanshika.concetto.R;
+import com.example.vanshika.concetto.buffetmoney;
+import com.example.vanshika.concetto.chemecar;
+import com.example.vanshika.concetto.electrocharades;
+import com.example.vanshika.concetto.flash;
+import com.example.vanshika.concetto.googleminer;
+import com.example.vanshika.concetto.industrialdesignproblem;
 import com.example.vanshika.concetto.leverthehuge;
 import com.example.vanshika.concetto.modelthecaravel;
 import com.example.vanshika.concetto.obstaclecourseracing;
 import com.example.vanshika.concetto.robowar;
 import com.example.vanshika.concetto.spardhatechbizz;
+import com.example.vanshika.concetto.symposium;
 import com.example.vanshika.concetto.techtriathlon;
+import com.example.vanshika.concetto.tesla;
+import com.example.vanshika.concetto.thebafflingplanet;
 import com.example.vanshika.concetto.trusstheframe;
+import com.example.vanshika.concetto.unravelthewhizz;
 import com.example.vanshika.concetto.vitricity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -182,6 +192,120 @@ import java.util.List;
                         else if(event.getName().equals("Vitricity"))
                         {
                             Intent intent=new Intent(mCtx, vitricity.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Flash"))
+                        {
+                            Intent intent=new Intent(mCtx, flash.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Buffet Money"))
+                        {
+                            Intent intent=new Intent(mCtx, buffetmoney.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Unravel The Whizz"))
+                        {
+                            Intent intent=new Intent(mCtx, unravelthewhizz.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Electrabuzz"))
+                        {
+                            Intent intent=new Intent(mCtx, vitricity.class); //Change it to electrabuzz after the class is created
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Electrocharades"))
+                        {
+                            Intent intent=new Intent(mCtx, electrocharades.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Tesla"))
+                        {
+                            Intent intent=new Intent(mCtx, tesla.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Shutterstock"))
+                        {
+                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Tech Triathlon"))
+                        {
+                            Intent intent=new Intent(mCtx, techtriathlon.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Truss The Frame"))
+                        {
+                            Intent intent=new Intent(mCtx, trusstheframe.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Industrial Design Problem"))
+                        {
+                            Intent intent=new Intent(mCtx, industrialdesignproblem.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Thrill of Drill"))
+                        {
+                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Google Miner"))
+                        {
+                            Intent intent=new Intent(mCtx, googleminer.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Techpro"))
+                        {
+                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("The Baffling Planet"))
+                        {
+                            Intent intent=new Intent(mCtx, thebafflingplanet.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Symposium"))
+                        {
+                            Intent intent=new Intent(mCtx, symposium.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Geo Quest"))
+                        {
+                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Chem-e-car"))
+                        {
+                            Intent intent=new Intent(mCtx, chemecar.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Spardha Tech Bizz"))
+                        {
+                            Intent intent=new Intent(mCtx, spardhatechbizz.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Symposium"))
+                        {
+                            Intent intent=new Intent(mCtx, symposium.class);
                             mCtx.startActivity(intent);
                         }
                     }
