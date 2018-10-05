@@ -47,7 +47,7 @@ public class obstacle_registration extends AppCompatActivity {
         em = (EditText)findViewById(R.id.em);
         mo = (EditText)findViewById(R.id.mo);
         obst = FirebaseDatabase.getInstance();
-        final DatabaseReference obs = obst.getReference("obstacle");
+        final DatabaseReference obs = obst.getReference("registration");
 
 
         b.setOnClickListener(new View.OnClickListener() {
@@ -110,7 +110,7 @@ public class obstacle_registration extends AppCompatActivity {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                               // dataSnapshot = dataSnapshot.child("teamname");
+                                dataSnapshot = dataSnapshot.child("obstacle");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -136,13 +136,13 @@ public class obstacle_registration extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                    // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                    // obs.child(id).setValue(reg);
-                                    obs.child(id).child("teamname").setValue(name);
-                                    obs.child(id).child("member1").setValue(mem1);
-                                    obs.child(id).child("member2").setValue(mem2);
-                                    obs.child(id).child("member3").setValue(mem3);
-                                    obs.child(id).child("member4").setValue(mem4);
-                                    obs.child(id).child("email").setValue(email);
-                                    obs.child(id).child("mobile").setValue(mob);
+                                    obs.child("obstacle").child(id).child("teamname").setValue(name);
+                                    obs.child("obstacle").child(id).child("member1").setValue(mem1);
+                                    obs.child("obstacle").child(id).child("member2").setValue(mem2);
+                                    obs.child("obstacle").child(id).child("member3").setValue(mem3);
+                                    obs.child("obstacle").child(id).child("member4").setValue(mem4);
+                                    obs.child("obstacle").child(id).child("email").setValue(email);
+                                    obs.child("obstacle").child(id).child("mobile").setValue(mob);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
                                     Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
