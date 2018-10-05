@@ -117,6 +117,7 @@ public class borntowander extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(borntowander.this,born_reg.class));
 
 
 

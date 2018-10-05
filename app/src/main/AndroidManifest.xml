@@ -33,27 +33,7 @@
         <activity android:name=".robowar_registration" />
         <activity android:name=".trusstheframe" />
         <activity android:name=".vitricity" />
-        <activity
-            android:name=".EventsActivity"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".robowar"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".obstaclecourseracing"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".obstacle_registration"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".robowar_registration"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".trusstheframe"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".vitricity"
-            tools:ignore="DuplicateActivity" />
+        <activity android:name=".born_reg"></activity>
         <activity android:name=".leverthehuge" />
         <activity android:name=".spardhatechbizz" />
         <activity android:name=".modelthecaravel" />
@@ -75,6 +55,26 @@
         <activity android:name=".electrocharades" />
         <activity android:name=".thebafflingplanet" />
         <activity android:name=".symposium" />
+        <activity android:name=".chemcarreg">
+
+
+        </activity>
+
+        <activity android:name=".thrillofdrill">
+        </activity>
+        <activity android:name=".thrill_reg"></activity>
+        <activity android:name=".aqua_reg"></activity>
+<activity android:name=".chemcarnivalreg"></activity>
+        <activity android:name=".sympreg"></activity>
+        <activity android:name=".electrocharades_reg"></activity>
+        <activity android:name=".tesla_reg"></activity>
+        <activity android:name=".bafflingplanet_reg"></activity>
+        <activity android:name=".googleminer_reg"></activity>
+        <activity android:name=".unravl_reg"></activity>
+        <activity android:name=".spardha_reg"></activity>
+        <activity android:name=".model_reg"></activity>
+        <activity android:name=".tech_triathlon_reg"></activity>
+        <activity android:name=".trusstheframeregistration"></activity>
 
         <service android:name=".MyFirebaseInstanceIDService">
             <intent-filter>

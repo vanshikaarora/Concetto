@@ -1,5 +1,6 @@
 package com.example.vanshika.concetto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -117,6 +118,7 @@ public class modelthecaravel extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(modelthecaravel.this,model_reg.class));
 
 
             }

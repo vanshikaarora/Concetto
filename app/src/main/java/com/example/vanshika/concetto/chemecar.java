@@ -117,6 +117,7 @@ public class chemecar extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(chemecar.this,chemcarreg.class));
 
 
 

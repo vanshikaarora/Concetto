@@ -31,7 +31,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 public class obstacle_registration extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
-    EditText nm,m1,m2,m3,m4,em,mo;
+    EditText nm,m1,m2,m3,m4,em,mo,clgg;
     Button b;
     FirebaseDatabase obst;
     @Override
@@ -46,6 +46,7 @@ public class obstacle_registration extends AppCompatActivity {
         m4 = (EditText)findViewById(R.id.mem4);
         em = (EditText)findViewById(R.id.em);
         mo = (EditText)findViewById(R.id.mo);
+        clgg = (EditText)findViewById(R.id.clg);
         obst = FirebaseDatabase.getInstance();
         final DatabaseReference obs = obst.getReference("registration");
 
@@ -61,6 +62,7 @@ public class obstacle_registration extends AppCompatActivity {
                 final String mem4 = m4.getText().toString();
                 final String email = em.getText().toString();
                 final String mob = mo.getText().toString();
+                final String clgn = clgg.getText().toString();
                 boolean   connected = false;
                 final View[] focusView = {null};
                 //check internet connection
@@ -104,7 +106,12 @@ public class obstacle_registration extends AppCompatActivity {
                         focusView[0] = em;
 
                     }
-                    if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mem4.isEmpty()==true||email.isEmpty()==true){
+                    if(TextUtils.isEmpty(clgn)){
+                        clgg.setError("field is required");
+                        focusView[0] = clgg;
+
+                    }
+                    if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mob.isEmpty()==true||mem4.isEmpty()==true||email.isEmpty()==true||clgn.isEmpty()==true){
 
                     }else {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -143,6 +150,7 @@ public class obstacle_registration extends AppCompatActivity {
                                     obs.child("obstacle").child(id).child("member4").setValue(mem4);
                                     obs.child("obstacle").child(id).child("email").setValue(email);
                                     obs.child("obstacle").child(id).child("mobile").setValue(mob);
+                                    obs.child("obstacle").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
                                     Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",

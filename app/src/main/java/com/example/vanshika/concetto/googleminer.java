@@ -117,7 +117,7 @@ public class googleminer extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(googleminer.this,googleminer_reg.class));
 
             }
         });

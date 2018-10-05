@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,10 +15,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 /**
- * Created by lenovo on 9/30/2018.
+ * Created by lenovo on 10/6/2018.
  */
 
-public class trusstheframe extends MainActivity {
+public class thrillofdrill extends MainActivity {
     TextView tl;
     Button ab,ru,pr,co,reg,jud;
     AlertDialog.Builder about;
@@ -32,7 +31,7 @@ public class trusstheframe extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.trusstheframe, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.thrill, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -63,8 +62,8 @@ public class trusstheframe extends MainActivity {
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(trusstheframe.this);
-                about.setMessage(R.string.truss_desc);
+                about = new AlertDialog.Builder(thrillofdrill.this);
+                about.setMessage(R.string.thriiiabout);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,8 +74,8 @@ public class trusstheframe extends MainActivity {
         jud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                judging = new AlertDialog.Builder(trusstheframe.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging = new AlertDialog.Builder(thrillofdrill.this);
+                judging.setMessage(R.string.thrilljudging);
                 AlertDialog jd = judging.create();
                 jd.setTitle("JUDGING");
                 jd.show();
@@ -85,8 +84,8 @@ public class trusstheframe extends MainActivity {
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(trusstheframe.this);
-                rules.setMessage(R.string.truss_rules);
+                rules = new AlertDialog.Builder(thrillofdrill.this);
+                rules.setMessage(R.string.thrillrules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -96,7 +95,7 @@ public class trusstheframe extends MainActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(trusstheframe.this);
+                prizes = new AlertDialog.Builder(thrillofdrill.this);
                 prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -107,7 +106,7 @@ public class trusstheframe extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(trusstheframe.this);
+                contacts = new AlertDialog.Builder(thrillofdrill.this);
                 contacts.setMessage(R.string.truss_contact);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
@@ -118,7 +117,7 @@ public class trusstheframe extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(trusstheframe.this,trusstheframeregistration.class));
+                startActivity(new Intent(thrillofdrill.this,thrill_reg.class));
 
 
             }

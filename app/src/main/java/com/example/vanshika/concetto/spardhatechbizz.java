@@ -105,6 +105,7 @@ public class spardhatechbizz extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(spardhatechbizz.this,spardha_reg.class));
 
 
             }

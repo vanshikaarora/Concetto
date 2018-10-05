@@ -117,7 +117,7 @@ public class electrocharades extends MainActivity{
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+ startActivity(new Intent(electrocharades.this,electrocharades_reg.class));
 
             }
         });

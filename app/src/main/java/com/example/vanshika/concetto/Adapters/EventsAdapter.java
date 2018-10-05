@@ -257,7 +257,7 @@ import java.util.List;
 
                         else if(event.getName().equals("Thrill of Drill"))
                         {
-                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
+                            Intent intent=new Intent(mCtx, tesla.class); //Change it
                             mCtx.startActivity(intent);
                         }
 
@@ -269,7 +269,7 @@ import java.util.List;
 
                         else if(event.getName().equals("Techpro"))
                         {
-                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
+                            Intent intent=new Intent(mCtx,flash.class); //Change it
                             mCtx.startActivity(intent);
                         }
 

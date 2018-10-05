@@ -117,7 +117,7 @@ public class symposium extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+             startActivity(new Intent(symposium.this,sympreg.class));
 
 
             }

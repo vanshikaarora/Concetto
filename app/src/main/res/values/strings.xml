@@ -787,4 +787,86 @@ The event is focused on lifting and moving of object with the help of hydraulic 
     • 20 POINTS for stability &amp; design of the Derrick.\n
     • 20 POINTS - Time {2/3 of the time remaining at the time of quitting}\n
     The one securing maximum number of points will be the winner. In case of a tie, time will be the judging criterion.</string>
+<string name="bfftabt">
+    Do you have what it takes to be the top gun? Inviting all the analytic minds to fight it out for the top prize in Buffet Money, Concetto’s Virtual Stock Trading game. Buy, Sell and Trade in this intense three-day challenge and get a feel of the real market as you bid for real prices against real players. Engulf yourself in the nail-biting market swings as you would soon find out that money is the only thing virtual here. Rewards worth Rs. XXXX up for grabs. May the odds be ever in your favour
+</string>
+    <string name="bfftrules">
+        1. Each team begins the simulation with $100,000 in cash.\n
+2. It does not permit buying stocks that trade below $5 per share. Such orders will be rejected.\n
+3. Sell transactions for existing long positions will be accepted, even if the price is less than $5.00 per share.\n
+4. The Game is run Friday through sunday. You can trade on any day, the participating stock markets are open.\n
+5. Trades entered after close of market (4:00p.m. Eastern Time) will be priced at next trading day\'s closing price.\n
+6. To be eligible for final ranking the participant should make atleast 5 transactions on each day of the game;\n
+7. Members do not have to liquidate their portfolios at the end of The Game. Winners will be determined on the basis of the equity in their portfolios at the end of the final transaction day.\n
+8. A record of a participant's portfolio and transactions will be available daily. He/She will not receive a portfolio nor be listed in rankings until its initial transaction is entered successfully.\n
+9. Stock and cash dividends and stock splits are automatically computed into your portfolio.\n
+10. Participants of the end of day pricing game may delete pending transactions prior to market close.
+    </string>
+    <string name="bfftcon">
+        Sahil Seli -> 8557891934\n
+        Rishabh Baranwal -> 7355735863
+    </string>
+    <string name="unraabt">
+        <b> Round 1  Domino </b>
+The teams will fall so will the questions the goal of each team will be to solve questions as if they were in a relay race. The race can only be won with the combined effort of all the three members.
+The questions of this round will be based on general mathematics and mental ability.\n\n
+<b> Round 2- Divide and Conquer </b>
+This round will be a complete surprise, teams shortlisted from the first round will be going to play this whizzing round.
+
+    </string>
+    <string name="unrarul">1. The team should comprise of exactly  3 members. \n
+2. Carry a pen or pencil with you.\n
+3. Use of Any electronic gadgets is strictly prohibited. If found guilty the team will be immediately disqualified.\n
+4. Cheating in any form is a strict no -no. \n
+5. If any team  indulges in any kind of misbehaviour or misconduct than the organisers have the right to immediately disqualify the team.\n
+6.The decision of organisers in any case will be final and all must abide by it.
+    </string>
+    <string name="unravljud">
+        <b>Round 1-</b>
+1. Its a time based event.\n
+2. All the members of a team will get different questions and they have to solve them separately.\n
+3. The second member cannot solve his question until and unless the first member passes the answer of first question to him on a piece of paper and without any form of discussion.\n
+Only the answer shall be passed on that piece of paper. Same rules are applicable for the third member.\n
+4. Finally the third member has to submit his answer to the volunteers present. \n
+5. Since the judgement will also be based upon time taken so members should try to be as quick as possible.\n\n
+
+<b>Round 2-</b>\n
+Rules for this round will be stated on the spot.
+    </string>
+    <string name="sparabt">
+        •	<b>First Round</b>\n Would Consist of the questions Regarding the CEO, Higher management authorities, technology based and Company related questions where each team will be given a set of questions that they have to answer, Top 10 teams would be selected for next round.\n\n
+•	 <b>Round 2</b> It will be conducted with the Help of Projector where Pictures will be displayed on the screen and the participants would be required to guess the right answer.\n\n
+•	<b>Third Round</b> Would Consist of questions related to Latest Business changes and technical innovations.
+
+    </string>
+    <string name="sparrul">
+        <b>Round 1- </b>\nThere will be 25-30 questions and time allotted will be approximately 30 minutes. Group members would discuss and mark the answer correctly. No Negative Marking.\n\n
+<b>Round 2-</b>\n The Team Would Nominate 1 Member From The Group. The Logo/Symbols/Pictures would be Displayed and the member will have to guess the correct answer, time given would be 10 seconds each, team will Lose marks if the member Fails to answer. 2-3 such rounds will be conducted. Top 5 teams would go to the next round.\n\n
+<b>Round 3- </b>Current Business and technological questions would be asked Individually to members of the teams for which 15 seconds will be provided. Each member of the team would get 1 question, and 1 bonus question for 1 team of 5 marks to make up.\n\n
+In case of tie, tie breaker question would be asked.
+
+    </string>
+    <string name="sparcon">
+        Deepti -> 7783024700\n
+        Krishna Sudhakar Sonvane -> 9158464845
+    </string>
+    <string name="idpabt">
+        The desire to create is one of the deepest yearnings of the human soul. The IDP - Industrial Design Problem will push the students to think beyond the conventional and to look at a problem in a different way and solve it in a limited amount of time. This event is going to be a simulator which will provide the competitors with real life environment for industrial challenges. The event is set to help the participants develop an industry sense. This is a quality every engineering aspirant needs to have regardless of the industry and/or the location they work in.\n\n
+       <b>Event Structure</b> \n\n
+1. The competition will be organized in two phases, both to be conducted at IIT (ISM) Dhanbad during Concetto'18.\n
+2. The first round will have an aptitude test from which few teams will be selected for the second round.\n
+3.For the second round a problem statement related to industry will be given, the solution to which has to be designed in a specified period of time.\n
+4. Round 1 Aptitude Test will be 45min and Round 2 will be on next day of 1 hour period.
+
+
+    </string>
+    <string name="idpelig">
+        <b>Eligibility</b>\n
+The participant must be pursuing an UG/PG/Diploma program from a recognized institute. They may be asked to provide supporting documents so as to prove the above mentioned criteria.
+
+    </string>
+    <string name="idpcon">
+
+    </string>
+
 </resources>

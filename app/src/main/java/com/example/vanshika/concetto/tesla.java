@@ -117,7 +117,7 @@ public class tesla extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(tesla.this,tesla_reg.class));
 
 
             }

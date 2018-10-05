@@ -59,7 +59,7 @@ public class buffetmoney extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(buffetmoney.this);
-                about.setMessage("perul jain");
+                about.setMessage(R.string.bfftabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -71,7 +71,7 @@ public class buffetmoney extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(buffetmoney.this);
-                rules.setMessage("rules are");
+                rules.setMessage(R.string.bfftrules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -94,7 +94,7 @@ public class buffetmoney extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(buffetmoney.this);
-                contacts.setMessage("Rs 2000");
+                contacts.setMessage(R.string.bfftcon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

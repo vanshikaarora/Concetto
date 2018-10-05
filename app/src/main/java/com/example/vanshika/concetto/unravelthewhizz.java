@@ -1,5 +1,6 @@
 package com.example.vanshika.concetto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -62,7 +63,7 @@ public class unravelthewhizz extends MainActivity  {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(unravelthewhizz.this);
-                about.setMessage(R.string.truss_desc);
+                about.setMessage(R.string.unraabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -74,7 +75,7 @@ public class unravelthewhizz extends MainActivity  {
             @Override
             public void onClick(View v) {
                 judging = new AlertDialog.Builder(unravelthewhizz.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging.setMessage(R.string.unravljud);
                 AlertDialog jd = judging.create();
                 jd.setTitle("JUDGING");
                 jd.show();
@@ -84,7 +85,7 @@ public class unravelthewhizz extends MainActivity  {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(unravelthewhizz.this);
-                rules.setMessage(R.string.truss_rules);
+                rules.setMessage(R.string.unrarul);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -116,7 +117,7 @@ public class unravelthewhizz extends MainActivity  {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+    startActivity(new Intent(unravelthewhizz.this,unravl_reg.class));
 
             }
         });

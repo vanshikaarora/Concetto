@@ -104,6 +104,7 @@ public class thebafflingplanet extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(thebafflingplanet.this,bafflingplanet_reg.class));
 
             }
         });
