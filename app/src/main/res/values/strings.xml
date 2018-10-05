@@ -569,8 +569,8 @@ The judging for all rounds will be done by the judges of the competition who sha
 
     </string>
     <string name="carabout">
-        <b>Problem Statement</b>\n
-        Your team is given a list of reactions which is required to completed. To complete
+Each team can consist of at most 4 members and min 2 members\n\n<b>problem statement</b>\n
+    Your team is given a list of reactions which is required to completed. To complete
 It, your team require certain chemicals. At the starting you’ve certain chemical, but the twist is they are insufficient to complete any one of reaction.\n\n
 
     <b>Solution</b>\n
