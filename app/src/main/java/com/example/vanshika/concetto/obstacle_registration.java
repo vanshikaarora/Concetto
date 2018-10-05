@@ -31,7 +31,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 public class obstacle_registration extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
-    EditText nm,m1,m2,m3,m4,em;
+    EditText nm,m1,m2,m3,m4,em,mo;
     Button b;
     FirebaseDatabase obst;
     @Override
@@ -45,6 +45,7 @@ public class obstacle_registration extends AppCompatActivity {
         m3 = (EditText)findViewById(R.id.mem3);
         m4 = (EditText)findViewById(R.id.mem4);
         em = (EditText)findViewById(R.id.em);
+        mo = (EditText)findViewById(R.id.mo);
         obst = FirebaseDatabase.getInstance();
         final DatabaseReference obs = obst.getReference("obstacle");
 
@@ -59,6 +60,7 @@ public class obstacle_registration extends AppCompatActivity {
                 final String mem3 = m3.getText().toString();
                 final String mem4 = m4.getText().toString();
                 final String email = em.getText().toString();
+                final String mob = mo.getText().toString();
                 boolean   connected = false;
                 final View[] focusView = {null};
                 //check internet connection
@@ -105,16 +107,18 @@ public class obstacle_registration extends AppCompatActivity {
                     if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mem4.isEmpty()==true||email.isEmpty()==true){
 
                     }else {
-                        obs.addValueEventListener(new ValueEventListener() {
+                        obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
+                               // dataSnapshot = dataSnapshot.child("teamname");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                                         Log.e(obstacle_registration.class.getSimpleName(),"check1");
-                                        registration_team regss = snapshot.getValue(registration_team.class);
-                                        String p = regss.getTeamname();
-                                        Log.e(TAG,p);
+                                        //registration_team regss = snapshot.getValue(registration_team.class);
+                                        String p = snapshot.child("teamname").getValue().toString();
+
+                                        Log.e(obstacle_registration.class.getSimpleName(),p);
                                         if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
@@ -130,8 +134,16 @@ public class obstacle_registration extends AppCompatActivity {
                                 if(flag){
                                     Log.e(obstacle_registration.class.getSimpleName(),"enter");
                                     String id = obs.push().getKey();
-                                    registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
-                                    obs.child(id).setValue(reg);
+                                   // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
+                                   // obs.child(id).setValue(reg);
+                                    obs.child(id).child("teamname").setValue(name);
+                                    obs.child(id).child("member1").setValue(mem1);
+                                    obs.child(id).child("member2").setValue(mem2);
+                                    obs.child(id).child("member3").setValue(mem3);
+                                    obs.child(id).child("member4").setValue(mem4);
+                                    obs.child(id).child("email").setValue(email);
+                                    obs.child(id).child("mobile").setValue(mob);
+
                                     FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
                                     Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
                                             Toast.LENGTH_LONG).show();

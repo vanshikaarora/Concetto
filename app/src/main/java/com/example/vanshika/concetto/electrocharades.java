@@ -48,7 +48,7 @@ public class electrocharades extends MainActivity{
         tru.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("electochar").child("prize");
+                dataSnapshot = dataSnapshot.child("electrochar").child("prize");
                 p = dataSnapshot.getValue().toString();
 
 

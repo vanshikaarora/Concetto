@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="100"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/register_page"
     android:orientation="vertical">
@@ -11,8 +12,9 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="150dp"
+        android:layout_weight="70"
         >
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -91,6 +93,16 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/mem4"/>
+            <EditText
+                android:id="@+id/mo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="TEAM LEADER MOBILE NO."
+                android:inputType="textPersonName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/em"/>
 
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/button4"
@@ -99,7 +111,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/ripple_second"
-                app:layout_constraintTop_toBottomOf="@+id/em"
+                app:layout_constraintTop_toBottomOf="@+id/mo"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:textColor="#ffffff"
