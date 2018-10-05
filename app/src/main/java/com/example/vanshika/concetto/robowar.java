@@ -21,14 +21,14 @@ import com.google.firebase.database.ValueEventListener;
  */
 
 public class robowar extends MainActivity {
-    //ImageView img;
     TextView tl;
-   Button ab,ru,pr,co,reg;
+    Button ab,ta,pr,ar,reg,ru,bot;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    DatabaseReference rob;
+    AlertDialog.Builder judging;
+    DatabaseReference tru;
     String p;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,20 +37,24 @@ public class robowar extends MainActivity {
 
         getSupportActionBar().hide();
 
-       //// img = (ImageView)findViewById(R.id.titleImage);
+        //// img = (ImageView)findViewById(R.id.titleImage);
         tl = (TextView)findViewById(R.id.title);
 
         ab = (Button)findViewById(R.id.bt1);
-        ru = (Button)findViewById(R.id.bt2);
+        ta = (Button)findViewById(R.id.bt2);
         pr = (Button)findViewById(R.id.bt3);
-        co = (Button)findViewById(R.id.bt4);
+        bot = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        rob  = FirebaseDatabase.getInstance().getReference();
-        rob.addListenerForSingleValueEvent(new ValueEventListener() {
+        ru = (Button)findViewById(R.id.bt6);
+        ar = (Button)findViewById(R.id.bt7);
+        tru = FirebaseDatabase.getInstance().getReference();
+        tru.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 dataSnapshot = dataSnapshot.child("robo").child("prize");
                 p = dataSnapshot.getValue().toString();
+
+
             }
 
             @Override
@@ -62,9 +66,9 @@ public class robowar extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(robowar.this);
-                about.setMessage("perul jain");
+                about.setMessage(R.string.roboelig);
                 AlertDialog ab = about.create();
-                ab.setTitle("ABOUT");
+                ab.setTitle("Eligibility");
                 ab.show();
 
 
@@ -73,10 +77,20 @@ public class robowar extends MainActivity {
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                judging = new AlertDialog.Builder(robowar.this);
+                judging.setMessage(R.string.roborules);
+                AlertDialog jd = judging.create();
+                jd.setTitle("RULES");
+                jd.show();
+            }
+        });
+        ta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 rules = new AlertDialog.Builder(robowar.this);
-                rules.setMessage("rules are");
+                rules.setMessage(R.string.robojudging);
                 AlertDialog ru = rules.create();
-                ru.setTitle("RULES");
+                ru.setTitle("JUDGING");
                 ru.show();
 
             }
@@ -84,7 +98,6 @@ public class robowar extends MainActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 prizes = new AlertDialog.Builder(robowar.this);
                 prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
@@ -93,13 +106,13 @@ public class robowar extends MainActivity {
 
             }
         });
-        co.setOnClickListener(new View.OnClickListener() {
+        bot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(robowar.this);
-                contacts.setMessage("Rs 2000");
+                contacts.setMessage(R.string.robospecs);
                 AlertDialog co = contacts.create();
-                co.setTitle("CONTACTS");
+                co.setTitle("BOT SPECIFICATIONS");
                 co.show();
 
             }
@@ -107,11 +120,16 @@ public class robowar extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(robowar.this,robowar_registration.class));
+
+
+            }
+        });
+        ar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
             }
         });
     }
-
 
 }

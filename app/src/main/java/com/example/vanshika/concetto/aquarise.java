@@ -63,7 +63,7 @@ public class aquarise extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(aquarise.this);
-                about.setMessage(R.string.truss_desc);
+                about.setMessage(R.string.aquaabout);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,7 +75,7 @@ public class aquarise extends MainActivity {
             @Override
             public void onClick(View v) {
                 judging = new AlertDialog.Builder(aquarise.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging.setMessage(R.string.aquajud);
                 AlertDialog jd = judging.create();
                 jd.setTitle("JUDGING");
                 jd.show();
@@ -85,7 +85,7 @@ public class aquarise extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(aquarise.this);
-                rules.setMessage(R.string.truss_rules);
+                rules.setMessage(R.string.aquarules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();

@@ -63,7 +63,7 @@ public class electrocharades extends MainActivity{
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(electrocharades.this);
-                about.setMessage(R.string.truss_desc);
+                about.setMessage(R.string.electroabout);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,7 +75,7 @@ public class electrocharades extends MainActivity{
             @Override
             public void onClick(View v) {
                 judging = new AlertDialog.Builder(electrocharades.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging.setMessage(R.string.electrchjud);
                 AlertDialog jd = judging.create();
                 jd.setTitle("JUDGING");
                 jd.show();
@@ -85,7 +85,7 @@ public class electrocharades extends MainActivity{
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(electrocharades.this);
-                rules.setMessage(R.string.truss_rules);
+                rules.setMessage(R.string.electrorules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -107,7 +107,7 @@ public class electrocharades extends MainActivity{
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(electrocharades.this);
-                contacts.setMessage(R.string.truss_contact);
+                contacts.setMessage(R.string.electrochcon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

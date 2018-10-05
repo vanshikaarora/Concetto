@@ -63,7 +63,7 @@ public class symposium extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(symposium.this);
-                about.setMessage(R.string.truss_desc);
+                about.setMessage(R.string.sympabout);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,7 +75,7 @@ public class symposium extends MainActivity {
             @Override
             public void onClick(View v) {
                 judging = new AlertDialog.Builder(symposium.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging.setMessage(R.string.symjudge);
                 AlertDialog jd = judging.create();
                 jd.setTitle("JUDGING");
                 jd.show();
@@ -85,7 +85,7 @@ public class symposium extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(symposium.this);
-                rules.setMessage(R.string.truss_rules);
+                rules.setMessage(R.string.symprules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -107,7 +107,7 @@ public class symposium extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(symposium.this);
-                contacts.setMessage(R.string.truss_contact);
+                contacts.setMessage(R.string.symcontacts);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

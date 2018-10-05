@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
     android:background="@color/bagcolor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
+        android:layout_weight="90"
         android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:id="@+id/hl">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/bagcolor"
 
 
@@ -107,6 +112,7 @@
                 android:text=" ARENA"
                 android:textColor="#ffffff"
 
+
                 android:background="@drawable/btn_shape"
                 />
 
@@ -126,14 +132,16 @@
     <Button
         android:id="@+id/bt5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="REGISTRATION"
-        android:padding="10dp"
-        android:textColor="#ffffff"
+        android:layout_height="45dp"
+        android:layout_weight="10"
         android:background="@color/regcolor"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="REGISTRATION"
+        android:textColor="#ffffff"
         app:layout_anchor="@+id/hl"
-        app:layout_anchorGravity="bottom|right"
+        app:layout_anchorGravity="bottom"
 
-        />
+        tools:layout_editor_absoluteX="176dp" />
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

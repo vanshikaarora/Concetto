@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -37,7 +38,7 @@ public class CategoriesActivity extends MainActivity {
         //getting the recyclerview from xml
         recyclerView = (RecyclerView) findViewById(R.id.categories_recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
 
         //initializing the productlist
         categoryList = new ArrayList<>();
@@ -102,3 +103,34 @@ public class CategoriesActivity extends MainActivity {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
