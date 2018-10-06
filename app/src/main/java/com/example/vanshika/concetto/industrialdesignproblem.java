@@ -63,7 +63,7 @@ public class industrialdesignproblem extends MainActivity {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(industrialdesignproblem.this);
-                about.setMessage(R.string.truss_desc);
+                about.setMessage(R.string.idpabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,9 +75,9 @@ public class industrialdesignproblem extends MainActivity {
             @Override
             public void onClick(View v) {
                 judging = new AlertDialog.Builder(industrialdesignproblem.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging.setMessage(R.string.idpelig);
                 AlertDialog jd = judging.create();
-                jd.setTitle("JUDGING");
+                jd.setTitle("ELIGIBILITY");
                 jd.show();
             }
         });
@@ -85,7 +85,7 @@ public class industrialdesignproblem extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(industrialdesignproblem.this);
-                rules.setMessage(R.string.truss_rules);
+                rules.setMessage(R.string.idprules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -107,7 +107,7 @@ public class industrialdesignproblem extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(industrialdesignproblem.this);
-                contacts.setMessage(R.string.truss_contact);
+                contacts.setMessage(R.string.idpcon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -118,7 +118,7 @@ public class industrialdesignproblem extends MainActivity {
             @Override
             public void onClick(View v) {
 
-
+        startActivity(new Intent(industrialdesignproblem.this,idp_reg.class));
 
             }
         });

@@ -75,6 +75,7 @@
         <activity android:name=".model_reg"></activity>
         <activity android:name=".tech_triathlon_reg"></activity>
         <activity android:name=".trusstheframeregistration"></activity>
+        <activity android:name=".idp_reg"></activity>
 
         <service android:name=".MyFirebaseInstanceIDService">
             <intent-filter>

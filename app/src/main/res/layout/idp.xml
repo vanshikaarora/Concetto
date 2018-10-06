@@ -68,7 +68,7 @@
                 android:padding="10dp"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:text="JUDGING"
+                android:text="ELIGIBILITY"
                 android:textColor="#ffffff"
                 android:background="@drawable/btn_shape"
                 />
