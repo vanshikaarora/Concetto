@@ -132,7 +132,7 @@
     <Button
         android:id="@+id/bt5"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_weight="10"
         android:background="@color/regcolor"
         android:gravity="center"

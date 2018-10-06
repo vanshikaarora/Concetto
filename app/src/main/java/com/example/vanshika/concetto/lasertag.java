@@ -15,44 +15,39 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 /**
- * Created by lenovo on 10/2/2018.
+ * Created by lenovo on 10/7/2018.
  */
 
-public class flash extends MainActivity {
-    TextView tl;
-    Button ab,ta,pr,ar,reg,ru,bot;
+public class lasertag extends MainActivity {
+    TextView tl,t2;
+    Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    AlertDialog.Builder judging;
-    DatabaseReference tru;
+    DatabaseReference obsta;
     String p;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.flash, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.bafflingplanet, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
-
-        //// img = (ImageView)findViewById(R.id.titleImage);
         tl = (TextView)findViewById(R.id.title);
+        t2 = (TextView)findViewById(R.id.title1);
+
 
         ab = (Button)findViewById(R.id.bt1);
-        ta = (Button)findViewById(R.id.bt2);
+        ru = (Button)findViewById(R.id.bt2);
         pr = (Button)findViewById(R.id.bt3);
-        bot = (Button)findViewById(R.id.bt4);
+        co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        ru = (Button)findViewById(R.id.bt6);
-        ar = (Button)findViewById(R.id.bt7);
-        tru = FirebaseDatabase.getInstance().getReference();
-        tru.addValueEventListener(new ValueEventListener() {
+        obsta = FirebaseDatabase.getInstance().getReference();
+        obsta.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("fla").child("prize");
+                dataSnapshot = dataSnapshot.child("laser").child("prize");
                 p = dataSnapshot.getValue().toString();
-
-
             }
 
             @Override
@@ -63,8 +58,8 @@ public class flash extends MainActivity {
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(flash.this);
-                about.setMessage(R.string.flashabout);
+                about = new AlertDialog.Builder(lasertag.this);
+                about.setMessage(R.string.laserabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,20 +70,10 @@ public class flash extends MainActivity {
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                judging = new AlertDialog.Builder(flash.this);
-                judging.setMessage(R.string.flashrules);
-                AlertDialog jd = judging.create();
-                jd.setTitle("RULES");
-                jd.show();
-            }
-        });
-        ta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rules = new AlertDialog.Builder(flash.this);
-                rules.setMessage(R.string.flashtasks);
+                rules = new AlertDialog.Builder(lasertag.this);
+                rules.setMessage(R.string.laserrules);
                 AlertDialog ru = rules.create();
-                ru.setTitle("TASKS");
+                ru.setTitle("RULES");
                 ru.show();
 
             }
@@ -96,7 +81,8 @@ public class flash extends MainActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(flash.this);
+
+                prizes = new AlertDialog.Builder(lasertag.this);
                 prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -104,13 +90,13 @@ public class flash extends MainActivity {
 
             }
         });
-        bot.setOnClickListener(new View.OnClickListener() {
+        co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(flash.this);
-                contacts.setMessage(R.string.flashbot);
+                contacts = new AlertDialog.Builder(lasertag.this);
+                contacts.setMessage(R.string.bafcon);
                 AlertDialog co = contacts.create();
-                co.setTitle("BOT SPECIFICATIONS");
+                co.setTitle("CONTACTS");
                 co.show();
 
             }
@@ -118,16 +104,11 @@ public class flash extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(flash.this,flash_reg.class));
+                startActivity(new Intent(lasertag.this,laser_reg.class));
 
 
             }
         });
-        ar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(flash.this,arena.class));
-            }
-        });
+
     }
 }

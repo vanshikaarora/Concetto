@@ -31,7 +31,7 @@ public class chemecar extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.trusstheframe, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.chemecar, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 

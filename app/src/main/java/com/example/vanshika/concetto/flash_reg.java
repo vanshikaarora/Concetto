@@ -24,10 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 /**
- * Created by lenovo on 9/30/2018.
+ * Created by lenovo on 10/7/2018.
  */
 
-public class robowar_registration extends AppCompatActivity {
+public class flash_reg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
     EditText nm,m1,m2,m3,m4,em,mo,clgg;
@@ -107,7 +107,7 @@ public class robowar_registration extends AppCompatActivity {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("robowar");
+                                dataSnapshot = dataSnapshot.child("flash");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -119,7 +119,7 @@ public class robowar_registration extends AppCompatActivity {
                                         if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
-                                            Toast.makeText(robowar_registration.this, "Registration not done",
+                                            Toast.makeText(flash_reg.this, "Registration not done",
                                                     Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
 
@@ -133,19 +133,19 @@ public class robowar_registration extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                     // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                     // obs.child(id).setValue(reg);
-                                    obs.child("robowar").child(id).child("teamname").setValue(name);
-                                    obs.child("robowar").child(id).child("member1").setValue(mem1);
-                                    obs.child("robowar").child(id).child("member2").setValue(mem2);
-                                    obs.child("robowar").child(id).child("member3").setValue(mem3);
-                                    obs.child("robowar").child(id).child("member4").setValue(mem4);
-                                    obs.child("robowar").child(id).child("email").setValue(email);
-                                    obs.child("robowar").child(id).child("mobile").setValue(mob);
-                                    obs.child("robowar").child(id).child("college").setValue(clgn);
+                                    obs.child("flash").child(id).child("teamname").setValue(name);
+                                    obs.child("flash").child(id).child("member1").setValue(mem1);
+                                    obs.child("flash").child(id).child("member2").setValue(mem2);
+                                    obs.child("flash").child(id).child("member3").setValue(mem3);
+                                    obs.child("flash").child(id).child("member4").setValue(mem4);
+                                    obs.child("flash").child(id).child("email").setValue(email);
+                                    obs.child("flash").child(id).child("mobile").setValue(mob);
+                                    obs.child("flash").child(id).child("college").setValue(clgn);
 
-                                    FirebaseMessaging.getInstance().subscribeToTopic("robowar");
-                                    Toast.makeText(robowar_registration.this, "Registration done For ROBOWAR ",
+                                    FirebaseMessaging.getInstance().subscribeToTopic("flash");
+                                    Toast.makeText(flash_reg.this, "Registration done For FLASH ",
                                             Toast.LENGTH_LONG).show();
-                                    startActivity(new Intent(robowar_registration.this, MainActivity.class));
+                                    startActivity(new Intent(flash_reg.this, MainActivity.class));
 
                                 }
 
@@ -166,7 +166,7 @@ public class robowar_registration extends AppCompatActivity {
 
                 }
                 else {
-                    Toast.makeText(robowar_registration.this,"INTERNET CONNECTION IS NOT AVAILABLE",
+                    Toast.makeText(flash_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
                             Toast.LENGTH_LONG).show();
 
                 }

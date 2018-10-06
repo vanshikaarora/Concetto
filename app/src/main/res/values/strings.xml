@@ -875,5 +875,48 @@ The participant must be pursuing an UG/PG/Diploma program from a recognized inst
 3. Participants are requested to have their own stationaries.
 
     </string>
+    <string name="laserabt">Laser tag is a tag game played with guns which fire infrared beams. Infrared-sensitive targets are commonly worn by each player and are sometimes integrated within the arena in which the game is played. There are flashing targets on your front, shoulders, back and on the sides and front of the gun. When you fire the gun, a laser beam is projected towards your target and when you are shot, your pack is deactivated for up to four seconds.A session lasts only 15 minutes and the rules insist there’s no running,climbing,crouching or crawling - so it’s not a game that burns a great number of calories. But it does engage all your senses, like a Native American tracker, as you try to assess where the next danger is coming from, and attempt to pick off your enemies.If there’s only two of you, staff will aim to integrate you with another group so it’s more fun. At the end, scores are displayed on monitors, and your individual hits are broken down.
+If you’ve always secretly fancied yourself as an action hero trapped on a demonic spaceship facing an unknown enemy (and who hasn’t?), it’s got to be worth a try.
+
+    </string>
+    <string name="laserrules">
+        A session lasts only 15 minutes and the rules insist there’s no running,climbing,crouching or crawling.
+    </string>
+    <string name="paperabt">
+        Paper Dance is a competition among teams of two.The concept of the event is the pairs participating have to dance on a sheet of paper when the music plays and have to stop dancing when music stop. The sheet is folded into a half after every round and the pairs have to dance within the boundaries of the sheet.The sheet is folded till only a foot fits on the sheet and finally, the pair who can endure the diminishing sheet wins the game.
+An A3 sheet of paper is spread on the ground for each team.
+
+    </string>
+    <string name="paperrules">
+         In every round, each team has to dance on the sheet when the music starts.
+The moment any team member has any part of the body touching the area outside the sheet is disqualified along with his or her partner.The sheet is folded into its half in every round till only one foot fits on it.
+The team members have to continue dancing during the music is on. If they stops dancing in between to save.
+
+    </string>
+    <string name="paperjud">
+         Judging will be based on compatibility between the team members and balance in their dance steps.
+
+    </string>
+    <string name="blindabt">
+          A blind date is a social engagement game between two people who have not previously met, arranged randomly by organizers. The event is sponsored and endorsed by The Lemon Chilli Dhanbad. The game rolls down in steps of multiple rounds consist of various exciting and fun buzzing tasks. In each round participants will be shortlisted depending upon their performance in respective tasks.
+
+    </string>
+    <string name="blindtasks">
+        This question has definitely striked into your mind that turns out to be butterflies in your stomach at the same time. But We’re not going to kill those cute bees. The tasks will be kept remain as surprise till the bang of moment. The Winners will get some fascinating prizes and goodies by the sponsors and the organizers.
+    </string>
+    <string name="memeabt">
+        Meme Wars is an expression often referring to online rivalries in which opposing factions use internet memes to battle against one another or more generally as a clash of competing ideas.In case if you are unaware of this memolgic world here is all that a memer has to know :  meme is a virally-transmitted cultural symbol or social idea.
+The majority of modern memes are captioned photos that are intended to be funny, often as a way to publicly ridicule human behavior. Other memes can be videos and verbal expressions. Some memes have heavier and more philosophical content.
+
+    </string>
+    <string name="memerul">
+        Maximum of 3 entries are allowed for an individual.\n
+Entries should not contain any content of violence, Sexuality, Religious or Political sentiments.
+
+    </string>
+    <string name="memejud">Each Haha react will get 5 points.\n Each like and other reactions contain 3 points.\n
+    Winners will be decided by the final score including organizer’s decision(40%).
+
+    </string>
 
 </resources>

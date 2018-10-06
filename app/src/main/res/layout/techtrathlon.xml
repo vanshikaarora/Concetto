@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_weight="100"
     android:background="@color/bagcolor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <android.support.v4.widget.NestedScrollView
 
         android:layout_width="match_parent"
+        android:layout_weight="90"
         android:layout_height="match_parent"
         android:id="@+id/hl">
 
@@ -105,6 +107,7 @@
     <Button
         android:id="@+id/bt5"
         android:layout_width="match_parent"
+        android:layout_weight="10"
 
         android:layout_height="wrap_content"
 
@@ -119,4 +122,4 @@
 
         />
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
