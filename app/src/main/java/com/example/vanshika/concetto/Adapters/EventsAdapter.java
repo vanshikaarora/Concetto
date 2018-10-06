@@ -147,7 +147,7 @@ import java.util.List;
 
                         Event event = eventsList.get(getAdapterPosition());
 
-                        if(event.getName().equals("Robowar"))
+                        if(event.getName().equals("Robo Wars"))
                         {
                             Intent intent=new Intent(mCtx, robowar.class);
                             mCtx.startActivity(intent);
@@ -231,12 +231,6 @@ import java.util.List;
                             mCtx.startActivity(intent);
                         }
 
-                        else if(event.getName().equals("Shutterstock"))
-                        {
-                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
-                            mCtx.startActivity(intent);
-                        }
-
                         else if(event.getName().equals("Tech Triathlon"))
                         {
                             Intent intent=new Intent(mCtx, techtriathlon.class);
@@ -282,12 +276,6 @@ import java.util.List;
                         else if(event.getName().equals("Symposium"))
                         {
                             Intent intent=new Intent(mCtx, symposium.class);
-                            mCtx.startActivity(intent);
-                        }
-
-                        else if(event.getName().equals("Geo Quest"))
-                        {
-                            Intent intent=new Intent(mCtx, vitricity.class); //Change it
                             mCtx.startActivity(intent);
                         }
 

@@ -109,9 +109,6 @@ public class EventsActivity extends MainActivity {
 
         else if(position.equals("6")) {
             eventsList.add(
-                    new Event("Shutterstock", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
-
-            eventsList.add(
                     new Event("Lever The Huge", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
 
             eventsList.add(
@@ -153,8 +150,6 @@ public class EventsActivity extends MainActivity {
             eventsList.add(
                     new Event("Symposium", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
 
-            eventsList.add(
-                    new Event("Geo Quest", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
         }
 
         else if(position.equals("13")) {
