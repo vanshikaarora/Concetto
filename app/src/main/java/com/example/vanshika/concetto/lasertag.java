@@ -30,7 +30,7 @@ public class lasertag extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.bafflingplanet, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.laser, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
         tl = (TextView)findViewById(R.id.title);

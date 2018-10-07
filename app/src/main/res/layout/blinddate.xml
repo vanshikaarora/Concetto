@@ -28,7 +28,7 @@
                 android:layout_height="250dp"
 
                 android:orientation="vertical"
-                android:background="@drawable/bafflingplanet">
+                android:background="@drawable/blind">
 
 
 

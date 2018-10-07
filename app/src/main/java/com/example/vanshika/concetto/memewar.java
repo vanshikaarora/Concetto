@@ -32,7 +32,7 @@ public class memewar extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.symposium, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.meme, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
