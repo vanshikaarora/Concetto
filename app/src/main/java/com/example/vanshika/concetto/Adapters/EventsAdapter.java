@@ -17,21 +17,28 @@ import android.widget.TextView;
 import com.example.vanshika.concetto.EventsActivity;
 import com.example.vanshika.concetto.Models.Event;
 import com.example.vanshika.concetto.R;
+import com.example.vanshika.concetto.blinddate;
 import com.example.vanshika.concetto.buffetmoney;
+import com.example.vanshika.concetto.chemcarnival;
 import com.example.vanshika.concetto.chemecar;
 import com.example.vanshika.concetto.electrocharades;
 import com.example.vanshika.concetto.flash;
+import com.example.vanshika.concetto.frothfloatation;
 import com.example.vanshika.concetto.googleminer;
 import com.example.vanshika.concetto.industrialdesignproblem;
+import com.example.vanshika.concetto.lasertag;
 import com.example.vanshika.concetto.leverthehuge;
+import com.example.vanshika.concetto.memewar;
 import com.example.vanshika.concetto.modelthecaravel;
 import com.example.vanshika.concetto.obstaclecourseracing;
+import com.example.vanshika.concetto.paper_dance;
 import com.example.vanshika.concetto.robowar;
 import com.example.vanshika.concetto.spardhatechbizz;
 import com.example.vanshika.concetto.symposium;
 import com.example.vanshika.concetto.techtriathlon;
 import com.example.vanshika.concetto.tesla;
 import com.example.vanshika.concetto.thebafflingplanet;
+import com.example.vanshika.concetto.thrillofdrill;
 import com.example.vanshika.concetto.trusstheframe;
 import com.example.vanshika.concetto.unravelthewhizz;
 import com.example.vanshika.concetto.vitricity;
@@ -251,7 +258,7 @@ import java.util.List;
 
                         else if(event.getName().equals("Thrill of Drill"))
                         {
-                            Intent intent=new Intent(mCtx, tesla.class); //Change it
+                            Intent intent=new Intent(mCtx, thrillofdrill.class);
                             mCtx.startActivity(intent);
                         }
 
@@ -263,7 +270,7 @@ import java.util.List;
 
                         else if(event.getName().equals("Techpro"))
                         {
-                            Intent intent=new Intent(mCtx,flash.class); //Change it
+                            Intent intent=new Intent(mCtx,frothfloatation.class);
                             mCtx.startActivity(intent);
                         }
 
@@ -294,6 +301,42 @@ import java.util.List;
                         else if(event.getName().equals("Symposium"))
                         {
                             Intent intent=new Intent(mCtx, symposium.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Chem-e-carnival"))
+                        {
+                            Intent intent=new Intent(mCtx, chemcarnival.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Paper Dance"))
+                        {
+                            Intent intent=new Intent(mCtx, paper_dance.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Blind Date"))
+                        {
+                            Intent intent=new Intent(mCtx, blinddate.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Meme War"))
+                        {
+                            Intent intent=new Intent(mCtx, memewar.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Laser Tag"))
+                        {
+                            Intent intent=new Intent(mCtx, lasertag.class);
+                            mCtx.startActivity(intent);
+                        }
+
+                        else if(event.getName().equals("Sin and Win"))
+                        {
+                            Intent intent=new Intent(mCtx, chemcarnival.class); //Change it
                             mCtx.startActivity(intent);
                         }
                     }
