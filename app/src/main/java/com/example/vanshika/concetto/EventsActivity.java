@@ -60,10 +60,20 @@ public class EventsActivity extends MainActivity {
 
         if(position.equals("0")) {
             eventsList.add(
-                    new Event("Event A", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+                    new Event("Paper Dance", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
 
             eventsList.add(
-                    new Event("Event B", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+                    new Event("Blind Date", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+
+            eventsList.add(
+                    new Event("Meme War", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+
+            eventsList.add(
+                    new Event("Laser Tag", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+
+            eventsList.add(
+                    new Event("Sin and Win", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+
         }
 
         else if(position.equals("1")) {
@@ -155,6 +165,9 @@ public class EventsActivity extends MainActivity {
         else if(position.equals("13")) {
             eventsList.add(
                     new Event("Chem-e-car", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+
+            eventsList.add(
+                    new Event("Chem-e-carnival", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
         }
 
         else if(position.equals("14")) {
