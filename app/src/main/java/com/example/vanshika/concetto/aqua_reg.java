@@ -95,7 +95,7 @@ public class aqua_reg extends AppCompatActivity {
                         focusView[0] = mo;
 
                     }
-                    if(clgn.isEmpty()==true||mob.isEmpty()==true){
+                    if(clgn.isEmpty()==true||mob.isEmpty()==true||name.isEmpty()==true){
 
                     }else {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -137,7 +137,7 @@ public class aqua_reg extends AppCompatActivity {
                                     obs.child("aquarise").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("aquarise");
-                                    Toast.makeText(aqua_reg.this, "Registration done For GOOGLE MINER ",
+                                    Toast.makeText(aqua_reg.this, "Registration done For AQUA RISE ",
                                             Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(aqua_reg.this, MainActivity.class));
 

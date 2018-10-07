@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d3d3d3"
+    android:background="#ffffff"
 
     android:orientation="vertical">
     <LinearLayout
@@ -91,20 +91,22 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/perugit"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="25dp"
-                                android:onClick="perumail"
-                                android:src="@drawable/gmail" />
+
+                                android:src="@drawable/githubb" />
 
                             <ImageView
+                                android:id="@+id/perulinked"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="25dp"
-                                android:onClick="perufb"
-                                android:src="@drawable/fb" />
+
+                                android:src="@drawable/linked" />
 
 
                         </LinearLayout>
@@ -132,6 +134,7 @@
                     <ImageView
                         android:layout_width="130dp"
                         android:layout_height="150dp"
+                        android:src="@drawable/shridhar"
 
                         android:scaleType="centerCrop" />
 
@@ -163,20 +166,22 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/srigit"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="25dp"
-                                android:onClick="srimail"
-                                android:src="@drawable/gmail" />
+
+                                android:src="@drawable/githubb" />
 
                             <ImageView
+                                android:id="@+id/srilinked"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="25dp"
-                                android:onClick="srifb"
-                                android:src="@drawable/fb" />
+
+                                android:src="@drawable/linked" />
 
 
                         </LinearLayout>
@@ -238,20 +243,22 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/vanshigit"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="25dp"
-                                android:onClick="gmailvanshi"
-                                android:src="@drawable/gmail" />
+
+                                android:src="@drawable/githubb" />
 
                             <ImageView
+                                android:id="@+id/vanshilinked"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="25dp"
-                                android:onClick="vanshifb"
-                                android:src="@drawable/fb" />
+
+                                android:src="@drawable/linked" />
 
 
                         </LinearLayout>
@@ -294,7 +301,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/peru" />
+                        android:src="@drawable/kuldeep" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -321,16 +328,7 @@
 
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="5dp"
-                        android:onClick="kulfb"
 
-                        android:src="@drawable/fb" />
                 </LinearLayout>
 
 

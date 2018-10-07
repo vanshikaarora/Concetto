@@ -148,7 +148,7 @@ public class model_reg extends AppCompatActivity {
                                     obs.child("modelcaravel").child(id).child("mobile").setValue(mob);
                                     obs.child("modelcaravel").child(id).child("college").setValue(clgn);
 
-                                    FirebaseMessaging.getInstance().subscribeToTopic("bafflingplanet");
+                                    FirebaseMessaging.getInstance().subscribeToTopic("modelthecaravel");
                                     Toast.makeText(model_reg.this, "Registration done For MODEL THE CARAVEL ",
                                             Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(model_reg.this, MainActivity.class));

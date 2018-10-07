@@ -101,7 +101,7 @@ public class idp_reg extends AppCompatActivity {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("googleminer");
+                                dataSnapshot = dataSnapshot.child("industrial");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -127,14 +127,14 @@ public class idp_reg extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                     // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                     // obs.child(id).setValue(reg);
-                                    obs.child("obstacle").child(id).child("teamname").setValue(name);
-                                    obs.child("obstacle").child(id).child("member1").setValue(mem1);
-                                    obs.child("obstacle").child(id).child("member2").setValue(mem2);
-                                    obs.child("obstacle").child(id).child("member3").setValue(mem3);
+                                    obs.child("industrial").child(id).child("teamname").setValue(name);
+                                    obs.child("industrial").child(id).child("member1").setValue(mem1);
+                                    obs.child("industrial").child(id).child("member2").setValue(mem2);
+                                    obs.child("industrial").child(id).child("member3").setValue(mem3);
 
-                                    obs.child("obstacle").child(id).child("email").setValue(email);
-                                    obs.child("obstacle").child(id).child("mobile").setValue(mob);
-                                    obs.child("obstacle").child(id).child("college").setValue(clgn);
+                                    obs.child("industrial").child(id).child("email").setValue(email);
+                                    obs.child("industrial").child(id).child("mobile").setValue(mob);
+                                    obs.child("industrial").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("industrialdesignproblem");
                                     Toast.makeText(idp_reg.this, "Registration done For INDUSTRIAL DESIGN ",

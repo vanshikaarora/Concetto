@@ -157,7 +157,7 @@ public class trusstheframeregistration extends AppCompatActivity {
                                     obs.child("trusstheframe").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("trusstheframe");
-                                    Toast.makeText(trusstheframeregistration.this, "Registration done For obstacle course racing ",
+                                    Toast.makeText(trusstheframeregistration.this, "Registration done For TRUSS THE FRAME ",
                                             Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(trusstheframeregistration.this, MainActivity.class));
 
