@@ -25,8 +25,8 @@ public class Developers extends MainActivity {
         vsl = (ImageView)findViewById(R.id.vanshilinked);
         peg = (ImageView)findViewById(R.id.perugit);
         pel = (ImageView)findViewById(R.id.perulinked);
-        ssg = (ImageView)findViewById(R.id.srigit);
-        sl = (ImageView)findViewById(R.id.srilinked);
+        ssg = (ImageView)findViewById(R.id.shridhargit);
+        sl = (ImageView)findViewById(R.id.shridharlinked);
         vsg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +72,7 @@ public class Developers extends MainActivity {
         sl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uri = "https://github.com/ShridharGoel";
+                String uri = "https://www.linkedin.com/in/shridhar-goel/";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 startActivity(intent);
             }
@@ -84,5 +84,6 @@ public class Developers extends MainActivity {
         super.onBackPressed();
 
         startActivity(new Intent(Developers.this, MainActivity.class));
+
     }
 }
