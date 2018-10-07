@@ -42,6 +42,7 @@
                 android:inputType="textPersonName"
                 android:layout_centerHorizontal="true"
                 app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tnm"
                 app:layout_constraintRight_toRightOf="parent"
                 />
 
