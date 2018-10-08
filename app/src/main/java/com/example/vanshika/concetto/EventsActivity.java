@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -51,7 +53,8 @@ public class EventsActivity extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.replaceContentLayout(R.layout.activity_events, R.id.content_main_linear_layout);
-
+        Animation openScale = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.activity_open_scale);
+        overridePendingTransition(R.anim.popup_in,R.anim.activity_open_translate);
         getSupportActionBar().hide();
 
         placeholder = (TextView) findViewById(R.id.placeholder_text);
@@ -148,7 +151,7 @@ public class EventsActivity extends MainActivity {
                 eventsList.add(
                         new Event("The Baffling Planet", "android.resource://com.example.vanshika.concetto/" + concetto_white));
             } else if (position.equals("12")) {
-                eventsList.add(
+eventsList.add(
                         new Event("Aqua Rise", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
             }
 

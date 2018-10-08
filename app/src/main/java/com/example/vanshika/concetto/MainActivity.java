@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        } else if (id == R.id.nav_faq) {
+        } else if (id == R.id.nav_about) {
 
             startActivity(new Intent(MainActivity.this,About.class));
 
@@ -135,7 +135,19 @@ public class MainActivity extends AppCompatActivity
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;
 
-        } else if (id == R.id.nav_dev) {
+        } else if (id == R.id.nav_report_bug) {
+
+            String shareBody = "Here is the share content body";
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.app_name)));
+
+            return true;
+        }
+
+        else if (id == R.id.nav_dev) {
         
              startActivity(new Intent(MainActivity.this,Developers.class));
 

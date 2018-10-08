@@ -58,7 +58,7 @@ public class GuestLectureAdapter  extends RecyclerView.Adapter<GuestLectureAdapt
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if (dataSnapshot.hasChild(guestLecture.getAbout())){
                             String message=dataSnapshot.child(guestLecture.getAbout()).child("about").getValue().toString();
-                            new AlertDialog.Builder(mCtx)
+                            AlertDialog.Builder builder=new AlertDialog.Builder(mCtx)
                                     .setTitle("About")
                                     .setMessage(message)
                                     .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -66,7 +66,10 @@ public class GuestLectureAdapter  extends RecyclerView.Adapter<GuestLectureAdapt
                                         public void onClick(DialogInterface dialog, int which) {
                                             Log.d("MainActivity", "Sending atomic bombs to Jupiter");
                                         }
-                                    }).show();
+                                    });
+                            AlertDialog dialog = builder.create();
+                            dialog.getWindow().getAttributes().windowAnimations=R.anim.activity_open_translate;
+                            dialog.show();
                         }
                     }
 

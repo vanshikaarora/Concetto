@@ -13,10 +13,6 @@
             android:icon="@drawable/ic_contact_phone_black_24dp"
             android:title="Contact Us" />
         <item
-            android:id="@+id/nav_faq"
-            android:icon="@drawable/ic_question_answer_black_24dp"
-            android:title="FAQ" />
-        <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_info_black_24dp"
             android:title="About" />
@@ -24,5 +20,9 @@
             android:id="@+id/nav_dev"
             android:icon="@drawable/ic_work_black_24dp"
             android:title="Developers" />
+        <item
+            android:id="@+id/nav_report_bug"
+            android:icon="@drawable/ic_bug_report_black_24dp"
+            android:title="Report Bug" />
     </group>
 </menu>
