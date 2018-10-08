@@ -146,10 +146,15 @@ public class EventsActivity extends MainActivity {
 
             else if(position.equals("9")) {
                 eventsList.add(
-                        new Event("Thrill of Drill", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+                        new Event("Aqua Rise", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
             }
 
             else if(position.equals("10")) {
+                eventsList.add(
+                        new Event("Thrill of Drill", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+            }
+
+            else if(position.equals("11")) {
                 eventsList.add(
                         new Event("Google Miner", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
 
@@ -157,18 +162,18 @@ public class EventsActivity extends MainActivity {
                         new Event("Techpro", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
             }
 
-            else if(position.equals("11")) {
+            else if(position.equals("12")) {
                 eventsList.add(
                         new Event("The Baffling Planet", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
             }
 
-            else if(position.equals("12")) {
+            else if(position.equals("13")) {
                 eventsList.add(
                         new Event("Symposium", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
 
             }
 
-            else if(position.equals("13")) {
+            else if(position.equals("14")) {
                 eventsList.add(
                         new Event("Chem-e-car", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
 
@@ -176,12 +181,12 @@ public class EventsActivity extends MainActivity {
                         new Event("Chem-e-carnival", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
             }
 
-            else if(position.equals("14")) {
+            else if(position.equals("15")) {
                 eventsList.add(
-                        new Event("Aqua Rise", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
+                        new Event("Magl-o-cart", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
             }
 
-            else if(position.equals("15")) {
+            else if(position.equals("16")) {
                 eventsList.add(
                         new Event("Spardha Tech Bizz", "android.resource://com.example.vanshika.concetto/" + R.drawable.concetto_white));
             }
