@@ -107,7 +107,7 @@ public class thrillofdrill extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(thrillofdrill.this);
-                contacts.setMessage(R.string.truss_contact);
+                contacts.setMessage(R.string.thrillcon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

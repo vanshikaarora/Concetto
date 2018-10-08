@@ -73,6 +73,9 @@ public class CategoriesActivity extends MainActivity {
                 new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.mining, "Mining Engineering"));
 
         categoryList.add(
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.manage, "Mining Machinery Engineering"));
+
+        categoryList.add(
                 new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.petro, "Petroleum Engineering"));
 
         categoryList.add(
@@ -90,8 +93,8 @@ public class CategoriesActivity extends MainActivity {
         categoryList.add(
                 new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.physics, "Engineering Physics"));
 
-        //categoryList.add(
-                //new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.manage, "Management Studies"));
+        categoryList.add(
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.manage, "Management Studies"));
 
 
 
