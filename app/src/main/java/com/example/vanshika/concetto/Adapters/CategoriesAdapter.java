@@ -81,6 +81,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
                 public void onClick(View v) {
                     Intent intent=new Intent(mCtx, EventsActivity.class);
                     intent.putExtra("Position", String.valueOf(getAdapterPosition()));
+                    intent.putExtra("activity","events");
                     mCtx.startActivity(intent);
                 }
             });

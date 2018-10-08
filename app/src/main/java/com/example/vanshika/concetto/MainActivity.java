@@ -55,6 +55,17 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+        (findViewById(R.id.timingButton)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, EventsActivity.class);
+                intent.putExtra("activity","guest_lectures");
+                startActivity(intent);
+
+            }
+        });
+
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             NotificationManager mNotificationManager =
                     (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
