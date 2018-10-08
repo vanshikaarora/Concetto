@@ -1,13 +1,35 @@
 package com.example.vanshika.concetto.Models;
 
 public class GuestLecture {
-    private String LectureName, GuestName, image,time;
+    private String lecture_name, guest_name, date,time,about;
 
-    public GuestLecture(String lectureName, String guestName, String image, String time) {
-        LectureName = lectureName;
-        GuestName = guestName;
-        this.image = image;
+
+
+    public GuestLecture(String lecture_name, String guest_name, String date, String time, String about) {
+
+        this.lecture_name = lecture_name;
+        this.guest_name = guest_name;
+        this.date = date;
         this.time = time;
+        this.about = about;
+    }
+
+    public GuestLecture() {
+    }
+
+    public GuestLecture(String lecture_name, String guest_name, String date, String time) {
+        this.lecture_name = lecture_name;
+        this.guest_name = guest_name;
+        this.date = date;
+        this.time = time;
+    }
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
     }
 
     public String getTime() {
@@ -18,27 +40,27 @@ public class GuestLecture {
         this.time = time;
     }
 
-    public String getLectureName() {
-        return LectureName;
+    public String getLecture_name() {
+        return lecture_name;
     }
 
-    public void setLectureName(String lectureName) {
-        LectureName = lectureName;
+    public void setLecture_name(String lecture_name) {
+        this.lecture_name = lecture_name;
     }
 
-    public String getGuestName() {
-        return GuestName;
+    public String getGuest_name() {
+        return guest_name;
     }
 
-    public void setGuestName(String guestName) {
-        GuestName = guestName;
+    public void setGuest_name(String guest_name) {
+        this.guest_name = guest_name;
     }
 
-    public String getImage() {
-        return image;
+    public String getDate() {
+        return date;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setDate(String date) {
+        this.date = date;
     }
 }

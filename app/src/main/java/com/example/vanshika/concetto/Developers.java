@@ -38,7 +38,7 @@ public class Developers extends MainActivity {
         vsl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uri = "https://github.com/vanshikaarora";
+                String uri = "https://www.linkedin.com/in/vanshika-arora-6396b4143/";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 startActivity(intent);
 
