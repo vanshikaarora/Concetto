@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +27,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
  * Created by lenovo on 10/6/2018.
  */
 
-public class thrill_reg extends MainActivity {
+public class thrill_reg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
     EditText nm,m1,m2,m3,m4,em,mo,clgg;

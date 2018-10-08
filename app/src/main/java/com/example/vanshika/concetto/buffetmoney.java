@@ -104,6 +104,7 @@ public class buffetmoney extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(buffetmoney.this,bft_reg.class));
 
 
             }

@@ -24,10 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 /**
- * Created by lenovo on 10/1/2018.
+ * Created by lenovo on 10/8/2018.
  */
 
-public class trusstheframeregistration extends AppCompatActivity {
+public class lever_reg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
     EditText nm,m1,m2,m3,m4,em,mo,clgg;
@@ -112,7 +112,7 @@ public class trusstheframeregistration extends AppCompatActivity {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("trusstheframe");
+                                dataSnapshot = dataSnapshot.child("leverthehuge");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -124,7 +124,7 @@ public class trusstheframeregistration extends AppCompatActivity {
                                         if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
-                                            Toast.makeText(trusstheframeregistration.this, "Registration not done",
+                                            Toast.makeText(lever_reg.this, "Registration not done",
                                                     Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
 
@@ -138,19 +138,19 @@ public class trusstheframeregistration extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                     // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                     // obs.child(id).setValue(reg);
-                                    obs.child("trusstheframe").child(id).child("teamname").setValue(name);
-                                    obs.child("trusstheframe").child(id).child("member1").setValue(mem1);
-                                    obs.child("trusstheframe").child(id).child("member2").setValue(mem2);
-                                    obs.child("trusstheframe").child(id).child("member3").setValue(mem3);
-                                    obs.child("trusstheframe").child(id).child("member4").setValue(mem4);
-                                    obs.child("trusstheframe").child(id).child("email").setValue(email);
-                                    obs.child("trusstheframe").child(id).child("mobile").setValue(mob);
-                                    obs.child("trusstheframe").child(id).child("college").setValue(clgn);
+                                    obs.child("leverthehuge").child(id).child("teamname").setValue(name);
+                                    obs.child("leverthehuge").child(id).child("member1").setValue(mem1);
+                                    obs.child("leverthehuge").child(id).child("member2").setValue(mem2);
+                                    obs.child("leverthehuge").child(id).child("member3").setValue(mem3);
+                                    obs.child("leverthehuge").child(id).child("member4").setValue(mem4);
+                                    obs.child("leverthehuge").child(id).child("email").setValue(email);
+                                    obs.child("leverthehuge").child(id).child("mobile").setValue(mob);
+                                    obs.child("leverthehuge").child(id).child("college").setValue(clgn);
 
-                                    FirebaseMessaging.getInstance().subscribeToTopic("trusstheframe");
-                                    Toast.makeText(trusstheframeregistration.this, "Registration done For TRUSS THE FRAME ",
+                                    FirebaseMessaging.getInstance().subscribeToTopic("leverthehuge");
+                                    Toast.makeText(lever_reg.this, "Registration done For LEVER THE HUGE ",
                                             Toast.LENGTH_LONG).show();
-                                    startActivity(new Intent(trusstheframeregistration.this, MainActivity.class));
+                                    startActivity(new Intent(lever_reg.this, MainActivity.class));
 
                                 }
 
@@ -171,7 +171,7 @@ public class trusstheframeregistration extends AppCompatActivity {
 
                 }
                 else {
-                    Toast.makeText(trusstheframeregistration.this,"INTERNET CONNECTION IS NOT AVAILABLE",
+                    Toast.makeText(lever_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
                             Toast.LENGTH_LONG).show();
 
                 }
@@ -180,4 +180,3 @@ public class trusstheframeregistration extends AppCompatActivity {
         });
     }
 }
-

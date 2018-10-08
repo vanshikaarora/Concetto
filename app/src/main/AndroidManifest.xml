@@ -87,6 +87,9 @@
         <activity android:name=".memewar"></activity>
         <activity android:name=".memereg"></activity>
         <activity android:name=".flash_reg"></activity>
+        <activity android:name=".froth_reg"></activity>
+        <activity android:name=".bft_reg"></activity>
+        <activity android:name=".lever_reg"></activity>
 
 
         <service android:name=".MyFirebaseInstanceIDService">

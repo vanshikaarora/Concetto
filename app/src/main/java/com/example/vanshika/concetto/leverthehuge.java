@@ -1,5 +1,6 @@
 package com.example.vanshika.concetto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -117,7 +118,7 @@ public class leverthehuge extends MainActivity {
             @Override
             public void onClick(View v) {
 
-
+startActivity(new Intent(leverthehuge.this,lever_reg.class));
             }
         });
     }
