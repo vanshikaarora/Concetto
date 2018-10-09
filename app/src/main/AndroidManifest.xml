@@ -47,7 +47,7 @@
         <activity android:name=".frothfloatation" />
         <activity android:name=".borntowander" />
         <activity android:name=".googleminer" />
-        <activity android:name=".arena" />
+
         <activity android:name=".About" />
         <activity android:name=".chemcarnival" />
         <activity android:name=".chemecar" />
@@ -90,6 +90,17 @@
         <activity android:name=".froth_reg"></activity>
         <activity android:name=".bft_reg"></activity>
         <activity android:name=".lever_reg"></activity>
+        <activity android:name=".munreg"></activity>
+        <activity android:name=".mun"></activity>
+        <activity android:name=".route"></activity>
+        <activity android:name=".routereg"></activity>
+        <activity android:name=".electrabuzz"></activity>
+        <activity android:name=".buzzreg"></activity>
+        <activity android:name=".earth"></activity>
+        <activity android:name=".sinwinreg"></activity>
+        <activity android:name=".sinwin"></activity>
+        <activity android:name=".pubg"></activity>
+        <activity android:name=".pubgreg"></activity>
 
 
         <service android:name=".MyFirebaseInstanceIDService">

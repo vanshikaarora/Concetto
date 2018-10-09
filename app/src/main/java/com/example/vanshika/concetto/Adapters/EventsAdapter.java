@@ -21,6 +21,7 @@ import com.example.vanshika.concetto.blinddate;
 import com.example.vanshika.concetto.buffetmoney;
 import com.example.vanshika.concetto.chemcarnival;
 import com.example.vanshika.concetto.chemecar;
+import com.example.vanshika.concetto.electrabuzz;
 import com.example.vanshika.concetto.electrocharades;
 import com.example.vanshika.concetto.flash;
 import com.example.vanshika.concetto.frothfloatation;
@@ -222,7 +223,7 @@ import java.util.List;
 
                         else if(event.getName().equals("Electrabuzz"))
                         {
-                            Intent intent=new Intent(mCtx, vitricity.class); //Change it to electrabuzz after the class is created
+                            Intent intent=new Intent(mCtx, electrabuzz.class); //Change it to electrabuzz after the class is created
                             mCtx.startActivity(intent);
                         }
 

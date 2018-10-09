@@ -24,10 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 /**
- * Created by lenovo on 10/6/2018.
+ * Created by lenovo on 10/9/2018.
  */
 
-public class thrill_reg extends AppCompatActivity {
+public class buzzreg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
     EditText nm,m1,m2,m3,m4,em,mo,clgg;
@@ -97,6 +97,7 @@ public class thrill_reg extends AppCompatActivity {
 
                     }
 
+
                     if(TextUtils.isEmpty(clgn)){
                         clgg.setError("field is required");
                         focusView[0] = clgg;
@@ -113,7 +114,7 @@ public class thrill_reg extends AppCompatActivity {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("thrill");
+                                dataSnapshot = dataSnapshot.child("electrabuzz");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -125,7 +126,7 @@ public class thrill_reg extends AppCompatActivity {
                                         if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
-                                            Toast.makeText(thrill_reg.this, "Registration not done",
+                                            Toast.makeText(buzzreg.this, "Registration not done",
                                                     Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
 
@@ -139,19 +140,19 @@ public class thrill_reg extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                     // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                     // obs.child(id).setValue(reg);
-                                    obs.child("thrill").child(id).child("teamname").setValue(name);
-                                    obs.child("thrill").child(id).child("member1").setValue(mem1);
-                                    obs.child("thrill").child(id).child("member2").setValue(mem2);
-                                    obs.child("thrill").child(id).child("member3").setValue(mem3);
-                                    obs.child("thrill").child(id).child("member4").setValue(mem4);
-                                    obs.child("thrill").child(id).child("member5").setValue(email);
-                                    obs.child("thrill").child(id).child("mobile").setValue(mob);
-                                    obs.child("thrill").child(id).child("college").setValue(clgn);
+                                    obs.child("electrabuzz").child(id).child("teamname").setValue(name);
+                                    obs.child("electrabuzz").child(id).child("member1").setValue(mem1);
+                                    obs.child("electrabuzz").child(id).child("member2").setValue(mem2);
+                                    obs.child("electrabuzz").child(id).child("member3").setValue(mem3);
+                                    obs.child("electrabuzz").child(id).child("member4").setValue(mem4);
+                                    obs.child("electrabuzz").child(id).child("member5").setValue(email);
+                                    obs.child("electrabuzz").child(id).child("mobile").setValue(mob);
+                                    obs.child("electrabuzz").child(id).child("college").setValue(clgn);
 
-                                    FirebaseMessaging.getInstance().subscribeToTopic("thrillofdrill");
-                                    Toast.makeText(thrill_reg.this, "Registration done For thrill of drill ",
+                                    FirebaseMessaging.getInstance().subscribeToTopic("electrabuzz");
+                                    Toast.makeText(buzzreg.this, "Registration done For thrill of drill ",
                                             Toast.LENGTH_LONG).show();
-                                    startActivity(new Intent(thrill_reg.this, MainActivity.class));
+                                    startActivity(new Intent(buzzreg.this, MainActivity.class));
 
                                 }
 
@@ -172,7 +173,7 @@ public class thrill_reg extends AppCompatActivity {
 
                 }
                 else {
-                    Toast.makeText(thrill_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
+                    Toast.makeText(buzzreg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
                             Toast.LENGTH_LONG).show();
 
                 }
