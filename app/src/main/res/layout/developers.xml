@@ -324,6 +324,14 @@
                             android:paddingTop="8dp"
                             android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
                             android:textSize="10dp" />
+                        <ImageView
+                            android:id="@+id/kullinked"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginLeft="25dp"
+
+                            android:src="@drawable/linked" />
 
 
                     </LinearLayout>
