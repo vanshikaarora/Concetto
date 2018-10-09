@@ -117,6 +117,7 @@ public class frothfloatation extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(frothfloatation.this,froth_reg.class));
 
 
 

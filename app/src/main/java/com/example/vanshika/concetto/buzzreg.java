@@ -150,7 +150,7 @@ public class buzzreg extends AppCompatActivity {
                                     obs.child("electrabuzz").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("electrabuzz");
-                                    Toast.makeText(buzzreg.this, "Registration done For thrill of drill ",
+                                    Toast.makeText(buzzreg.this, "Registration done  for ELECTRABUZZ ",
                                             Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(buzzreg.this, MainActivity.class));
 

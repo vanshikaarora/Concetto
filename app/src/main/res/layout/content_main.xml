@@ -46,7 +46,7 @@
         android:layout_marginTop="35dp"
         android:background="@drawable/ripple"
         android:fontFamily="@font/batmanforeveralternate"
-        android:text="Guest Lectures"
+        android:text="TECH-TALKS"
         android:textColor="#ffffff"/>
 
 </LinearLayout>
