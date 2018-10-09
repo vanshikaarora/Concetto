@@ -34,9 +34,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/about_concetto"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="20dp"
                 android:padding="15dp"
-                android:textColor="#ffff"
+                android:textColor="#001e32"
                 app:layout_constraintTop_toBottomOf="@+id/hola"
                 android:typeface="monospace"/>
         </android.support.constraint.ConstraintLayout>
