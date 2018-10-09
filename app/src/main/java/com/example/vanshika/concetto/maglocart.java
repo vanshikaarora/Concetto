@@ -18,9 +18,9 @@ import com.google.firebase.database.ValueEventListener;
  * Created by lenovo on 10/9/2018.
  */
 
-public class pubg extends MainActivity {
+public class maglocart extends MainActivity {
     TextView tl;
-    Button ab,ru,pr,co,reg;
+    Button ab,ru,pr,co,reg,jud;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
@@ -31,7 +31,7 @@ public class pubg extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.pubg, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.maglo, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -43,12 +43,12 @@ public class pubg extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        // jud = (Button)findViewById(R.id.bt6);
+        jud = (Button)findViewById(R.id.bt6);
         tru = FirebaseDatabase.getInstance().getReference();
         tru.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("pub").child("prize");
+                dataSnapshot = dataSnapshot.child("maglo").child("prize");
                 p = dataSnapshot.getValue().toString();
 
 
@@ -62,8 +62,8 @@ public class pubg extends MainActivity {
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(pubg.this);
-                about.setMessage(R.string.pubgabt);
+                about = new AlertDialog.Builder(maglocart.this);
+                about.setMessage(R.string.magloabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -71,12 +71,21 @@ public class pubg extends MainActivity {
 
             }
         });
-
+        jud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                judging = new AlertDialog.Builder(maglocart.this);
+                judging.setMessage(R.string.maglospec);
+                AlertDialog jd = judging.create();
+                jd.setTitle("SPECIFICATIONS");
+                jd.show();
+            }
+        });
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(pubg.this);
-                rules.setMessage(R.string.pubgrules);
+                rules = new AlertDialog.Builder(maglocart.this);
+                rules.setMessage(R.string.maglorules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -86,7 +95,7 @@ public class pubg extends MainActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(pubg.this);
+                prizes = new AlertDialog.Builder(maglocart.this);
                 prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -97,8 +106,8 @@ public class pubg extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(pubg.this);
-                contacts.setMessage(R.string.buzzcon);
+                contacts = new AlertDialog.Builder(maglocart.this);
+                contacts.setMessage(R.string.googleminercontacts);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -108,8 +117,7 @@ public class pubg extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(pubg.this,pubgreg.class));
-
+                startActivity(new Intent(maglocart.this,maglocart_reg.class));
 
             }
         });

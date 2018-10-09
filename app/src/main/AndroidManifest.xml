@@ -101,6 +101,10 @@
         <activity android:name=".sinwin"></activity>
         <activity android:name=".pubg"></activity>
         <activity android:name=".pubgreg"></activity>
+        <activity android:name=".maglocart"></activity>
+        <activity android:name=".maglocart_reg"></activity>
+        <activity android:name=".buil_reg"></activity>
+        <activity android:name=".buildabit"></activity>
 
 
 

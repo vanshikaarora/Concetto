@@ -18,20 +18,19 @@ import com.google.firebase.database.ValueEventListener;
  * Created by lenovo on 10/9/2018.
  */
 
-public class pubg extends MainActivity {
+public class buildabit extends MainActivity {
     TextView tl;
     Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    AlertDialog.Builder judging;
-    DatabaseReference tru;
-    String p;
+   // DatabaseReference spa ;
+    String p ;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.pubg, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.build, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -43,27 +42,12 @@ public class pubg extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        // jud = (Button)findViewById(R.id.bt6);
-        tru = FirebaseDatabase.getInstance().getReference();
-        tru.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("pub").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(pubg.this);
-                about.setMessage(R.string.pubgabt);
+                about = new AlertDialog.Builder(buildabit.this);
+                about.setMessage(R.string.buildabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -71,12 +55,11 @@ public class pubg extends MainActivity {
 
             }
         });
-
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(pubg.this);
-                rules.setMessage(R.string.pubgrules);
+                rules = new AlertDialog.Builder(buildabit.this);
+                rules.setMessage(R.string.buildrul);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -86,8 +69,9 @@ public class pubg extends MainActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(pubg.this);
-                prizes.setMessage(p);
+
+                prizes = new AlertDialog.Builder(buildabit.this);
+                prizes.setMessage(R.string.buildprize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();
@@ -97,8 +81,8 @@ public class pubg extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(pubg.this);
-                contacts.setMessage(R.string.buzzcon);
+                contacts = new AlertDialog.Builder(buildabit.this);
+                contacts.setMessage(R.string.spardha_contact);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -108,10 +92,11 @@ public class pubg extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(pubg.this,pubgreg.class));
+               startActivity(new Intent(buildabit.this,buil_reg.class));
 
 
             }
         });
     }
+
 }
