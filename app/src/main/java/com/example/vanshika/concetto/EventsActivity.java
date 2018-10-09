@@ -119,6 +119,8 @@ public class EventsActivity extends MainActivity {
             } else if (position.equals("3")) {
                 eventsList.add(
                         new Event("EArTh", "android.resource://com.example.vanshika.concetto/" + concetto_white));
+                eventsList.add(
+                        new Event("BUILD A BIT", "android.resource://com.example.vanshika.concetto/" + concetto_white));
 
             } else if (position.equals("4")) {
                 eventsList.add(
