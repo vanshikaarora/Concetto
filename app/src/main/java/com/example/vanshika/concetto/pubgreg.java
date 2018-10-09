@@ -24,10 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 /**
- * Created by lenovo on 10/6/2018.
+ * Created by lenovo on 10/9/2018.
  */
 
-public class thrill_reg extends AppCompatActivity {
+public class pubgreg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
     EditText nm,m1,m2,m3,m4,em,mo,clgg;
@@ -44,7 +44,6 @@ public class thrill_reg extends AppCompatActivity {
         m3 = (EditText)findViewById(R.id.mem3);
         m4 = (EditText)findViewById(R.id.mem4);
         em = (EditText)findViewById(R.id.em);
-        em.setHint("member 5");
         mo = (EditText)findViewById(R.id.mo);
         clgg = (EditText)findViewById(R.id.clg);
         obst = FirebaseDatabase.getInstance();
@@ -91,29 +90,24 @@ public class thrill_reg extends AppCompatActivity {
                         focusView[0] = m2;
 
                     }
-                    if(TextUtils.isEmpty(mem3)){
-                        m3.setError("field is required");
-                        focusView[0] = m3;
+
+                    if(TextUtils.isEmpty(email)){
+                        em.setError("field is required");
+                        focusView[0] = em;
 
                     }
-
                     if(TextUtils.isEmpty(clgn)){
                         clgg.setError("field is required");
                         focusView[0] = clgg;
 
                     }
-                    if(TextUtils.isEmpty(mob)){
-                        mo.setError("field is required");
-                        focusView[0] = mo;
-
-                    }
-                    if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mob.isEmpty()==true||clgn.isEmpty()==true){
+                    if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mob.isEmpty()==true||email.isEmpty()==true||clgn.isEmpty()==true){
 
                     }else {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("thrill");
+                                dataSnapshot = dataSnapshot.child("pubg");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -125,7 +119,7 @@ public class thrill_reg extends AppCompatActivity {
                                         if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
-                                            Toast.makeText(thrill_reg.this, "Registration not done",
+                                            Toast.makeText(pubgreg.this, "Registration not done",
                                                     Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
 
@@ -139,19 +133,19 @@ public class thrill_reg extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                     // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                     // obs.child(id).setValue(reg);
-                                    obs.child("thrill").child(id).child("teamname").setValue(name);
-                                    obs.child("thrill").child(id).child("member1").setValue(mem1);
-                                    obs.child("thrill").child(id).child("member2").setValue(mem2);
-                                    obs.child("thrill").child(id).child("member3").setValue(mem3);
-                                    obs.child("thrill").child(id).child("member4").setValue(mem4);
-                                    obs.child("thrill").child(id).child("member5").setValue(email);
-                                    obs.child("thrill").child(id).child("mobile").setValue(mob);
-                                    obs.child("thrill").child(id).child("college").setValue(clgn);
+                                    obs.child("pubg").child(id).child("teamname").setValue(name);
+                                    obs.child("pubg").child(id).child("member1").setValue(mem1);
+                                    obs.child("pubg").child(id).child("member2").setValue(mem2);
+                                    obs.child("pubg").child(id).child("member3").setValue(mem3);
+                                    obs.child("pubg").child(id).child("member4").setValue(mem4);
+                                    obs.child("pubg").child(id).child("email").setValue(email);
+                                    obs.child("pubg").child(id).child("mobile").setValue(mob);
+                                    obs.child("pubg").child(id).child("college").setValue(clgn);
 
-                                    FirebaseMessaging.getInstance().subscribeToTopic("thrillofdrill");
-                                    Toast.makeText(thrill_reg.this, "Registration done For thrill of drill ",
+                                    FirebaseMessaging.getInstance().subscribeToTopic("pubg");
+                                    Toast.makeText(pubgreg.this, "Registration done For pubg ",
                                             Toast.LENGTH_LONG).show();
-                                    startActivity(new Intent(thrill_reg.this, MainActivity.class));
+                                    startActivity(new Intent(pubgreg.this, MainActivity.class));
 
                                 }
 
@@ -172,7 +166,7 @@ public class thrill_reg extends AppCompatActivity {
 
                 }
                 else {
-                    Toast.makeText(thrill_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
+                    Toast.makeText(pubgreg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
                             Toast.LENGTH_LONG).show();
 
                 }
@@ -180,4 +174,6 @@ public class thrill_reg extends AppCompatActivity {
             }
         });
     }
+
+
 }

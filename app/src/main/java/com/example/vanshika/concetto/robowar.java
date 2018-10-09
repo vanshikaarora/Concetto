@@ -1,6 +1,7 @@
 package com.example.vanshika.concetto;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -128,6 +129,9 @@ public class robowar extends MainActivity {
         ar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String uri = "https://l.facebook.com/l.php?u=https%3A%2F%2Fgoo.gl%2FcwzioE&h=AT0RXzwby5rYeSUxZI6vi-5rKghRiPl4S5D_4ItWwPwAZKy5N_hd2fsqx2vGShj60OVQLIlm-Cg2DrU1Gp2L_oCflmyEqCdq9GQcr8PwR6ypdxpPlRFWNG1T_PQ67oGffsc4vjxpBmIzVQAJ0ETIz-8EcKX51sKbO08VHn0MZEhhuYmWkKyWe7h8OW1t0XcSsLxhyPZXdmj-89lSB_hqCu63FS7VZlW5ymXRhzp6eh1pCsA9yv86z3-xm9gxBRUFR6TG0PZmJYaEMkYKbASc7knHFXptgxu3ZHYX15wJRYN-GBwdmuXGIDYPRyWDtKPGPHHasFCOCJ2uILI6zrVko5Nmd2nq5fSdzrIYM4-pMhsQYRof9hAsQ5shhk0GOp0FS8UEmPbmUE1-DrV4mgvsdD7FupVIGniJjQ";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                startActivity(intent);
 
             }
         });

@@ -933,5 +933,161 @@ Entries should not contain any content of violence, Sexuality, Religious or Poli
     Winners will be decided by the final score including organizer’s decision(40%).
 
     </string>
+    <string name="munabt">Model  United  Nations  is  an  authentic  simulation  of  the UN  General  Assembly,  UN  Security Council,  or  other  multilateral  body,  which  introduces  students  to  the  world  of  diplomacy,
+negotiation,  and  decision  making.\n\n
+Model  UN  delegates  also  look  closely  at  the  needs,  aspira
+tions,  and  foreign  policy  of  the
+country  they  will“represent” at  the  event.\n\n
+The  delegates  can  form  a  group  of  2  individuals.\n
+The  problem  statement  will  be  given  beforehand.\n
+        <b>SELECTION  CRITERIA:</b>\n    Submit  an  abstract  about  the  views
+of  an  individual  on  the  problem
+statement  provided  .The  top  30  teams  with  effective  and  innovative  abstra
+ct  will  be  selected  and  their representative  country  will  be  mentioned  who  will  finally  participate  in  MUN. \n\n
+        <b>Committee  :</b>\n
+        GENERAL  ASSEMBLY
+    </string>
+    <string name="munrul">
+        1) The  delegates  need  to  research  on  the  foreign  policies  ,
+economic  and  social  policies
+of  their  countries.\n
+2) A  list  of  countries  will  be  prepared  and  few  countries
+will  be  called  to  initiate  the committee  who  have  to  put  forward  their  view  for  3  minutes  and  the  debating  begins.\n
+3)The  delegates  have  to  put  forward  there  views  according to  the  unexpected  events that  may  take  place.\n
+4) There  will  be  series  of  formal  debates  and  caucuses.\n
+5) The  unmoderated  caucus  is  the  one  where  the  delegates  have  to  interact  with  their counterparts  and  influence  them  to  form  allies.\n
+6) The  moderated  caucus  will  be  a  break  where  informal  interactions  will  take  place which  definitely  will  be  the  most  fun  part  of  MUN.\n
+7) Finally  the  delegates  with  their  respective  allies  have to  draft  a  position  paper expressing  their  countries  stands  and  the  changes  they  want  to  propose  on  the  given problem  statement.
+8) There  will  be  voting  and  the  position  paper  with  a  majority  will  be  passed.
+    </string>
+    <string name="munjud">The  abstract  will  be  judged  on  the  innovative  ,  effective  and  efficiency  of  the  content. MUN  will  be  judged  on  the  basis  of  public  speaking  skills,  influencing  and  interaction  skills,the  knowledge  about  the  policies  ,  innovative  ways  to  amend  the  position  paper,  debating and cross  questioning.
+    </string>
+    <string name="muncon">
 
+    </string>
+    <string name="routeabt">
+        Bracing  ourselves  for  future,  most  of  us  have  forgotten  about  ri
+ddles  and  puzzles which  were  once  an  integral  part  of  our  life.  So, ROUTE  THE  TRUCK is  presentedto  you  to  experience  the  lost  childhood  in  a  more  technical  way.  It  is  a  real-life based  brain  teaser  to  enhance  your  mental  strength  and  logical  reasoning. \n\n
+In ROUTE  THE  TRUCK an  empty  truck  will  be  starting  from  a  collection  point  and
+will  be  reaching  back  after  collecting  all  the  wastes  from  entire township.\n\n
+Participants  will  have  to  find  the  best  possible  route  that  will  consume  minimum time  and  cost.
+    </string>
+    <string name="rourules">
+
+-> Participants  will  have  to  participate  in  teams  consisting  of
+maximum  3  members. \n
+-> Features  of  truck  and  township  will  be  predefined  and  will  be
+disclosed  at  the  time  of  event.\n
+        -> Distance  between  each  house  and  institution  will  be  given.
+-> Truck  will  have  a  mileage  of x kmph  in  the  beginning  that  will reduce  with  time  in  a  regular  manner.\n
+-> There  will  be  a  provision  for  maintenance  of  truck  to  increase  the mileage  back  to x kmpl  at  various  places  in  township,  but  the participant  will  have  to  spend  some  specific  amount  of  time  and money  for  this  purpose. \n
+-> Cost  of  fuel  will  be  fixed  and  there  will  be  fuel  stations  where
+participants  will  have  to  spend  time  and  money  for  refuelling  their trucks.\n
+-> The  truck  will  be  on  lease  with ₹ y kmph.
+Pickup  time  for  waste  and  turning  time  for  truck  at  each  point  will
+be  fixed.
+    </string>
+    <string name="roujud">
+        Teams  will  be  judged  on  the  basis  of  their  path  selection.  They  will  also
+be  judged  on  the  basis  of  their  management  of  time  and  sustainable
+use  of  resources.
+    </string>
+    <string name="roucon">
+
+    </string>
+    <string name="buzzabt">
+        ITS  A  KNOWLEDGE  HUNT.  THE  EVENT  IS  ALL  ABOUT  TESTING  THE  BASIC
+  ELECTRONICS  YOU  COMEACROSS  IN  YOUR  REAL  DAY  TO  DAY  LIFE.  IT  COMPRISES  OF  THREE  ROUNDS  OF  POSSIBLE ELIMINATIONS.\n\n
+<b>ROUND  1:</b>\n
+        A  TEAM  IS  FORMED  AND  QUESTIONS  RELATED  TO  ELECTRON
+IC  COMPONENT  IS  GIVEN.
+THEY  HAVE  TO  SEARCH  FOR  THE  COMPONENT  AND  DROP  IT  IN  TEAMS  DROP  BOX..  EACH  CORRECT
+COMPONENT(ANSWER)  WILL  BE  A  CLUE  TO  THE  NEXT  QUESTION.  TEAMS ARE  PROMOTED  TO  NEXT ROUND  BASED  ON  CORRECT  AND  QUICK  ANSWERING.\n\n
+<b>ROUND  2:</b>\n   SELECTED  TEAMS  HAVE  TO  MAKE  A  CIRCUIT  WITH  THE HELP  OF  GIVEN  COMPLEX  CIRCUIT DIAGRAM.  THEY  HAVE  TO  REDUCE  IT  TO  SIMPLER  FORM  AND  MAKE  THE  RESULTING  CIRCUIT.  THE
+GIVEN  CIRCUIT  DIAGRAM  WILL  BE  A  BLEND  OF  CIRCUIT  THAT  PARTICIPANTS  COME  ACROSS  DAY TO DAY  LIFE.\n\n
+<b>ROUND  3:</b>  QUIZ  ON  BASIC  ELECTRONICS  WILL  BE  CONDUCTED.  TEAM
+WITH  MORE  POINTS  WILL TURN  OUT  TO  BE  THE  WINNER.
+    </string>
+    <string name="buzzrul">
+        1. EACH  TEAM  IS  OF  4-5  PEOPLE. \n
+2. IN  FIRST  ROUND,  ANSWER  HAS  TO  BE  WRITTEN  ON  QUESTION  PAPER  ALSO AND  THE  RESPECTIVE COMPONENT  SHOULD  BE  DROPPED  IN  TEAMS  DROP  BOX.\n
+3. IN  SECOND  ROUND,  SIMPLIFIED  CIRCUIT  HAS  TO  BE  DRAWN  ON  THE QUESTION  PAPER.\n
+4. IN  THIRD  ROUND,  NEGATIVE  POINTS  ARE  ALSO  AWARDED  TO  THE  WRONG ANSWERS.\n
+5. +3,  -1  ,0  POINTS  ARE  AWARDED  TO  CORRECT,  WRONG  AND  NO  ANSWER  RESPECTIVELY
+    </string>
+    <string name="buzzjud">
+
+    </string>
+    <string name="buzzcon">
+        SIRIGIREDDY  DHANA  LAXMI -> 7780134173 \n
+         PERUL  JAIN  -> 7891167889
+    </string>
+    <string name="earthabt">
+        1. It  is  an  Augmented  Reality  based  Treasure  Hunt  which  would  test  the  participant’s  logical  and
+analytical  skills.\n
+2. Event  focus  on  Introduction  of  Augmented  Reality  and  Cryptography  among  the  participants.\n
+3. Event  goes  on  the  basis  of  story  completion  using  encrypted  logical  Puzzles  to  get  the  Treasure
+in  a  completely  Augmented  World,  rather  Campus.\n
+4. It’s  whole  map  will    be  an  augmented  Island  designed  in  IIT(ISM)  Campus  where  you  will  be  the
+pirates  of  terrain.
+    </string>
+    <string name="earthrul">
+        1. The  whole  campus  would  be  divided  into  3-4  zones.\n
+2. Each  zone  would  have  its  own  story.  For  instance,  in  one  of  the  story,  we  have  to  collect  3  keys  and  then  kill  a
+spider  in  order  to  complete  the  story.\n
+3. To  complete  the  treasure  hunt,  a  team  would  have  to  complete  atleast  2  stories.  This  would  provide  them
+with  gold  bricks  which  would  be  useful  to  unlock  the  final  treasure.\n
+4. The  team  which  completes  the  hunt  in  the  least  time  would  be  declared  the  winner.\n
+5. Falling  on  a  trap  continuously  or  retrying  more  than  a  specified  number  of  times  would  lead  to  loss  of  the
+previously  collected loot (gold  bricks/  keys  whichever  is  applicable).
+    </string>
+ <string name="earthcon">1. Neelansh  Maheshwari -  7255929901\n
+2. Suyash  Srivastava -  7255933926\n
+3. Swapnil  Narayan -  7864024344\n
+4. Viney  Yadav  -  7678629252 \n
+ </string>
+    <string name="sinabt">
+        <b>“Limit poker is a science, but no-limit is an art. In limit, you are shooting at a target. In no-limit, the target comes alive and shoots back at you”</b>\n\n
+
+While Poker is played in innumerable forms, a player who understands the values of the Poker hands and the principles of betting can play without difficulty in any type of Poker game. Except in a few versions of the game, a Poker hand consists of five cards. The various combinations of Poker hands rank from five of a kind (the highest) to no pair or nothing (the lowest):\n\n
+
+        <b>Five of a Kind</b>\n – This is the highest possible hand and can occur only in games where at least one card is wild, such as a joker, the two one-eyed jacks, or the four deuces. Examples of five of a kind would be four 10s and a wild card or two queens and three wild cards.
+Straight Flush – This is the highest possible hand when only the standard pack is used, and there are no wild cards. A straight flush consists of five cards of the same suit in sequence, such as 10, 9, 8, 7, 6 of hearts. The highest-ranking straight flush is the A, K, Q, J, and 10 of one suit, and this combination has a special name: a royal flush or a royal straight flush. The odds on being dealt this hand are 1 in almost 650,000.\n
+        <b>Four of a Kind –</b>\n This is the next highest hand, and it ranks just below a straight flush. An example is four aces or four 3s. It does not matter what the fifth, unmatched card is.
+Full House – This colorful hand is made up of three cards of one rank and two cards of another rank, such as three 8s and two 4s, or three aces and two 6s.
+Flush – Five cards, all of the same suit, but not all in sequence, is a flush. An example is Q, 10, 7, 6, and 2 of clubs.
+Straight – Five cards in sequence, but not all of the same suit is a straight. An example is 9♥, 8♣, 7♠, 6♦, 5♥.\n
+        <b>Three of a Kind –</b> This combination contains three cards of the same rank, and the other two cards each of a different rank, such as three jacks, a seven, and a four.
+Two Pairs – This hand contains a pair of one rank and another pair of a different rank, plus any fifth card of a different rank, such as Q, Q, 7, 7, 4.
+One Pair – This frequent combination contains just one pair with the other three cards being of different rank. An example is 10, 10, K, 4, 3.
+No Pair – This very common hand contains "nothing." None of the five cards pair up, nor are all five cards of the same suit or consecutive in rank. When more than one player has no pair, the hands are rated by the highest card each hand contains, so that an ace-high hand beats a king-high hand, and so on\n\n
+        <b>CHIPS</b>
+Poker is almost always played with poker chips. For a game with seven or more players, there should be a supply of at least 200 chips. Usually, the white chip (or the lightest-colored chip) is the unit, or lowest-valued chip, worth whatever the minimum ante or bet is; a red chip (or some other colored chip) is worth five whites, and a blue chip (or some other dark-colored chip) is worth 10 or 20 or 25 whites or two, four or five reds. At the start of the game, each player "buys in" by purchasing a certain number of chips. All of the players usually buy in for the same amount.
+Betting/n
+In the course of each Poker deal, there will be one or more betting intervals in which the players have an opportunity to bet on their hands. Minimizing losses with poor hands and maximizing winnings with good hands is the underlying skill that Poker requires.
+Before the cards are even dealt, the rules of the Poker game being played may require that each player put an initial contribution, called an "ante," of one or more chips into the pot, to start it off.
+Each betting interval, or round, begins when a player, in turn, makes a bet of one or more chips. Each player to the left, in turn, must either "call" that bet by putting into the pot the same number of chips; or "raise," which means that he puts in more than enough chips to call; or "drop" ("fold"), which means that he puts no chips in the pot, discards his hand, and is out of the betting until the next deal.
+When a player drops, he loses any chips he has put into that pot. Unless a player is willing to put into the pot at least as many chips as any preceding player, he must drop out.
+A betting interval ends when the bets have been equalized - that is, when each player has either put in exactly as many chips as his predecessors or has dropped. There are usually two or more betting intervals for each Poker deal. After the final interval there is a "showdown," which means that each player who remains shows his hand face up on the table. The best Poker hand then takes the pot.
+If a player makes a bet or a raise that no other player calls, he wins the pot without showing his hand. Thus, in Poker, there is a bluffing element, and the best combination of cards does not always win the pot! Bluffing is one of the key reasons why Poker is so popular.
+If a player wishes to remain in the game without betting, he "checks." This means, in effect, that the player is making a "bet of nothing." A player may check provided no one before him in that betting interval has made a bet. If another player has bet, he cannot check but must at least call the bet or drop. A player who checks may raise a bet that has been raised by another player. This is called "sandbagging," which is allowed, unless it has been decided beforehand that this practice is forbidden. If all players check during a round of play, the betting interval is over, and all the players still in the pot remain in the game.
+In each betting round, one player is designated as the first bettor, according to the rules of the game. The turn to bet always moves to the left, from player to player, and no one may check, bet, or even drop, except when it is his turn.
+
+    </string>
+    <string name="pubgabt">
+          Where even vegans go crazy for the Chicken Dinner, where survival is the only goal, The Player Unknown’s BattleGround or PUBG is the current buzz in the kingdom of Game-O-Freaks. Pubg is a battle royale game, In this game there are 100 players on one server which jump out of a aeroplane on a deadly island without anything.Then you go and loot weapons from the most dangerous to ones who will never use.Helmets and vests are there to protects yourself. You have to find things to upgrade your weapons and then try to kill your enemies. There are buildings to hide, cars to run and kill but the maps are huge.How will you find others they can be anywhere ??There is a random circle on the map called safe zone and each player should remain in it, If not you will die outside and it shrinks too.so get ready to go crazy with this wonderful game with full of costumes,full of weapons and full of action.
+
+    </string>
+    <string name="pubgrules">
+
+The participants must have an latest updated version of pubg.\n\n
+Only 4 players are allowed at max in a squad.\n
+One player can be part of only one squad.\n
+Using abusive words can lead you directly to the disqualification.\n
+Any attempt to share server with other than the participants will lead you to direct disqualifications.
+
+    </string>
+    <string name="pubgjud">
+        The team which survives till the end will be having “Winner Winner Chicken Dinner”.
+    </string>
 </resources>

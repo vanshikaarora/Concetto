@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="45dp"
-    android:background="@drawable/mainbg"
+    android:background="@drawable/conc"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -17,7 +17,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="250dp"
         android:background="@drawable/ripple"
         android:fontFamily="@font/batmanforeveralternate"
         android:text="Events"
