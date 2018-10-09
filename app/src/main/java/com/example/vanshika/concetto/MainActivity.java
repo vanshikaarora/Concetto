@@ -2,8 +2,10 @@ package com.example.vanshika.concetto;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -96,7 +98,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    /*@Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -104,12 +106,34 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_fb) {
+            Intent intent;
+            try {Context context=getApplicationContext();
+                context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
+                 intent= new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/Concettoiitdhanbad/"));
+            } catch (Exception e) {
+                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/Concettoiitdhanbad/"));
+            }
+            startActivity(intent);
             return true;
+        }
+        else if (id== R.id.action_insta){
+            Uri uri = Uri.parse("https://instagram.com/concetto.iitism?utm_source=ig_profile_share&igshid=1mulii77l36d5");
+            Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+            likeIng.setPackage("com.instagram.android");
+
+            try {
+                startActivity(likeIng);
+            } catch (ActivityNotFoundException e) {
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://instagram.com/concetto.iitism?utm_source=ig_profile_share&igshid=1mulii77l36d5")));
+            }
+
         }
 
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -136,12 +160,14 @@ public class MainActivity extends AppCompatActivity
             return true;
 
         } else if (id == R.id.nav_report_bug) {
-
+            String address[]={"perul365@gmail.com"};
             String shareBody = "Here is the share content body";
             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");
             sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
             sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            sharingIntent.putExtra(Intent.EXTRA_PHONE_NUMBER,"9709372706");
+            sharingIntent.putExtra(Intent.EXTRA_EMAIL,address);
             startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.app_name)));
 
             return true;
