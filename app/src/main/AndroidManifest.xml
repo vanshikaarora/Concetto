@@ -105,6 +105,10 @@
         <activity android:name=".maglocart_reg"></activity>
         <activity android:name=".buil_reg"></activity>
         <activity android:name=".buildabit"></activity>
+        <activity android:name=".earth_reg"></activity>
+        <activity android:name=".csgo">
+        </activity>
+        <activity android:name=".csgoreg"></activity>
 
 
 

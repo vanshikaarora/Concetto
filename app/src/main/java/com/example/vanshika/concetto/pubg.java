@@ -98,7 +98,7 @@ public class pubg extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(pubg.this);
-                contacts.setMessage(R.string.buzzcon);
+                contacts.setMessage("AMRIT VYAS -> 9431785428");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

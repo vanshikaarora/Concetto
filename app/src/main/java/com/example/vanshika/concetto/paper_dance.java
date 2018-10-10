@@ -107,7 +107,7 @@ public class paper_dance extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(paper_dance.this);
-                contacts.setMessage(R.string.symcontacts);
+                contacts.setMessage("PRANJAL GUPTA - 9709372706");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
