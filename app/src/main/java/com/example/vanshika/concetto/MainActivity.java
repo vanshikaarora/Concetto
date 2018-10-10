@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_report_bug) {
             String address[]={"perul365@gmail.com"};
-            String shareBody = "Here is the share content body";
+            /*String shareBody = "Here is the share content body";
             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");
             sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
@@ -178,6 +178,14 @@ public class MainActivity extends AppCompatActivity
             sharingIntent.putExtra(Intent.EXTRA_PHONE_NUMBER,"9709372706");
             sharingIntent.putExtra(Intent.EXTRA_EMAIL,address);
             startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.app_name)));
+            */Intent send = new Intent(Intent.ACTION_SENDTO);
+            String uriText = "mailto:" + Uri.encode("perul365@gmail.com") +
+                    "?subject=" + Uri.encode("Reporting bug") +
+                    "&body=" + Uri.encode("Please give us details");
+            Uri uri = Uri.parse(uriText);
+
+            send.setData(uri);
+            startActivity(Intent.createChooser(send, "Send mail..."));
 
             return true;
         }
