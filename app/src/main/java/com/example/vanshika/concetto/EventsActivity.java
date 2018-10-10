@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.vanshika.concetto.Adapters.EventsAdapter;
@@ -50,6 +51,7 @@ public class EventsActivity extends MainActivity {
     int childCount;
     FirebaseRecyclerOptions<GuestLecture> list;
     WorkshopAdapter wAdapter;
+    LinearLayout llProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,8 @@ public class EventsActivity extends MainActivity {
        // Animation openScale = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.activity_open_scale);
        // overridePendingTransition(R.anim.popup_in,R.anim.activity_open_translate);
         getSupportActionBar().hide();
+        llProgress = (LinearLayout) findViewById(R.id.llProgress);
+        showProgress("Loading...");
 
         placeholder = (TextView) findViewById(R.id.placeholder_text);
 
@@ -295,7 +299,7 @@ public class EventsActivity extends MainActivity {
                         guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_7"));
 
                         adapter.notifyDataSetChanged();
-                    }
+                    }llProgress.setVisibility(View.GONE);
                 }
 
 
@@ -306,7 +310,34 @@ public class EventsActivity extends MainActivity {
 
                 @Override
                 public void onChildRemoved(DataSnapshot dataSnapshot) {
-
+                    if (dataSnapshot.getKey().equals("guest_lecture_1")){
+                        guestLectures.remove(0);
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_2")){
+                        guestLectures.remove(1);
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_3")){
+                        guestLectures.remove(2);
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_4")){
+                        guestLectures.remove(3);
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_5")){
+                        guestLectures.remove(4);
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_6")){
+                        guestLectures.remove(5);
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_7")){
+                        guestLectures.remove(6);
+                        adapter.notifyDataSetChanged();
+                    }
                 }
 
                 @Override
@@ -392,7 +423,7 @@ public class EventsActivity extends MainActivity {
         */}
         else if (whichClass.equals("workshop")){
 
-            guestLectures.add(new GuestLecture("Internet of things","","6/10/2018","9am to 4pm","https://drive.google.com/file/d/1yXd7znVEM-IVODXwyjGD0jWMmC00elWR/view"));
+            //guestLectures.add(new GuestLecture("Internet of things","","6/10/2018","9am to 4pm","https://drive.google.com/file/d/1yXd7znVEM-IVODXwyjGD0jWMmC00elWR/view"));
 
             DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
             Query query = reference.child("Workshop");
@@ -403,6 +434,18 @@ public class EventsActivity extends MainActivity {
                         guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),"",dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),dataSnapshot.child("about").getValue().toString()));
                         wAdapter.notifyDataSetChanged();
                     }
+                    if (dataSnapshot.getKey().equals("workshop_2")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),"",dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),dataSnapshot.child("about").getValue().toString()));
+                        wAdapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("workshop_3")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),"",dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),dataSnapshot.child("about").getValue().toString()));
+                        wAdapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("workshop_4")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),"",dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),dataSnapshot.child("about").getValue().toString()));
+                        wAdapter.notifyDataSetChanged();
+                    }llProgress.setVisibility(View.GONE);
                 }
 
                 @Override
@@ -412,7 +455,22 @@ public class EventsActivity extends MainActivity {
 
                 @Override
                 public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
+                        if(dataSnapshot.getKey().toString().equals("workshop_1")){
+                            guestLectures.remove(0);
+                            wAdapter.notifyDataSetChanged();
+                        }
+                    if(dataSnapshot.getKey().toString().equals("workshop_2")){
+                        guestLectures.remove(1);
+                        wAdapter.notifyDataSetChanged();
+                    }
+                    if(dataSnapshot.getKey().toString().equals("workshop_3")){
+                        guestLectures.remove(2);
+                        wAdapter.notifyDataSetChanged();
+                    }
+                    if(dataSnapshot.getKey().toString().equals("workshop_4")){
+                        guestLectures.remove(3);
+                        wAdapter.notifyDataSetChanged();
+                    }
                 }
 
                 @Override
@@ -429,6 +487,11 @@ public class EventsActivity extends MainActivity {
 
 
         }
+    }
+
+    private void showProgress(String s) {
+        ((TextView) llProgress.findViewById(R.id.tvMessage)).setText(s);
+        llProgress.setVisibility(View.VISIBLE);
     }
 }
 
