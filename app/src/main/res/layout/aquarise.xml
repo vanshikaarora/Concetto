@@ -25,7 +25,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="@drawable/truss"
+                android:background="@drawable/aqua"
                 android:orientation="vertical">
 
 
@@ -36,7 +36,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="150dp"
 
-                    android:text="TRUSS THE FRAME"
+                    android:text="AQUA RISE"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
                     android:textStyle="bold" />
