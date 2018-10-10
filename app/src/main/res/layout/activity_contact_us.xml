@@ -7,28 +7,6 @@
     android:background="#ffffff"
 
     android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="vertical"
-        android:background="@drawable/deve1">
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text= "Developers"
-            android:paddingTop="95dp"
-            android:layout_gravity="left"
-            android:paddingLeft="20dp"
-            android:textSize="40dp"
-            android:textColor = "#ffffff"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="114dp" />
-
-
-
-    </LinearLayout>
 
 
     <android.support.v4.widget.NestedScrollView
@@ -61,7 +39,7 @@
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
 
-                        android:src="@drawable/peru" />
+                        android:src="@drawable/amrit" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -74,7 +52,7 @@
                             android:layout_height="45dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="18dp"
-                            android:text="PERUL JAIN"
+                            android:text="AMRIT VYAS"
                             android:textSize="20dp" />
 
                         <TextView
@@ -82,31 +60,13 @@
                             android:layout_height="50dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
-                            android:text="Electronics and Communication Engineering"
+                            android:text="STUDENT COORDINATOR  9431785428"
                             android:textSize="15dp" />
 
                         <LinearLayout
                             android:layout_width="225dp"
                             android:layout_height="50dp"
                             android:orientation="horizontal">
-
-                            <ImageView
-                                android:id="@+id/perugit"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="25dp"
-
-                                android:src="@drawable/githubb" />
-
-                            <ImageView
-                                android:id="@+id/perulinked"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="25dp"
-
-                                android:src="@drawable/linked" />
 
 
                         </LinearLayout>
@@ -134,9 +94,9 @@
                     <ImageView
                         android:layout_width="130dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/shridhar"
+                        android:scaleType="centerCrop"
 
-                        android:scaleType="centerCrop" />
+                        android:src="@drawable/pranjal" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -149,39 +109,21 @@
                             android:layout_height="45dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="18dp"
-                            android:text="SHRIDHAR GOEL"
+                            android:text="PRANJAL GUPTA"
                             android:textSize="20dp" />
 
                         <TextView
                             android:layout_width="225dp"
-                            android:layout_height="50dp"
+                            android:layout_height="86dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
-                            android:text="Mathematics and Computing"
+                            android:text="STUDENT CO-COORDINATOR (EVENT MANAGEMENT)           9709372706"
                             android:textSize="15dp" />
 
                         <LinearLayout
                             android:layout_width="225dp"
                             android:layout_height="50dp"
                             android:orientation="horizontal">
-
-                            <ImageView
-                                android:id="@+id/shridhargit"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="25dp"
-
-                                android:src="@drawable/githubb" />
-
-                            <ImageView
-                                android:id="@+id/shridharlinked"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="25dp"
-
-                                android:src="@drawable/linked" />
 
 
                         </LinearLayout>
@@ -212,7 +154,7 @@
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
 
-                        android:src="@drawable/vanshi" />
+                        android:src="@drawable/satvik" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -225,43 +167,17 @@
                             android:layout_height="45dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="18dp"
-                            android:text="VANSHIKA ARORA"
+                            android:text="SATVIK SINGHAL"
                             android:textSize="20dp" />
 
                         <TextView
                             android:layout_width="225dp"
-                            android:layout_height="50dp"
+                            android:layout_height="100dp"
                             android:layout_weight="1"
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
-                            android:text="Mathematics and Computing"
+                            android:text="STUDENT CO-COORDINATOR (PROMOTION)             9430386448"
                             android:textSize="15dp" />
-
-                        <LinearLayout
-                            android:layout_width="225dp"
-                            android:layout_height="50dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:id="@+id/vanshigit"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="25dp"
-
-                                android:src="@drawable/githubb" />
-
-                            <ImageView
-                                android:id="@+id/vanshilinked"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="25dp"
-
-                                android:src="@drawable/linked" />
-
-
-                        </LinearLayout>
 
 
                     </LinearLayout>
@@ -275,14 +191,6 @@
                 android:layout_height="1dip"
                 android:layout_centerVertical="true"
                 android:background="#BDBDBD" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:text="  Designers"
-                android:textSize="20dp" />
 
 
             <android.support.v7.widget.CardView
@@ -301,7 +209,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/kuldeep"
+                        android:src="@drawable/anuroop"
                         android:scaleType="centerCrop"/>
 
                     <LinearLayout
@@ -315,24 +223,16 @@
                             android:layout_height="45dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="18dp"
-                            android:text="KULDEEP GAUTAM"
+                            android:text="ANUROOP KAMBLE"
                             android:textSize="20dp" />
 
                         <TextView
-                            android:layout_width="173dp"
-                            android:layout_height="50dp"
+                            android:layout_width="232dp"
+                            android:layout_height="89dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
-                            android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
-                            android:textSize="10dp" />
-                        <ImageView
-                            android:id="@+id/kullinked"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-
-                            android:layout_marginLeft="25dp"
-
-                            android:src="@drawable/linked" />
+                            android:text="STUDENT CO-COORDINATOR (SPONSORSHIP)            9422411104"
+                            android:textSize="15dp" />
 
 
                     </LinearLayout>

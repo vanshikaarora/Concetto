@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_fb) {
-            Intent intent;
+            /*Intent intent;
             try {Context context=getApplicationContext();
                 context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
                  intent= new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/Concettoiitdhanbad/"));
@@ -124,7 +124,20 @@ public class MainActivity extends AppCompatActivity
                  intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/Concettoiitdhanbad/"));
             }
             startActivity(intent);
-            return true;
+            return true;*/
+
+            Uri uri = Uri.parse("https://www.facebook.com/Concettoiitdhanbad/");
+            Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+            likeIng.setPackage("com.facebook.katana");
+
+            try {
+                startActivity(likeIng);
+            } catch (ActivityNotFoundException e) {
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.facebook.com/Concettoiitdhanbad/")));
+            }
+
         }
         else if (id== R.id.action_insta){
             Uri uri = Uri.parse("https://instagram.com/concetto.iitism?utm_source=ig_profile_share&igshid=1mulii77l36d5");
@@ -153,7 +166,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_contact_us) {
-            startActivity(new Intent(MainActivity.this,flash.class));
+            startActivity(new Intent(MainActivity.this,ContactUsActivity.class));
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
             return true;
 

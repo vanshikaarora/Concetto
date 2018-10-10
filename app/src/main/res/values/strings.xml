@@ -761,13 +761,31 @@ The event is focused on lifting and moving of object with the help of hydraulic 
 •	Design of the hydraulic arm.\n
 •	Lifting mechanisms.
 
-    </string>CONCETTO is the annual techno-management festival of INDIAN INSTITUTE OF TECHNOLOGY (INDIAN SCHOOL OF MINES) DHANBAD. It also refers to the independent body of students who organize this event along with many other social initiatives and outreach programs around the year. CONCETTO is known for hosting a variety of events that include competitions, exhibitions, guest lectures as well as workshops. CONCETTO is Eastern India’s Largest Technical fest organized by the student body of the college.
+    </string>CONCETTO is the annual techno-management festival of INDIAN INSTITUTE OF TECHNOLOGY
+    (INDIAN SCHOOL OF MINES) DHANBAD. It also refers to the independent body of students who
+    organize this event along with many other social initiatives and outreach programs around the
+    year. CONCETTO is known for hosting a variety of events that include competitions, exhibitions,
+    guest lectures as well as workshops. CONCETTO is Eastern India’s Largest Technical fest
+    organized by the student body of the college.
 
-The word “Concetto” means an opinion, an idea that has the revolutionary potential to shake the technical world.
+    The word “Concetto” means an opinion, an idea that has the revolutionary potential to shake the
+    technical world.
 
-Started in 2012, with the aim of providing a platform for the Indian student community to develop and showcase their technical prowess, it has now grown into East India’s Largest Science and Technology Festival with the participation of thousands of students from hundreds of Technical Institutes all around the nation. The activities culminate in a grand three-day festival event in the IIT (ISM) campus which attracts people from all over the country, including students, academia, corporates, and the general public as well. CONCETTO is all set to have its 8th Edition from 26th to 28th October’18.
+    Started in 2012, with the aim of providing a platform for the Indian student community to
+    develop and showcase their technical prowess, it has now grown into East India’s Largest Science
+    and Technology Festival with the participation of thousands of students from hundreds of
+    Technical Institutes all around the nation. The activities culminate in a grand three-day
+    festival event in the IIT (ISM) campus which attracts people from all over the country,
+    including students, academia, corporates, and the general public as well. CONCETTO is all set to
+    have its 8th Edition from 26th to 28th October’18.
 
-The 3 day Technical Fiesta of IIT (ISM) DHANBAD- “CONCETTO” is one of the largest Techno-Management Fests in Eastern India with a massive participation of more than 10000 participants from hundreds of different institutes and colleges, who stalk the grounds of IIT (ISM) to prove their technical expertise, encompassing a platform to shoot the “TECHNICAL ME” of everyone. Apart from the various Robotics and Coding events, Concetto calls all the budding Entrepreneurs to showcase their innovative business skills. At the same time, hone your skills by joining our workshops taken by the eminent personalities in the various fields of science
+    The 3 day Technical Fiesta of IIT (ISM) DHANBAD- “CONCETTO” is one of the largest
+    Techno-Management Fests in Eastern India with a massive participation of more than 10000
+    participants from hundreds of different institutes and colleges, who stalk the grounds of IIT
+    (ISM) to prove their technical expertise, encompassing a platform to shoot the “TECHNICAL ME” of
+    everyone. Apart from the various Robotics and Coding events, Concetto calls all the budding
+    Entrepreneurs to showcase their innovative business skills. At the same time, hone your skills
+    by joining our workshops taken by the eminent personalities in the various fields of science
     <string name="thriiiabout">
         The task of this is as simple as can be. You are required to construct a framework which can adequately support the equipments. Drill through the obstructions efficiently to claim your prize. Sounds daunting, doesn\'t it! Well there\'s not much to worry about as we have a Workshop designed specifically to acquaint you with a vivid description of the intricacies involved.\n
 <b>REQUIREMENT:</b>
@@ -782,7 +800,7 @@ The 3 day Technical Fiesta of IIT (ISM) DHANBAD- “CONCETTO” is one of the la
 ➢ Drill chuck and the drill pipes will be provided at the time of event.\n
 
     </string>
-<string name="thrillrules">
+    <string name="thrillrules">
     TEAM:
     • Team must consist of 3 to 5 members.
     • Participation fee will be Rs 500 per team.
@@ -794,7 +812,8 @@ The 3 day Technical Fiesta of IIT (ISM) DHANBAD- “CONCETTO” is one of the la
     TIME LIMIT:
     • Maximum time limit to drill the composition is 30 minutes.
     • Minimum performing time is 6 minutes.
-</string><string name="thrilljudging">Judging criterion includes a distribution of 100 points.\n
+</string>
+    <string name="thrilljudging">Judging criterion includes a distribution of 100 points.\n
     • 60 POINTS for the length of drilled composition. (1 cm =1 point)\n
     • 20 POINTS for stability &amp; design of the Derrick.\n
     • 20 POINTS - Time {2/3 of the time remaining at the time of quitting}\n
@@ -802,7 +821,7 @@ The 3 day Technical Fiesta of IIT (ISM) DHANBAD- “CONCETTO” is one of the la
     <string name="thrillcon">
         kshitij goyal -> 9425725040
     </string>
-<string name="bfftabt">
+    <string name="bfftabt">
     Do you have what it takes to be the top gun? Inviting all the analytic minds to fight it out for the top prize in Buffet Money, Concetto’s Virtual Stock Trading game. Buy, Sell and Trade in this intense three-day challenge and get a feel of the real market as you bid for real prices against real players. Engulf yourself in the nail-biting market swings as you would soon find out that money is the only thing virtual here. Rewards worth Rs. XXXX up for grabs. May the odds be ever in your favour
 </string>
     <string name="bfftrules">
@@ -1041,7 +1060,7 @@ with  gold  bricks  which  would  be  useful  to  unlock  the  final  treasure.\
 5. Falling  on  a  trap  continuously  or  retrying  more  than  a  specified  number  of  times  would  lead  to  loss  of  the
 previously  collected loot (gold  bricks/  keys  whichever  is  applicable).
     </string>
- <string name="earthcon">1. Neelansh  Maheshwari -  7255929901\n
+    <string name="earthcon">1. Neelansh  Maheshwari -  7255929901\n
 2. Suyash  Srivastava -  7255933926\n
 3. Swapnil  Narayan -  7864024344\n
 4. Viney  Yadav  -  7678629252 \n

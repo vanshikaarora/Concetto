@@ -11,12 +11,12 @@
         android:icon="@mipmap/concetto"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/concetto"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".SplashActivity"
-            android:label="@string/app_name"
-            >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +33,7 @@
         <activity android:name=".robowar_registration" />
         <activity android:name=".trusstheframe" />
         <activity android:name=".vitricity" />
-        <activity android:name=".born_reg"></activity>
+        <activity android:name=".born_reg" />
         <activity android:name=".leverthehuge" />
         <activity android:name=".spardhatechbizz" />
         <activity android:name=".modelthecaravel" />
@@ -47,7 +47,6 @@
         <activity android:name=".frothfloatation" />
         <activity android:name=".borntowander" />
         <activity android:name=".googleminer" />
-
         <activity android:name=".About" />
         <activity android:name=".chemcarnival" />
         <activity android:name=".chemecar" />
@@ -55,6 +54,7 @@
         <activity android:name=".electrocharades" />
         <activity android:name=".thebafflingplanet" />
         <activity android:name=".symposium" />
+      
         <activity android:name=".chemcarreg">
 
 
@@ -123,7 +123,7 @@
             </intent-filter>
         </service>
 
-
+        <activity android:name=".ContactUsActivity"></activity>
     </application>
 
 </manifest>
