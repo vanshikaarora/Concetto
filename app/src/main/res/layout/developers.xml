@@ -319,12 +319,13 @@
                             android:textSize="20dp" />
 
                         <TextView
-                            android:layout_width="173dp"
-                            android:layout_height="50dp"
+                            android:layout_width="234dp"
+                            android:layout_height="73dp"
                             android:paddingLeft="20dp"
                             android:paddingTop="8dp"
                             android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
-                            android:textSize="10dp" />
+                            android:textSize="15dp" />
+
                         <ImageView
                             android:id="@+id/kullinked"
                             android:layout_width="30dp"
