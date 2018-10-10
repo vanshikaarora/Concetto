@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.example.vanshika.concetto.Adapters.EventsAdapter;
 import com.example.vanshika.concetto.Adapters.GuestLectureAdapter;
+import com.example.vanshika.concetto.Adapters.WorkshopAdapter;
 import com.example.vanshika.concetto.Models.Event;
 import com.example.vanshika.concetto.Models.GuestLecture;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -48,6 +49,7 @@ public class EventsActivity extends MainActivity {
     GuestLectureAdapter adapter;
     int childCount;
     FirebaseRecyclerOptions<GuestLecture> list;
+    WorkshopAdapter wAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,9 @@ public class EventsActivity extends MainActivity {
         recyclerView = (RecyclerView) findViewById(R.id.events_recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        guestLectures = new ArrayList<>();
+        wAdapter=new WorkshopAdapter(EventsActivity.this,guestLectures);
+        recyclerView.setAdapter(wAdapter);
         String whichClass = getIntent().getStringExtra("activity");
 
         if (whichClass.equals("events")) {
@@ -210,6 +215,8 @@ public class EventsActivity extends MainActivity {
 
         } else if (whichClass.equals("guest_lectures")) {
             guestLectures = new ArrayList<>();
+            adapter=new GuestLectureAdapter(EventsActivity.this,guestLectures);
+            recyclerView.setAdapter(adapter);
             final FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference ref = database.getReference();//HAve you made this reference already in the database?
             DatabaseReference dRef = ref.child("GuestLectures");
@@ -257,22 +264,37 @@ public class EventsActivity extends MainActivity {
                     if (dataSnapshot.getKey().equals("guest_lecture_1")){
                         guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_1"));
 
-                        //adapter.notifyDataSetChanged();
+                        adapter.notifyDataSetChanged();
                     }
                     else if (dataSnapshot.getKey().equals("guest_lecture_2")){
                         guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_2"));
 
-                        //adapter.notifyDataSetChanged();
+                        adapter.notifyDataSetChanged();
                     }
                     else if (dataSnapshot.getKey().equals("guest_lecture_3")){
                         guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_3"));
 
-                        //adapter.notifyDataSetChanged();
+                        adapter.notifyDataSetChanged();
                     }
                     if (dataSnapshot.getKey().equals("guest_lecture_4")){
                         guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_4"));
 
-                        //adapter.notifyDataSetChanged();
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_5")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_5"));
+
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_6")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_6"));
+
+                        adapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("guest_lecture_7")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_7"));
+
+                        adapter.notifyDataSetChanged();
                     }
                 }
 
@@ -300,8 +322,7 @@ public class EventsActivity extends MainActivity {
             list = new FirebaseRecyclerOptions.Builder<GuestLecture>()
                     .setQuery(query, GuestLecture.class)
                     .build();
-adapter=new GuestLectureAdapter(EventsActivity.this,guestLectures);
-recyclerView.setAdapter(adapter);
+
 
             /*mLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
             recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -370,6 +391,42 @@ recyclerView.setAdapter(adapter);
             });*//*
         */}
         else if (whichClass.equals("workshop")){
+
+            guestLectures.add(new GuestLecture("Internet of things","","6/10/2018","9am to 4pm","https://drive.google.com/file/d/1yXd7znVEM-IVODXwyjGD0jWMmC00elWR/view"));
+
+            DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+            Query query = reference.child("Workshop");
+            query.addChildEventListener(new ChildEventListener() {
+                @Override
+                public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                    if (dataSnapshot.getKey().equals("workshop_1")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),"",dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),dataSnapshot.child("about").getValue().toString()));
+                        wAdapter.notifyDataSetChanged();
+                    }
+                }
+
+                @Override
+                public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+                }
+
+                @Override
+                public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+                }
+
+                @Override
+                public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+
+
 
         }
     }
