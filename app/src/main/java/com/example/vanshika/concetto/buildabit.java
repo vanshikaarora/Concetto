@@ -82,7 +82,8 @@ public class buildabit extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(buildabit.this);
-                contacts.setMessage(R.string.spardha_contact);
+                contacts.setMessage("MILIND VERMA -> 7484092811\n" +
+                        "sachin Bhadoria -> 9753323535");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

@@ -94,7 +94,7 @@ public class blinddate extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(blinddate.this);
-                contacts.setMessage(R.string.bafcon);
+                contacts.setMessage("PRANJAL GUPTA - 9709372706");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

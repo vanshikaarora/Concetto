@@ -107,7 +107,11 @@ public class aquarise extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(aquarise.this);
-                contacts.setMessage(R.string.truss_contact);
+                contacts.setMessage("Akash\n" +
+                        "                        Ajay saini\n" +
+                        "                        Prince keshri -> 9386667625\n" +
+                        "                        Uday kiran\n" +
+                        "                        Aman kumar");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -117,7 +121,7 @@ public class aquarise extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+             startActivity(new Intent(aquarise.this,aqua_reg.class));
 
             }
         });
