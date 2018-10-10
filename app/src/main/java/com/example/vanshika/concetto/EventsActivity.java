@@ -99,7 +99,7 @@ public class EventsActivity extends MainActivity {
 
                 eventsList.add(
                         new Event("FIFA", "android.resource://com.example.vanshika.concetto/" + concetto_white));
-                
+
             } else if (position.equals("1")) {
 
                 eventsList.add(
