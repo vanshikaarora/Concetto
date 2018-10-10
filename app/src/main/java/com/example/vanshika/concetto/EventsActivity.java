@@ -60,8 +60,7 @@ public class EventsActivity extends MainActivity {
        // Animation openScale = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.activity_open_scale);
        // overridePendingTransition(R.anim.popup_in,R.anim.activity_open_translate);
         getSupportActionBar().hide();
-        llProgress = (LinearLayout) findViewById(R.id.llProgress);
-        showProgress("Loading...");
+
 
         placeholder = (TextView) findViewById(R.id.placeholder_text);
 
@@ -218,6 +217,8 @@ public class EventsActivity extends MainActivity {
 
 
         } else if (whichClass.equals("guest_lectures")) {
+            llProgress = (LinearLayout) findViewById(R.id.llProgress);
+            showProgress("Loading...");
             guestLectures = new ArrayList<>();
             adapter=new GuestLectureAdapter(EventsActivity.this,guestLectures);
             recyclerView.setAdapter(adapter);
@@ -422,6 +423,8 @@ public class EventsActivity extends MainActivity {
             });*//*
         */}
         else if (whichClass.equals("workshop")){
+            llProgress = (LinearLayout) findViewById(R.id.llProgress);
+            showProgress("Loading...");
 
             //guestLectures.add(new GuestLecture("Internet of things","","6/10/2018","9am to 4pm","https://drive.google.com/file/d/1yXd7znVEM-IVODXwyjGD0jWMmC00elWR/view"));
 
