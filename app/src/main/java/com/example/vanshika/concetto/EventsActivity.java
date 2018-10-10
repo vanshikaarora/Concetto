@@ -377,6 +377,9 @@ recyclerView.setAdapter(adapter);
                 }
             });*//*
         */}
+        else if (whichClass.equals("workshop")){
+
+        }
     }
 }
 

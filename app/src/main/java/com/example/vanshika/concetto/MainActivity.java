@@ -67,6 +67,15 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+        (findViewById(R.id.workshopButton)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+        Intent intent=new Intent(MainActivity.this, EventsActivity.class);
+        intent.putExtra("activity","workshop");
+        startActivity(intent);
+
+            }
+        });
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             NotificationManager mNotificationManager =
