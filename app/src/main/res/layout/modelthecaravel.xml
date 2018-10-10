@@ -10,7 +10,7 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="90"
+        android:layout_weight="85"
         android:id="@+id/hl">
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,12 +113,15 @@
     <Button
         android:id="@+id/bt5"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-        android:text="REGISTRATION"
         android:layout_weight="10"
-        android:padding="10dp"
-        android:textColor="#ffffff"
+
         android:background="@color/regcolor"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="REGISTRATION"
+        android:textColor="#ffffff"
         app:layout_anchor="@+id/hl"
         app:layout_anchorGravity="bottom|right"
 

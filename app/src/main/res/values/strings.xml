@@ -1090,4 +1090,42 @@ Any attempt to share server with other than the participants will lead you to di
     <string name="pubgjud">
         The team which survives till the end will be having “Winner Winner Chicken Dinner”.
     </string>
+    <string name="magloabt">
+        Magl-O-Cart event is all about designing a compact light weight levitating cart using magnets and try it on a magnetic track using modest power source. Levitating Cart may be considered to be an analogical representation of train that levitate on magnetic track popularly known as MAGLEV Train. Magnetic levitation (MAGLEV) is a highly advanced public transportation technology which uses the principle of electromagnetic suspension technology and achieves high speed without making contact with ground.
+
+    </string>
+    <string name="maglorules">Maximum 3 participants can be in a team (with valid id cards). Team should give model details before round 1 for valid participation. Competition will be held in 4 Rounds. The Levitating Cart will be evaluated based on its effectiveness, simplicity, design explanation and efficiency. Path of track will be in parabolic nature with one side end short(It will be having depth in between two slopes).As magl-o-cart will fell from short end Distance will be measured.\n
+	<b>Round 1:
+</b>\nCart should levitate on designed magnetic track.
+Levitating Cart should qualify minimum distance proceeding to round 2.
+[ 3 tries will be given to each team]\n\n
+
+	<b>Round 2:</b>\n
+Levitating Cart with minimum time will gain maximum points.
+[ 3 tries will be given to each team]\n\n
+        <b>Round 3:</b>\n
+Levitating Cart should be able to pull certain weight and points would be given based on weight and distance travelled.\n\n
+        <b>Round 4:</b>\n
+Distance(For info read rules properly) measured should be maximum for entering in next round.\n\n
+
+	<b>Round 5:</b>\n
+Points would be given for Model design and analysis.
+
+    </string>
+    <string name="maglospec">Cart can be made of any material like Sponge, wood, plastic,  e.t.c (Note: It should light in weight for levitation.\nLength of the cart should be around 10cm to 11cm.\nWidth of cart should be 6.8cm-7.0cm only. (Cart can be of any shape with the specified Dimensions only)\n\n
+        <b>Note:</b>\n Fan, Motor, Battery, Switch should be brought by the participants. Magnetic strips will be provided.
+
+    </string>
+    <string name="buildabt">
+        For the first time in the history of Concetto, a hackathon is being organised. It is expected to add even more grandeur to the great Concetto. Build-a-Bit welcomes multinationals and major companies from the sector of information technology who will provide problem statements to the participating techies of Build-a-Bit.
+    </string>
+    <string name="buildrul">
+         The event would stretch for a duration of around 12 hours, thus, making it an overnight event. At the end, the participants with the most efficient and innovative solutions to the provided problem statements would be declared winners. The winners would solely be decided by the visiting companies and rewarded with exciting goodies.
+    </string>
+    <string name="buildprize">
+        The winners would solely be decided by the visiting companies and rewarded with exciting goodies. The event has a cash prize of worth more than ₹20,000. The rewards don\'t only end here. If impressed with the quality of skills, the winners might be given an opportunity to pursue an internship under the respective companies. So don't hold back your skills, unleash your passion for coding and participate in this thrilling event of Build-a-Bit.
+    </string>
+    <string name="buildcon">
+
+    </string>
 </resources>

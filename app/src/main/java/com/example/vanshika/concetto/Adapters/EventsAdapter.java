@@ -17,10 +17,13 @@ import android.widget.TextView;
 import com.example.vanshika.concetto.EventsActivity;
 import com.example.vanshika.concetto.Models.Event;
 import com.example.vanshika.concetto.R;
+import com.example.vanshika.concetto.aquarise;
 import com.example.vanshika.concetto.blinddate;
 import com.example.vanshika.concetto.buffetmoney;
+import com.example.vanshika.concetto.buildabit;
 import com.example.vanshika.concetto.chemcarnival;
 import com.example.vanshika.concetto.chemecar;
+import com.example.vanshika.concetto.earth;
 import com.example.vanshika.concetto.electrabuzz;
 import com.example.vanshika.concetto.electrocharades;
 import com.example.vanshika.concetto.flash;
@@ -29,11 +32,16 @@ import com.example.vanshika.concetto.googleminer;
 import com.example.vanshika.concetto.industrialdesignproblem;
 import com.example.vanshika.concetto.lasertag;
 import com.example.vanshika.concetto.leverthehuge;
+import com.example.vanshika.concetto.maglocart;
 import com.example.vanshika.concetto.memewar;
 import com.example.vanshika.concetto.modelthecaravel;
+import com.example.vanshika.concetto.mun;
 import com.example.vanshika.concetto.obstaclecourseracing;
 import com.example.vanshika.concetto.paper_dance;
+import com.example.vanshika.concetto.pubg;
 import com.example.vanshika.concetto.robowar;
+import com.example.vanshika.concetto.route;
+import com.example.vanshika.concetto.sinwin;
 import com.example.vanshika.concetto.spardhatechbizz;
 import com.example.vanshika.concetto.symposium;
 import com.example.vanshika.concetto.techtriathlon;
@@ -269,7 +277,7 @@ import java.util.List;
                             mCtx.startActivity(intent);
                         }
 
-                        else if(event.getName().equals("Techpro"))
+                        else if(event.getName().equals("TechPro"))
                         {
                             Intent intent=new Intent(mCtx,frothfloatation.class);
                             mCtx.startActivity(intent);
@@ -337,7 +345,42 @@ import java.util.List;
 
                         else if(event.getName().equals("Sin and Win"))
                         {
-                            Intent intent=new Intent(mCtx, chemcarnival.class); //Change it
+                            Intent intent=new Intent(mCtx, sinwin.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("EArTh"))
+                        {
+                            Intent intent=new Intent(mCtx, earth.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("Magl-o-cart"))
+                        {
+                            Intent intent=new Intent(mCtx, maglocart.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("Aqua Rise"))
+                        {
+                            Intent intent=new Intent(mCtx, aquarise.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("Route The Truck"))
+                        {
+                            Intent intent=new Intent(mCtx, route.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("Model United Nations"))
+                        {
+                            Intent intent=new Intent(mCtx, mun.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("BUILD A BIT"))
+                        {
+                            Intent intent=new Intent(mCtx, buildabit.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("PUBG"))
+                        {
+                            Intent intent=new Intent(mCtx, pubg.class);
                             mCtx.startActivity(intent);
                         }
                     }

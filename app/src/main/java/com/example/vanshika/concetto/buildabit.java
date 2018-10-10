@@ -15,23 +15,22 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 /**
- * Created by lenovo on 10/2/2018.
+ * Created by lenovo on 10/9/2018.
  */
 
-public class frothfloatation extends MainActivity {
+public class buildabit extends MainActivity {
     TextView tl;
-    Button ab,ru,pr,co,reg,jud;
+    Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    AlertDialog.Builder judging;
-    DatabaseReference tru;
-    String p;
+   // DatabaseReference spa ;
+    String p ;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.frothfloatation, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.build, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -43,27 +42,12 @@ public class frothfloatation extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        jud = (Button)findViewById(R.id.bt6);
-        tru = FirebaseDatabase.getInstance().getReference();
-        tru.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("froth").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(frothfloatation.this);
-                about.setMessage(R.string.frothabout);
+                about = new AlertDialog.Builder(buildabit.this);
+                about.setMessage(R.string.buildabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -71,21 +55,11 @@ public class frothfloatation extends MainActivity {
 
             }
         });
-        jud.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                judging = new AlertDialog.Builder(frothfloatation.this);
-                judging.setMessage(R.string.frothjudging);
-                AlertDialog jd = judging.create();
-                jd.setTitle("JUDGING");
-                jd.show();
-            }
-        });
         ru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rules = new AlertDialog.Builder(frothfloatation.this);
-                rules.setMessage(R.string.frothrules);
+                rules = new AlertDialog.Builder(buildabit.this);
+                rules.setMessage(R.string.buildrul);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -95,8 +69,9 @@ public class frothfloatation extends MainActivity {
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(frothfloatation.this);
-                prizes.setMessage(p);
+
+                prizes = new AlertDialog.Builder(buildabit.this);
+                prizes.setMessage(R.string.buildprize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();
@@ -106,8 +81,8 @@ public class frothfloatation extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(frothfloatation.this);
-                contacts.setMessage(R.string.frothcontacts);
+                contacts = new AlertDialog.Builder(buildabit.this);
+                contacts.setMessage(R.string.spardha_contact);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -117,11 +92,11 @@ public class frothfloatation extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(frothfloatation.this,froth_reg.class));
-
+               startActivity(new Intent(buildabit.this,buil_reg.class));
 
 
             }
         });
     }
+
 }

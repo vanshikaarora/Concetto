@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 
 public class Developers extends MainActivity {
-    ImageView vsg,vsl,peg,pel,ssg,sl;
+    ImageView vsg,vsl,peg,pel,ssg,sl,kul;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class Developers extends MainActivity {
         pel = (ImageView)findViewById(R.id.perulinked);
         ssg = (ImageView)findViewById(R.id.shridhargit);
         sl = (ImageView)findViewById(R.id.shridharlinked);
+        kul = (ImageView)findViewById(R.id.kullinked);
         vsg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +74,14 @@ public class Developers extends MainActivity {
             @Override
             public void onClick(View v) {
                 String uri = "https://www.linkedin.com/in/shridhar-goel/";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                startActivity(intent);
+            }
+        });
+        kul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String uri = "http://www.linkedin.com/in/gautamkuldeep73096";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 startActivity(intent);
             }

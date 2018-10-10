@@ -24,10 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 /**
- * Created by lenovo on 10/9/2018.
+ * Created by lenovo on 10/10/2018.
  */
 
-public class buzzreg extends AppCompatActivity {
+public class buil_reg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
     EditText nm,m1,m2,m3,m4,em,mo,clgg;
@@ -44,7 +44,6 @@ public class buzzreg extends AppCompatActivity {
         m3 = (EditText)findViewById(R.id.mem3);
         m4 = (EditText)findViewById(R.id.mem4);
         em = (EditText)findViewById(R.id.em);
-        em.setHint("member 5");
         mo = (EditText)findViewById(R.id.mo);
         clgg = (EditText)findViewById(R.id.clg);
         obst = FirebaseDatabase.getInstance();
@@ -97,24 +96,23 @@ public class buzzreg extends AppCompatActivity {
 
                     }
 
+                    if(TextUtils.isEmpty(email)){
+                        em.setError("field is required");
+                        focusView[0] = em;
 
+                    }
                     if(TextUtils.isEmpty(clgn)){
                         clgg.setError("field is required");
                         focusView[0] = clgg;
 
                     }
-                    if(TextUtils.isEmpty(mob)){
-                        mo.setError("field is required");
-                        focusView[0] = mo;
-
-                    }
-                    if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mob.isEmpty()==true||clgn.isEmpty()==true){
+                    if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mob.isEmpty()==true||email.isEmpty()==true||clgn.isEmpty()==true){
 
                     }else {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("electrabuzz");
+                                dataSnapshot = dataSnapshot.child("buildbit");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -126,7 +124,7 @@ public class buzzreg extends AppCompatActivity {
                                         if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
-                                            Toast.makeText(buzzreg.this, "Registration not done",
+                                            Toast.makeText(buil_reg.this, "Registration not done",
                                                     Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
 
@@ -140,19 +138,19 @@ public class buzzreg extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                     // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                     // obs.child(id).setValue(reg);
-                                    obs.child("electrabuzz").child(id).child("teamname").setValue(name);
-                                    obs.child("electrabuzz").child(id).child("member1").setValue(mem1);
-                                    obs.child("electrabuzz").child(id).child("member2").setValue(mem2);
-                                    obs.child("electrabuzz").child(id).child("member3").setValue(mem3);
-                                    obs.child("electrabuzz").child(id).child("member4").setValue(mem4);
-                                    obs.child("electrabuzz").child(id).child("member5").setValue(email);
-                                    obs.child("electrabuzz").child(id).child("mobile").setValue(mob);
-                                    obs.child("electrabuzz").child(id).child("college").setValue(clgn);
+                                    obs.child("buildbit").child(id).child("teamname").setValue(name);
+                                    obs.child("buildbit").child(id).child("member1").setValue(mem1);
+                                    obs.child("buildbit").child(id).child("member2").setValue(mem2);
+                                    obs.child("buildbit").child(id).child("member3").setValue(mem3);
+                                    obs.child("buildbit").child(id).child("member4").setValue(mem4);
+                                    obs.child("buildbit").child(id).child("email").setValue(email);
+                                    obs.child("buildbit").child(id).child("mobile").setValue(mob);
+                                    obs.child("buildbit").child(id).child("college").setValue(clgn);
 
-                                    FirebaseMessaging.getInstance().subscribeToTopic("electrabuzz");
-                                    Toast.makeText(buzzreg.this, "Registration done  for ELECTRABUZZ ",
+                                    FirebaseMessaging.getInstance().subscribeToTopic("buildbit");
+                                    Toast.makeText(buil_reg.this, "Registration done For build a bit ",
                                             Toast.LENGTH_LONG).show();
-                                    startActivity(new Intent(buzzreg.this, MainActivity.class));
+                                    startActivity(new Intent(buil_reg.this, MainActivity.class));
 
                                 }
 
@@ -173,7 +171,7 @@ public class buzzreg extends AppCompatActivity {
 
                 }
                 else {
-                    Toast.makeText(buzzreg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
+                    Toast.makeText(buil_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
                             Toast.LENGTH_LONG).show();
 
                 }
@@ -181,4 +179,5 @@ public class buzzreg extends AppCompatActivity {
             }
         });
     }
+
 }

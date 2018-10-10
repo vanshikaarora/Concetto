@@ -25,7 +25,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="@drawable/tesla"
+                android:background="@drawable/route"
                 android:orientation="vertical">
 
 
@@ -35,6 +35,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="150dp"
+                    android:text="ROUTE THE TRUCK"
 
 
                     android:textColor="#ffffff"

@@ -8,9 +8,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/bgc"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/bg"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -101,6 +101,11 @@
         <activity android:name=".sinwin"></activity>
         <activity android:name=".pubg"></activity>
         <activity android:name=".pubgreg"></activity>
+        <activity android:name=".maglocart"></activity>
+        <activity android:name=".maglocart_reg"></activity>
+        <activity android:name=".buil_reg"></activity>
+        <activity android:name=".buildabit"></activity>
+
 
 
         <service android:name=".MyFirebaseInstanceIDService">
