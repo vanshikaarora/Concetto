@@ -2,6 +2,7 @@ package com.example.vanshika.concetto;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
@@ -57,6 +58,7 @@ public class EventsActivity extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.replaceContentLayout(R.layout.activity_events, R.id.content_main_linear_layout);
+        
        // Animation openScale = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.activity_open_scale);
        // overridePendingTransition(R.anim.popup_in,R.anim.activity_open_translate);
         getSupportActionBar().hide();

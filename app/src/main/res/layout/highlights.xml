@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    card_view:contentPadding="5dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardElevation="15dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="15dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/events_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/textViewTime"
+            android:layout_alignStart="@+id/textViewTime"
+            android:src="@drawable/robo" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/imageView"
+            android:fontFamily="@font/calibri"
+            android:text="Event A"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#001e32"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#3e3e3e"
+            android:layout_toRightOf="@id/imageView"
+            android:text="Date"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageView"
+            android:background="#001e32"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        card_view:contentPadding="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="15dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/events_image2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/textViewTime2"
+                android:layout_alignStart="@+id/textViewTime2"
+                android:src="@drawable/robo" />
+
+            <TextView
+                android:id="@+id/textViewTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_toRightOf="@id/imageView"
+                android:fontFamily="@font/calibri"
+                android:text="Event A"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#001e32"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/textViewDate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle2"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#3e3e3e"
+                android:layout_toRightOf="@id/imageView"
+                android:text="Date"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/textViewTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDate2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:background="#001e32"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        card_view:contentPadding="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="15dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/events_image3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/textViewTime3"
+                android:layout_alignStart="@+id/textViewTime3"
+                android:src="@drawable/robo" />
+
+            <TextView
+                android:id="@+id/textViewTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_toRightOf="@id/imageView"
+                android:fontFamily="@font/calibri"
+                android:text="Event A"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#001e32"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/textViewDate3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle3"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#3e3e3e"
+                android:layout_toRightOf="@id/imageView"
+                android:text="Date"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/textViewTime3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDate3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:background="#001e32"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
