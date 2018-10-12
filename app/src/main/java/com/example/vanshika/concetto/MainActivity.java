@@ -97,6 +97,8 @@ public class MainActivity extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+
+            finish();
         }
     }
 
@@ -164,7 +166,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            // Take to home
+
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            startActivity(intent);
+            overridePendingTransition(0,0);
+
         } else if (id == R.id.nav_contact_us) {
             startActivity(new Intent(MainActivity.this,ContactUsActivity.class));
             //FirebaseMessaging.getInstance().subscribeToTopic("love");
