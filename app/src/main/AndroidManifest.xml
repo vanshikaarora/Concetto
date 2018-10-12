@@ -24,6 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".highlights" />
         <activity android:name=".CategoriesActivity" />
         <activity android:name=".Developers" />
         <activity android:name=".EventsActivity" />
