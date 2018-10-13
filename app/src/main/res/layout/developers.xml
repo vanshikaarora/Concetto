@@ -61,7 +61,7 @@
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
 
-                        android:src="@drawable/peru" />
+                        android:src="@drawable/perul" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
