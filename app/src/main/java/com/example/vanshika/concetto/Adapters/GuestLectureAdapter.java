@@ -46,7 +46,7 @@ public class GuestLectureAdapter  extends RecyclerView.Adapter<GuestLectureAdapt
         final GuestLecture guestLecture=lectureList.get(position);
 
         holder.textViewDate.setText(guestLecture.getDate());
-        holder.textViewTitle.setText(guestLecture.getLecture_name()+" by "+guestLecture.getGuest_name());
+        holder.textViewTitle.setText(guestLecture.getLecture_name());
         holder.textViewTime.setText(guestLecture.getTime());
         holder.cardViewObject.setOnClickListener(new View.OnClickListener() {
             @Override

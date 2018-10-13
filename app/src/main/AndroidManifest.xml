@@ -8,9 +8,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/bgc"
+        android:icon="@mipmap/concetto"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/bgc"
+        android:roundIcon="@mipmap/concetto"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

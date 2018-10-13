@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -28,6 +29,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -193,6 +195,32 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(Intent.ACTION_VIEW,
                         Uri.parse("https://instagram.com/concetto.iitism?utm_source=ig_profile_share&igshid=1mulii77l36d5")));
             }
+
+        }
+        else if (id==R.id.action_website){
+            DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+            Query query = reference.child("website");
+            query.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.exists()){
+
+                        String webpage=dataSnapshot.getValue().toString();
+                        Log.v("mainweburl",webpage);
+                        String url="http://"+webpage;
+                        Uri uri = Uri.parse(url);
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                    Uri.parse(url)));
+
+                    }
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
 
         }
 

@@ -21,8 +21,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/events_image"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginBottom="5dp"
             android:layout_above="@+id/textViewTime"
             android:layout_alignStart="@+id/textViewTime"
@@ -38,7 +38,7 @@
             android:text="Event A"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textColor="#001e32"
-            android:textSize="25sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/textViewDate"
@@ -47,7 +47,7 @@
             android:layout_below="@id/textViewTitle"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="5dp"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textColor="#3e3e3e"
             android:layout_toRightOf="@id/imageView"
             android:text="Date"
