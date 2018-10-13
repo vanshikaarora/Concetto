@@ -152,6 +152,7 @@ public class buzzreg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("electrabuzz");
                                     Toast.makeText(buzzreg.this, "Registration done  for ELECTRABUZZ ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(buzzreg.this, MainActivity.class));
 
                                 }

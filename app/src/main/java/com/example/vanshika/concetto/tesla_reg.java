@@ -145,6 +145,7 @@ public class tesla_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("tesla");
                                     Toast.makeText(tesla_reg.this, "Registration done FOR TESLA ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(tesla_reg.this, MainActivity.class));
 
                                 }

@@ -118,6 +118,7 @@ public class munreg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("mun");
                         Toast.makeText(munreg.this, "Registration done For MUN ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(munreg.this, MainActivity.class));
 
 

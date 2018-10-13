@@ -140,6 +140,7 @@ public class csgoreg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("csgo");
                                     Toast.makeText(csgoreg.this, "Registration done For CS-GO ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(csgoreg.this, MainActivity.class));
 
                                 }

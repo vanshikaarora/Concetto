@@ -29,7 +29,7 @@
                 android:layout_height="250dp"
 
                 android:orientation="vertical"
-                android:background="@drawable/bfft">
+                android:background="@drawable/earth">
 
 
 
@@ -42,8 +42,8 @@
                     android:layout_marginTop="150dp"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
-                    android:text="BUFFET THE MONEY
-          "/>
+
+          />
 
             </LinearLayout>
 

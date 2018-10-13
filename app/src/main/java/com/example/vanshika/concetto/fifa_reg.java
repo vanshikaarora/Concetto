@@ -110,6 +110,7 @@ public class fifa_reg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("fifa");
                         Toast.makeText(fifa_reg.this, "Registration done For FIFA ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(fifa_reg.this, MainActivity.class));
 
 

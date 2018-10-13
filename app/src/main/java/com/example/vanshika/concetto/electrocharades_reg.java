@@ -154,6 +154,7 @@ public class electrocharades_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("electrocharades");
                                     Toast.makeText(electrocharades_reg.this, "Registration done For ELECTROCHARADES ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(electrocharades_reg.this, MainActivity.class));
 
                                 }

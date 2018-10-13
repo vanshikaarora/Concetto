@@ -150,6 +150,7 @@ public class bafflingplanet_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("bafflingpalnet");
                                     Toast.makeText(bafflingplanet_reg.this, "Registration done For BAFFLING PLANET ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(bafflingplanet_reg.this, MainActivity.class));
 
                                 }

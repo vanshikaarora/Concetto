@@ -159,6 +159,7 @@ public class chemcarnivalreg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("chemcarnival");
                                     Toast.makeText(chemcarnivalreg.this, "Registration done For CHEM-CARNIVAL",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(chemcarnivalreg.this, MainActivity.class));
 
                                 }

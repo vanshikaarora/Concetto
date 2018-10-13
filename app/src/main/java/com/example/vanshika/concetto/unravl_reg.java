@@ -155,6 +155,7 @@ public class unravl_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("unravelthewhizz");
                                     Toast.makeText(unravl_reg.this, "Registration done For UNRAVEL THE WHIZZ ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(unravl_reg.this, MainActivity.class));
 
                                 }

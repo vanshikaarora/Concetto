@@ -110,6 +110,7 @@ public class laser_reg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("lasertag");
                         Toast.makeText(laser_reg.this, "Registration done For LASER TAG ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(laser_reg.this, MainActivity.class));
 
 

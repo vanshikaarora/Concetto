@@ -141,6 +141,7 @@ public class earth_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("earth");
                                     Toast.makeText(earth_reg.this, "Registration done  FOR EARTH ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(earth_reg.this, MainActivity.class));
 
                                 }

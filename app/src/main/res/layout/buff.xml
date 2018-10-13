@@ -39,8 +39,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="150dp"
+                    android:layout_marginTop="130dp"
                     android:textColor="#ffffff"
+                    android:fontFamily="@font/batmanforeveralternate"
                     android:textSize="25dp"
                     android:text="BUFFET THE MONEY
           "/>

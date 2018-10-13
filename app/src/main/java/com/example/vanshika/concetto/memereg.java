@@ -110,6 +110,7 @@ public class memereg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("memewar");
                         Toast.makeText(memereg.this, "Registration done For MEMEWAR ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(memereg.this, MainActivity.class));
 
 

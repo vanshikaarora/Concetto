@@ -139,6 +139,7 @@ public class idp_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("industrialdesignproblem");
                                     Toast.makeText(idp_reg.this, "Registration done For INDUSTRIAL DESIGN ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(idp_reg.this, MainActivity.class));
 
                                 }

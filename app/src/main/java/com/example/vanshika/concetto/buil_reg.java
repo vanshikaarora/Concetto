@@ -150,6 +150,7 @@ public class buil_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("buildbit");
                                     Toast.makeText(buil_reg.this, "Registration done For build a bit ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(buil_reg.this, MainActivity.class));
 
                                 }

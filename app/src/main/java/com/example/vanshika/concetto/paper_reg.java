@@ -118,6 +118,7 @@ public class paper_reg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("paperdance");
                         Toast.makeText(paper_reg.this, "Registration done For PAPER DANCE ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(paper_reg.this, MainActivity.class));
 
 

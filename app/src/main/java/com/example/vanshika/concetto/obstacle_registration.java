@@ -155,6 +155,7 @@ public class obstacle_registration extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
                                     Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(obstacle_registration.this, MainActivity.class));
 
                                 }
