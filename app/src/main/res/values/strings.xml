@@ -1015,24 +1015,23 @@ use  of  resources.
 
     </string>
     <string name="buzzabt">
-        ITS  A  KNOWLEDGE  HUNT.  THE  EVENT  IS  ALL  ABOUT  TESTING  THE  BASIC
-  ELECTRONICS  YOU  COMEACROSS  IN  YOUR  REAL  DAY  TO  DAY  LIFE.  IT  COMPRISES  OF  THREE  ROUNDS  OF  POSSIBLE ELIMINATIONS.\n\n
-<b>ROUND  1:</b>\n
-        A  TEAM  IS  FORMED  AND  QUESTIONS  RELATED  TO  ELECTRON
-IC  COMPONENT  IS  GIVEN.
-THEY  HAVE  TO  SEARCH  FOR  THE  COMPONENT  AND  DROP  IT  IN  TEAMS  DROP  BOX..  EACH  CORRECT
-COMPONENT(ANSWER)  WILL  BE  A  CLUE  TO  THE  NEXT  QUESTION.  TEAMS ARE  PROMOTED  TO  NEXT ROUND  BASED  ON  CORRECT  AND  QUICK  ANSWERING.\n\n
-<b>ROUND  2:</b>\n   SELECTED  TEAMS  HAVE  TO  MAKE  A  CIRCUIT  WITH  THE HELP  OF  GIVEN  COMPLEX  CIRCUIT DIAGRAM.  THEY  HAVE  TO  REDUCE  IT  TO  SIMPLER  FORM  AND  MAKE  THE  RESULTING  CIRCUIT.  THE
-GIVEN  CIRCUIT  DIAGRAM  WILL  BE  A  BLEND  OF  CIRCUIT  THAT  PARTICIPANTS  COME  ACROSS  DAY TO DAY  LIFE.\n\n
-<b>ROUND  3:</b>  QUIZ  ON  BASIC  ELECTRONICS  WILL  BE  CONDUCTED.  TEAM
-WITH  MORE  POINTS  WILL TURN  OUT  TO  BE  THE  WINNER.
+        IT\'S A KNOWLEDGE HUNT. THE EVENT IS ALL ABOUT TESTING THE BASIC ELECTRONICS YOU COME ACROSS IN YOUR EVERYDAY LIFE. IT COMPRISES OF THREE ROUNDS OF POSSIBLE ELIMINATIONS.\n
+<b>ROUND 1 : QUIZ</b>\n
+TEAMS ARE FORMED.
+AN INTERACTIVE QUIZ ON BASIC ELECTRONICS WILL BE CONDUCTED. TOP 10 TEAMS WILL BE SELECTED FOR THE NEXT.\n\n
+<b>ROUND 2: ELECTRO HUNT.</b>
+CIRCUIT IS GIVEN AND STUDENTS HAVE TO FIND COMPONENTS OF THAT CIRCUIT. CLUES FOR IT WILL BE PROVIDED IN THE BOX AS CHITS. ONE BY ONE THEY HAVE TO FIND COMPONENTS AND DROP IT IN TEAM’S DROP BOX. TEAMS ARE PROMOTED TO NEXT ROUND BASING UPON CORRECT AND QUICK ANSWERING.\n\n
+        <b>ROUND 3:  WORK IT UP.</b>\n
+SELECTED TEAMS HAVE TO MAKE THE CIRCUIT WORK ON THE GIVEN BREADBOARD. TEAM WHICH COMPLETES THE CIRCUIT WITH LESS COMPLEXITY WILL BE THE WINNER.
+
     </string>
     <string name="buzzrul">
-        1. EACH  TEAM  IS  OF  4-5  PEOPLE. \n
-2. IN  FIRST  ROUND,  ANSWER  HAS  TO  BE  WRITTEN  ON  QUESTION  PAPER  ALSO AND  THE  RESPECTIVE COMPONENT  SHOULD  BE  DROPPED  IN  TEAMS  DROP  BOX.\n
-3. IN  SECOND  ROUND,  SIMPLIFIED  CIRCUIT  HAS  TO  BE  DRAWN  ON  THE QUESTION  PAPER.\n
-4. IN  THIRD  ROUND,  NEGATIVE  POINTS  ARE  ALSO  AWARDED  TO  THE  WRONG ANSWERS.\n
-5. +3,  -1  ,0  POINTS  ARE  AWARDED  TO  CORRECT,  WRONG  AND  NO  ANSWER  RESPECTIVELY
+     1.EACH TEAM IS OF 4 PEOPLE.\n
+2. IN FIRST ROUND, NEGATIVE POINTS ARE ALSO AWARDED TO THE WRONG ANSWERS.\n
+3. +3 , -1 and 0 POINTS ARE GIVEN TO CORRECT , WRONG AND NO ANSWER RESPECTIVELY.\n
+4. IN SECOND ROUND, COMPONENTS (ANSWERS) FOUND HAS TO BE WRITTEN ON QUESTION PAPER ALSO AND THE RESPECTIVE COMPONENT SHOULD BE DROPPED IN TEAM’S DROP BOX.\n
+5. IN THIRD ROUND, GOAL OF CIRCUIT MAKING HAS TO BE ACHIEVED WITH LESS COMPLICATIONS.
+
     </string>
     <string name="buzzjud">
 
@@ -1146,5 +1145,43 @@ Points would be given for Model design and analysis.
     </string>
     <string name="buildcon">
 
+    </string>
+    <string name="csgoabt">
+        Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game that allows players to play on dedicated Valve servers, as well as allowing members of the community to host their own servers with custom maps and game modes.
+    </string>
+    <string name="csgorul">
+         A team of 5 member is required that you can form by your side or individuals will be grouped on spot.\n\n
+Everyone needs to bring their mouse and headphones.\n
+ Teams will be selected based on knockout tournament
+    </string>
+    <string name="fifaabt">
+        <b>GAME EDITION:</b>\n
+FIFA 18\n\n
+1 vs 1 Knockout Tournament\n\n
+The Tournament will proceed as per the following Knockout Rounds:\n\n
+1st KO Round: Players will use teams having rating less than 3.5 stars\n
+2nd KO Round: Players will use teams having rating  less than 4 stars\n
+3rd KO Round: Players will use teams having rating less than 4.5 stars\n
+and so on(**This will be adjusted according to the participation)\n\n
+The final remaining 8 players can choose teams of any rating
+and henceforth the Quarters/Semis/Finals will commence.\n
+Players can choose their teams only from the following Leagues:\n\n
+1.English Premier League\n
+2.German Bundesliga\n
+3.Italian Serie\n
+4.Spanish La Liga\n
+5.French Ligue 1
+    </string>
+
+
+    <string name="fifarules"> 1.Matches will be of 10 mins(5 mins each half).\n
+2.Players are allowed to customize their controls.\n
+3.In-Game rules will remain the same.\n
+4.In case of a draw,Extra Time(Classic)/Penalties will follow to decide the winner.\n\n
+
+**Note:Re-Registration will stop once the quarters will start.
+    </string>
+    <string name="fifacon">
+        PRANJAL GUPTA -> 9709372706
     </string>
 </resources>

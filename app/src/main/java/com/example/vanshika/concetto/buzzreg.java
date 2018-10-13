@@ -44,7 +44,7 @@ public class buzzreg extends AppCompatActivity {
         m3 = (EditText)findViewById(R.id.mem3);
         m4 = (EditText)findViewById(R.id.mem4);
         em = (EditText)findViewById(R.id.em);
-        em.setHint("member 5");
+        em.setHint("Email Id");
         mo = (EditText)findViewById(R.id.mo);
         clgg = (EditText)findViewById(R.id.clg);
         obst = FirebaseDatabase.getInstance();
@@ -145,7 +145,7 @@ public class buzzreg extends AppCompatActivity {
                                     obs.child("electrabuzz").child(id).child("member2").setValue(mem2);
                                     obs.child("electrabuzz").child(id).child("member3").setValue(mem3);
                                     obs.child("electrabuzz").child(id).child("member4").setValue(mem4);
-                                    obs.child("electrabuzz").child(id).child("member5").setValue(email);
+                                    obs.child("electrabuzz").child(id).child("email").setValue(email);
                                     obs.child("electrabuzz").child(id).child("mobile").setValue(mob);
                                     obs.child("electrabuzz").child(id).child("college").setValue(clgn);
 

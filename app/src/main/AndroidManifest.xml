@@ -110,6 +110,9 @@
         <activity android:name=".csgo">
         </activity>
         <activity android:name=".csgoreg"></activity>
+        <activity android:name=".testing"></activity>
+        <activity android:name=".fifa"></activity>
+        <activity android:name=".fifa_reg"></activity>
 
 
 

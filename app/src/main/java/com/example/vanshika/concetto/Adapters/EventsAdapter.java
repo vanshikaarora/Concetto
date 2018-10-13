@@ -23,9 +23,11 @@ import com.example.vanshika.concetto.buffetmoney;
 import com.example.vanshika.concetto.buildabit;
 import com.example.vanshika.concetto.chemcarnival;
 import com.example.vanshika.concetto.chemecar;
+import com.example.vanshika.concetto.csgo;
 import com.example.vanshika.concetto.earth;
 import com.example.vanshika.concetto.electrabuzz;
 import com.example.vanshika.concetto.electrocharades;
+import com.example.vanshika.concetto.fifa;
 import com.example.vanshika.concetto.flash;
 import com.example.vanshika.concetto.frothfloatation;
 import com.example.vanshika.concetto.googleminer;
@@ -381,6 +383,16 @@ import java.util.List;
                         else if(event.getName().equals("PUBG"))
                         {
                             Intent intent=new Intent(mCtx, pubg.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("CS Go"))
+                        {
+                            Intent intent=new Intent(mCtx, csgo.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("FIFA"))
+                        {
+                            Intent intent=new Intent(mCtx, fifa.class);
                             mCtx.startActivity(intent);
                         }
                     }

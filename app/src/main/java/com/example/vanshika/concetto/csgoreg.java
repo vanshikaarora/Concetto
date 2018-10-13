@@ -85,21 +85,7 @@ public class csgoreg extends AppCompatActivity {
                         focusView[0] = m1;
 
                     }
-                    if(TextUtils.isEmpty(mem2)){
-                        m2.setError("field is required");
-                        focusView[0] = m2;
 
-                    }
-                    if(TextUtils.isEmpty(mem3)){
-                        m3.setError("field is required");
-                        focusView[0] = m3;
-
-                    }
-                    if(TextUtils.isEmpty(mem4)){
-                        m4.setError("field is required");
-                        focusView[0] = m4;
-
-                    }
                     if(TextUtils.isEmpty(email)){
                         em.setError("field is required");
                         focusView[0] = em;
@@ -110,7 +96,7 @@ public class csgoreg extends AppCompatActivity {
                         focusView[0] = clgg;
 
                     }
-                    if(name.isEmpty()==true||mem1.isEmpty()==true||mem2.isEmpty()==true||mem3.isEmpty()==true||mob.isEmpty()==true||mem4.isEmpty()==true||email.isEmpty()==true||clgn.isEmpty()==true){
+                    if(name.isEmpty()==true||mem1.isEmpty()==true||mob.isEmpty()==true||email.isEmpty()==true||clgn.isEmpty()==true){
 
                     }else {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {

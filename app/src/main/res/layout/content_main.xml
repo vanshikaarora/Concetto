@@ -9,45 +9,74 @@
     android:background="@drawable/conc"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-
-
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/eventsButton"
-        android:layout_width="200dp"
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="250dp"
-        android:background="@drawable/ripple"
-        android:fontFamily="@font/batmanforeveralternate"
-        android:text="Events"
-        android:textColor="#ffffff"/>
+        android:layout_marginTop="175dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/highlights"
+                android:layout_width="200dp"
+                android:layout_marginTop="35dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+
+                   android:text="HIGHLIGHTS"
+                android:background="@drawable/ripple"
+
+                android:fontFamily="@font/batmanforeveralternate"
+
+
+                android:textColor="#ffffff"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/eventsButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ripple"
+                android:fontFamily="@font/batmanforeveralternate"
+                android:text="Events"
+                android:textColor="#ffffff"/>
 
 
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/workshopButton"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/ripple"
-        android:fontFamily="@font/batmanforeveralternate"
-        android:text="workshop"
-        android:textColor="#ffffff"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/workshopButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ripple"
+                android:fontFamily="@font/batmanforeveralternate"
+                android:text="workshop"
+                android:textColor="#ffffff"/>
 
 
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/timingButton"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/ripple"
-        android:fontFamily="@font/batmanforeveralternate"
-        android:text="TECH-TALKS"
-        android:textColor="#ffffff"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/timingButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ripple"
+                android:fontFamily="@font/batmanforeveralternate"
+                android:text="TECH-TALKS"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
 
 </LinearLayout>
 

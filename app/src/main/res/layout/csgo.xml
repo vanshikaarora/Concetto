@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_weight="100" android:layout_height="match_parent"
+    android:orientation="vertical" android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_weight="100"
     android:background="@color/bagcolor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <android.support.v4.widget.NestedScrollView
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_weight="90"
+        android:layout_height="match_parent"
         android:id="@+id/hl">
 
         <LinearLayout
@@ -28,7 +28,7 @@
                 android:layout_height="250dp"
 
                 android:orientation="vertical"
-                android:background="@drawable/blind">
+                android:background="@drawable/csgo">
 
 
 
@@ -38,11 +38,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="150dp"
+                    android:layout_marginTop="170dp"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
-                    android:text="BLIND DATE
-          "/>
+                    android:text="CS-GO"/>
 
             </LinearLayout>
 
@@ -69,7 +68,7 @@
                 android:padding="10dp"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:text="TASKS"
+                android:text="RULES"
                 android:textColor="#ffffff"
                 android:background="@drawable/btn_shape" />
 
@@ -107,10 +106,10 @@
 
     <Button
         android:id="@+id/bt5"
-        android:layout_weight="10"
         android:layout_width="match_parent"
+        android:layout_weight="10"
 
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
 
         android:background="@color/regcolor"
         android:gravity="center"
