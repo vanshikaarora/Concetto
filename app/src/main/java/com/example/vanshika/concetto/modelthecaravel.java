@@ -26,8 +26,7 @@ public class modelthecaravel extends MainActivity {
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
     AlertDialog.Builder judging;
-    DatabaseReference mod ;
-    String p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,21 +43,7 @@ public class modelthecaravel extends MainActivity {
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
         jud = (Button)findViewById(R.id.bt6);
-        mod = FirebaseDatabase.getInstance().getReference();
-        mod.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("model").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,7 +82,7 @@ public class modelthecaravel extends MainActivity {
             public void onClick(View v) {
 
                 prizes = new AlertDialog.Builder(modelthecaravel.this);
-                prizes.setMessage(p);
+                prizes.setMessage(R.string.modelthecaravel_prizes);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();

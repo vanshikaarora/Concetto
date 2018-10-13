@@ -25,8 +25,7 @@ public class spardhatechbizz extends MainActivity {
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    DatabaseReference spa ;
-    String p ;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,20 +41,7 @@ public class spardhatechbizz extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        spa = FirebaseDatabase.getInstance().getReference();
 
-        spa.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("spardha").child("prize");
-                p = dataSnapshot.getValue().toString();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +70,7 @@ public class spardhatechbizz extends MainActivity {
             public void onClick(View v) {
 
                 prizes = new AlertDialog.Builder(spardhatechbizz.this);
-                prizes.setMessage(p);
+                prizes.setMessage(R.string.spardhaPrize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();

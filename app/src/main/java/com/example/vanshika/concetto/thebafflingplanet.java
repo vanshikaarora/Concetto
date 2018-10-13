@@ -25,8 +25,7 @@ public class thebafflingplanet extends MainActivity {
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    DatabaseReference obsta;
-    String p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,19 +41,7 @@ public class thebafflingplanet extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        obsta = FirebaseDatabase.getInstance().getReference();
-        obsta.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("planet").child("prize");
-                p = dataSnapshot.getValue().toString();
-            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +70,7 @@ public class thebafflingplanet extends MainActivity {
             public void onClick(View v) {
 
                 prizes = new AlertDialog.Builder(thebafflingplanet.this);
-                prizes.setMessage(p);
+                prizes.setMessage(R.string.bafflingPrize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();

@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.net.Uri;
 import android.provider.CalendarContract;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -41,6 +42,7 @@ import com.example.vanshika.concetto.mun;
 import com.example.vanshika.concetto.obstaclecourseracing;
 import com.example.vanshika.concetto.paper_dance;
 import com.example.vanshika.concetto.pubg;
+import com.example.vanshika.concetto.quiz;
 import com.example.vanshika.concetto.robowar;
 import com.example.vanshika.concetto.route;
 import com.example.vanshika.concetto.sinwin;
@@ -66,7 +68,7 @@ import java.util.List;
  */
 
     public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsViewHolder> {
-
+            AlertDialog.Builder about_builder;
 
         //this context we will use to inflate the layout
         private Context mCtx;
@@ -393,6 +395,29 @@ import java.util.List;
                         else if(event.getName().equals("FIFA"))
                         {
                             Intent intent=new Intent(mCtx, fifa.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("CONTRIVANCE"))
+                        {
+                            about_builder = new AlertDialog.Builder(mCtx);
+                            about_builder.setMessage(R.string.contrivance);
+                            AlertDialog alert_about = about_builder.create();
+                            alert_about.setTitle("About");
+                            // alert_about.setTitle(Html.fromHtml("<font color='#FF7F27'>About</font>"));
+                            alert_about.show();
+                        }
+                        else if(event.getName().equals("Shark Tank"))
+                        {
+                            about_builder = new AlertDialog.Builder(mCtx);
+                            about_builder.setMessage(R.string.shark);
+                            AlertDialog alert_about = about_builder.create();
+                            alert_about.setTitle("About");
+                            // alert_about.setTitle(Html.fromHtml("<font color='#FF7F27'>About</font>"));
+                            alert_about.show();
+                        }
+                        else if(event.getName().equals("BIG BANG QUIZ"))
+                        {
+                            Intent intent=new Intent(mCtx, quiz.class);
                             mCtx.startActivity(intent);
                         }
                     }

@@ -113,6 +113,8 @@
         <activity android:name=".testing"></activity>
         <activity android:name=".fifa"></activity>
         <activity android:name=".fifa_reg"></activity>
+        <activity android:name=".quiz"></activity>
+        <activity android:name=".quiz_reg"></activity>
 
 
 

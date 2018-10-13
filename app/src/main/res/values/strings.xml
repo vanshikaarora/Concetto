@@ -1184,4 +1184,144 @@ Players can choose their teams only from the following Leagues:\n\n
     <string name="fifacon">
         PRANJAL GUPTA -> 9709372706
     </string>
+    <string name="shark">
+        CONCETTO’18 in association with I and We and E-Cell, IIT-ISM Dhanbad presents you
+the Management Fiesta of The Annual Techno-Management Festival of IIT(ISM) Dhanbad,
+CONCETTO.\n\n
+With the entrepreneurial mindset of E-Cell, IIT-ISM Dhanbad, CONCETTO’18 presents
+“Bizathon 18” a three-day journey towards the B-World. The event involves a workshop named
+“Doing Business - the Young and the Restless Way!”, where participants would be exposed to
+the phases of business and business modeling. An Entrepreneurship Assessment Test (EAT)
+will be conducted in association with I and We which shall provide a detailed report of your
+attempt. The other side of the event aims at “hands-at-work” where participants would be
+designing a business model using their knowledge and the new arenas opened during the
+workshop. The teams would be guided by mentors adding cherry-on-the-cake to the event and
+making it more of an interactive one! The ultimate aim of the participants would be to convert
+their idea into a business model and ultimately validate it! Are you ready for the Ultimate
+Challenge!\n\n
+<b>Shark Tank:</b>\n
+One of the most awaited events of CONCETTO’18 powered by E-Cell, IIT-ISM Dhanbad. The
+event provides a platform where the participating “entrepreneurial” minds would be given a time
+bound opportunity to present their innovative startup idea all midst the participating investors!
+The time limit would be five-minutes, neither-more, nor-less. Who knows the right opportunity is
+just knocking the door, do you have the potential?!\n\n
+        <b>Timeline:</b>\n
+<b>Day-1</b>\n
+7:00 AM - 10:00 AM : Workshop (Part-1)\n
+5:00 PM - 8:00 PM : Workshop (Part-2)\n
+<b>Day-2</b>\n
+7:00 AM - 10:00 AM: Workshop (Part-3)\n
+8:30 PM : Entrepreneurship Assessment Test (EAT)\n
+9:30 PM : Result\n
+<b>Day-3</b>\n
+        12:00 AM - 6:00 AM: Product Hackathon: The Overnight Journey\n
+1:00 PM - 4:00 PM: Shark Tank\n\n
+        <b>CONTACT</b>\n
+         SATVIK SINGHAL -> 9430386448
+
+    </string>
+    <string name="contrivance">
+       Creativity is a skill that can be developed and a process that can be managed. Creativity begins with a foundation of knowledge, learning a discipline, and mastering a way of thinking. You can learn to be creative by experimenting, exploring, questioning assumptions, using imagination and synthesing information.\n
+        So Let\'s get your grey cells functioning before we dive into the actual extravaganza. Concetto 18 brings you it is online event Contrivance.\n Here is what you have to do. You have  to create C shape in the most creative and innovative of ways and grab prizes  worth upto 5k.
+    </string>
+    <string name="quizabt">
+        The quiz will be a general set which will cover topics like science, technology and earth science. The first round will be written and will have 15-20 questions. The top 8 teams will make it to the stage round and eventually the top 3 teams will be awarded cash prize worth 6k. There are goodies and coupons for the audience as well. The duration of the quiz will be around 3 hours.
+
+    </string>
+    <string name="quizrules">
+      The quiz is a team event. People can participate in teams of maximum 3. The quiz consists of two rounds, the questions of first round will be shown in the form of presentation (which will consist of audio/visual questions as well). The top 8 teams will qualify for the finals. There will be 4-5 star marked question which will be a deciding factor in case of a tie.
+The final round will consist of 4 rounds, two rounds of infinite bounce and pounce, a written round and a mega connect. Do come with a pen.
+
+    </string>
+    <string name="quizcon">
+        Kanishk Khatri (9978614399)\n
+Tejas Bagrecha(7295992507)
+
+
+
+    </string>
+    <string name="quizprize">
+        The top three teams will get a cash prize worth 6k.
+    </string>
+    <string name="EarthPrize">
+        worth Rs 8000
+    </string>
+    <string name="teslaPrize">
+        worth Rs 8000
+    </string>
+    <string name="electrocharadesPrize">
+        worth Rs 5000
+    </string>
+    <string name="ElectrabuzzPrize">
+        worth Rs 5000
+    </string>
+    <string name="robowarPrize">
+        worth Rs 11000
+    </string>
+    <string name="flashPrize">
+        worth Rs 8000
+    </string>
+    <string name="obstaclePrize">
+        worth Rs 8000
+    </string>
+    <string name="magloPrize">
+        worth Rs 8000
+    </string>
+    <string name="bafflingPrize">
+        worth Rs 8000
+    </string>
+    <string name="symposiumPrize">
+        worth Rs 8000
+    </string>
+    <string name="buffetPrize">
+        worth Rs 8000
+    </string>
+    <string name="unravelPrize">
+        worth Rs 5000
+    </string>
+    <string name="idpPrize">
+        worth Rs 8000
+    </string>
+    <string name="spardhaPrize">
+        worth Rs 5000
+    </string>
+    <string name="leverPrize">
+        worth Rs 8000
+    </string>
+    <string name="modelPrize">
+        worth Rs 8000
+    </string>
+    <string name="munPrize">
+        worth Rs 10,000
+    </string>
+    <string name="routePrize">
+        worth Rs 5000
+    </string>
+    <string name="trussPrize">
+        worth Rs 10,000
+    </string>
+    <string name="techtriathlonPrize">
+        worth Rs 5000
+    </string>
+    <string name="aquarisePrize">
+        worth Rs 8000
+    </string>
+    <string name="bigbangPrize">
+        worth Rs 8000
+    </string>
+    <string name="thrillPrize">
+        worth Rs 10,000
+    </string>
+    <string name="googlePrize">
+        worth Rs 8000
+    </string>
+    <string name="techproPrize">
+        worth Rs 5000
+    </string>
+    <string name="chemecarPrize">
+        worth Rs 8000
+    </string>
+    <string name="chemcarnivalPrize">
+        worth Rs 5000
+    </string>
 </resources>

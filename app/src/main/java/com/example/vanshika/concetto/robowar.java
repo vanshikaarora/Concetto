@@ -29,8 +29,7 @@ public class robowar extends MainActivity {
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
     AlertDialog.Builder judging;
-    DatabaseReference tru;
-    String p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,21 +47,7 @@ public class robowar extends MainActivity {
         reg = (Button)findViewById(R.id.bt5);
         ru = (Button)findViewById(R.id.bt6);
         ar = (Button)findViewById(R.id.bt7);
-        tru = FirebaseDatabase.getInstance().getReference();
-        tru.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("robo").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,7 +85,7 @@ public class robowar extends MainActivity {
             @Override
             public void onClick(View v) {
                 prizes = new AlertDialog.Builder(robowar.this);
-                prizes.setMessage(p);
+                prizes.setMessage(R.string.robowarPrize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();
