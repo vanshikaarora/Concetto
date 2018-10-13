@@ -36,7 +36,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="150dp"
 
-                    android:text="TECHPRO"
+
                     android:textColor="#ffffff"
                     android:textSize="25dp"
                     android:textStyle="bold" />

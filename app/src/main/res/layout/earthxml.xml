@@ -29,7 +29,7 @@
                 android:layout_height="250dp"
 
                 android:orientation="vertical"
-                android:background="@drawable/bfft">
+                android:background="@drawable/earth">
 
 
 
