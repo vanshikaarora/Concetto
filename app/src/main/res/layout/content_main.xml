@@ -25,7 +25,7 @@
                 android:layout_gravity="center_horizontal"
                 android:visibility="gone"
 
-                   android:text="HIGHLIGHTS"
+                   android:text="TECH NIGHT"
                 android:background="@drawable/ripple"
 
                 android:fontFamily="@font/batmanforeveralternate"

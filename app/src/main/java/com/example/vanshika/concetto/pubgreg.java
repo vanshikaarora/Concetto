@@ -145,6 +145,7 @@ public class pubgreg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("pubg");
                                     Toast.makeText(pubgreg.this, "Registration done For pubg ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(pubgreg.this, MainActivity.class));
 
                                 }

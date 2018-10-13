@@ -145,6 +145,7 @@ public class robowar_registration extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("robowar");
                                     Toast.makeText(robowar_registration.this, "Registration done For ROBOWAR ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(robowar_registration.this, MainActivity.class));
 
                                 }

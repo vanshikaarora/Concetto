@@ -150,6 +150,7 @@ public class lever_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("leverthehuge");
                                     Toast.makeText(lever_reg.this, "Registration done For LEVER THE HUGE ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(lever_reg.this, MainActivity.class));
 
                                 }

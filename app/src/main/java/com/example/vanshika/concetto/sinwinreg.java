@@ -110,6 +110,7 @@ public class sinwinreg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("sinwin");
                         Toast.makeText(sinwinreg.this, "Registration done For SIN-WIN ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(sinwinreg.this, MainActivity.class));
 
 

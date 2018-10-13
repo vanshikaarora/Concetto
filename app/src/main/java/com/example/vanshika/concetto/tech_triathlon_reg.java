@@ -110,6 +110,7 @@ public class tech_triathlon_reg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("techtriathlon");
                         Toast.makeText(tech_triathlon_reg.this, "Registration done For TECH-TRIATHLON ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(tech_triathlon_reg.this, MainActivity.class));
 
 

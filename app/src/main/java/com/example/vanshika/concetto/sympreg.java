@@ -114,6 +114,7 @@ public class sympreg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("symposium");
                         Toast.makeText(sympreg.this, "Registration done For SYMPOSIUM ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(sympreg.this, MainActivity.class));
 
 

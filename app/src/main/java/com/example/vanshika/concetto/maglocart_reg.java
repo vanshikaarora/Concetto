@@ -145,6 +145,7 @@ public class maglocart_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("maglocart");
                                     Toast.makeText(maglocart_reg.this, "Registration done maglocart ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(maglocart_reg.this, MainActivity.class));
 
                                 }

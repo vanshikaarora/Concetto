@@ -139,6 +139,7 @@ public class googleminer_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("googleminer");
                                     Toast.makeText(googleminer_reg.this, "Registration done For GOOGLE MINER ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(googleminer_reg.this, MainActivity.class));
 
                                 }

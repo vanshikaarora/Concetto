@@ -145,6 +145,7 @@ public class spardha_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("spardhatechbizz");
                                     Toast.makeText(spardha_reg.this, "Registration done For SPARDHA TECH BIZZ ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(spardha_reg.this, MainActivity.class));
 
                                 }

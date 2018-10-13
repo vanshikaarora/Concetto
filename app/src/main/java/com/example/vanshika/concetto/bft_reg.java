@@ -110,6 +110,7 @@ public class bft_reg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("buffetmoney");
                         Toast.makeText(bft_reg.this, "Registration done For BUFFETMONEY ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(bft_reg.this, MainActivity.class));
 
 

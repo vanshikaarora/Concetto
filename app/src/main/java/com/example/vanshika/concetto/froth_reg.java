@@ -145,6 +145,7 @@ public class froth_reg extends AppCompatActivity{
                                     FirebaseMessaging.getInstance().subscribeToTopic("techpro");
                                     Toast.makeText(froth_reg.this, "Registration done For TECH-PRO ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(froth_reg.this, MainActivity.class));
 
                                 }

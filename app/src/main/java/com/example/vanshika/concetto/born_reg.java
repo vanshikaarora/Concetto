@@ -139,6 +139,7 @@ public class born_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("borntowander");
                                     Toast.makeText(born_reg.this, "Registration done For BORN TO WANDER ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(born_reg.this, MainActivity.class));
 
                                 }

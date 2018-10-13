@@ -145,6 +145,7 @@ public class flash_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("flash");
                                     Toast.makeText(flash_reg.this, "Registration done For FLASH ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(flash_reg.this, MainActivity.class));
 
                                 }

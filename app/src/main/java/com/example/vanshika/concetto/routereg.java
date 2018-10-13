@@ -145,6 +145,7 @@ public class routereg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("routethetruck");
                                     Toast.makeText(routereg.this, "Registration done ROUTE THE TRUCK ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(routereg.this, MainActivity.class));
 
                                 }

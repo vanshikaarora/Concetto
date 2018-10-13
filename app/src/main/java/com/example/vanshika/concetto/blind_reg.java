@@ -110,6 +110,7 @@ public class blind_reg extends AppCompatActivity {
                         FirebaseMessaging.getInstance().subscribeToTopic("blinddate");
                         Toast.makeText(blind_reg.this, "Registration done For BLINDDATE ",
                                 Toast.LENGTH_LONG).show();
+                        finish();
                         startActivity(new Intent(blind_reg.this, MainActivity.class));
 
 

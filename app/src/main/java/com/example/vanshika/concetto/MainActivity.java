@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
                     high.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            startActivity(new Intent(MainActivity.this,testing.class));
+                            startActivity(new Intent(MainActivity.this,highlights.class));
                         }
                     });
                 }

@@ -139,6 +139,7 @@ public class aqua_reg extends AppCompatActivity {
                                     FirebaseMessaging.getInstance().subscribeToTopic("aquarise");
                                     Toast.makeText(aqua_reg.this, "Registration done For AQUA RISE ",
                                             Toast.LENGTH_LONG).show();
+                                    finish();
                                     startActivity(new Intent(aqua_reg.this, MainActivity.class));
 
                                 }
