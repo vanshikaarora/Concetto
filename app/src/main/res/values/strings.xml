@@ -775,6 +775,13 @@ The event is focused on lifting and moving of object with the help of hydraulic 
 •	Syringes, Hard board, wood, rubber bands.
 
     </string>
+    <string name="aquacon">
+        Prince Kunal- 9386667625\n
+Akash- 7355745553\n
+Aman Singh- 7033331443\n
+Ajay saini- 9828445269\n
+Jathorath Uday Kiran -9618476872
+    </string>
     <string name="aquarules">
         •	Maximum of 3 people are allowed in a team.\n
 •	The fluid inside the syringes should be water.\n
@@ -1066,13 +1073,7 @@ SELECTED TEAMS HAVE TO MAKE THE CIRCUIT WORK ON THE GIVEN BREADBOARD. TEAM WHICH
          PERUL  JAIN  -> 7891167889
     </string>
     <string name="earthabt">
-        1. It  is  an  Augmented  Reality  based  Treasure  Hunt  which  would  test  the  participant’s  logical  and
-analytical  skills.\n
-2. Event  focus  on  Introduction  of  Augmented  Reality  and  Cryptography  among  the  participants.\n
-3. Event  goes  on  the  basis  of  story  completion  using  encrypted  logical  Puzzles  to  get  the  Treasure
-in  a  completely  Augmented  World,  rather  Campus.\n
-4. It’s  whole  map  will    be  an  augmented  Island  designed  in  IIT(ISM)  Campus  where  you  will  be  the
-pirates  of  terrain.
+       Be ready to meet crazy anime characters, courageous game warriors, powerful superheroes and beautiful princesses in the Augmented IIT Dhanbad Campus and seek their help to solve mysteries in the auspicious event, EARTH(Extended Augmented Reality Treasure Hunt) presented to you by the Department of Computer Science and Engineering.
     </string>
     <string name="earthrul">
         1. The  whole  campus  would  be  divided  into  3-4  zones.\n
