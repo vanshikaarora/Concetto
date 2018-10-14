@@ -156,6 +156,8 @@ public class EventsActivity extends MainActivity {
             } else if (position.equals("8")) {
                 eventsList.add(
                         new Event("Industrial Design Problem", "android.resource://com.example.vanshika.concetto/" + concetto_white));
+                eventsList.add(
+                        new Event("SURVEY TOPOGRAPHIA", "android.resource://com.example.vanshika.concetto/" + concetto_white));
             }
 
             else if (position.equals("9")) {

@@ -47,6 +47,7 @@ import com.example.vanshika.concetto.robowar;
 import com.example.vanshika.concetto.route;
 import com.example.vanshika.concetto.sinwin;
 import com.example.vanshika.concetto.spardhatechbizz;
+import com.example.vanshika.concetto.surveytopographia;
 import com.example.vanshika.concetto.symposium;
 import com.example.vanshika.concetto.techtriathlon;
 import com.example.vanshika.concetto.tesla;
@@ -418,6 +419,11 @@ import java.util.List;
                         else if(event.getName().equals("BIG BANG QUIZ"))
                         {
                             Intent intent=new Intent(mCtx, quiz.class);
+                            mCtx.startActivity(intent);
+                        }
+                        else if(event.getName().equals("SURVEY TOPOGRAPHIA"))
+                        {
+                            Intent intent=new Intent(mCtx, surveytopographia.class);
                             mCtx.startActivity(intent);
                         }
                     }

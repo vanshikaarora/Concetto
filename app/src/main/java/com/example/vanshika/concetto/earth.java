@@ -91,7 +91,7 @@ public class earth extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // startActivity(new Intent(earth.this,earth_reg.class));
+               startActivity(new Intent(earth.this,earth_reg.class));
 
 
             }

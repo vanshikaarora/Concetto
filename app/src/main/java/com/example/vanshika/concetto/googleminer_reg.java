@@ -30,22 +30,23 @@ import com.google.firebase.messaging.FirebaseMessaging;
 public class googleminer_reg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
-    EditText nm,m1,m2,m3,m4,em,mo,clgg;
+    EditText nm, m1, m2, m3, nm2;
     Button b;
     FirebaseDatabase obst;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.regthree);
-        b = (Button)findViewById(R.id.button4);
-        nm = (EditText)findViewById(R.id.tnm);
-        m1 = (EditText)findViewById(R.id.mem1);
-        m2 = (EditText)findViewById(R.id.mem2);
-        m3 = (EditText)findViewById(R.id.mem3);
-      //  m4 = (EditText)findViewById(R.id.mem4);
-        em = (EditText)findViewById(R.id.em);
-        mo = (EditText)findViewById(R.id.mo);
-        clgg = (EditText)findViewById(R.id.clg);
+        setContentView(R.layout.reg_2);
+        b = (Button) findViewById(R.id.button4);
+        nm = (EditText) findViewById(R.id.tnm);
+        m1 = (EditText) findViewById(R.id.mem1);
+        m2 = (EditText) findViewById(R.id.mem2);
+        m3 = (EditText) findViewById(R.id.mem3);
+        nm2 = (EditText) findViewById(R.id.nm2);
+        //m4 = (EditText)findViewById(R.id.mem4);
+        //em = (EditText)findViewById(R.id.em);
+        //mo = (EditText)findViewById(R.id.mo);
         obst = FirebaseDatabase.getInstance();
         final DatabaseReference obs = obst.getReference("registration");
 
@@ -58,115 +59,80 @@ public class googleminer_reg extends AppCompatActivity {
                 final String mem1 = m1.getText().toString();
                 final String mem2 = m2.getText().toString();
                 final String mem3 = m3.getText().toString();
-              //  final String mem4 = m4.getText().toString();
-                final String email = em.getText().toString();
-                final String mob = mo.getText().toString();
-                final String clgn = clgg.getText().toString();
-                boolean   connected = false;
+                final String name2 = nm2.getText().toString();
+                //final String mem4 = m4.getText().toString();
+                // final String email = em.getText().toString();
+                // final String mob = mo.getText().toString();
+                boolean connected = false;
                 final View[] focusView = {null};
                 //check internet connection
-                ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
-                if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
                     connected = true;
-                }
-                else
+                } else
                     connected = false;
 
-                if(connected){
-                    if(TextUtils.isEmpty(name)){
+                if (connected) {
+                    if (TextUtils.isEmpty(name)) {
                         nm.setError("field is required");
                         focusView[0] = nm;
 
-                    }if(TextUtils.isEmpty(mem1)){
+                    }
+                    if (TextUtils.isEmpty(mem1)) {
                         m1.setError("field is required");
                         focusView[0] = m1;
 
                     }
-
-                    if(TextUtils.isEmpty(clgn)){
-                        clgg.setError("field is required");
-                        focusView[0] = clgg;
-
-                    }
-                    if(TextUtils.isEmpty(mob)){
-                        mo.setError("field is required");
-                        focusView[0] = mo;
+                    if (TextUtils.isEmpty(mem2)) {
+                        m2.setError("field is required");
+                        focusView[0] = m2;
 
                     }
-                    if(clgn.isEmpty()==true||mob.isEmpty()==true){
-
-                    }else {
-                        obs.addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("googleminer");
-                                boolean flag = true;
-                                if(dataSnapshot.hasChildren()){
-                                    for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                                        Log.e(obstacle_registration.class.getSimpleName(),"check1");
-                                        //registration_team regss = snapshot.getValue(registration_team.class);
-                                        String p = snapshot.child("teamname").getValue().toString();
-
-                                        Log.e(obstacle_registration.class.getSimpleName(),p);
-                                        if(p.equals(name)){
-                                            Log.e(obstacle_registration.class.getSimpleName(),"check");
-                                            nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
-                                            Toast.makeText(googleminer_reg.this, "Registration not done",
-                                                    Toast.LENGTH_LONG).show();
-                                            focusView[0] = nm;
-
-                                            flag = false;
-                                            break;
-                                        }
-                                    }
-                                }
-                                if(flag){
-                                    Log.e(obstacle_registration.class.getSimpleName(),"enter");
-                                    String id = obs.push().getKey();
-                                    // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
-                                    // obs.child(id).setValue(reg);
-                                    obs.child("obstacle").child(id).child("teamname").setValue(name);
-                                    obs.child("obstacle").child(id).child("member1").setValue(mem1);
-                                    obs.child("obstacle").child(id).child("member2").setValue(mem2);
-                                    obs.child("obstacle").child(id).child("member3").setValue(mem3);
-
-                                    obs.child("obstacle").child(id).child("email").setValue(email);
-                                    obs.child("obstacle").child(id).child("mobile").setValue(mob);
-                                    obs.child("obstacle").child(id).child("college").setValue(clgn);
-
-                                    FirebaseMessaging.getInstance().subscribeToTopic("googleminer");
-                                    Toast.makeText(googleminer_reg.this, "Registration done For GOOGLE MINER  and you will receive notifications regarding it. ",
-                                            Toast.LENGTH_LONG).show();
-                                    finish();
-                                    startActivity(new Intent(googleminer_reg.this, MainActivity.class));
-
-                                }
-
-
-                            }
-
-                            @Override
-                            public void onCancelled(DatabaseError databaseError) {
-
-                            }
-                        });
-
-
-
+                    if (TextUtils.isEmpty(mem3)) {
+                        m3.setError("field is required");
+                        focusView[0] = m3;
 
                     }
 
+                  /*  if(TextUtils.isEmpty(mem4)){
+                        m4.setError("field is required");
+                        focusView[0] = m4;
 
-                }
-                else {
-                    Toast.makeText(googleminer_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
+                    }
+                    if(TextUtils.isEmpty(email)){
+                        em.setError("field is required");
+                        focusView[0] = em;
+
+                    }*/
+                    if (name.isEmpty() == true || mem1.isEmpty() == true || mem2.isEmpty() == true || mem3.isEmpty() == true ) {
+
+                    } else {
+                        String id = obs.push().getKey();
+                        obs.child("paper").child(id).child("name").setValue(name);
+                        obs.child("paper").child(id).child("name2").setValue(name2);
+                        obs.child("paper").child(id).child("email").setValue(mem1);
+                        obs.child("paper").child(id).child("mobile").setValue(mem2);
+                        obs.child("paper").child(id).child("college").setValue(mem3);
+                        FirebaseMessaging.getInstance().subscribeToTopic("googleminer");
+                        Toast.makeText(googleminer_reg.this, "Registration done For GOOGLE MINER and you will receive notifications regarding it.",
+                                Toast.LENGTH_LONG).show();
+                        finish();
+                        startActivity(new Intent(googleminer_reg.this, MainActivity.class));
+
+
+                    }
+                } else {
+                    Toast.makeText(googleminer_reg.this, "INTERNET CONNECTION IS NOT AVAILABLE",
                             Toast.LENGTH_LONG).show();
 
                 }
 
+
             }
         });
+
+
     }
 }

@@ -26,8 +26,7 @@ public class surveytopographia extends MainActivity {
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
     AlertDialog.Builder judging;
-    DatabaseReference tru;
-    String p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,26 +43,12 @@ public class surveytopographia extends MainActivity {
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
         jud = (Button)findViewById(R.id.bt6);
-        tru = FirebaseDatabase.getInstance().getReference();
-        tru.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("survey").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 about = new AlertDialog.Builder(surveytopographia.this);
-                about.setMessage(R.string.truss_desc);
+                about.setMessage(R.string.topoabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -75,7 +60,7 @@ public class surveytopographia extends MainActivity {
             @Override
             public void onClick(View v) {
                 judging = new AlertDialog.Builder(surveytopographia.this);
-                judging.setMessage(R.string.truss_guidelines);
+                judging.setMessage(R.string.topojud);
                 AlertDialog jd = judging.create();
                 jd.setTitle("JUDGING");
                 jd.show();
@@ -85,7 +70,7 @@ public class surveytopographia extends MainActivity {
             @Override
             public void onClick(View v) {
                 rules = new AlertDialog.Builder(surveytopographia.this);
-                rules.setMessage(R.string.truss_rules);
+                rules.setMessage(R.string.toporules);
                 AlertDialog ru = rules.create();
                 ru.setTitle("RULES");
                 ru.show();
@@ -96,7 +81,7 @@ public class surveytopographia extends MainActivity {
             @Override
             public void onClick(View v) {
                 prizes = new AlertDialog.Builder(surveytopographia.this);
-                prizes.setMessage(p);
+                prizes.setMessage("worth Rs 5000");
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();
@@ -107,7 +92,7 @@ public class surveytopographia extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(surveytopographia.this);
-                contacts.setMessage(R.string.truss_contact);
+                contacts.setMessage(R.string.topocon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
@@ -117,7 +102,7 @@ public class surveytopographia extends MainActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+             startActivity(new Intent(surveytopographia.this,topo_reg.class));
             }
         });
     }
