@@ -93,11 +93,8 @@ public class aquarise extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(aquarise.this);
-                contacts.setMessage("Akash\n" +
-                        "                        Ajay saini\n" +
-                        "                        Prince keshri -> 9386667625\n" +
-                        "                        Uday kiran\n" +
-                        "                        Aman kumar");
+                contacts.setMessage(" Prince keshri -> 9386667625"
+                        );
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

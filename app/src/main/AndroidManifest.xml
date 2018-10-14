@@ -115,6 +115,8 @@
         <activity android:name=".fifa_reg"></activity>
         <activity android:name=".quiz"></activity>
         <activity android:name=".quiz_reg"></activity>
+        <activity android:name=".topo_reg"></activity>
+
 
 
 

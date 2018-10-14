@@ -26,8 +26,9 @@ public class fifa extends MainActivity {
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
     AlertDialog.Builder judging;
+    String p;
     DatabaseReference tru;
-    String p,a,c,r;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +50,7 @@ public class fifa extends MainActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 dataSnapshot = dataSnapshot.child("fifa").child("prize");
-                String p = dataSnapshot.getValue().toString();
+                 p = dataSnapshot.getValue().toString();
 
             }
 

@@ -92,7 +92,7 @@ public class tesla extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(tesla.this);
-                contacts.setMessage(R.string.tescon);
+                contacts.setMessage("TARUN KUMAR -> 8507359111\n suraj Gupta -> 9412168203");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

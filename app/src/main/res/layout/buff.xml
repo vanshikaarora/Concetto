@@ -43,7 +43,7 @@
                     android:textColor="#ffffff"
                     android:fontFamily="@font/batmanforeveralternate"
                     android:textSize="25dp"
-                    android:text="BUFFET THE MONEY
+                    android:text="BUFFET MONEY
           "/>
 
             </LinearLayout>

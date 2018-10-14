@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="spardha_desc">Compromising of 3 members each there will be approximately 15-20 Groups (Depending on the participants). The quiz will be Divided into 3 Rounds. \n
+    <string name="spardha_desc">Comprising of 3 members each there will be approximately 15-20 Groups (Depending on the participants). The quiz will be Divided into 3 Rounds. \n
 •	First Round Would Consist of the questions Regarding the CEO, Higher management authorities, technology based and Company related questions where each team will be given a set of questions that they have to answer, Top 10 teams would be selected for next round. \n
 •	Round 2 will be conducted with the Help of Projector where Pictures will be displayed on the screen and the participants would be required to guess the right answer. \n
 •	Third Round Would Consist of questions related to Latest Business changes and technical innovations. \n
@@ -135,7 +135,7 @@ Experience the world of construction in a miniature form by constructing a Truss
         Truss is used because it is very rigid structure and it transfers the load from single point to much wider area and are economic to construct. But the closed bridges provide obstacle for better transportation along the river.\n
         To overcome this hurdle, the new concept called HYDRAULIC ASSISTED BRIDGE (HAB) is used that provides the feasible transportation.\n
 Participants are required to build a Hydraulic Assisted truss bridge with the following material\n\n
-1.	100 popsicle sticks \n 2. Fevicol\n 3. Syringe\n 4. Narrow hose pipe Note: - All the materials will be provided by event organizers.\n\n
+1.	 popsicles sticks \n 2. Fevicol\n 3. Syringe\n 4. Narrow hose pipe\n <b>Note:</b> - All the materials will be provided by event organizers.\n\n
 
 </string>
 
@@ -160,7 +160,7 @@ Minimum gap between the base of the bridge —10 cm Maximum width — 10 cm\n
         3.	If Syringe is taking load — DISQUALIFIED\n
 4.	Use of superglues — DISQUALIFIED\n\n
         ->	<b>Team Size</b> — 4 Students\n
-        ->	Entry Fee - 400\n
+        ->	Entry Fee - will be updated soon\n
 
 
     </string>
@@ -178,7 +178,7 @@ Stage 1- Bid-Vaganza \n
 Participants will be provided fixed amount of virtual cash. Participants will bid on the buildings present in the IIT(ISM) campus that will be put on the auction. \n
 Stage 2- Concee-quiz \n
 
-Second round will be the general quiz. Stage 3- Caliber \n
+Second round will be the general quiz.\n Stage 3- Caliber \n
 Industrial problems will be provided to the participants and participants have to come up with a innovative solution to the Problem. \n
     </string>
 
@@ -189,7 +189,7 @@ Industrial problems will be provided to the participants and participants have t
     </string>
 
     <string name="triathlon_contact">1-Surya Kumar Samadhiya :-9304154418 \n
-        2- Sahil :- 725592778 \n
+        2- Sahil :- 7255927784 \n
     </string>
 
     <string name="triathlon_time">3 Days (150 minutes daily) </string>
@@ -236,6 +236,10 @@ There's no right way to solve it, but there's only one right answer.
 3.	A Bowl
 
     </string>
+    <string name="maglocon">
+        suraj Paliwal -> 9636215569\n
+        Jaypal chauhan -> 9712841240
+    </string>
     <string name="frothjudging">
         The winners will be the top 3 teams getting maximum points. The points will be based on\n
 1.	How good the model look -20 Points\n
@@ -264,49 +268,69 @@ Wander fast and get the ANSWERS asked.\n
 REWARD CRITERIA
     </string>
     <string name="flashabout">
-        Here is the mission for you. The robot you make has to play a crucial role. The mission is to carry THE SECRET CODES from CODE_SQUARE to DATA_RING. You do not have much time. The clock is ticking fast. Should you choose to accept it?\n
+        Here is the mission for you. The robot you make has to play a crucial role. The mission is to carry THE SECRET
+CODES from CODE_SQUARE to DATA_RING. You do not have much time. The clock is ticking fast. Should you
+choose to accept it?\n
+        <b>PROBLEM STATEMENT</b>
+Teams have to build an autonomous bot that can follow a black line over a brightly coloured surface to move
+between the different zones and perform the required tasks. The arena will consist of the Starting Zone (SZ),
+Code Square(CS) , Data Ring (DR) and timers T1 and T2. The bot will start from the SZ and follow the thick white
+path. It will reach the CS where it has to identify a set of operators (+, -, x, %) and operands (p, q, r), where p, q,
+r are small integers encoded using combinations of LEDs. The mapping of operators and operands to LEDs of
+CS are shown clearly in table 1. The bot has to calculate that arithmetic expression. Once it has done its work
+at CS, it has to move to DR, where it shall transmit of evaluated result (magnitude only) of expression using its
+binary equivalent with the help of a set of 5-LEDs (An ON LED will represent ‘1’ and an OFF LED will represent
+‘0’).
 
-        <b>PROBLEM STATEMENT</b>\n
- Teams have to build an autonomous bot that can follow a white line over a coloured surface to move between the different zones and perform the required tasks.\nThe arena will consist of the Starting Zone (SZ), Code Square (CS), Data Ring (DR) and timers T1 and T2.\n The bot will start from the SZ and follow the thick white path. It will reach the CS where it has to identify a set of operators (+, -, x, %) and operands (a, b, c), where a, b, c are small integers encoded using combinations of LEDs.\n The mapping of operators and operands to LEDs of CS are shown clearly in table 1. The bot has to calculate that arithmetic expression. Once it has done its work at CS, it has to move to DR, where it shall transmit of evaluated result(magnitude only) of expression using its binary equivalent with the help of a set of 5-LEDs (An ON LED will represent ‘1’ and an OFF LED will represent ‘0’).\n\n
-        <b>Guidelines and Suggestions</b>
-1)	Along with an Arduino board, make use of light detecting sensors like photo-diode, light-dependent resistor (LDR), photo-transistors, LEDs.\n
-2)	Strictly follow the dimensions of CODE_SQUARE and place your sensors accordingly to get accurate readings and prevent misalignments.\n
-3)	The codes given by CODE_SQUARE will change on the spot i.e. they will be different for different bots. Thus, the bot should be programmed to adapt according to every possible code given.
     </string>
     <string name="flashtasks">
-        <b>Level 1:</b>
-The first task will check the bot’s locomotion capabilities. The bot will have to travel path by following the thick white line. The bots who are successfully able to do this will qualify this stage.
-Bot should complete this level without any human intervention. In case of any human intervention the respective penalties will be awarded.
-Maximum time limit: 10 minutes.\n
-Points awarded: \n\n
-•	50 points on completion of level.\n
-•	-5 for each human intervention.\n
-
-<b>Level 2:</b>
-The Second level is where the real challenge begins. The bot will start from SZ and travel the path to reach CS. Now according to table 1, decode the code given through LED’s and convert it into a meaningful arithmetic expression and then calculate the value and store that value as it will be used later. Also, initially all the 4 LED’s will be ON for the bot to properly align itself to take those readings. Make sure that after the bot has stopped on CS it signals in the form of an external LED after which the code will be exposed (refer note 1). After taking the readings from CS the bot will move to DR where it will display the calculated output number in the form of binary which is advised to be done with the help of 5-LEDs placed in a line (array) on the bot.
-Maximum time limit: 15 minutes.\n
-Points awarded:\n\n
-•	20 points for stopping at CS.\n
-•	20 points for successfully collecting data from CS.\n
-•	10 points for crossing to path break.\n
-•	15 points for successfully crossing ‘L’ junction.\n
-•	70 points for displaying correct answer at DR.\n
-•	-5 points for touch for each physical contact.\n
-        <b>Note1:</b>
-Initially all the LEDs of CS will be on, in order to help the bot properly align. The bot must signal only after it has properly aligned.\n
-
-<b>Tie-breaker Level:</b>\n\n
-This level will be open only for those team whose points are coincident and in top three scores. Quantitative tie-breaking strategies will be employed. The strategies will be disclosed on the spot.\n
-
-
+        <b>Level 1:</b>\n
+The first task will check the bot’s locomotion capabilities. The bot will have to travel path by following the thick
+black line. The bots who are successfully able to do this will qualify this stage.
+Bot should complete this level without any human intervention. In case of any human intervention the
+respective penalties will be awarded.\n\n
+Maximum time limit : 10 minutes.\n
+        <b>Points awarded:</b>\n\n
+ 50 points on completion of level.\n
+ 15 points for successfully crossing ‘L’ junction.\n
+ -5 for each human intervention.\n
+<b>Level 2:</b>\n
+The Second level is where the real challenge begins. The bot will start from SZ and travel the path to reach CS.
+Now according to code table (as shown below), read and decode the code given through LED’s and convert it
+into a meaningful arithmetic expression and then calculate the value and store that value as it will be used
+later. The four LEDs will be initially OFF and the bot has to stop itself after entering the black CS square. After
+that all the four LEDs will be ON simultaneously for some time(4-5 seconds) followed by the LED codes which
+the bot has to detect and perform required operation. The codes and further details about the reading of LEDs
+have been mentioned along with the code table in the READING MODE section below. After taking the
+readings from CS the bot will move to DR. In between the bot will encounter a T-junction where the bot has
+two options i.e. to go through an elevated bridge(For which the will be awarded bonus points as mentioned
+below) or a level path with a curve .Once it reaches DR, the bot is required to display the calculated output
+number in the form of binary which is advised to be done with the help of 5-LEDs placed in a line (array) on the
+bot.\n\n
+Maximum time limit : 15 minutes.\n
+        <b>Points awarded:</b>\n
+ 20 points for stopping at CS.\n
+ 10 points for successfully collecting data from CS.\n
+ 10 points for crossing to path break.\n
+ 70 points for displaying correct answer at DR\n.
+ -5 points for touch for each physical contact.\n
+ [BONUS] +20 points : If the bot chooses to climb the bridge and successfully climbs it.\n\n
+        <b>Tie-breaker Level:</b>\n
+In case of a tie between two or more teams, travel time between T1 and T2 will be used for breaking the tie.\n
+In case of further tie, other quantitative strategies will be employed.
     </string>
     <string name="flashrules">
-        1)	Only one bot per team is allowed.\n
-2)	A team can have a maximum of 4 members.\n
-3)	Sharing or exchanging of bots within teams is not allowed.\n
-4)	Explicit physical contact with the bot during the course of the event is not allowed without the organizer’s permission. Doing so can lead to a penalty or even disqualification.\n
-5)	In case the bot leaves the defined track, the respective team will have to restart from the Starting Zone.\n
-6)	Each participant has to bring his/her Identity Proof to be checked by the organizers at the time of the event.
+        1) Only one bot per team is allowed.\n
+2) A team from recognised College can only participate.\n
+3) A team can have a maximum of 4 members.\n
+4) Sharing or exchanging of bots within teams is not allowed.\n
+5) Explicit physical contact with the bot during the course of the event is not allowed without the
+organizer’s permission. Doing so can lead to a penalty or even disqualification.\n
+6) In case the bot leaves the defined track, the respective team will have to restart from the Starting
+Zone.\n
+7) Each participant has to bring his/her college Identity Proof to be checked by the organizers at the time
+of the event.
+
 
 
 
@@ -319,14 +343,18 @@ Pradyumna Gupta ->	7023086751\n
 
     </string>
     <string name="flashbot">
-        1)	 The size of the bot should not be more than 17x17x10 (cm). Care should be taken such that it fits in the arena properly.\n
-2)	 Use of internal combustion engines in the bot is not allowed.\n
-3)	 The bot can have its own power source. An external Power source of 220 Volts AC will be provided if needed. However, teams are suggested to confine the power source within the bot. \n
-4)	 Teams are permitted to implement their own choice of sensors.\n
-5)	 Teams are allowed to use readymade microcontrollers, an array of LDR, IR or any other sensor as per their requirement.\n
-6)	Bots with power source confined within the bot (i.e. not using an adapter to power the bot) will be rewarded bonus points\n
-7)	 Teams are not allowed to use any readymade Lego kits or any such assemblies.\n
-8)	 Any type of violation can result to disqualification.
+      1) The size of the bot should not be more than 16x16x10 (cm). Care should be taken such that it fits in the
+arena properly.\n
+2) Use of internal combustion engines in the bot is not allowed.\n
+3) The bot can have its own power source. An external Power source of 220 Volts AC will be provided if
+needed. However, teams are suggested to confine the power source within the bot.\n
+4) Teams are permitted to implement their own choice of sensors.\n
+        5) Teams are allowed to use readymade microcontrollers, an array of LDR, IR or any other sensor as per
+their requirement.\n
+6) Bots with power source confined within the bot (i.e. not using an adapter to power the bot) will be
+rewarded bonus points.\n
+7) Teams are not allowed to use any readymade Lego kits or any such assemblies.\n
+8) Any type of violation can result to disqualification.
 
     </string>
     <string name="obstacleabout">
@@ -714,7 +742,7 @@ also depends on how much they understood by observations and experimenting circu
         <b>Round 1:</b>\n
 Teams consisting of 3 to 4 members will compete with each other on the basis of their
 knowledge of elementary earth sciences. A problem sheet will be provided to each team.\n\n
-<b>Round 1:</b>\n
+<b>Round 2A:</b>\n
 Teams selected from round 1 will have an interactive pictionary round. With the blend of
 Science, this round will be full of fun and something to look forward to.\n\n
 <b>Round 2B:</b>
@@ -735,8 +763,8 @@ round.\n
 
     </string>
     <string name="bafcon">
-        Anuj Gupta
-        Pushpendra Singh Deora
+        Anuj Gupta\n
+        Pushpendra Singh Deora-> 8239310248
     </string>
     <string name="aquaabout">
         <b>TASK:</b> \n
@@ -868,6 +896,7 @@ Only the answer shall be passed on that piece of paper. Same rules are applicabl
 Rules for this round will be stated on the spot.
     </string>
     <string name="sparabt">
+
         •	<b>First Round</b>\n Would Consist of the questions Regarding the CEO, Higher management authorities, technology based and Company related questions where each team will be given a set of questions that they have to answer, Top 10 teams would be selected for next round.\n\n
 •	 <b>Round 2</b> It will be conducted with the Help of Projector where Pictures will be displayed on the screen and the participants would be required to guess the right answer.\n\n
 •	<b>Third Round</b> Would Consist of questions related to Latest Business changes and technical innovations.
@@ -954,15 +983,13 @@ Entries should not contain any content of violence, Sexuality, Religious or Poli
     </string>
     <string name="munabt">Model  United  Nations  is  an  authentic  simulation  of  the UN  General  Assembly,  UN  Security Council,  or  other  multilateral  body,  which  introduces  students  to  the  world  of  diplomacy,
 negotiation,  and  decision  making.\n\n
-Model  UN  delegates  also  look  closely  at  the  needs,  aspira
-tions,  and  foreign  policy  of  the
+Model  UN  delegates  also  look  closely  at  the  needs,  aspirations,  and  foreign  policy  of  the
 country  they  will“represent” at  the  event.\n\n
 The  delegates  can  form  a  group  of  2  individuals.\n
 The  problem  statement  will  be  given  beforehand.\n
         <b>SELECTION  CRITERIA:</b>\n    Submit  an  abstract  about  the  views
 of  an  individual  on  the  problem
-statement  provided  .The  top  30  teams  with  effective  and  innovative  abstra
-ct  will  be  selected  and  their representative  country  will  be  mentioned  who  will  finally  participate  in  MUN. \n\n
+statement  provided  .The  top  30  teams  with  effective  and  innovative  abstract  will  be  selected  and  their representative  country  will  be  mentioned  who  will  finally  participate  in  MUN. \n\n
         <b>Committee  :</b>\n
         GENERAL  ASSEMBLY
     </string>
@@ -976,17 +1003,17 @@ will  be  called  to  initiate  the committee  who  have  to  put  forward  thei
 4) There  will  be  series  of  formal  debates  and  caucuses.\n
 5) The  unmoderated  caucus  is  the  one  where  the  delegates  have  to  interact  with  their counterparts  and  influence  them  to  form  allies.\n
 6) The  moderated  caucus  will  be  a  break  where  informal  interactions  will  take  place which  definitely  will  be  the  most  fun  part  of  MUN.\n
-7) Finally  the  delegates  with  their  respective  allies  have to  draft  a  position  paper expressing  their  countries  stands  and  the  changes  they  want  to  propose  on  the  given problem  statement.
+7) Finally  the  delegates  with  their  respective  allies  have to  draft  a  position  paper expressing  their  countries  stands  and  the  changes  they  want  to  propose  on  the  given problem  statement.\n
 8) There  will  be  voting  and  the  position  paper  with  a  majority  will  be  passed.
     </string>
     <string name="munjud">The  abstract  will  be  judged  on  the  innovative  ,  effective  and  efficiency  of  the  content. MUN  will  be  judged  on  the  basis  of  public  speaking  skills,  influencing  and  interaction  skills,the  knowledge  about  the  policies  ,  innovative  ways  to  amend  the  position  paper,  debating and cross  questioning.
     </string>
     <string name="muncon">
-
+      Sakshi Kamble -> 9702727444\n
+        Khushboo Garg -> 8728080869
     </string>
     <string name="routeabt">
-        Bracing  ourselves  for  future,  most  of  us  have  forgotten  about  ri
-ddles  and  puzzles which  were  once  an  integral  part  of  our  life.  So, ROUTE  THE  TRUCK is  presentedto  you  to  experience  the  lost  childhood  in  a  more  technical  way.  It  is  a  real-life based  brain  teaser  to  enhance  your  mental  strength  and  logical  reasoning. \n\n
+        Bracing  ourselves  for  future,  most  of  us  have  forgotten  about  riddles  and  puzzles which  were  once  an  integral  part  of  our  life.  So, ROUTE  THE  TRUCK is  presented to  you  to  experience  the  lost  childhood  in  a  more  technical  way.  It  is  a  real-life based  brain  teaser  to  enhance  your  mental  strength  and  logical  reasoning. \n\n
 In ROUTE  THE  TRUCK an  empty  truck  will  be  starting  from  a  collection  point  and
 will  be  reaching  back  after  collecting  all  the  wastes  from  entire township.\n\n
 Participants  will  have  to  find  the  best  possible  route  that  will  consume  minimum time  and  cost.
@@ -997,14 +1024,11 @@ Participants  will  have  to  find  the  best  possible  route  that  will  cons
 maximum  3  members. \n
 -> Features  of  truck  and  township  will  be  predefined  and  will  be
 disclosed  at  the  time  of  event.\n
-        -> Distance  between  each  house  and  institution  will  be  given.
--> Truck  will  have  a  mileage  of x kmph  in  the  beginning  that  will reduce  with  time  in  a  regular  manner.\n
+        -> Distance  between  each  house  and  institution  will  be  given.\n\n
+-> Truck  will  have  a  mileage  of x kmpl  in  the  beginning  that  will reduce  with  time  in  a  regular  manner.\n
 -> There  will  be  a  provision  for  maintenance  of  truck  to  increase  the mileage  back  to x kmpl  at  various  places  in  township,  but  the participant  will  have  to  spend  some  specific  amount  of  time  and money  for  this  purpose. \n
--> Cost  of  fuel  will  be  fixed  and  there  will  be  fuel  stations  where
-participants  will  have  to  spend  time  and  money  for  refuelling  their trucks.\n
--> The  truck  will  be  on  lease  with ₹ y kmph.
-Pickup  time  for  waste  and  turning  time  for  truck  at  each  point  will
-be  fixed.
+-> Cost  of  fuel  will  be  fixed  and  there  will  be  fuel  stations  where participants  will  have  to  spend  time  and  money  for  refuelling  their trucks.\n
+-> The  truck  will  be  on  lease  with ₹ y kmph .Pickup  time  for  waste  and  turning  time  for  truck  at  each  point  will be  fixed.
     </string>
     <string name="roujud">
         Teams  will  be  judged  on  the  basis  of  their  path  selection.  They  will  also
@@ -1142,7 +1166,7 @@ Points would be given for Model design and analysis.
          The event would stretch for a duration of around 12 hours, thus, making it an overnight event. At the end, the participants with the most efficient and innovative solutions to the provided problem statements would be declared winners. The winners would solely be decided by the visiting companies and rewarded with exciting goodies.
     </string>
     <string name="buildprize">
-        The winners would solely be decided by the visiting companies and rewarded with exciting goodies. The event has a cash prize of worth more than ₹20,000. The rewards don\'t only end here. If impressed with the quality of skills, the winners might be given an opportunity to pursue an internship under the respective companies. So don't hold back your skills, unleash your passion for coding and participate in this thrilling event of Build-a-Bit.
+        The winners would solely be decided by the visiting companies and rewarded with exciting goodies. The event has a  prize of worth more than ₹20,000. The rewards don\'t only end here. If impressed with the quality of skills, the winners might be given an opportunity to pursue an internship under the respective companies. So don't hold back your skills, unleash your passion for coding and participate in this thrilling event of Build-a-Bit.
     </string>
     <string name="buildcon">
 
@@ -1156,31 +1180,43 @@ Everyone needs to bring their mouse and headphones.\n
  Teams will be selected based on knockout tournament
     </string>
     <string name="fifaabt">
-        <b>GAME EDITION:</b>\n
-FIFA 18\n\n
-1 vs 1 Knockout Tournament\n\n
-The Tournament will proceed as per the following Knockout Rounds:\n\n
-1st KO Round: Players will use teams having rating less than 3.5 stars\n
-2nd KO Round: Players will use teams having rating  less than 4 stars\n
-3rd KO Round: Players will use teams having rating less than 4.5 stars\n
-and so on(**This will be adjusted according to the participation)\n\n
-The final remaining 8 players can choose teams of any rating
-and henceforth the Quarters/Semis/Finals will commence.\n
-Players can choose their teams only from the following Leagues:\n\n
-1.English Premier League\n
-2.German Bundesliga\n
-3.Italian Serie\n
-4.Spanish La Liga\n
-5.French Ligue 1
+      Feel the excitement and drama of the “Beautiful Game” Football through this FIFA Tournament.
+This 1 vs 1 Tournament will take place in the form of two phases:\n\n
+        <b>1st phase: Elimination Round</b>\n
+Players will play their matches against their respective opponents and their stats will be
+noted.Depending upon the participation only a specified list of players will proceed to the
+2nd phase depending on the judging criteria mentioned below.\n
+        <b>2nd phase: Knockout Stage</b>\n
+Knockout Stages will proceed until the finals.\n\n
+        <b>Eligible Leagues:</b>
+● English Premier League\n
+● German Bundesliga\n
+● Italian Serie A\n
+● Spanish La Liga\n
+● French Ligue 1
     </string>
 
 
-    <string name="fifarules"> 1.Matches will be of 10 mins(5 mins each half).\n
-2.Players are allowed to customize their controls.\n
-3.In-Game rules will remain the same.\n
-4.In case of a draw,Extra Time(Classic)/Penalties will follow to decide the winner.\n\n
-
-**Note:Re-Registration will stop once the quarters will start.
+    <string name="fifarules"> 1.Matches will be of 10 minutes (5 minutes per half)\n
+2.In-Game rules will remain the same.\n
+3.Players can customize the controls.\n
+4.Players can pause the game only during in- game stoppages.\n
+5.During 1st phase players can use teams having FIFA rating less than 4 stars. While,on proceeding
+on to the 2nd phase players can use any team they wish.\n
+6.In case both the players choose the same team then a coin toss will take place.\n\n
+        <b>Judging Criteria:</b>\n
+1.During the 1st phase players will be allowed to play only In-Game 90 minutes.\n
+2.The list of players going into 2nd phase will be judged upon the following stats:\n
+● Goal Difference\n
+● Goals scored\n
+● Shots on target\n
+● Shots\n
+● Possession\n\n
+3.In case of a draw in the knockout stage, Extra Time/Penalties will follow to decide the winner.\n
+4.The winner of the knockout stage wins it all.\n\n
+        <b>NOTE</b>\n
+        Registrations will stop as soon as the 2nd phase player list will be sorted out.\n
+● Using abusive words or unfair means will directly lead to disqualification.
     </string>
     <string name="fifacon">
         PRANJAL GUPTA -> 9709372706
@@ -1325,4 +1361,41 @@ Tejas Bagrecha(7295992507)
     <string name="chemcarnivalPrize">
         worth Rs 5000
     </string>
+    <string name="topoabt">
+        If  you  cannot  count  it,  you  do nott  know  it  yet.  Going  all  out
+  with  this  spirit  in  mind,  here  we  bring  to  you,  Survey  
+Topographia.  This  event  entails  three  distinct  parts.  The  first  and  most  in
+teresting  is  an  exhibition  of  surveying  
+instruments  of  IIT  (ISM)  Dhanbad.  The  measurement  and  analysis  of  all  kinds  
+of  data  is  an  essential  part  and  parcel  of  
+work  for  a  wide  variety  of  professionals.  The  skill  of  being  able  to  use  instrument
+s  efficiently  and  effortlessly  thus  
+becomes  important.  So,  we  welcome  you  to  an  excellent  platform  to  dev
+elop  and  present  this  skill.\n\n
+
+1.  The  event  will  consist  of  two  rounds  all  conducted  at  IIT  (ISM)  Dhanbad.  The  first  round  will  be  an  exhibition  of  the
+surveying  instruments  of  IIT  (ISM)  Dhanbad  and  an  aptitude  test  aimed  to
+check  your  observation  skills  and  also  screen  a smaller  number  of  teams  which  will  thus  make  their  way  to  the  final  round.\n
+2.  The  second  round  will  involve  using  the  given  set  of  instruments
+  to  solve  the  given  problem  statement(s)  using surveying  principles.\n
+3.  Each  of  the  Round  1  and  Round  2  will  be  of  one  hour  duration.
+    </string>
+    <string name="topojud">
+        1.  The  event  will  consist  of  two  rounds  all  conducted  at  IIT  (ISM)  Dhanbad.  The  first  round  will  be  an  exhibition  of  the
+surveying  instruments  of  IIT  (ISM)  Dhanbad  and  an  aptitude  test  aimed  to
+check  your  observation  skills  and  also  screen  a smaller  number  of  teams  which  will  thus  make  their  way  to  the  final  round.\n
+2.  The  second  round  will  involve  using  the  given  set  of  instruments
+  to  solve  the  given  problem  statement(s)  using surveying  principles.\n
+3.  Each  of  the  Round  1  and  Round  2  will  be  of  one  hour  duration.
+    </string>
+    <string name="toporules">
+        1.  A  team  shall  not  comprise  of  more  than  3  members. \n
+2.  All  members  must  register  online.\n
+3.  Participants  are  requested  to  have  their  own  stationaries.
+    </string>
+    <string name="topocon">
+Shashwat  Raj  -  7903592830  \n
+        Harsh  Agarwal - 9572266466
+    </string>
+
 </resources>

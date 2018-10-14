@@ -92,7 +92,7 @@ public class maglocart extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(maglocart.this);
-                contacts.setMessage(R.string.googleminercontacts);
+                contacts.setMessage(R.string.maglocon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

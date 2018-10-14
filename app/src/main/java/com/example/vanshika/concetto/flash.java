@@ -112,7 +112,7 @@ public class flash extends MainActivity {
         ar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uri = "https://l.facebook.com/l.php?u=https%3A%2F%2Fgoo.gl%2FosyhcT&h=AT0vgqJL4QsVTO0X3ICDwh-r2z2IXADzeAQ2BqPh7RjEvcapAU2ojbQWr74MpE2XG8FIxpXKgb_C-nNGhyC3VGHQWaseQIjJAOEA2vvaGWTBWzMh7MYLTAROWzaLKCoinBHRN_7cZXoWzEWcTtDO34TQKHoTVrEB5vi4l6VZbXi3KIjl3UR-8I28cvJqMPwnMeramk8Pi4FtA0fSvBnqm2J-lDjRulpqHrwA7kg01T2xBtWtBynWo28tY2IJIoXI22cWIOvETnYGDbfLfUmYOhPMf7hLnNSwzyaRpaUHP-RPhzz3GDNn_EYtQK67tqULO4e1PPdSFXdAuWhnfLYBA0aDdyBiN_M4qMzzwwh7R79PgZ4Jl_-yjjmRBDs6amxJKMkdJ2t4VW2jXV0OCEDhOUW6ZybMTKeDiw";
+                String uri = "https://drive.google.com/open?id=1bysA40XSz7Dadc5f-j6y-50Vrz66ejNZ";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 startActivity(intent);
 
