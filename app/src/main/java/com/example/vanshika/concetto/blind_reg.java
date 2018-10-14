@@ -108,7 +108,7 @@ public class blind_reg extends AppCompatActivity {
                         obs.child("blinddate").child(id).child("mobile").setValue(mem2);
                         obs.child("blinddate").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("blinddate");
-                        Toast.makeText(blind_reg.this, "Registration done For BLINDDATE ",
+                        Toast.makeText(blind_reg.this, "Registration done For BLINDDATE  and you will receive notifications regarding it. ",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(blind_reg.this, MainActivity.class));

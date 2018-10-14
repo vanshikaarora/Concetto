@@ -143,7 +143,7 @@ public class tesla_reg extends AppCompatActivity {
                                     obs.child("tesla").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("tesla");
-                                    Toast.makeText(tesla_reg.this, "Registration done FOR TESLA ",
+                                    Toast.makeText(tesla_reg.this, "Registration done FOR TESLA  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(tesla_reg.this, MainActivity.class));

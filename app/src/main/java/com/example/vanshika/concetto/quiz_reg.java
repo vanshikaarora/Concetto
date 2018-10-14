@@ -143,7 +143,7 @@ public class quiz_reg extends AppCompatActivity {
                                     obs.child("tesla").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("bigbangquiz");
-                                    Toast.makeText(quiz_reg.this, "Registration done FOR BIG BANG QUIZ ",
+                                    Toast.makeText(quiz_reg.this, "Registration done FOR BIG BANG QUIZ  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(quiz_reg.this, MainActivity.class));

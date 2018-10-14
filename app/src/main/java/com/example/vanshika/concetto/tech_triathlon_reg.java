@@ -108,7 +108,7 @@ public class tech_triathlon_reg extends AppCompatActivity {
                         obs.child("triathlon").child(id).child("mobile").setValue(mem2);
                         obs.child("triathlon").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("techtriathlon");
-                        Toast.makeText(tech_triathlon_reg.this, "Registration done For TECH-TRIATHLON ",
+                        Toast.makeText(tech_triathlon_reg.this, "Registration done For TECH-TRIATHLON  and you will receive notifications regarding it. ",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(tech_triathlon_reg.this, MainActivity.class));

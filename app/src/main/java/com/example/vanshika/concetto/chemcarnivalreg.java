@@ -157,7 +157,7 @@ public class chemcarnivalreg extends AppCompatActivity {
                                     obs.child("chemcarnival").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("chemcarnival");
-                                    Toast.makeText(chemcarnivalreg.this, "Registration done For CHEM-CARNIVAL",
+                                    Toast.makeText(chemcarnivalreg.this, "Registration done For CHEM-CARNIVAL  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(chemcarnivalreg.this, MainActivity.class));

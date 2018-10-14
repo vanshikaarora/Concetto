@@ -143,7 +143,7 @@ public class pubgreg extends AppCompatActivity {
                                     obs.child("pubg").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("pubg");
-                                    Toast.makeText(pubgreg.this, "Registration done For pubg ",
+                                    Toast.makeText(pubgreg.this, "Registration done For pubg  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(pubgreg.this, MainActivity.class));

@@ -137,7 +137,7 @@ public class idp_reg extends AppCompatActivity {
                                     obs.child("industrial").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("industrialdesignproblem");
-                                    Toast.makeText(idp_reg.this, "Registration done For INDUSTRIAL DESIGN ",
+                                    Toast.makeText(idp_reg.this, "Registration done For INDUSTRIAL DESIGN  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(idp_reg.this, MainActivity.class));

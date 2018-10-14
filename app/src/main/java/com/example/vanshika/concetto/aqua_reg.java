@@ -137,7 +137,7 @@ public class aqua_reg extends AppCompatActivity {
                                     obs.child("aquarise").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("aquarise");
-                                    Toast.makeText(aqua_reg.this, "Registration done For AQUA RISE ",
+                                    Toast.makeText(aqua_reg.this, "Registration done For AQUA RISE  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(aqua_reg.this, MainActivity.class));

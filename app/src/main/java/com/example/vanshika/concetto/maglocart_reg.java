@@ -143,7 +143,7 @@ public class maglocart_reg extends AppCompatActivity {
                                     obs.child("maglocart").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("maglocart");
-                                    Toast.makeText(maglocart_reg.this, "Registration done maglocart ",
+                                    Toast.makeText(maglocart_reg.this, "Registration done maglocart  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(maglocart_reg.this, MainActivity.class));

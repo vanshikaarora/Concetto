@@ -149,7 +149,7 @@ public class model_reg extends AppCompatActivity {
                                     obs.child("modelcaravel").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("modelthecaravel");
-                                    Toast.makeText(model_reg.this, "Registration done For MODEL THE CARAVEL ",
+                                    Toast.makeText(model_reg.this, "Registration done For MODEL THE CARAVEL  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(model_reg.this, MainActivity.class));

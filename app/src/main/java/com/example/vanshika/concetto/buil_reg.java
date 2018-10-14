@@ -148,7 +148,7 @@ public class buil_reg extends AppCompatActivity {
                                     obs.child("buildbit").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("buildbit");
-                                    Toast.makeText(buil_reg.this, "Registration done For build a bit ",
+                                    Toast.makeText(buil_reg.this, "Registration done For build a bit  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(buil_reg.this, MainActivity.class));

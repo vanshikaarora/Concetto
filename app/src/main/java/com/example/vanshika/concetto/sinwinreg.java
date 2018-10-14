@@ -108,7 +108,7 @@ public class sinwinreg extends AppCompatActivity {
                         obs.child("symposium").child(id).child("mobile").setValue(mem2);
                         obs.child("symposium").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("sinwin");
-                        Toast.makeText(sinwinreg.this, "Registration done For SIN-WIN ",
+                        Toast.makeText(sinwinreg.this, "Registration done For SIN-WIN  and you will receive notifications regarding it. ",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(sinwinreg.this, MainActivity.class));

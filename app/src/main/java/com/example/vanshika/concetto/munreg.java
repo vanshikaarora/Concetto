@@ -116,7 +116,7 @@ public class munreg extends AppCompatActivity {
                         obs.child("mun").child(id).child("mobile").setValue(mem2);
                         obs.child("mun").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("mun");
-                        Toast.makeText(munreg.this, "Registration done For MUN ",
+                        Toast.makeText(munreg.this, "Registration done For MUN  and you will receive notifications regarding it.",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(munreg.this, MainActivity.class));

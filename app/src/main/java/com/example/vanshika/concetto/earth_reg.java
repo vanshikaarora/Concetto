@@ -139,7 +139,7 @@ public class earth_reg extends AppCompatActivity {
                                     obs.child("earth").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("earth");
-                                    Toast.makeText(earth_reg.this, "Registration done  FOR EARTH ",
+                                    Toast.makeText(earth_reg.this, "Registration done  FOR EARTH  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(earth_reg.this, MainActivity.class));

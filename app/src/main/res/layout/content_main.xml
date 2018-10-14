@@ -17,21 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <Button
-                android:id="@+id/highlights"
-                android:layout_width="200dp"
-                android:layout_marginTop="35dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:visibility="gone"
 
-                   android:text="TECH NIGHT"
-                android:background="@drawable/ripple"
-
-                android:fontFamily="@font/batmanforeveralternate"
-
-
-                android:textColor="#ffffff"/>
 
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/eventsButton"
@@ -68,6 +54,21 @@
                 android:background="@drawable/ripple"
                 android:fontFamily="@font/batmanforeveralternate"
                 android:text="TECH-TALKS"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/highlights"
+                android:layout_width="200dp"
+                android:layout_marginTop="35dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+
+                android:text="TECH NIGHT"
+                android:background="@drawable/ripple"
+
+                android:fontFamily="@font/batmanforeveralternate"
+
+
                 android:textColor="#ffffff"/>
 
         </LinearLayout>

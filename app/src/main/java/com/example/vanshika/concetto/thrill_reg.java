@@ -149,7 +149,7 @@ public class thrill_reg extends AppCompatActivity {
                                     obs.child("thrill").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("thrillofdrill");
-                                    Toast.makeText(thrill_reg.this, "Registration done For thrill of drill ",
+                                    Toast.makeText(thrill_reg.this, "Registration done For thrill of drill  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(thrill_reg.this, MainActivity.class));

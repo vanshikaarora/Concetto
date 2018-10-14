@@ -148,7 +148,7 @@ public class lever_reg extends AppCompatActivity {
                                     obs.child("leverthehuge").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("leverthehuge");
-                                    Toast.makeText(lever_reg.this, "Registration done For LEVER THE HUGE ",
+                                    Toast.makeText(lever_reg.this, "Registration done For LEVER THE HUGE  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(lever_reg.this, MainActivity.class));

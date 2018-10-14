@@ -92,7 +92,7 @@ public class route extends MainActivity {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(route.this);
-                contacts.setMessage(R.string.symcontacts);
+                contacts.setMessage(R.string.roucon);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

@@ -108,7 +108,7 @@ public class fifa_reg extends AppCompatActivity {
                         obs.child("memewar").child(id).child("mobile").setValue(mem2);
                         obs.child("memewar").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("fifa");
-                        Toast.makeText(fifa_reg.this, "Registration done For FIFA ",
+                        Toast.makeText(fifa_reg.this, "Registration done For FIFA  and you will receive notifications regarding it.",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(fifa_reg.this, MainActivity.class));

@@ -143,7 +143,7 @@ public class froth_reg extends AppCompatActivity{
                                     obs.child("techpro").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("techpro");
-                                    Toast.makeText(froth_reg.this, "Registration done For TECH-PRO ",
+                                    Toast.makeText(froth_reg.this, "Registration done For TECH-PRO  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(froth_reg.this, MainActivity.class));
