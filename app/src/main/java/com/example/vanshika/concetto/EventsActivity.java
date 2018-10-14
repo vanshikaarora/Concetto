@@ -235,7 +235,7 @@ public class EventsActivity extends MainActivity {
             //GuestLectureAdapter adapter=new GuestLectureAdapter(getApplicationContext(),)
 
             //DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
-            Query query1 = reference.child("GuestLectures");
+            /*Query query1 = reference.child("GuestLectures");
             query1.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -246,9 +246,9 @@ public class EventsActivity extends MainActivity {
 
                                 GuestLecture newOrder = singleSnapshot.getValue(GuestLecture.class);//singleSshot he or neeche isi line pe datasnapshot use ki ho
                                 if (newOrder != null) {// sir maine code run kiya hua h aur adapter main screen par bhi data aa rha h and notification bhi
-                                        /*newOrder.setOrderid(singleSnapshot.getKey());
+                                        *//*newOrder.setOrderid(singleSnapshot.getKey());
                                         setId = singleSnapshot.getKey();
-                                        orderId = singleSnapshot.getKey();*/
+                                        orderId = singleSnapshot.getKey();*//*
                                         Log.v("ondatachange",newOrder.getDate()+" "+newOrder.getTime()+" "+newOrder.getGuest_name()+" "+newOrder.getLecture_name());
                                     adapter.notifyDataSetChanged();
                                 }
@@ -263,43 +263,43 @@ public class EventsActivity extends MainActivity {
                 public void onCancelled(@NonNull DatabaseError databaseError) {
 
                 }
-            });
+            });*/
 
             query.addChildEventListener(new ChildEventListener() {
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                     if (dataSnapshot.getKey().equals("guest_lecture_1")){
-                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_1"));
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_1",R.drawable.ayan_mishra));
 
                         adapter.notifyDataSetChanged();
                     }
                     else if (dataSnapshot.getKey().equals("guest_lecture_2")){
-                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_2"));
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_2",R.drawable.mihir_ojha));
 
                         adapter.notifyDataSetChanged();
                     }
                     else if (dataSnapshot.getKey().equals("guest_lecture_3")){
-                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_3"));
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_3",R.drawable.guest_lecture));
 
                         adapter.notifyDataSetChanged();
                     }
                     if (dataSnapshot.getKey().equals("guest_lecture_4")){
-                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_4"));
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_4",R.drawable.guest_lecture));
 
                         adapter.notifyDataSetChanged();
                     }
                     if (dataSnapshot.getKey().equals("guest_lecture_5")){
-                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_5"));
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_5",R.drawable.guest_lecture));
 
                         adapter.notifyDataSetChanged();
                     }
                     if (dataSnapshot.getKey().equals("guest_lecture_6")){
-                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_6"));
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_6",R.drawable.guest_lecture));
 
                         adapter.notifyDataSetChanged();
                     }
                     if (dataSnapshot.getKey().equals("guest_lecture_7")){
-                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_7"));
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),dataSnapshot.child("guest_name").getValue().toString(),dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),"guest_lecture_7",R.drawable.guest_lecture));
 
                         adapter.notifyDataSetChanged();
                     }llProgress.setVisibility(View.GONE);
