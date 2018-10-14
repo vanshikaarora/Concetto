@@ -103,12 +103,12 @@ public class laser_reg extends AppCompatActivity {
 
                     } else {
                         String id = obs.push().getKey();
-                        obs.child("symposium").child(id).child("name").setValue(name);
-                        obs.child("symposium").child(id).child("email").setValue(mem1);
-                        obs.child("symposium").child(id).child("mobile").setValue(mem2);
-                        obs.child("symposium").child(id).child("college").setValue(mem3);
+                        obs.child("lasertag").child(id).child("name").setValue(name);
+                        obs.child("lasertag").child(id).child("email").setValue(mem1);
+                        obs.child("lasertag").child(id).child("mobile").setValue(mem2);
+                        obs.child("lasertag").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("lasertag");
-                        Toast.makeText(laser_reg.this, "Registration done For LASER TAG ",
+                        Toast.makeText(laser_reg.this, "Registration done For LASER TAG  and you will receive notifications regarding it. ",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(laser_reg.this, MainActivity.class));

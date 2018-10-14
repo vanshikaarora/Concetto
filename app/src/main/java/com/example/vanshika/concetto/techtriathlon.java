@@ -26,7 +26,7 @@ public class techtriathlon extends MainActivity {
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    DatabaseReference triath;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,20 +42,7 @@ public class techtriathlon extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        triath = FirebaseDatabase.getInstance().getReference();
-        triath.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("triathlon").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +71,7 @@ public class techtriathlon extends MainActivity {
             public void onClick(View v) {
 
                 prizes = new AlertDialog.Builder(techtriathlon.this);
-                prizes.setMessage(p);
+                prizes.setMessage(R.string.techtriathlonPrize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();

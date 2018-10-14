@@ -8,9 +8,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/concetto"
+        android:icon="@mipmap/bgc"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/concetto"
+        android:roundIcon="@mipmap/bgc"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -113,6 +113,8 @@
         <activity android:name=".testing"></activity>
         <activity android:name=".fifa"></activity>
         <activity android:name=".fifa_reg"></activity>
+        <activity android:name=".quiz"></activity>
+        <activity android:name=".quiz_reg"></activity>
 
 
 

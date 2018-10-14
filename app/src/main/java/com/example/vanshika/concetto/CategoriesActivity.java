@@ -97,7 +97,11 @@ public class CategoriesActivity extends MainActivity {
                 new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.manage, "Management Studies"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.manage, "Environmental Engineering"));
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.env, "Environmental Engineering"));
+        categoryList.add(
+                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.exhibition, "SPECIAL"));
+
+
 
 
 

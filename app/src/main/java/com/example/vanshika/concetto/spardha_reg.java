@@ -143,7 +143,7 @@ public class spardha_reg extends AppCompatActivity {
                                     obs.child("spardha").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("spardhatechbizz");
-                                    Toast.makeText(spardha_reg.this, "Registration done For SPARDHA TECH BIZZ ",
+                                    Toast.makeText(spardha_reg.this, "Registration done For SPARDHA TECH BIZZ  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(spardha_reg.this, MainActivity.class));

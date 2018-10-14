@@ -116,7 +116,7 @@ public class paper_reg extends AppCompatActivity {
                         obs.child("paper").child(id).child("mobile").setValue(mem2);
                         obs.child("paper").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("paperdance");
-                        Toast.makeText(paper_reg.this, "Registration done For PAPER DANCE ",
+                        Toast.makeText(paper_reg.this, "Registration done For PAPER DANCE  and you will receive notifications regarding it.",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(paper_reg.this, MainActivity.class));

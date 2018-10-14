@@ -137,7 +137,7 @@ public class googleminer_reg extends AppCompatActivity {
                                     obs.child("obstacle").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("googleminer");
-                                    Toast.makeText(googleminer_reg.this, "Registration done For GOOGLE MINER ",
+                                    Toast.makeText(googleminer_reg.this, "Registration done For GOOGLE MINER  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(googleminer_reg.this, MainActivity.class));

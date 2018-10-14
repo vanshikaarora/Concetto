@@ -143,7 +143,7 @@ public class robowar_registration extends AppCompatActivity {
                                     obs.child("robowar").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("robowar");
-                                    Toast.makeText(robowar_registration.this, "Registration done For ROBOWAR ",
+                                    Toast.makeText(robowar_registration.this, "Registration done For ROBOWAR  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(robowar_registration.this, MainActivity.class));

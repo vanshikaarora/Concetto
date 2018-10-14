@@ -25,8 +25,7 @@ public class buffetmoney extends MainActivity {
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    DatabaseReference rob;
-    String p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,19 +41,7 @@ public class buffetmoney extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        rob  = FirebaseDatabase.getInstance().getReference();
-        rob.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("buffet").child("prize");
-                p = dataSnapshot.getValue().toString();
-            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +70,7 @@ public class buffetmoney extends MainActivity {
             public void onClick(View v) {
 
                 prizes = new AlertDialog.Builder(buffetmoney.this);
-                prizes.setMessage(p);
+                prizes.setMessage(R.string.buffetPrize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();

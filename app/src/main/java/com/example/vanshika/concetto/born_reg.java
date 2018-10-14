@@ -137,7 +137,7 @@ public class born_reg extends AppCompatActivity {
                                     obs.child("borntowander").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("borntowander");
-                                    Toast.makeText(born_reg.this, "Registration done For BORN TO WANDER ",
+                                    Toast.makeText(born_reg.this, "Registration done For BORN TO WANDER  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(born_reg.this, MainActivity.class));

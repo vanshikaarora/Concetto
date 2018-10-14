@@ -39,7 +39,7 @@
             android:layout_marginBottom="5dp"
             android:layout_above="@+id/textViewTime"
             android:layout_alignStart="@+id/textViewTime"
-            android:src="@drawable/comedy" />
+            android:src="@drawable/sethia" />
 
         <TextView
             android:id="@+id/textViewTitle"

@@ -153,7 +153,7 @@ public class unravl_reg extends AppCompatActivity {
                                     obs.child("unravel").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("unravelthewhizz");
-                                    Toast.makeText(unravl_reg.this, "Registration done For UNRAVEL THE WHIZZ ",
+                                    Toast.makeText(unravl_reg.this, "Registration done For UNRAVEL THE WHIZZ  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(unravl_reg.this, MainActivity.class));

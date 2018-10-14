@@ -153,7 +153,7 @@ public class obstacle_registration extends AppCompatActivity {
                                     obs.child("obstacle").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("obstaclecourseracing");
-                                    Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing ",
+                                    Toast.makeText(obstacle_registration.this, "Registration done For obstacle course racing  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(obstacle_registration.this, MainActivity.class));

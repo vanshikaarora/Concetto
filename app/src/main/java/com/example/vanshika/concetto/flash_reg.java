@@ -143,7 +143,7 @@ public class flash_reg extends AppCompatActivity {
                                     obs.child("flash").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("flash");
-                                    Toast.makeText(flash_reg.this, "Registration done For FLASH ",
+                                    Toast.makeText(flash_reg.this, "Registration done For FLASH  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(flash_reg.this, MainActivity.class));

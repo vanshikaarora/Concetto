@@ -26,8 +26,7 @@ public class googleminer extends MainActivity {
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
     AlertDialog.Builder judging;
-    DatabaseReference tru;
-    String p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,21 +43,7 @@ public class googleminer extends MainActivity {
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
         jud = (Button)findViewById(R.id.bt6);
-        tru = FirebaseDatabase.getInstance().getReference();
-        tru.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("google").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +81,7 @@ public class googleminer extends MainActivity {
             @Override
             public void onClick(View v) {
                 prizes = new AlertDialog.Builder(googleminer.this);
-                prizes.setMessage(p);
+                prizes.setMessage(R.string.googlePrize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();

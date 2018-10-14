@@ -138,7 +138,7 @@ public class csgoreg extends AppCompatActivity {
                                     obs.child("cs-go").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("csgo");
-                                    Toast.makeText(csgoreg.this, "Registration done For CS-GO ",
+                                    Toast.makeText(csgoreg.this, "Registration done For CS-GO  and you will receive notifications regarding it.",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(csgoreg.this, MainActivity.class));

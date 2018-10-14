@@ -143,7 +143,7 @@ public class routereg extends AppCompatActivity {
                                     obs.child("route").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("routethetruck");
-                                    Toast.makeText(routereg.this, "Registration done ROUTE THE TRUCK ",
+                                    Toast.makeText(routereg.this, "Registration done ROUTE THE TRUCK  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(routereg.this, MainActivity.class));

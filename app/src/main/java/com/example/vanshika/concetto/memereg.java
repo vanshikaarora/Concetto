@@ -108,7 +108,7 @@ public class memereg extends AppCompatActivity {
                         obs.child("memewar").child(id).child("mobile").setValue(mem2);
                         obs.child("memewar").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("memewar");
-                        Toast.makeText(memereg.this, "Registration done For MEMEWAR ",
+                        Toast.makeText(memereg.this, "Registration done For MEMEWAR  and you will receive notifications regarding it. ",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(memereg.this, MainActivity.class));

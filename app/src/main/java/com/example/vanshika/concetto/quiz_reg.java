@@ -24,10 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 /**
- * Created by lenovo on 10/9/2018.
+ * Created by lenovo on 10/14/2018.
  */
 
-public class maglocart_reg extends AppCompatActivity {
+public class quiz_reg extends AppCompatActivity {
     String TAG = obstacle_registration.class.getSimpleName();
 
     EditText nm,m1,m2,m3,m4,em,mo,clgg;
@@ -108,7 +108,7 @@ public class maglocart_reg extends AppCompatActivity {
                         obs.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                dataSnapshot = dataSnapshot.child("maglocart");
+                                dataSnapshot = dataSnapshot.child("quiz");
                                 boolean flag = true;
                                 if(dataSnapshot.hasChildren()){
                                     for(DataSnapshot snapshot : dataSnapshot.getChildren()){
@@ -120,7 +120,7 @@ public class maglocart_reg extends AppCompatActivity {
                                         if(p.equals(name)){
                                             Log.e(obstacle_registration.class.getSimpleName(),"check");
                                             nm.setError("THIS TEAM NAME ALREADY EXISTS ,CHOOSE ANOTHER TEAM NAME");
-                                            Toast.makeText(maglocart_reg.this, "Registration not done",
+                                            Toast.makeText(quiz_reg.this, "Registration not done",
                                                     Toast.LENGTH_LONG).show();
                                             focusView[0] = nm;
 
@@ -134,19 +134,19 @@ public class maglocart_reg extends AppCompatActivity {
                                     String id = obs.push().getKey();
                                     // registration_team reg = new registration_team(name,mem1,mem2,mem3,mem4,email);
                                     // obs.child(id).setValue(reg);
-                                    obs.child("maglocart").child(id).child("teamname").setValue(name);
-                                    obs.child("maglocart").child(id).child("member1").setValue(mem1);
-                                    obs.child("maglocart").child(id).child("member2").setValue(mem2);
-                                    obs.child("maglocart").child(id).child("member3").setValue(mem3);
-                                    obs.child("maglocart").child(id).child("email").setValue(email);
-                                    obs.child("maglocart").child(id).child("mobile").setValue(mob);
-                                    obs.child("maglocart").child(id).child("college").setValue(clgn);
+                                    obs.child("tesla").child(id).child("teamname").setValue(name);
+                                    obs.child("tesla").child(id).child("member1").setValue(mem1);
+                                    obs.child("tesla").child(id).child("member2").setValue(mem2);
+                                    obs.child("tesla").child(id).child("member3").setValue(mem3);
+                                    obs.child("tesla").child(id).child("email").setValue(email);
+                                    obs.child("tesla").child(id).child("mobile").setValue(mob);
+                                    obs.child("tesla").child(id).child("college").setValue(clgn);
 
-                                    FirebaseMessaging.getInstance().subscribeToTopic("maglocart");
-                                    Toast.makeText(maglocart_reg.this, "Registration done maglocart  and you will receive notifications regarding it.",
+                                    FirebaseMessaging.getInstance().subscribeToTopic("bigbangquiz");
+                                    Toast.makeText(quiz_reg.this, "Registration done FOR BIG BANG QUIZ  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
-                                    startActivity(new Intent(maglocart_reg.this, MainActivity.class));
+                                    startActivity(new Intent(quiz_reg.this, MainActivity.class));
 
                                 }
 
@@ -167,7 +167,7 @@ public class maglocart_reg extends AppCompatActivity {
 
                 }
                 else {
-                    Toast.makeText(maglocart_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
+                    Toast.makeText(quiz_reg.this,"INTERNET CONNECTION IS NOT AVAILABLE",
                             Toast.LENGTH_LONG).show();
 
                 }
@@ -175,5 +175,4 @@ public class maglocart_reg extends AppCompatActivity {
             }
         });
     }
-
 }

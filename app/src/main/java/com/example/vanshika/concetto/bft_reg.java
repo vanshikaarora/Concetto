@@ -108,7 +108,7 @@ public class bft_reg extends AppCompatActivity {
                         obs.child("symposium").child(id).child("mobile").setValue(mem2);
                         obs.child("symposium").child(id).child("college").setValue(mem3);
                         FirebaseMessaging.getInstance().subscribeToTopic("buffetmoney");
-                        Toast.makeText(bft_reg.this, "Registration done For BUFFETMONEY ",
+                        Toast.makeText(bft_reg.this, "Registration done For BUFFETMONEY  and you will receive notifications regarding it. ",
                                 Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(new Intent(bft_reg.this, MainActivity.class));

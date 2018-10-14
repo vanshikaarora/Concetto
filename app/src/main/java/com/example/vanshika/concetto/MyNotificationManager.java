@@ -34,7 +34,7 @@ class MyNotificationManager {
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(mCtx, constants.CHANNEL_ID)
-                        .setSmallIcon(R.drawable.concetto_white)
+                        .setSmallIcon(R.mipmap.bgc)
                         .setContentTitle(title)
                         .setContentText(body);
 

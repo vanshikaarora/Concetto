@@ -148,7 +148,7 @@ public class bafflingplanet_reg extends AppCompatActivity {
                                     obs.child("baffling").child(id).child("college").setValue(clgn);
 
                                     FirebaseMessaging.getInstance().subscribeToTopic("bafflingpalnet");
-                                    Toast.makeText(bafflingplanet_reg.this, "Registration done For BAFFLING PLANET ",
+                                    Toast.makeText(bafflingplanet_reg.this, "Registration done For BAFFLING PLANET  and you will receive notifications regarding it. ",
                                             Toast.LENGTH_LONG).show();
                                     finish();
                                     startActivity(new Intent(bafflingplanet_reg.this, MainActivity.class));
