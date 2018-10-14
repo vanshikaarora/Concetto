@@ -213,15 +213,18 @@ public class EventsActivity extends MainActivity {
 
             }
             else if (position.equals("18")) {
-                eventsList.add(
-                        new Event("CONTRIVANCE", "android.resource://com.example.vanshika.concetto/" + concetto_white));
 
                 eventsList.add(
                         new Event("Shark Tank", "android.resource://com.example.vanshika.concetto/" + concetto_white));
+
+                eventsList.add(
+                        new Event("BUILD A BIT", "android.resource://com.example.vanshika.concetto/" + concetto_white));
+
+
+            }
+            else if(position.equals("19")){
                 eventsList.add(
                         new Event("BIG BANG QUIZ", "android.resource://com.example.vanshika.concetto/" + concetto_white));
-
-
             }
 
 //creating recyclerview adapter

@@ -23,7 +23,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text= "CO-ORDINATORS"
+            android:text= "COORDINATORS"
             android:paddingTop="95dp"
             android:layout_gravity="left"
             android:paddingLeft="20dp"

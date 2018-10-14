@@ -10,7 +10,8 @@ Animation openScale;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.activity_contact_us, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.activity_about, R.id.content_main_linear_layout);
+        getSupportActionBar().hide();
         openScale= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.activity_open_scale);
         overridePendingTransition(R.anim.activity_open_scale,R.anim.activity_close_scale);
     }
