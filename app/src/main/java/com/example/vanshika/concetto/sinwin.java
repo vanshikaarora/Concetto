@@ -95,6 +95,17 @@ public class sinwin extends MainActivity {
 
             }
         });
+        ru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rules = new AlertDialog.Builder(sinwin.this);
+                rules.setMessage(R.string.sinrules);
+                AlertDialog co = contacts.create();
+                co.setTitle("CONTACTS");
+                co.show();
+
+            }
+        });
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

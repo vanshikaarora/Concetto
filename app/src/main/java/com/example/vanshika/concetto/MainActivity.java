@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.concetto_white);
         high = (Button)findViewById(R.id.highlights);
+        high.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,highlights.class));
+            }
+        });
 
 
 
