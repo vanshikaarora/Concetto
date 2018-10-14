@@ -198,7 +198,7 @@ Industrial problems will be provided to the participants and participants have t
         <b>TASK</b>\n
         To google about the question and find the right answer.\n
 
-There's no right way to solve it, but there's only one right answer.
+There\'s no right way to solve it, but there\'s only one right answer.
 
 
 
@@ -372,7 +372,7 @@ In case of any discrepancies in the rules, the view of the presiding judge over 
     <string name="roboelig">
         <b>Eligibility</b> \n   Team from any recognized engineering college are eligible to participate.\n
         <b>Team Specification:</b> Any team consisting of maximum 4 members can participate.\n
-        <b>Team Name</b> : Every team must have an appropriate name which must be unique. Team's name won’t be change once submitted.\n
+        <b>Team Name</b> : Every team must have an appropriate name which must be unique. Team\'s name won\’t be change once submitted.\n
         <b>Team Representative:</b> Each team must specify their Team Representative (Leader) at the time of registration on the website or app.\n\n
 All important communications between Concetto (Robowars) and the registered
 teams will be done through their Team Representative.
@@ -832,7 +832,7 @@ The event is focused on lifting and moving of object with the help of hydraulic 
 5. Trades entered after close of market (4:00p.m. Eastern Time) will be priced at next trading day\'s closing price.\n
 6. To be eligible for final ranking the participant should make atleast 5 transactions on each day of the game;\n
 7. Members do not have to liquidate their portfolios at the end of The Game. Winners will be determined on the basis of the equity in their portfolios at the end of the final transaction day.\n
-8. A record of a participant's portfolio and transactions will be available daily. He/She will not receive a portfolio nor be listed in rankings until its initial transaction is entered successfully.\n
+8. A record of a participant\'s portfolio and transactions will be available daily. He/She will not receive a portfolio nor be listed in rankings until its initial transaction is entered successfully.\n
 9. Stock and cash dividends and stock splits are automatically computed into your portfolio.\n
 10. Participants of the end of day pricing game may delete pending transactions prior to market close.
     </string>
@@ -887,7 +887,7 @@ In case of tie, tie breaker question would be asked.
     <string name="idpabt">
         The desire to create is one of the deepest yearnings of the human soul. The IDP - Industrial Design Problem will push the students to think beyond the conventional and to look at a problem in a different way and solve it in a limited amount of time. This event is going to be a simulator which will provide the competitors with real life environment for industrial challenges. The event is set to help the participants develop an industry sense. This is a quality every engineering aspirant needs to have regardless of the industry and/or the location they work in.\n\n
        <b>Event Structure</b> \n\n
-1. The competition will be organized in two phases, both to be conducted at IIT (ISM) Dhanbad during Concetto'18.\n
+1. The competition will be organized in two phases, both to be conducted at IIT (ISM) Dhanbad during Concetto\'18.\n
 2. The first round will have an aptitude test from which few teams will be selected for the second round.\n
 3.For the second round a problem statement related to industry will be given, the solution to which has to be designed in a specified period of time.\n
 4. Round 1 Aptitude Test will be 45min and Round 2 will be on next day of 1 hour period.
@@ -1142,7 +1142,7 @@ Points would be given for Model design and analysis.
          The event would stretch for a duration of around 12 hours, thus, making it an overnight event. At the end, the participants with the most efficient and innovative solutions to the provided problem statements would be declared winners. The winners would solely be decided by the visiting companies and rewarded with exciting goodies.
     </string>
     <string name="buildprize">
-        The winners would solely be decided by the visiting companies and rewarded with exciting goodies. The event has a cash prize of worth more than ₹20,000. The rewards don\'t only end here. If impressed with the quality of skills, the winners might be given an opportunity to pursue an internship under the respective companies. So don't hold back your skills, unleash your passion for coding and participate in this thrilling event of Build-a-Bit.
+        The winners would solely be decided by the visiting companies and rewarded with exciting goodies. The event has a cash prize of worth more than ₹20,000. The rewards don\'t only end here. If impressed with the quality of skills, the winners might be given an opportunity to pursue an internship under the respective companies. So don\'t hold back your skills, unleash your passion for coding and participate in this thrilling event of Build-a-Bit.
     </string>
     <string name="buildcon">
 
