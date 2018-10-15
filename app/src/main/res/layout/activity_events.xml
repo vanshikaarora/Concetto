@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/registeration_bg"
-    tools:context="com.example.vanshika.concetto.EventsActivity">
+    tools:context="com.perul.vanshika.concetto.EventsActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/events_recycler_view"

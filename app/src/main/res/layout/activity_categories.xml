@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/registeration_bg"
-    tools:context="com.example.vanshika.concetto.CategoriesActivity">
+    tools:context="com.perul.vanshika.concetto.CategoriesActivity">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/categories_recycler_view"
