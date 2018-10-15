@@ -149,7 +149,7 @@ public class EventsActivity extends MainActivity {
                 eventsList.add(
                         new Event("FIFA", "android.resource://com.example.vanshika.concetto/" + fifaic ));
 
-            } else if (position.equals("1")) {
+            } else if (position.equals("3")) {
 
                 eventsList.add(
                         new Event("Robo Wars", "android.resource://com.example.vanshika.concetto/" + robowarsic));
@@ -159,56 +159,56 @@ public class EventsActivity extends MainActivity {
 
                 eventsList.add(
                         new Event("Flash", "android.resource://com.example.vanshika.concetto/" + flashic));
-            } else if (position.equals("2")) {
+            } else if (position.equals("4")) {
                 eventsList.add(
                         new Event("Buffet Money", "android.resource://com.example.vanshika.concetto/" + moneybuffet));
 
                 eventsList.add(
                         new Event("Unravel The Whizz", "android.resource://com.example.vanshika.concetto/" + unravelic));
-            } else if (position.equals("3")) {
+            } else if (position.equals("5")) {
                 eventsList.add(
                         new Event("EArTh", "android.resource://com.example.vanshika.concetto/" + erth));
                 eventsList.add(
                         new Event("BUILD A BIT", "android.resource://com.example.vanshika.concetto/" + buildabiltic));
 
-            } else if (position.equals("4")) {
+            } else if (position.equals("6")) {
                 eventsList.add(
                         new Event("Electrabuzz", "android.resource://com.example.vanshika.concetto/" + electrabuzzic));
-            } else if (position.equals("5")) {
+            } else if (position.equals("7")) {
                 eventsList.add(
                         new Event("Electrocharades", "android.resource://com.example.vanshika.concetto/" + concetto_white));
 
                 eventsList.add(
                         new Event("Tesla", "android.resource://com.example.vanshika.concetto/" + teslaic));
-            } else if (position.equals("6")) {
+            } else if (position.equals("8")) {
                 eventsList.add(
                         new Event("Lever The Huge", "android.resource://com.example.vanshika.concetto/" + leverthehudge));
 
                 eventsList.add(
                         new Event("Model The Caravel", "android.resource://com.example.vanshika.concetto/" + modelthecarvel));
-            } else if (position.equals("7")) {
+            } else if (position.equals("9")) {
                 eventsList.add(
                         new Event("Tech Triathlon", "android.resource://com.example.vanshika.concetto/" + R.drawable.techtriathlon));
 
                 eventsList.add(
                         new Event("Truss The Frame", "android.resource://com.example.vanshika.concetto/" + trusstheframeic));
-            } else if (position.equals("8")) {
+            } else if (position.equals("10")) {
                 eventsList.add(
                         new Event("Industrial Design Problem", "android.resource://com.example.vanshika.concetto/" + idpic));
                 eventsList.add(
                         new Event("SURVEY TOPOGRAPHIA", "android.resource://com.example.vanshika.concetto/" + topographiaic));
             }
 
-            else if (position.equals("9")) {
+            else if (position.equals("11")) {
                 eventsList.add(
                         new Event("Aqua Rise", "android.resource://com.example.vanshika.concetto/" + aqua_rise));
             }
 
-            else if (position.equals("10")) {
+            else if (position.equals("12")) {
                 eventsList.add(
 
                         new Event("Thrill of Drill", "android.resource://com.example.vanshika.concetto/" + thrillofrill));
-            } else if (position.equals("11")) {
+            } else if (position.equals("13")) {
                 eventsList.add(
                         new Event("Google Miner", "android.resource://com.example.vanshika.concetto/" + googlemineric));
 
@@ -216,34 +216,34 @@ public class EventsActivity extends MainActivity {
                         new Event("TechPro", "android.resource://com.example.vanshika.concetto/" + techproic));
             }
 
-            else if (position.equals("12")) {
+            else if (position.equals("14")) {
                 eventsList.add(
                         new Event("The Baffling Planet", "android.resource://com.example.vanshika.concetto/" + baffling_planet));
             }
 
-            else if(position.equals("13")) {
+            else if(position.equals("15")) {
 
                 eventsList.add(
                         new Event("Symposium", "android.resource://com.example.vanshika.concetto/" + symposiumic));
 
-            } else if (position.equals("14")) {
+            } else if (position.equals("16")) {
                 eventsList.add(
                         new Event("Chem-e-car", "android.resource://com.example.vanshika.concetto/" + chemecaric));
 
                 eventsList.add(
 
                         new Event("Chem-e-carnival", "android.resource://com.example.vanshika.concetto/" + chemcarnivalic));
-            } else if (position.equals("15")) {
+            } else if (position.equals("17")) {
                 eventsList.add(
                         new Event("Magl-o-cart", "android.resource://com.example.vanshika.concetto/" + R.drawable.maglocart));
             }
 
-            else if (position.equals("16")) {
+            else if (position.equals("18")) {
                 eventsList.add(
                         new Event("Spardha Tech Bizz", "android.resource://com.example.vanshika.concetto/" + spardhaic));
             }
 
-            else if (position.equals("17")) {
+            else if (position.equals("19")) {
                 eventsList.add(
                         new Event("Model United Nations", "android.resource://com.example.vanshika.concetto/" + munic));
 
@@ -251,17 +251,17 @@ public class EventsActivity extends MainActivity {
                         new Event("Route The Truck", "android.resource://com.example.vanshika.concetto/" + routethetruckic));
 
             }
-            else if (position.equals("18")) {
+            else if (position.equals("1")) {
 
                 eventsList.add(
-                        new Event("Shark Tank", "android.resource://com.example.vanshika.concetto/" + bizathonic));
+                        new Event("BIZATHON", "android.resource://com.example.vanshika.concetto/" + bizathonic));
 
                 eventsList.add(
                         new Event("BUILD A BIT", "android.resource://com.example.vanshika.concetto/" + buildabiltic));
 
 
             }
-            else if(position.equals("19")){
+            else if(position.equals("2")){
                 eventsList.add(
                         new Event("BIG BANG QUIZ", "android.resource://com.example.vanshika.concetto/" + thebigbangquiz));
             }

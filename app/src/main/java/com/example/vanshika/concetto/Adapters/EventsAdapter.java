@@ -407,7 +407,7 @@ import java.util.List;
                             // alert_about.setTitle(Html.fromHtml("<font color='#FF7F27'>About</font>"));
                             alert_about.show();
                         }
-                        else if(event.getName().equals("Shark Tank"))
+                        else if(event.getName().equals("BIZATHON"))
                         {
                             about_builder = new AlertDialog.Builder(mCtx);
                             about_builder.setMessage(R.string.shark);
