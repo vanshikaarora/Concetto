@@ -92,7 +92,7 @@ public class unravelthewhizz extends MainActivity  {
             @Override
             public void onClick(View v) {
                 contacts = new AlertDialog.Builder(unravelthewhizz.this);
-                contacts.setMessage("NAMAN KHETAN -> 8302237255");
+                contacts.setMessage("NAMAN KHETAN -> 8302237255\nPrajwal Mehta -> 08954272066");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();

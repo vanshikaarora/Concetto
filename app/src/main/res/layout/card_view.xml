@@ -27,7 +27,7 @@
             android:layout_above="@+id/textViewTime"
             android:layout_alignStart="@+id/textViewTime"
             android:src="@drawable/workshop"
-            android:layout_alignLeft="@+id/textViewTime" />
+            />
 
         <TextView
             android:id="@+id/textViewTitle"
