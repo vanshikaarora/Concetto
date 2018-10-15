@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import com.example.vanshika.concetto.CategoriesActivity;
 import com.example.vanshika.concetto.EventsActivity;
 import com.example.vanshika.concetto.Models.Category;
@@ -53,7 +55,10 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
 
         //binding the data with the viewholder views
         holder.textViewTitle.setText(category.getTitle());
-        holder.imageView.setImageURI(Uri.parse(category.getImage()));
+        Glide.with(mCtx)
+                .load(Uri.parse(category.getImage()))
+                .into(holder.imageView);
+        //holder.imageView.setImageURI(Uri.parse(category.getImage()));
 
         Log.d("CategoriesAdapter", "onBindViewHolder: "+Uri.parse(category.getImage()));
     }
