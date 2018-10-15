@@ -50,32 +50,13 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.concetto_white);
         high = (Button)findViewById(R.id.highlights);
-        highlight = FirebaseDatabase.getInstance().getReference();
-        highlight.addValueEventListener(new ValueEventListener() {
+        high.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("highlights").child("buttonvisible");
-                p = dataSnapshot.getValue().toString();
-                if(p.equals("yes")) {
-                    high.setVisibility(View.VISIBLE);
-                    high.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            startActivity(new Intent(MainActivity.this,highlights.class));
-                        }
-                    });
-                }
-                else {
-                    high.setVisibility(View.GONE);
-                }
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,highlights.class));
             }
         });
+
 
 
 
@@ -197,7 +178,7 @@ public class MainActivity extends AppCompatActivity
             }
 
         }
-        else if (id==R.id.action_website){
+     /*   else if (id==R.id.action_website){
             DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
             Query query = reference.child("website");
             query.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -222,7 +203,7 @@ public class MainActivity extends AppCompatActivity
                 }
             });
 
-        }
+        }*/
 
         return super.onOptionsItemSelected(item);
     }

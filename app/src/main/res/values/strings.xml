@@ -360,7 +360,7 @@ rewarded bonus points.\n
     <string name="obstacleabout">
         The participant shall hereafter be referred to as the player and their robot, the bot.\n
 In this event the player is supposed to complete a course littered with obstacles, the player who finishes in the least amount of score wins the event. The obstacles can be either active or passive; active – they can deliberately delay the bot or passive – they can make it harder to continue.\n
-The bot must not harm or otherwise deliberately sabotage the Arena. They must adhere to the following rules while participating in the event.\n
+The bot must not harm or otherwise deliberately sabotage the Arena. \n
 
     </string>
     <string name="obstaclespecs">
@@ -775,6 +775,13 @@ The event is focused on lifting and moving of object with the help of hydraulic 
 •	Syringes, Hard board, wood, rubber bands.
 
     </string>
+    <string name="aquacon">
+        Prince Kunal- 9386667625\n
+Akash- 7355745553\n
+Aman Singh- 7033331443\n
+Ajay saini- 9828445269\n
+Jathorath Uday Kiran -9618476872
+    </string>
     <string name="aquarules">
         •	Maximum of 3 people are allowed in a team.\n
 •	The fluid inside the syringes should be water.\n
@@ -1066,13 +1073,7 @@ SELECTED TEAMS HAVE TO MAKE THE CIRCUIT WORK ON THE GIVEN BREADBOARD. TEAM WHICH
          PERUL  JAIN  -> 7891167889
     </string>
     <string name="earthabt">
-        1. It  is  an  Augmented  Reality  based  Treasure  Hunt  which  would  test  the  participant’s  logical  and
-analytical  skills.\n
-2. Event  focus  on  Introduction  of  Augmented  Reality  and  Cryptography  among  the  participants.\n
-3. Event  goes  on  the  basis  of  story  completion  using  encrypted  logical  Puzzles  to  get  the  Treasure
-in  a  completely  Augmented  World,  rather  Campus.\n
-4. It’s  whole  map  will    be  an  augmented  Island  designed  in  IIT(ISM)  Campus  where  you  will  be  the
-pirates  of  terrain.
+       Be ready to meet crazy anime characters, courageous game warriors, powerful superheroes and beautiful princesses in the Augmented IIT Dhanbad Campus and seek their help to solve mysteries in the auspicious event, EARTH(Extended Augmented Reality Treasure Hunt) presented to you by the Department of Computer Science and Engineering.
     </string>
     <string name="earthrul">
         1. The  whole  campus  would  be  divided  into  3-4  zones.\n
@@ -1115,6 +1116,21 @@ A betting interval ends when the bets have been equalized - that is, when each p
 If a player makes a bet or a raise that no other player calls, he wins the pot without showing his hand. Thus, in Poker, there is a bluffing element, and the best combination of cards does not always win the pot! Bluffing is one of the key reasons why Poker is so popular.
 If a player wishes to remain in the game without betting, he "checks." This means, in effect, that the player is making a "bet of nothing." A player may check provided no one before him in that betting interval has made a bet. If another player has bet, he cannot check but must at least call the bet or drop. A player who checks may raise a bet that has been raised by another player. This is called "sandbagging," which is allowed, unless it has been decided beforehand that this practice is forbidden. If all players check during a round of play, the betting interval is over, and all the players still in the pot remain in the game.
 In each betting round, one player is designated as the first bettor, according to the rules of the game. The turn to bet always moves to the left, from player to player, and no one may check, bet, or even drop, except when it is his turn.
+
+    </string>
+    <string name="sinrules">
+         <b>CHIPS</b>
+Poker is almost always played with poker chips. For a game with seven or more players, there should be a supply of at least 200 chips. Usually, the white chip (or the lightest-colored chip) is the unit, or lowest-valued chip, worth whatever the minimum ante or bet is; a red chip (or some other colored chip) is worth five whites, and a blue chip (or some other dark-colored chip) is worth 10 or 20 or 25 whites or two, four or five reds. At the start of the game, each player "buys in" by purchasing a certain number of chips. All of the players usually buy in for the same amount.
+Betting/n
+In the course of each Poker deal, there will be one or more betting intervals in which the players have an opportunity to bet on their hands. Minimizing losses with poor hands and maximizing winnings with good hands is the underlying skill that Poker requires.
+Before the cards are even dealt, the rules of the Poker game being played may require that each player put an initial contribution, called an "ante," of one or more chips into the pot, to start it off.
+Each betting interval, or round, begins when a player, in turn, makes a bet of one or more chips. Each player to the left, in turn, must either "call" that bet by putting into the pot the same number of chips; or "raise," which means that he puts in more than enough chips to call; or "drop" ("fold"), which means that he puts no chips in the pot, discards his hand, and is out of the betting until the next deal.
+When a player drops, he loses any chips he has put into that pot. Unless a player is willing to put into the pot at least as many chips as any preceding player, he must drop out.
+A betting interval ends when the bets have been equalized - that is, when each player has either put in exactly as many chips as his predecessors or has dropped. There are usually two or more betting intervals for each Poker deal. After the final interval there is a "showdown," which means that each player who remains shows his hand face up on the table. The best Poker hand then takes the pot.
+If a player makes a bet or a raise that no other player calls, he wins the pot without showing his hand. Thus, in Poker, there is a bluffing element, and the best combination of cards does not always win the pot! Bluffing is one of the key reasons why Poker is so popular.
+If a player wishes to remain in the game without betting, he "checks." This means, in effect, that the player is making a "bet of nothing." A player may check provided no one before him in that betting interval has made a bet. If another player has bet, he cannot check but must at least call the bet or drop. A player who checks may raise a bet that has been raised by another player. This is called "sandbagging," which is allowed, unless it has been decided beforehand that this practice is forbidden. If all players check during a round of play, the betting interval is over, and all the players still in the pot remain in the game.
+In each betting round, one player is designated as the first bettor, according to the rules of the game. The turn to bet always moves to the left, from player to player, and no one may check, bet, or even drop, except when it is his turn.
+
 
     </string>
     <string name="pubgabt">
