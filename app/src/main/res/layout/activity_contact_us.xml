@@ -3,39 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
 
     android:layout_width="match_parent"
-
-    android:layout_height="match_parent"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto">
-
-<LinearLayout
-
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/registeration_bg"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
-    android:orientation="vertical">
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="vertical"
-        android:background="@drawable/cordi">
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        android:layout_height="match_parent"
 
-            android:paddingTop="95dp"
-            android:layout_gravity="left"
-            android:paddingLeft="20dp"
-            android:textSize="30dp"
-            android:textColor = "@color/btcolor"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="114dp" />
+        android:orientation="vertical">
 
-
-
-    </LinearLayout>
 
 
 
@@ -70,8 +48,9 @@
                         android:layout_width="100dp"
                         android:layout_height="130dp"
                         android:scaleType="centerCrop"
+                        android:id="@+id/aj"
 
-                        android:src="@drawable/amrit" />
+                        />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -133,8 +112,9 @@
                         android:layout_width="100dp"
                         android:layout_height="130dp"
                         android:scaleType="centerCrop"
+                        android:id="@+id/pj"
 
-                        android:src="@drawable/pranjal" />
+                        />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -197,8 +177,10 @@
                         android:layout_width="100dp"
                         android:layout_height="130dp"
                         android:scaleType="centerCrop"
+                        android:id="@+id/sj"
 
-                        android:src="@drawable/singhal" />
+
+                        />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -254,7 +236,8 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="130dp"
-                        android:src="@drawable/anuroop"
+                        android:id="@+id/anuuj"
+
                         android:scaleType="centerCrop"/>
 
                     <LinearLayout
@@ -293,6 +276,6 @@
 
 
 
-</LinearLayout>
+    </LinearLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.NestedScrollView>

@@ -505,6 +505,10 @@ public class EventsActivity extends MainActivity {
                     if (dataSnapshot.getKey().equals("workshop_4")){
                         guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),"",dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),dataSnapshot.child("about").getValue().toString()));
                         wAdapter.notifyDataSetChanged();
+                    }
+                    if (dataSnapshot.getKey().equals("workshop_5")){
+                        guestLectures.add(new GuestLecture(dataSnapshot.child("lecture_name").getValue().toString(),"",dataSnapshot.child("date").getValue().toString(),dataSnapshot.child("time").getValue().toString(),dataSnapshot.child("about").getValue().toString()));
+                        wAdapter.notifyDataSetChanged();
                     }llProgress.setVisibility(View.GONE);
                 }
 
@@ -529,6 +533,10 @@ public class EventsActivity extends MainActivity {
                     }
                     if(dataSnapshot.getKey().toString().equals("workshop_4")){
                         guestLectures.remove(3);
+                        wAdapter.notifyDataSetChanged();
+                    }
+                    if(dataSnapshot.getKey().toString().equals("workshop_5")){
+                        guestLectures.remove(4);
                         wAdapter.notifyDataSetChanged();
                     }
                 }
