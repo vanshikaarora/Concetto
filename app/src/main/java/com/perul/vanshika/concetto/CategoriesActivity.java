@@ -46,62 +46,62 @@ public class CategoriesActivity extends MainActivity {
 
         //adding some items to our list
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.fifaic, "Informal"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.fifaic, "Informal"));
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.exhibition, "OVERNIGHT EVENT"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.exhibition, "OVERNIGHT EVENT"));
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.thebigbangquiz, "QUIZ"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.thebigbangquiz, "QUIZ"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.robo, "Robotics"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.robo, "Robotics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.maths, "Applied Mathematics"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.maths, "Applied Mathematics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.cse, "Computer Science and Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.cse, "Computer Science and Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.electronics, "Electronics Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.electronics, "Electronics Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.elec, "Electrical Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.elec, "Electrical Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.mech, "Mechanical Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.mech, "Mechanical Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.civil, "Civil Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.civil, "Civil Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.mining, "Mining Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.mining, "Mining Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.manage, "Mining Machinery Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.manage, "Mining Machinery Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.petro, "Petroleum Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.petro, "Petroleum Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.mineral, "Fuel and Mineral Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.mineral, "Fuel and Mineral Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.geology, "Applied Geology"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.geology, "Applied Geology"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.geophysics, "Applied Geophysics"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.geophysics, "Applied Geophysics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.chem, "Chemical Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.chem, "Chemical Engineering"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.physics, "Engineering Physics"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.physics, "Engineering Physics"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.manage, "Management Studies"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.manage, "Management Studies"));
 
         categoryList.add(
-                new Category("android.resource://com.example.vanshika.concetto/" + R.drawable.enviro , "Environmental Engineering"));
+                new Category("android.resource://com.perul.vanshika.concetto/" + R.drawable.enviro , "Environmental Engineering"));
 
 
 

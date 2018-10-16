@@ -8,30 +8,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
 /**
- * Created by lenovo on 10/9/2018.
+ * Created by lenovo on 10/1/2018.
  */
 
-public class sinwin extends MainActivity {
+public class techtriathlon extends MainActivity {
+    String p;
     TextView tl;
     Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
     AlertDialog.Builder rules;
     AlertDialog.Builder prizes;
     AlertDialog.Builder contacts;
-    AlertDialog.Builder judging;
-    DatabaseReference tru;
-    String p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.sin, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.techtrathlon, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -43,27 +36,12 @@ public class sinwin extends MainActivity {
         pr = (Button)findViewById(R.id.bt3);
         co = (Button)findViewById(R.id.bt4);
         reg = (Button)findViewById(R.id.bt5);
-        // jud = (Button)findViewById(R.id.bt6);
-        tru = FirebaseDatabase.getInstance().getReference();
-        tru.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("sin").child("prize");
-                p = dataSnapshot.getValue().toString();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(sinwin.this);
-                about.setMessage(R.string.sinabt);
+                about = new AlertDialog.Builder(techtriathlon.this);
+                about.setMessage(R.string.triathlon_intro);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -71,13 +49,23 @@ public class sinwin extends MainActivity {
 
             }
         });
+        ru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rules = new AlertDialog.Builder(techtriathlon.this);
+                rules.setMessage(R.string.triathlon_rules);
+                AlertDialog ru = rules.create();
+                ru.setTitle("RULES");
+                ru.show();
 
-
+            }
+        });
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(sinwin.this);
-                prizes.setMessage(p);
+
+                prizes = new AlertDialog.Builder(techtriathlon.this);
+                prizes.setMessage(R.string.techtriathlonPrize);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
                 pb.show();
@@ -87,33 +75,23 @@ public class sinwin extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(sinwin.this);
-                contacts.setMessage("PRANJAL GUPTA - 9709372706");
+                contacts = new AlertDialog.Builder(techtriathlon.this);
+                contacts.setMessage(R.string.triathlon_contact);
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
 
             }
         });
-        ru.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rules = new AlertDialog.Builder(sinwin.this);
-                rules.setMessage(R.string.sinrules);
-                AlertDialog ro = rules.create();
-                ro.setTitle("RULES");
-                ro.show();
-
-            }
-        });
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(sinwin.this,sinwinreg.class));
+                startActivity(new Intent(techtriathlon.this,tech_triathlon_reg.class));
 
 
             }
         });
     }
-}
 
+
+}

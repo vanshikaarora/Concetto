@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
  * Created by lenovo on 10/9/2018.
  */
 
-public class sinwin extends MainActivity {
+public class pubg extends MainActivity {
     TextView tl;
     Button ab,ru,pr,co,reg;
     AlertDialog.Builder about;
@@ -31,7 +31,7 @@ public class sinwin extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.replaceContentLayout(R.layout.sin, R.id.content_main_linear_layout);
+        super.replaceContentLayout(R.layout.pubg, R.id.content_main_linear_layout);
 
         getSupportActionBar().hide();
 
@@ -48,7 +48,7 @@ public class sinwin extends MainActivity {
         tru.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                dataSnapshot = dataSnapshot.child("sin").child("prize");
+                dataSnapshot = dataSnapshot.child("pub").child("prize");
                 p = dataSnapshot.getValue().toString();
 
 
@@ -62,8 +62,8 @@ public class sinwin extends MainActivity {
         ab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                about = new AlertDialog.Builder(sinwin.this);
-                about.setMessage(R.string.sinabt);
+                about = new AlertDialog.Builder(pubg.this);
+                about.setMessage(R.string.pubgabt);
                 AlertDialog ab = about.create();
                 ab.setTitle("ABOUT");
                 ab.show();
@@ -72,11 +72,21 @@ public class sinwin extends MainActivity {
             }
         });
 
+        ru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rules = new AlertDialog.Builder(pubg.this);
+                rules.setMessage(R.string.pubgrules);
+                AlertDialog ru = rules.create();
+                ru.setTitle("RULES");
+                ru.show();
 
+            }
+        });
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prizes = new AlertDialog.Builder(sinwin.this);
+                prizes = new AlertDialog.Builder(pubg.this);
                 prizes.setMessage(p);
                 AlertDialog pb = prizes.create();
                 pb.setTitle("PRIZES");
@@ -87,33 +97,21 @@ public class sinwin extends MainActivity {
         co.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                contacts = new AlertDialog.Builder(sinwin.this);
-                contacts.setMessage("PRANJAL GUPTA - 9709372706");
+                contacts = new AlertDialog.Builder(pubg.this);
+                contacts.setMessage("AMRIT VYAS -> 9431785428");
                 AlertDialog co = contacts.create();
                 co.setTitle("CONTACTS");
                 co.show();
 
             }
         });
-        ru.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rules = new AlertDialog.Builder(sinwin.this);
-                rules.setMessage(R.string.sinrules);
-                AlertDialog ro = rules.create();
-                ro.setTitle("RULES");
-                ro.show();
-
-            }
-        });
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(sinwin.this,sinwinreg.class));
+                startActivity(new Intent(pubg.this,pubgreg.class));
 
 
             }
         });
     }
 }
-

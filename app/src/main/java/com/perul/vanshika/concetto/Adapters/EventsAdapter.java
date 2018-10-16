@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.perul.vanshika.concetto.EventsActivity;
 import com.perul.vanshika.concetto.Models.Event;
 import com.perul.vanshika.concetto.R;
@@ -98,8 +99,10 @@ import java.util.List;
 
             //binding the data with the viewholder views
             holder.textViewTitle.setText(event.getName());
-            holder.imageView.setImageURI(Uri.parse(event.getImage()));
-
+           // holder.imageView.setImageURI(Uri.parse(event.getImage()));
+            Glide.with(mCtx)
+                    .load(Uri.parse(event.getImage()))
+                    .into(holder.imageView);
             final DatabaseReference ref= FirebaseDatabase.getInstance().getReference("EventTimings");
 
             final String[] date = new String[1];
