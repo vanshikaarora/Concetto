@@ -50,7 +50,7 @@
                 android:textSize="20sp"
                 android:textColor="#3e3e3e"
                 android:layout_toRightOf="@id/imageView"
-                android:text="Date"
+                android:text="Will be updated soon..."
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
             <TextView
@@ -64,7 +64,7 @@
                 android:background="#001e32"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="Time"
+                android:text="Will be updated soon..."
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                 android:textColor="#FFFFFF"
