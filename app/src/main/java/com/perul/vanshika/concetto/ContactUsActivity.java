@@ -19,6 +19,7 @@ public class ContactUsActivity extends MainActivity {
         b = (ImageView) findViewById(R.id.pj);
         c = (ImageView) findViewById(R.id.sj);
         d = (ImageView) findViewById(R.id.anuuj);
+        getSupportActionBar().hide();
 
 
         Glide.with(ContactUsActivity.this).load(R.drawable.amrit).into(a);

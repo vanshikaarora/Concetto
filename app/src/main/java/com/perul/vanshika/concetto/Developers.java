@@ -56,7 +56,7 @@ public class Developers extends MainActivity {
         pel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uri = "https://www.linkedin.com/in/perul-jain";
+                String uri = "https://www.linkedin.com/in/perul-jain-55845b154/";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 startActivity(intent);
             }
